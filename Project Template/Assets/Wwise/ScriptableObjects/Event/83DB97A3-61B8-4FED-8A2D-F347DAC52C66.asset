@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63921192d24b49a4bb08c2348bbb739f, type: 3}
+  m_Name: 83DB97A3-61B8-4FED-8A2D-F347DAC52C66
+  m_EditorClassIdentifier: 
+  objectName: Play_SFX_PopLetterGood_01
+  id: 122831938
+  guid: 83DB97A3-61B8-4FED-8A2D-F347DAC52C66
