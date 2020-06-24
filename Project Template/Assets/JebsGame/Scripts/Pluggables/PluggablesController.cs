@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEditor.ShaderGraph.Internal;
-using UnityEditor.UI;
 using System.Linq;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.Events;
@@ -47,6 +45,7 @@ public class PluggablesController : MonoBehaviour
 
     public GameObject feedbackSkybox;
 
+    [Header("Script Data")]
     //Lists of objects to destroy
     [SerializeField] public List<PluggableGap> gaps = new List<PluggableGap>();
     [SerializeField] public List<PluggableLetter> letters = new List<PluggableLetter>();
@@ -73,6 +72,7 @@ public class PluggablesController : MonoBehaviour
     int currentTime;
     bool congratulated;
 
+    [Header("Debug")]
     public bool greenSkybox;
     public bool redSkybox;
 
@@ -96,6 +96,7 @@ public class PluggablesController : MonoBehaviour
 
         CheckGaps();
 
+        //Blend Skybox Colors
         if (greenSkybox)
         {
             feedbackSkybox.GetComponent<MeshRenderer>().material.color = Color.Lerp(feedbackSkybox.GetComponent<MeshRenderer>().material.color, Color.green, 9f * Time.deltaTime);
@@ -143,6 +144,7 @@ public class PluggablesController : MonoBehaviour
                 completed = false;
             }
         }
+
         if (completed)
         {
             if (!congratulated)
