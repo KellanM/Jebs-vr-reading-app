@@ -172,7 +172,17 @@ public class PluggablesController : MonoBehaviour
 
         foreach(PluggableLetter letter in letters)
         {
-            Destroy(letter.letter);
+            //Check if object is being held
+
+            if (letter.letter.GetComponent<XRGrabInteractable>().m_beingHeld)
+            {
+                //Hide Object
+                letter.letter.transform.localScale = Vector3.zero;
+            } else
+            {
+                //Destroy Object
+                Destroy(letter.letter);
+            }
         }
         letters = new List<PluggableLetter>();
 
