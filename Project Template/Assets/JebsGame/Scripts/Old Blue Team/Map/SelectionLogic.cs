@@ -15,6 +15,8 @@ public enum SelectionState
 
 public class SelectionLogic : MonoBehaviour
 {
+    public SelectionState initialState = SelectionState.Unselectable;
+
     [Header("Objects")]
     public GameObject selectionGroupNotMe;
     public GameObject teleportationReceiver;
@@ -50,7 +52,6 @@ public class SelectionLogic : MonoBehaviour
         set
         {
             _LinTrigger = value;
-            pokeL.gameObject.SetActive(value);
             if (currentPoke == pokeL.gameObject) StopLoadingBar();
         }
     }
@@ -60,7 +61,6 @@ public class SelectionLogic : MonoBehaviour
         set
         {
             _RinTrigger = value;
-            pokeR.gameObject.SetActive(value);
             if (currentPoke == pokeR.gameObject) StopLoadingBar();
         }
     }
@@ -138,12 +138,20 @@ public class SelectionLogic : MonoBehaviour
 
     private void Start()
     {
-        currentState = SelectionState.Unselectable;
+        currentState = initialState;
     }
 
     private void Update()
     {
-        
+        if (currentState == SelectionState.LoadingSelection)
+        {
+            if (!currentPoke.activeSelf)
+            {
+                enteredAreas = new List<GameObject>();
+                areaEntered = false;
+                currentState = SelectionState.Selectable;
+            }
+        }
     }
 
     // Only area triggers should be able to call onAreaEntered
@@ -226,6 +234,7 @@ public class SelectionLogic : MonoBehaviour
         if (currentArea != null)
         {
             teleportationReceiver.transform.position = currentArea.destination.position;
+            teleportationReceiver.transform.rotation = currentArea.destination.rotation;
             onTeleport.Invoke();
         }
     }
