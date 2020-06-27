@@ -174,7 +174,7 @@ public class PluggablesController : MonoBehaviour
         {
             //Check if object is being held
 
-            if (letter.letter.GetComponent<XRGrabInteractable>().m_beingHeld)
+            if (letter.letter.GetComponent<GrabIsHeld>().isHeld)
             {
                 //Hide Object
                 letter.letter.transform.localScale = Vector3.zero;
@@ -356,8 +356,9 @@ public class PluggablesController : MonoBehaviour
                     }
                 }
 
-                //Sloppy code butcant think of any other way to do it
-                //If distance is too large and is ot filling any other gaps, enable gravity
+                //Sloppy code but cant think of any other way to do it apart from looping through again
+
+                //If distance is too large and is not filling any other gaps, enable gravity
                 bool isFilling = false;
                 foreach (PluggableGap gapCheck in gaps)
                 {
@@ -366,6 +367,7 @@ public class PluggablesController : MonoBehaviour
                         isFilling = true;
                     }
                 }
+
                 if(!isFilling && Vector3.Distance(letter.letter.transform.position, gap.gap.transform.position) > distanceToCountAsFilled)
                 {
                     letter.letter.GetComponent<Rigidbody>().useGravity = true;
