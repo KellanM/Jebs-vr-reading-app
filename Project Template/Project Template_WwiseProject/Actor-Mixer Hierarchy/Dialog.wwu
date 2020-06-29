@@ -14,6 +14,408 @@
 									<ObjectRef Name="2D_Dialog" ID="{CEA8EA19-5E91-4BB6-92C9-B6B321C43175}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Pirate" ID="{F5546AA9-B4C8-4AB0-9F91-1A87294052C8}" ShortID="370683078">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="Letter Search" ID="{DD09D329-5AE3-487F-9533-ECB66FDBC016}" ShortID="607578077">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<ActorMixer Name="Find Me The Letter _" ID="{501DCABF-C556-46C5-970A-B2E481AA933C}" ShortID="271311930">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="DX_Pirate_FindMeC_01" ID="{C9A787D1-FCA8-48C1-ABFC-69A8CEDDC8AC}" ShortID="678777002">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>13</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="2D_Dialog" ID="{CEA8EA19-5E91-4BB6-92C9-B6B321C43175}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="DX_Pirate_FindMeC_01" ID="{C0EFA1B0-8EB0-481E-A178-21D42D50240B}">
+																	<Language>SFX</Language>
+																	<AudioFile>DX_Pirate_FindMeC_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="615843219"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="DX_Pirate_FindMeC_01" ID="{C0EFA1B0-8EB0-481E-A178-21D42D50240B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="DX_Pirate_FindMeB_01" ID="{22037C0B-4DCB-455C-988B-AE03ED6A8FC6}" ShortID="408214576">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>19</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="2D_Dialog" ID="{CEA8EA19-5E91-4BB6-92C9-B6B321C43175}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="DX_Pirate_FindMeB_01" ID="{6667292C-385C-4B37-9081-EF1716D1A202}">
+																	<Language>SFX</Language>
+																	<AudioFile>DX_Pirate_FindMeB_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="16090932"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="DX_Pirate_FindMeB_01" ID="{6667292C-385C-4B37-9081-EF1716D1A202}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="DX_Pirate_FindMeA_01" ID="{FAC1CADB-A576-453C-ADAD-364EA775914A}" ShortID="83147672">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>14</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="2D_Dialog" ID="{CEA8EA19-5E91-4BB6-92C9-B6B321C43175}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="DX_Pirate_FindMeA_01" ID="{7EF1DA4D-E7A1-4623-84BB-443678A37209}">
+																	<Language>SFX</Language>
+																	<AudioFile>DX_Pirate_FindMeA_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="561540119"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="DX_Pirate_FindMeA_01" ID="{7EF1DA4D-E7A1-4623-84BB-443678A37209}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</ActorMixer>
+												<RandomSequenceContainer Name="Correct Letter Found" ID="{D01ADA0E-8A06-4A7A-BD72-F0E287F6E37D}" ShortID="811439467">
+													<PropertyList>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="DX_Pirate_CorrectLetter_01" ID="{1F0DD803-4D28-4B53-A028-FE5A7753287C}" ShortID="600696219">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-2.3</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="DX_Pirate_CorrectLetter_01" ID="{EEBAF6DC-4C65-460E-B87A-5EAA74F568C2}">
+																	<Language>SFX</Language>
+																	<AudioFile>DX_Pirate_CorrectLetter_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="474669687"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="DX_Pirate_CorrectLetter_01" ID="{EEBAF6DC-4C65-460E-B87A-5EAA74F568C2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="DX_Pirate_CorrectLetter_02" ID="{2E3B9A9F-8E54-47B3-96AF-CAF570FC543F}" ShortID="210476550">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="DX_Pirate_CorrectLetter_02" ID="{FB82A18C-ECE0-4603-9755-2CAA51918154}">
+																	<Language>SFX</Language>
+																	<AudioFile>DX_Pirate_CorrectLetter_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="64104581"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="DX_Pirate_CorrectLetter_02" ID="{FB82A18C-ECE0-4603-9755-2CAA51918154}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="DX_Pirate_CorrectLetter_03" ID="{12B16FD3-10BF-4954-A289-F4B83EBAACEC}" ShortID="823886123">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="DX_Pirate_CorrectLetter_03" ID="{63CBAA76-ADB3-47AF-9353-7A0B8CF85A1D}">
+																	<Language>SFX</Language>
+																	<AudioFile>DX_Pirate_CorrectLetter_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="102799088"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="DX_Pirate_CorrectLetter_03" ID="{63CBAA76-ADB3-47AF-9353-7A0B8CF85A1D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="DX_Pirate_CorrectLetter_04" ID="{2C621852-EB37-4BB6-9A4A-189A104BB838}" ShortID="439641534">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="DX_Pirate_CorrectLetter_04" ID="{C1EEA6E8-6262-45FD-96F1-036BA662CACA}">
+																	<Language>SFX</Language>
+																	<AudioFile>DX_Pirate_CorrectLetter_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="604484223"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="DX_Pirate_CorrectLetter_04" ID="{C1EEA6E8-6262-45FD-96F1-036BA662CACA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="DX_Pirate_CorrectLetter_05" ID="{CD398480-22E1-435B-B5C2-384462787C1C}" ShortID="654731236">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="DX_Pirate_CorrectLetter_05" ID="{D6ABA828-D61D-468E-B9A9-AF063B98CD45}">
+																	<Language>SFX</Language>
+																	<AudioFile>DX_Pirate_CorrectLetter_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="994503425"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="DX_Pirate_CorrectLetter_05" ID="{D6ABA828-D61D-468E-B9A9-AF063B98CD45}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<ActorMixer Name="Thats The Letter _" ID="{8C6C7370-4D5A-49D4-BE68-A917D45B644B}" ShortID="372745323">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="DX_Pirate_ThatsLetterA_01" ID="{C3F3E121-BA19-4F72-A917-C4005EE642E4}" ShortID="992407403">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>13</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="DX_Pirate_ThatsLetterA_01" ID="{B63EB695-1AE4-496F-A5D4-A63D3F50A605}">
+																	<Language>SFX</Language>
+																	<AudioFile>DX_Pirate_ThatsLetterA_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="135275204"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="DX_Pirate_ThatsLetterA_01" ID="{B63EB695-1AE4-496F-A5D4-A63D3F50A605}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="DX_Pirate_ThatsLetterB_01" ID="{8AB83B41-7E75-481C-BC60-2137B66848E5}" ShortID="1063777694">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>11</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="DX_Pirate_ThatsLetterB_01" ID="{85094774-C34F-4212-9F21-235290B54A76}">
+																	<Language>SFX</Language>
+																	<AudioFile>DX_Pirate_ThatsLetterB_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="368120319"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="DX_Pirate_ThatsLetterB_01" ID="{85094774-C34F-4212-9F21-235290B54A76}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="DX_Pirate_ThatsLetterC_01" ID="{AD4107BE-9CDA-4F2D-821E-D132537D750F}" ShortID="427642330">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>14</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="DX_Pirate_ThatsLetterC_01" ID="{62994C9E-A562-4FD4-AAD8-FF8FDE6A6531}">
+																	<Language>SFX</Language>
+																	<AudioFile>DX_Pirate_ThatsLetterC_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1048041803"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="DX_Pirate_ThatsLetterC_01" ID="{62994C9E-A562-4FD4-AAD8-FF8FDE6A6531}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</ActorMixer>
+												<ActorMixer Name="We're Still Looking For The Letter _" ID="{F200692B-9694-469A-B8FF-0B4651F57228}" ShortID="880311029">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="DX_Pirate_StillLookingForC_01" ID="{754E609B-D76A-46C7-92C8-C524AAE1D389}" ShortID="199344034">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>11</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="DX_Pirate_StillLookingForC_01" ID="{B15C64F8-C9F8-40FA-AD9D-18A31F8526DD}">
+																	<Language>SFX</Language>
+																	<AudioFile>DX_Pirate_StillLookingForC_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="586350733"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="DX_Pirate_StillLookingForC_01" ID="{B15C64F8-C9F8-40FA-AD9D-18A31F8526DD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</ActorMixer>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="3D Dialog" ID="{F88F86F8-D3F6-4EBF-9652-27038AEB40F6}" ShortID="1049869641">
 							<ReferenceList>
@@ -38,6 +440,119 @@
 									<ObjectRef Name="2D_Dialog" ID="{CEA8EA19-5E91-4BB6-92C9-B6B321C43175}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Alphabet" ID="{71BEB2C1-F38D-4A06-9387-61BCADBE51BB}" ShortID="222146677">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="DX_Letername_A_01" ID="{2105E8D5-4BAA-41DD-A40E-0B086612C125}" ShortID="209251343">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>11.5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Letername_A_01" ID="{87E4A480-582E-478F-8C9C-F83A4CE762F3}">
+													<Language>SFX</Language>
+													<AudioFile>Letername_A_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="193728657"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Letername_A_01" ID="{87E4A480-582E-478F-8C9C-F83A4CE762F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DX_Letername_B_01" ID="{6FDF51BF-B9AD-40BB-B4CF-4D167B3910B9}" ShortID="843077552">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>18.5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Letername_B_01" ID="{D4A16069-D894-4D4B-A8D8-823CAD7B5719}">
+													<Language>SFX</Language>
+													<AudioFile>Letername_B_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="934173128"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Letername_B_01" ID="{D4A16069-D894-4D4B-A8D8-823CAD7B5719}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="DX_Letername_C_01" ID="{64CD414F-650B-4AA4-B322-ACE63543003F}" ShortID="960162814">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{33E62BA3-C9D4-4D76-8CE5-ADE1B946125D}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="783"/>
+																	<Property Name="Min" Type="Real64" Value="-1086"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>17.9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Letername_C_01" ID="{B7F18A61-96E1-4831-917C-329381A5B4EE}">
+													<Language>SFX</Language>
+													<AudioFile>Letername_C_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="482533939"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Letername_C_01" ID="{B7F18A61-96E1-4831-917C-329381A5B4EE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="3D Dialog" ID="{8740C6A6-22B5-45AB-828C-EB124624C537}" ShortID="236811848">
 							<ReferenceList>
