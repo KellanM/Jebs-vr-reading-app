@@ -236,6 +236,115 @@
 									<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<ActorMixer Name="Treasure Chest" ID="{C421B91F-18BD-47F2-ACE9-CB648C76A773}" ShortID="88478973">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="60"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="TreasureChest" ID="{4FE842C6-F6EF-4685-BAEC-F877565046E1}" WorkUnitID="{0942876A-8F5D-4B5C-A202-5AA8FB2853C0}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_Chest_Dig_Hit_01" ID="{B102EBD9-0E00-40CF-B439-FD32FC469A9F}" ShortID="405364383">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3.3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Chest_Dig_Hit_01" ID="{A4476341-63C6-48CC-9EDD-58A38245AD04}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Chest_Dig_Hit_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="133787045"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Chest_Dig_Hit_01" ID="{A4476341-63C6-48CC-9EDD-58A38245AD04}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Chest_Close_01" ID="{C4B0FCD1-D59D-47B1-B2CC-FE1C61E96424}" ShortID="352538967">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6.4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Chest_Close_01" ID="{8AFD7B14-5F7E-4446-A947-0F0F6F8C5D5C}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Chest_Close_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="861371255"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Chest_Close_01" ID="{8AFD7B14-5F7E-4446-A947-0F0F6F8C5D5C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Chest_Open_01" ID="{45CB08AE-9E40-472F-818E-416FBF494EA7}" ShortID="519384719">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>0.7</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Chest_Open_01" ID="{4AF68388-BC21-48F2-BEB9-C9B48437C723}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Chest_Open_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="273400121"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Chest_Open_01" ID="{4AF68388-BC21-48F2-BEB9-C9B48437C723}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</ActorMixer>
+							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</Folder>

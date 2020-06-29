@@ -1,8 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
+	80937159	Play_Letername_C_01			\Default Work Unit\Play_Letername_C_01	
 	459954740	Play__Crab_Fight_Music			\Default Work Unit\Play__Crab_Fight_Music	
+	790832349	Play_Letername_A_01			\Default Work Unit\Play_Letername_A_01	
+	2846587504	Play_Letername_B_01			\Default Work Unit\Play_Letername_B_01	
 	3776612809	Play_Example01			\Default Work Unit\Play_Example01	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	193728657	DX_Letername_A_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Mac\SFX\Letername_A_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\General\2D Dialog\Alphabet\DX_Letername_A_01		119790
+	482533939	DX_Letername_C_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Mac\SFX\Letername_C_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\General\2D Dialog\Alphabet\DX_Letername_C_01		128216
 	579986102	_Crab_Fight_Music	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Mac\SFX\_Crab_Fight_Music_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\_Crab_Fight_Music		3949780
 	849942311	Example01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Mac\SFX\Example01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Example01		2097216
+	934173128	DX_Letername_B_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Mac\SFX\Letername_B_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\General\2D Dialog\Alphabet\DX_Letername_B_01		115042
 
