@@ -6,12 +6,6 @@ using UnityEngine.Events;
 using UnityEngine.XR;
 using Zinnia.Action;
 
-public enum Usage
-{
-    Trigger,
-    Grip
-}
-
 public class ButtonWatcher : BooleanAction
 {
     [Header("Listen to")]
