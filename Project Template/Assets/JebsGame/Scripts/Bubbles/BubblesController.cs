@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Zinnia.Data.Type.Transformation.Conversion;
+using TMPro;
+using System.Reflection;
 
 public class ListTools
 {
@@ -23,6 +26,8 @@ public class BubblesController : MonoBehaviour
 
     public List<GameObject> letterBubblePrefabs = new List<GameObject>();
 
+    public TMP_Text timerText;
+
     [Header("Script Data")]
     public List<GameObject> instantiatedBubbles = new List<GameObject>();
     [SerializeField] public List<GameObject> instantiateQueue = new List<GameObject>();
@@ -37,9 +42,14 @@ public class BubblesController : MonoBehaviour
     public float xBetween;
     public float yBetween;
 
+    public float timeAllowed;
+    public bool timed;
+
     [Header("Debug")]
     public bool greenSkybox;
     public bool redSkybox;
+
+    float timeLeft;
 
     IEnumerator SpawnBubbles()
     {
@@ -95,30 +105,50 @@ public class BubblesController : MonoBehaviour
 
     }
 
-    public void ShotBubble(GameObject bubble)
+    public void ShotBubble(GameObject bubble, Vector3 dir, Vector3 point)
     {
         //Called by gun when bubble shot
         shotBubbles.Add(bubble.transform.name);
-        bubble.transform.GetChild(0).gameObject.AddComponent<DestroyAfterDelay>().StartDelay(2f);
+        bubble.transform.GetChild(0).gameObject.AddComponent<DestroyAfterDelay>().StartDelayWithScale(2f);
         bubble.transform.GetChild(0).gameObject.AddComponent<Rigidbody>();
+        bubble.transform.GetChild(0).gameObject.GetComponent<Rigidbody>().AddForceAtPosition(dir * 2f, point, ForceMode.Impulse);
         bubble.transform.GetChild(0).parent = null;
-        bubble.SetActive(false);
+        Destroy(bubble);
         CheckIfWin();
     }
 
-    void CheckIfWin()
+    void CheckIfWin(bool decisive = false)
     {
-        for(int i = 0; i < shotBubbles.Count; i++)
+        if (!decisive)
         {
-            if(shotBubbles[i] == letterBubblePrefabs[i].transform.name)
+            for (int i = 0; i < shotBubbles.Count; i++)
             {
-                if(i == shotBubbles.Count - 1)
+                if (shotBubbles[i] == letterBubblePrefabs[i].transform.name)
                 {
-                    if(shotBubbles.Count == letterBubblePrefabs.Count)
+                    if (i == shotBubbles.Count - 1)
                     {
-                        StartCoroutine(PositiveFeedback());
+                        if (shotBubbles.Count == letterBubblePrefabs.Count)
+                        {
+                            StartCoroutine(PositiveFeedback());
+                        }
                     }
                 }
+                else
+                {
+                    StartCoroutine(NegativeFeedback());
+                }
+            }
+        } else
+        {
+            List<string> compareList = new List<string>();
+            foreach(GameObject letterBubblePrefab in letterBubblePrefabs)
+            {
+                compareList.Add(letterBubblePrefab.name);
+            }
+
+            if(shotBubbles == compareList)
+            {
+                StartCoroutine(PositiveFeedback());
             } else
             {
                 StartCoroutine(NegativeFeedback());
@@ -129,6 +159,34 @@ public class BubblesController : MonoBehaviour
     private void Start()
     {
         StartCoroutine(SpawnBubbles());
+
+        if (timerText == null)
+        {
+            timed = false;
+        }
+
+        if (timed)
+        {
+            StartCoroutine("TimerControl");
+        }
+    }
+
+    IEnumerator TimerControl()
+    {
+        timeLeft = timeAllowed;
+        bool finished = false;
+        while (!finished)
+        {
+            yield return new WaitForSeconds(1f);
+            if (timeLeft > 0)
+            {
+                timeLeft -= 1;
+            } else
+            {
+                finished = true;
+                CheckIfWin(true);
+            }
+        }
     }
 
     void ResetEverything()
@@ -137,18 +195,23 @@ public class BubblesController : MonoBehaviour
         shotBubbles = new List<string>();
         instantiatedBubbles = new List<GameObject>();
         StartCoroutine(SpawnBubbles());
+        StopCoroutine("TimerControl");
+        if (timed)
+        {
+            StartCoroutine("TimerControl");
+        }
     }
 
     void DeleteEverything()
     {
         foreach(GameObject instantiatedBubble in instantiatedBubbles)
         {
-            if (instantiatedBubble.activeSelf == true)
+            if (instantiatedBubble != null && instantiatedBubble.transform.childCount != 0)
             {
-                instantiatedBubble.transform.GetChild(0).gameObject.AddComponent<DestroyAfterDelay>().StartDelay(2f);
+                instantiatedBubble.transform.GetChild(0).gameObject.AddComponent<DestroyAfterDelay>().StartDelayWithScale(2f);
                 instantiatedBubble.transform.GetChild(0).gameObject.AddComponent<Rigidbody>();
                 instantiatedBubble.transform.GetChild(0).parent = null;
-                instantiatedBubble.SetActive(false);
+                Destroy(instantiatedBubble);
             }
         }
     }
@@ -206,6 +269,11 @@ public class BubblesController : MonoBehaviour
                 Color color = new Color(0f * factor, 0f * factor, 0f * factor);
                 feedbackSkybox.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.Lerp(feedbackSkybox.GetComponent<MeshRenderer>().material.GetColor("_EmissionColor"), color, Time.deltaTime * 3f));
             }
+        }
+
+        if (timed)
+        {
+            timerText.text = timeLeft.ToString();
         }
     }
 

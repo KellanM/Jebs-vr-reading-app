@@ -7,7 +7,7 @@ public class BubblesShoot : MonoBehaviour
 {
     [Header("References")]
     public BubblesController controller;
-
+    public GameObject laserPrefab;
     public Transform shootPlace;
 
     [Header("Settings")]
@@ -36,7 +36,7 @@ public class BubblesShoot : MonoBehaviour
             print(value);
 
             //Shoot if value higher than 0.7
-            if (value > 0.7f)
+            if (value > shootThreshold)
             {
                 TriggerDown();
             } else
@@ -61,14 +61,32 @@ public class BubblesShoot : MonoBehaviour
             {
                 if (hit.transform.root.gameObject.tag == "Bubble")
                 {
-                    controller.ShotBubble(hit.transform.root.gameObject);
+                    controller.ShotBubble(hit.transform.root.gameObject, shootPlace.transform.forward, hit.point);
                 }
+                Laser(shootPlace.transform.position, hit.point);
+            } else
+            {
+                Laser(shootPlace.transform.position, shootPlace.transform.position + (shootPlace.transform.forward * 500f));
             }
             timedout = true;
             shot = true;
             CancelInvoke();
             Invoke("AllowShot", shootTimeout);
         }
+    }
+
+    public void Laser(Vector3 from, Vector3 to)
+    {
+        Vector3 scale = new Vector3(1, 1, 1);
+        scale.z = Vector3.Distance(from, to)/2;
+
+        Vector3 pos = Vector3.Lerp(from, to, 0.5f);
+
+        GameObject newLaser = Instantiate(laserPrefab, pos, Quaternion.identity, null);
+        newLaser.transform.localScale = scale;
+        newLaser.transform.forward = (from - to).normalized;
+
+        newLaser.AddComponent<LaserFadeOut>();
     }
 
     public void TriggerUp()
