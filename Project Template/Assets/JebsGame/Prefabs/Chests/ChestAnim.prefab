@@ -5431,17 +5431,17 @@ MonoBehaviour:
   ChestHit:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8a423c8c27098d344a2edb6057afa1dd,
+    WwiseObjectReference: {fileID: 11400000, guid: 3fc8b122875bebe4490f08e570577bb0,
       type: 2}
   ChestOpen:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 48f49756336758e4093fae491ca96512,
+    WwiseObjectReference: {fileID: 11400000, guid: 799f640ad2cf02c4daf95d64eb20a73f,
       type: 2}
   ChestClose:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5e625ccc900459b4284c13549baa190b,
+    WwiseObjectReference: {fileID: 11400000, guid: d851d40483d59bd44b11437121d42dc6,
       type: 2}
 --- !u!1 &8772264978011270011
 GameObject:
