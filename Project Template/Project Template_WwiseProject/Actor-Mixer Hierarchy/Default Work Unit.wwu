@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{2F635A3F-B0A4-4E68-B5DD-1401706CA3FC}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Test" ID="{C9F1BC7B-C468-4406-9FA5-68DBF2D0827C}" ShortID="507205628">
+				<Folder Name="Testing" ID="{C9F1BC7B-C468-4406-9FA5-68DBF2D0827C}" ShortID="507205628">
 					<ChildrenList>
 						<Sound Name="Example01" ID="{EA4A23BE-E9CE-472D-B979-4D88AB0AAF08}" ShortID="484178879">
 							<PropertyList>
