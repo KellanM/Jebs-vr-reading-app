@@ -2,13 +2,65 @@ Event	ID	Name			Wwise Object Path	Notes
 	80937159	Play_Letername_C_01			\Default Work Unit\Play_Letername_C_01	
 	459954740	Play__Crab_Fight_Music			\Default Work Unit\Play__Crab_Fight_Music	
 	790832349	Play_Letername_A_01			\Default Work Unit\Play_Letername_A_01	
+	1990152928	Play_letter_names_V			\Default Work Unit\Testing\Play_letter_names_V	
+	1990152929	Play_letter_names_W			\Default Work Unit\Testing\Play_letter_names_W	
+	1990152930	Play_letter_names_T			\Default Work Unit\Testing\Play_letter_names_T	
+	1990152931	Play_letter_names_U			\Default Work Unit\Testing\Play_letter_names_U	
+	1990152932	Play_letter_names_R			\Default Work Unit\Testing\Play_letter_names_R	
+	1990152933	Play_letter_names_S			\Default Work Unit\Testing\Play_letter_names_S	
+	1990152934	Play_letter_names_P			\Default Work Unit\Testing\Play_letter_names_P	
+	1990152935	Play_letter_names_Q			\Default Work Unit\Testing\Play_letter_names_Q	
+	1990152940	Play_letter_names_Z			\Default Work Unit\Testing\Play_letter_names_Z	
+	1990152942	Play_letter_names_X			\Default Work Unit\Testing\Play_letter_names_X	
+	1990152943	Play_letter_names_Y			\Default Work Unit\Testing\Play_letter_names_Y	
+	1990152944	Play_letter_names_F			\Default Work Unit\Testing\Play_letter_names_F	
+	1990152945	Play_letter_names_G			\Default Work Unit\Testing\Play_letter_names_G	
+	1990152946	Play_letter_names_D			\Default Work Unit\Testing\Play_letter_names_D	
+	1990152947	Play_letter_names_E			\Default Work Unit\Testing\Play_letter_names_E	
+	1990152948	Play_letter_names_B			\Default Work Unit\Testing\Play_letter_names_B	
+	1990152949	Play_letter_names_C			\Default Work Unit\Testing\Play_letter_names_C	
+	1990152951	Play_letter_names_A			\Default Work Unit\Testing\Play_letter_names_A	
+	1990152952	Play_letter_names_N			\Default Work Unit\Testing\Play_letter_names_N	
+	1990152953	Play_letter_names_O			\Default Work Unit\Testing\Play_letter_names_O	
+	1990152954	Play_letter_names_L			\Default Work Unit\Testing\Play_letter_names_L	
+	1990152955	Play_letter_names_M			\Default Work Unit\Testing\Play_letter_names_M	
+	1990152956	Play_letter_names_J			\Default Work Unit\Testing\Play_letter_names_J	
+	1990152957	Play_letter_names_K			\Default Work Unit\Testing\Play_letter_names_K	
+	1990152958	Play_letter_names_H			\Default Work Unit\Testing\Play_letter_names_H	
+	1990152959	Play_letter_names_I			\Default Work Unit\Testing\Play_letter_names_I	
 	2846587504	Play_Letername_B_01			\Default Work Unit\Play_Letername_B_01	
 	3776612809	Play_Example01			\Default Work Unit\Play_Example01	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	193728657	DX_Letername_A_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\Letername_A_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\General\2D Dialog\Alphabet\DX_Letername_A_01		119790
-	482533939	DX_Letername_C_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\Letername_C_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\General\2D Dialog\Alphabet\DX_Letername_C_01		128216
-	579986102	_Crab_Fight_Music	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\_Crab_Fight_Music_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\_Crab_Fight_Music		3949780
-	849942311	Example01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\Example01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Example01		2097216
-	934173128	DX_Letername_B_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\Letername_B_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\General\2D Dialog\Alphabet\DX_Letername_B_01		115042
+	120590934	letter_names_N	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_N_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_N		180204
+	123975073	letter_names_D	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_D_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_D		116036
+	150739701	letter_names_F	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_F_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_F		149616
+	193728657	DX_Letername_A_01	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\Letername_A_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\General\2D Dialog\Alphabet\DX_Letername_A_01		119790
+	228921737	letter_names_R	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_R_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_R		128526
+	230324078	letter_names_B	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_B_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_B		115042
+	424870908	letter_names_H	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_H_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_H		162130
+	431102176	letter_names_M	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_M_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_M		123564
+	476798721	letter_names_U	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_U_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_U		121058
+	482533939	DX_Letername_C_01	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\Letername_C_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\General\2D Dialog\Alphabet\DX_Letername_C_01		128216
+	516075408	letter_names_L	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_L_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_L		128922
+	530774890	letter_names_Z	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_Z_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_Z		124718
+	560162618	letter_names_W	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_W_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_W		137720
+	576139104	letter_names_S	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_S_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_S		173144
+	577298969	letter_names_K	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_K_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_K		125136
+	579986102	_Crab_Fight_Music	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\_Crab_Fight_Music_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\_Crab_Fight_Music		3949780
+	596764330	letter_names_J	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_J_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_J		125558
+	678463342	letter_names_V	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_V_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_V		122590
+	700675572	letter_names_G	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_G_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_G		120988
+	703402175	letter_names_E	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_E_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_E		112136
+	727109995	letter_names_X	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_X_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_X		147558
+	738681920	letter_names_O	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_O_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_O		236754
+	744265165	letter_names_A	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_A_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_A		119790
+	746366177	letter_names_Y	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_Y_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_Y		143262
+	759820326	letter_names_Q	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_Q_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_Q		118000
+	766012181	letter_names_C	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_C_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_C		128216
+	846831168	letter_names_I	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_I_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_I		127966
+	849942311	Example01	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\Example01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Example01		2097216
+	934173128	DX_Letername_B_01	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\Letername_B_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\General\2D Dialog\Alphabet\DX_Letername_B_01		115042
+	949865881	letter_names_P	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_P_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_P		213564
+	967428406	letter_names_T	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_T_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test\Letter Names\letter_names_T		124518
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -53,6 +53,214 @@
 						<File Id="482533939" Language="SFX">
 							<ShortName>Letername_C_01.wav</ShortName>
 							<Path>SFX\Letername_C_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152951" Name="Play_letter_names_A" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_A" DurationType="OneShot" DurationMin="1.247146" DurationMax="1.247146">
+					<IncludedMemoryFiles>
+						<File Id="744265165" Language="SFX">
+							<ShortName>letter_names_A.wav</ShortName>
+							<Path>SFX\letter_names_A_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152948" Name="Play_letter_names_B" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_B" DurationType="OneShot" DurationMin="1.197688" DurationMax="1.197688">
+					<IncludedMemoryFiles>
+						<File Id="230324078" Language="SFX">
+							<ShortName>letter_names_B.wav</ShortName>
+							<Path>SFX\letter_names_B_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152949" Name="Play_letter_names_C" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_C" DurationType="OneShot" DurationMin="1.334917" DurationMax="1.334917">
+					<IncludedMemoryFiles>
+						<File Id="766012181" Language="SFX">
+							<ShortName>letter_names_C.wav</ShortName>
+							<Path>SFX\letter_names_C_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152946" Name="Play_letter_names_D" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_D" DurationType="OneShot" DurationMin="1.208042" DurationMax="1.208042">
+					<IncludedMemoryFiles>
+						<File Id="123975073" Language="SFX">
+							<ShortName>letter_names_D.wav</ShortName>
+							<Path>SFX\letter_names_D_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152947" Name="Play_letter_names_E" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_E" DurationType="OneShot" DurationMin="1.167417" DurationMax="1.167417">
+					<IncludedMemoryFiles>
+						<File Id="703402175" Language="SFX">
+							<ShortName>letter_names_E.wav</ShortName>
+							<Path>SFX\letter_names_E_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152944" Name="Play_letter_names_F" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_F" DurationType="OneShot" DurationMin="1.557833" DurationMax="1.557833">
+					<IncludedMemoryFiles>
+						<File Id="150739701" Language="SFX">
+							<ShortName>letter_names_F.wav</ShortName>
+							<Path>SFX\letter_names_F_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152945" Name="Play_letter_names_G" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_G" DurationType="OneShot" DurationMin="1.259625" DurationMax="1.259625">
+					<IncludedMemoryFiles>
+						<File Id="700675572" Language="SFX">
+							<ShortName>letter_names_G.wav</ShortName>
+							<Path>SFX\letter_names_G_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152958" Name="Play_letter_names_H" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_H" DurationType="OneShot" DurationMin="1.688187" DurationMax="1.688187">
+					<IncludedMemoryFiles>
+						<File Id="424870908" Language="SFX">
+							<ShortName>letter_names_H.wav</ShortName>
+							<Path>SFX\letter_names_H_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152959" Name="Play_letter_names_I" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_I" DurationType="OneShot" DurationMin="1.332312" DurationMax="1.332312">
+					<IncludedMemoryFiles>
+						<File Id="846831168" Language="SFX">
+							<ShortName>letter_names_I.wav</ShortName>
+							<Path>SFX\letter_names_I_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152956" Name="Play_letter_names_J" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_J" DurationType="OneShot" DurationMin="1.307229" DurationMax="1.307229">
+					<IncludedMemoryFiles>
+						<File Id="596764330" Language="SFX">
+							<ShortName>letter_names_J.wav</ShortName>
+							<Path>SFX\letter_names_J_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152957" Name="Play_letter_names_K" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_K" DurationType="OneShot" DurationMin="1.302833" DurationMax="1.302833">
+					<IncludedMemoryFiles>
+						<File Id="577298969" Language="SFX">
+							<ShortName>letter_names_K.wav</ShortName>
+							<Path>SFX\letter_names_K_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152954" Name="Play_letter_names_L" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_L" DurationType="OneShot" DurationMin="1.342271" DurationMax="1.342271">
+					<IncludedMemoryFiles>
+						<File Id="516075408" Language="SFX">
+							<ShortName>letter_names_L.wav</ShortName>
+							<Path>SFX\letter_names_L_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152955" Name="Play_letter_names_M" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_M" DurationType="OneShot" DurationMin="1.286458" DurationMax="1.286458">
+					<IncludedMemoryFiles>
+						<File Id="431102176" Language="SFX">
+							<ShortName>letter_names_M.wav</ShortName>
+							<Path>SFX\letter_names_M_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152952" Name="Play_letter_names_N" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_N" DurationType="OneShot" DurationMin="1.876458" DurationMax="1.876458">
+					<IncludedMemoryFiles>
+						<File Id="120590934" Language="SFX">
+							<ShortName>letter_names_N.wav</ShortName>
+							<Path>SFX\letter_names_N_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152953" Name="Play_letter_names_O" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_O" DurationType="OneShot" DurationMin="2.465521" DurationMax="2.465521">
+					<IncludedMemoryFiles>
+						<File Id="738681920" Language="SFX">
+							<ShortName>letter_names_O.wav</ShortName>
+							<Path>SFX\letter_names_O_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152934" Name="Play_letter_names_P" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_P" DurationType="OneShot" DurationMin="2.223958" DurationMax="2.223958">
+					<IncludedMemoryFiles>
+						<File Id="949865881" Language="SFX">
+							<ShortName>letter_names_P.wav</ShortName>
+							<Path>SFX\letter_names_P_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152935" Name="Play_letter_names_Q" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_Q" DurationType="OneShot" DurationMin="1.228500" DurationMax="1.228500">
+					<IncludedMemoryFiles>
+						<File Id="759820326" Language="SFX">
+							<ShortName>letter_names_Q.wav</ShortName>
+							<Path>SFX\letter_names_Q_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152932" Name="Play_letter_names_R" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_R" DurationType="OneShot" DurationMin="1.338146" DurationMax="1.338146">
+					<IncludedMemoryFiles>
+						<File Id="228921737" Language="SFX">
+							<ShortName>letter_names_R.wav</ShortName>
+							<Path>SFX\letter_names_R_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152933" Name="Play_letter_names_S" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_S" DurationType="OneShot" DurationMin="1.802917" DurationMax="1.802917">
+					<IncludedMemoryFiles>
+						<File Id="576139104" Language="SFX">
+							<ShortName>letter_names_S.wav</ShortName>
+							<Path>SFX\letter_names_S_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152930" Name="Play_letter_names_T" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_T" DurationType="OneShot" DurationMin="1.296396" DurationMax="1.296396">
+					<IncludedMemoryFiles>
+						<File Id="967428406" Language="SFX">
+							<ShortName>letter_names_T.wav</ShortName>
+							<Path>SFX\letter_names_T_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152931" Name="Play_letter_names_U" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_U" DurationType="OneShot" DurationMin="1.260354" DurationMax="1.260354">
+					<IncludedMemoryFiles>
+						<File Id="476798721" Language="SFX">
+							<ShortName>letter_names_U.wav</ShortName>
+							<Path>SFX\letter_names_U_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152928" Name="Play_letter_names_V" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_V" DurationType="OneShot" DurationMin="1.276312" DurationMax="1.276312">
+					<IncludedMemoryFiles>
+						<File Id="678463342" Language="SFX">
+							<ShortName>letter_names_V.wav</ShortName>
+							<Path>SFX\letter_names_V_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152929" Name="Play_letter_names_W" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_W" DurationType="OneShot" DurationMin="1.433917" DurationMax="1.433917">
+					<IncludedMemoryFiles>
+						<File Id="560162618" Language="SFX">
+							<ShortName>letter_names_W.wav</ShortName>
+							<Path>SFX\letter_names_W_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152942" Name="Play_letter_names_X" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_X" DurationType="OneShot" DurationMin="1.536396" DurationMax="1.536396">
+					<IncludedMemoryFiles>
+						<File Id="727109995" Language="SFX">
+							<ShortName>letter_names_X.wav</ShortName>
+							<Path>SFX\letter_names_X_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152943" Name="Play_letter_names_Y" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_Y" DurationType="OneShot" DurationMin="1.491646" DurationMax="1.491646">
+					<IncludedMemoryFiles>
+						<File Id="746366177" Language="SFX">
+							<ShortName>letter_names_Y.wav</ShortName>
+							<Path>SFX\letter_names_Y_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1990152940" Name="Play_letter_names_Z" ObjectPath="\Events\Default Work Unit\Testing\Play_letter_names_Z" DurationType="OneShot" DurationMin="1.298479" DurationMax="1.298479">
+					<IncludedMemoryFiles>
+						<File Id="530774890" Language="SFX">
+							<ShortName>letter_names_Z.wav</ShortName>
+							<Path>SFX\letter_names_Z_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
