@@ -10,6 +10,7 @@ public class BagController : MonoBehaviour
     public static BagController bag;
 
     public char searchForLetter = 'a';
+    public WwiseVoice characterVoice;
 
     public UnityEvent positiveFeedback;
     public UnityEvent negativeFeedback;
@@ -36,18 +37,37 @@ public class BagController : MonoBehaviour
             Evaluate(letter,true);
 
             letter.gameObject.SetActive(false);
-            //Destroy(letter.gameObject);
         }
     }
 
     public void Evaluate(ChestLetter letter, bool accepted)
     {
         if (letter.value == searchForLetter && accepted)
+        {
+            /*
+            characterVoice.WellDone();
+            characterVoice.Info(letter.value);
+            */
             positiveFeedback.Invoke();
+        }    
         else if (letter.value != searchForLetter && !accepted)
+        {
+            /*
+            characterVoice.WellDone();
+            characterVoice.Info(letter.value);
+            characterVoice.Reminder(searchForLetter);
+            */
             positiveFeedback.Invoke();
+        }
         else
+        {
+            /*
+            characterVoice.Wrong();
+            characterVoice.Info(letter.value);
+            characterVoice.Reminder(searchForLetter);
+            */
             negativeFeedback.Invoke();
+        }
 
         factory.Restart();
     }
