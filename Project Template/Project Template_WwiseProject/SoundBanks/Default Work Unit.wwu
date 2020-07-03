@@ -6,10 +6,36 @@
 				<SoundBank Name="General" ID="{996F0978-A2C3-44D7-B065-02FD2B47163C}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Letername_A_01" ID="{287D0551-E021-4085-87DE-BC9195A07CCC}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_Y" ID="{41568555-860E-4094-A8D3-05313A965ED7}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Example01" ID="{E37E64A6-A17C-40A7-8832-1C83AF9A6CDB}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_L" ID="{DA010A25-7A4C-40D7-9EC4-348A9C655418}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_D" ID="{E8FF14C3-E42A-4113-8731-DFB51AEEEB54}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_O" ID="{0FDF7829-656B-41EC-9296-B7B89E7D2A03}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_T" ID="{01DD1E34-C657-424F-8368-866F5C65604F}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_M" ID="{A9EA169A-C701-43B9-936E-CFF1BBCDD331}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Letername_B_01" ID="{00FEBDAC-4793-43E4-B09E-D43107C45248}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_K" ID="{729A4E82-11D8-4437-9FDE-C30BFBAE42C3}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_W" ID="{AE33A95E-E8CC-44D6-A9D2-DF1C63FFB975}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_Q" ID="{152EE2A9-572D-4626-829E-2E74B6B39D43}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_U" ID="{D51D6899-9F11-46FE-8315-611E014340E5}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_B" ID="{A5397B8A-1E8E-4720-B22B-30D9AC76B704}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_I" ID="{EC46E88A-30C5-4912-8B1B-03491958EFD4}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_P" ID="{EB59D7DA-9337-493C-82C0-A101C7499458}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_A" ID="{EEC54EA4-67AF-4952-B497-496DFFD3C1F0}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_S" ID="{730F511E-282F-495B-9981-5A0B6640D3C5}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_H" ID="{DF713877-E281-497A-88E8-09A66DCD6110}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_R" ID="{BCB2A0B2-C9C4-4991-B39D-2B978032783E}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_C" ID="{2A8CB749-085E-4A0D-85AD-A306143311C7}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_G" ID="{2EE9C24F-547F-4A74-B81A-8CB420741AAE}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_N" ID="{DA5D5BFC-2447-4B44-947B-04B22B229DE3}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_Z" ID="{F6CB098C-D5C7-4BD8-929B-239109C238D1}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play__Crab_Fight_Music" ID="{E0D3A2C3-D19E-4BE3-906C-818EB2BDD96C}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_E" ID="{B4ADC2BA-B395-4C2A-9BFD-694EB06FEF9C}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_X" ID="{BBDDD1F5-80E6-4C94-AF3B-593BD4FCA58A}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_J" ID="{A007A594-E874-4D36-BAF3-C62ACC08E67A}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Letername_C_01" ID="{CE8D4C49-D514-4E05-B244-20BA0482FB7A}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_F" ID="{B4DF7A37-8C08-4E20-A914-B95F47DAE3B5}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_names_V" ID="{C62643FC-199D-4FA5-B726-C941B524E1C2}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
