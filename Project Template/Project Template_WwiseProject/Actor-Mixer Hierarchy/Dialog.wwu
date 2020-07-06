@@ -447,9 +447,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="pirate_identify_a" ID="{5ABCCB6D-4833-452C-A767-AAC391828C9E}" ShortID="600721738">
+												<RandomSequenceContainer Name="letter_turn_in" ID="{F880397B-F79B-4215-86AA-11E5BDF787B8}" ShortID="360300328">
 													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
+														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
@@ -460,404 +462,854 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="pirate_identify_a" ID="{8B8D18C7-B7A2-428A-A370-1CB1F66EA241}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_identify_a.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="163861408"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_identify_a" ID="{8B8D18C7-B7A2-428A-A370-1CB1F66EA241}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_identify_b" ID="{80AE33AE-C68E-412C-B962-6FA9DE47E510}" ShortID="557420115">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_identify_b" ID="{E0D45DC3-C3AE-4FF3-93E0-A2FCAEBA0CE2}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_identify_b.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="832301403"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_identify_b" ID="{E0D45DC3-C3AE-4FF3-93E0-A2FCAEBA0CE2}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_identify_c" ID="{61E1C29F-FF43-416C-B5BE-0A5759B61EFE}" ShortID="452083215">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_identify_c" ID="{7E603466-C2B3-4DAB-97C1-7D1EA1984459}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_identify_c.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="939058067"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_identify_c" ID="{7E603466-C2B3-4DAB-97C1-7D1EA1984459}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_identify_d" ID="{19C2C6E6-1D5D-4F04-B944-D1EBB2491F45}" ShortID="745110221">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_identify_d" ID="{D1F21DAC-3A6A-44DE-8246-98AC521A519D}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_identify_d.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="382467521"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_identify_d" ID="{D1F21DAC-3A6A-44DE-8246-98AC521A519D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_identify_e" ID="{AD9EAF67-6977-418E-A5BA-85F148BC8B9B}" ShortID="864258553">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_identify_e" ID="{EB2F7A79-1A1E-4A96-9425-0EAF08593E7B}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_identify_e.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="125184201"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_identify_e" ID="{EB2F7A79-1A1E-4A96-9425-0EAF08593E7B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_identify_f" ID="{19A42F59-48D2-4D44-9654-0B164AF45CB9}" ShortID="860285598">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_identify_f" ID="{AA195E0A-5374-4BE4-9FC2-E0CC90FDE188}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_identify_f.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1018617713"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_identify_f" ID="{AA195E0A-5374-4BE4-9FC2-E0CC90FDE188}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_identify_g" ID="{1DC29660-1A5C-4BCB-B2A6-9E15A5BDB860}" ShortID="966301744">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_identify_g" ID="{359F3DE4-1B9D-46F6-AA72-B25C219EA339}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_identify_g.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="785356739"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_identify_g" ID="{359F3DE4-1B9D-46F6-AA72-B25C219EA339}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_incorrectt_letter" ID="{830C1E99-82E9-4542-9A19-23F005F531ED}" ShortID="548193405">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_incorrectt_letter" ID="{4A65E547-F154-40FB-9D94-637DA0781050}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_incorrectt_letter.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="435575084"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_incorrectt_letter" ID="{4A65E547-F154-40FB-9D94-637DA0781050}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_request_a" ID="{DA88A8FC-899C-4E69-B756-4D6C5C94B338}" ShortID="1036566775">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_request_a" ID="{400624EB-F0E2-44E5-9DFE-7F8CC1D43FB1}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_request_a.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="699049083"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_request_a" ID="{400624EB-F0E2-44E5-9DFE-7F8CC1D43FB1}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_request_b" ID="{34BB6909-334F-4D54-9FE5-D56739DDE07A}" ShortID="889754222">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_request_b" ID="{02FFEC2E-F698-4720-9417-DD7DCB9B1772}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_request_b.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="547359368"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_request_b" ID="{02FFEC2E-F698-4720-9417-DD7DCB9B1772}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_request_c" ID="{DA290329-117E-47FF-914E-085C55A58188}" ShortID="711458168">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_request_c" ID="{DAB9239F-0A70-4446-8708-2C3D2AA413DE}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_request_c.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="271400875"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_request_c" ID="{DAB9239F-0A70-4446-8708-2C3D2AA413DE}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_request_d" ID="{0BF83B2F-349A-4139-8F8E-450106DD0AE3}" ShortID="359139702">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_request_d" ID="{D801B81A-251D-4230-BF80-C7F0AF760960}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_request_d.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="538034967"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_request_d" ID="{D801B81A-251D-4230-BF80-C7F0AF760960}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_request_e" ID="{271D955A-40F8-4DF0-BFB5-6C08B7751811}" ShortID="199642534">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_request_e" ID="{10185D3D-97D8-42E4-A399-B708CD105C78}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_request_e.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="225553374"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_request_e" ID="{10185D3D-97D8-42E4-A399-B708CD105C78}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_request_f" ID="{5B284F81-5F59-475F-A25A-D5181FE184AF}" ShortID="1005963282">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_request_f" ID="{4AB17AF0-F263-4F1C-A5F0-A89F7E287A9F}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_request_f.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="192868358"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_request_f" ID="{4AB17AF0-F263-4F1C-A5F0-A89F7E287A9F}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="pirate_request_g" ID="{E5F4266D-CFD0-4FDE-B264-72AF2CDC6833}" ShortID="90659193">
-													<PropertyList>
-														<Property Name="IsVoice" Type="bool" Value="True"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="pirate_request_g" ID="{EB26DB65-5BA0-4B25-B32C-4DAFF2C77949}">
-															<Language>English(US)</Language>
-															<AudioFile>pirate_request_g.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="469247242"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="pirate_request_g" ID="{EB26DB65-5BA0-4B25-B32C-4DAFF2C77949}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<RandomSequenceContainer Name="Correct Letter" ID="{AFA90E09-642C-4095-A288-C26760D3F413}" ShortID="982951212">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="pirate_correct_letter" ID="{217C69AD-E31F-4ADF-9121-415C3D0F6D0C}" ShortID="552807774">
-															<PropertyList>
-																<Property Name="IsVoice" Type="bool" Value="True"/>
-															</PropertyList>
+														<SwitchContainer Name="letter_id" ID="{ACF5E78C-DDD9-4387-A6B2-AE5B2130A9C7}" ShortID="663860878">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
 																</Reference>
+																<Reference Name="DefaultSwitchOrState">
+																	<ObjectRef Name="None" ID="{171C96CE-4930-4BA0-9E4E-15EA894A5868}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
 																</Reference>
+																<Reference Name="SwitchGroupOrStateGroup">
+																	<ObjectRef Name="letter_identify" ID="{E42A615E-D721-44B5-B390-ACDBDBD19D39}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="pirate_correct_letter" ID="{D0A568BD-A610-4FB2-B880-F2328A019803}">
-																	<Language>English(US)</Language>
-																	<AudioFile>pirate_correct_letter.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="704365388"/>
-																	</MediaIDList>
-																</AudioFileSource>
+																<RandomSequenceContainer Name="pirate_identify_a" ID="{03D05ABE-3FD2-4803-B80D-3301C0EA13E5}" ShortID="412510761">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="pirate_identify_a-001" ID="{41977ADA-7026-43E0-8630-DB3ACAA65B9F}" ShortID="425205738">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_identify_a-001" ID="{359AE1D9-07A6-4BEE-A22B-424FEEE8195F}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.110137065402383"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.0876090292973495"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.490610564065159"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="2.32539394906394"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_identify_a-001.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="48205813"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_identify_a-001" ID="{359AE1D9-07A6-4BEE-A22B-424FEEE8195F}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_identify_a-002" ID="{D073CFCE-AD3A-47AC-98A4-3D8E3B1AF9F4}" ShortID="209360366">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_identify_a-002" ID="{A05046E5-E501-430C-8992-C0759110D836}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.0531262612448335"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.164971021760272"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.57600051665451"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="2.55565277777778"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_identify_a-002.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="284895842"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_identify_a-002" ID="{A05046E5-E501-430C-8992-C0759110D836}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_identify_a-003" ID="{AB218A57-D1F9-44DA-97A6-D1842D613BA1}" ShortID="558128343">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_identify_a-003" ID="{8DFDE8CF-4DA4-4F7B-9047-6B6CCCD15A80}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.044946343909555"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.164803261001702"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.359570751276441"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.86206281911014"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_identify_a-003.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="972005717"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_identify_a-003" ID="{8DFDE8CF-4DA4-4F7B-9047-6B6CCCD15A80}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_identify_a-004" ID="{7AF42203-C693-40B5-98BC-E528FACBCD5D}" ShortID="479660733">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_identify_a-004" ID="{CC16587C-A2A8-42A1-B0E9-E6EEF2CBA7FD}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.0806264739849258"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.0546179339897885"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.283493085946997"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="1.99225416362752"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_identify_a-004.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="698238349"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_identify_a-004" ID="{CC16587C-A2A8-42A1-B0E9-E6EEF2CBA7FD}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_identify_a-005" ID="{D7AF66FA-84AA-490B-AAF7-C17DE88C455E}" ShortID="883459335">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_identify_a-005" ID="{3B83CA97-9026-4603-A626-83CB710DFE34}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.219335035254072"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.175468028203258"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.438670070508145"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="2.39388524191588"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_identify_a-005.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="249799003"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_identify_a-005" ID="{3B83CA97-9026-4603-A626-83CB710DFE34}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																	<StateInfo>
+																		<StateGroupList>
+																			<StateGroupInfo>
+																				<StateGroupRef Name="letter_identify" ID="{E42A615E-D721-44B5-B390-ACDBDBD19D39}"/>
+																			</StateGroupInfo>
+																		</StateGroupList>
+																		<CustomStateList>
+																			<CustomState>
+																				<StateRef Name="b_identify" ID="{3F001E55-BC62-4537-8787-80D656F16F18}"/>
+																				<CustomState Name="" ID="{EFD18B3F-2470-4853-B6A9-C4EE3C012C6B}" ShortID="851608999"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="d_identify" ID="{E5E7350E-019B-4633-A1AA-FBC3F11D9A75}"/>
+																				<CustomState Name="" ID="{7EA8EA89-4BF1-441E-8A8C-5995DFC63DE7}" ShortID="221121708"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="g_identify" ID="{849C1A17-6DFE-485B-B32E-898FE01AEEEB}"/>
+																				<CustomState Name="" ID="{D92DE20D-22F5-49A3-B25B-0ACFBE3C8ABD}" ShortID="828039091"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="c_identify" ID="{10D59C7E-D6D4-48E9-816C-3AFF5DDFA02E}"/>
+																				<CustomState Name="" ID="{FD8503C9-BDA8-4C39-BBBF-04BC76A81902}" ShortID="1052145063"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="f_identify" ID="{4EA0A3BD-2F21-499C-A1DF-3067FED665C3}"/>
+																				<CustomState Name="" ID="{27291EFF-93B1-4314-B05D-7E6F5ECA9FE4}" ShortID="550474136"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="e_identify" ID="{38BAB3A6-E811-49AE-9EED-3B3E28D4D5BF}"/>
+																				<CustomState Name="" ID="{B00ECBC3-3CFD-42BC-88A0-F08CD88993B3}" ShortID="970392756"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="a_identify" ID="{1CC70001-2240-4E41-829E-95D25D452C00}"/>
+																				<CustomState Name="" ID="{3AC2BB5E-93C7-495D-86A2-BE212136F493}" ShortID="958844843"/>
+																			</CustomState>
+																		</CustomStateList>
+																	</StateInfo>
+																</RandomSequenceContainer>
 															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="pirate_correct_letter" ID="{D0A568BD-A610-4FB2-B880-F2328A019803}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
+															<GroupingInfo>
+																<GroupingBehaviorList>
+																	<GroupingBehavior>
+																		<ItemRef Name="pirate_identify_a" ID="{03D05ABE-3FD2-4803-B80D-3301C0EA13E5}"/>
+																		<PropertyList>
+																			<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+																		</PropertyList>
+																	</GroupingBehavior>
+																</GroupingBehaviorList>
+																<GroupingList>
+																	<Grouping>
+																		<SwitchRef Name="a_identify" ID="{1CC70001-2240-4E41-829E-95D25D452C00}"/>
+																		<ItemList>
+																			<ItemRef Name="pirate_identify_a" ID="{03D05ABE-3FD2-4803-B80D-3301C0EA13E5}"/>
+																		</ItemList>
+																	</Grouping>
+																</GroupingList>
+															</GroupingInfo>
+														</SwitchContainer>
+														<SwitchContainer Name="letter_state" ID="{3A8C9B00-7466-41D3-9144-F006CFDA828A}" ShortID="38274106">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="DefaultSwitchOrState">
+																	<ObjectRef Name="None" ID="{5A091C8C-8D8D-4D02-B1AC-5DB20E4E9528}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+																<Reference Name="SwitchGroupOrStateGroup">
+																	<ObjectRef Name="letter_state" ID="{EBCB9B3B-32A2-426A-8F17-3553F624C445}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="pirate_incorrect_letter" ID="{C0205CFD-166F-4561-B518-6DBF0DDF2EEC}" ShortID="810737717">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="pirate_incorrect_letter-001" ID="{BCB1DA71-7D09-4B3D-8B36-DFF48B125F69}" ShortID="536244505">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_incorrect_letter-001" ID="{16B1EFA2-B2F9-40AC-B42C-955CE2115956}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.0500906727045159"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.244031376124483"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.512205179180389"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="3.93535887794797"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_incorrect_letter-001.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="721573298"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_incorrect_letter-001" ID="{16B1EFA2-B2F9-40AC-B42C-955CE2115956}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_incorrect_letter-002" ID="{14A0196E-E0BF-4164-9E6E-A0C926019B43}" ShortID="1025310170">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_incorrect_letter-002" ID="{932E33E2-98A3-47C9-AD46-8557103C999D}">
+																					<PropertyList>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="7.78117364150255"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="10.0812689946511"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_incorrect_letter-002.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="211112019"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_incorrect_letter-002" ID="{932E33E2-98A3-47C9-AD46-8557103C999D}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_incorrect_letter-003" ID="{AAC13BB3-C7B9-4610-9A9D-AF3A54023EBF}" ShortID="614917091">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_incorrect_letter-003" ID="{F3FBE972-7934-48EC-9405-6026B312CB57}">
+																					<PropertyList>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="3.22759004984196"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="5.25471787624605"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_incorrect_letter-003.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="466661053"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_incorrect_letter-003" ID="{F3FBE972-7934-48EC-9405-6026B312CB57}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_incorrect_letter-004" ID="{90158009-2B5D-40D2-B0CA-AE07CA285A9E}" ShortID="95973468">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_incorrect_letter-004" ID="{DBC7866B-03A3-482F-9A0F-495F85C1D9A4}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.077987828227571"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.090301695842451"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="1.44482713347921"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="3.54639387308534"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_incorrect_letter-004.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1024165224"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_incorrect_letter-004" ID="{DBC7866B-03A3-482F-9A0F-495F85C1D9A4}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																	<StateInfo>
+																		<StateGroupList>
+																			<StateGroupInfo>
+																				<StateGroupRef Name="letter_state" ID="{EBCB9B3B-32A2-426A-8F17-3553F624C445}"/>
+																			</StateGroupInfo>
+																		</StateGroupList>
+																		<CustomStateList>
+																			<CustomState>
+																				<StateRef Name="correct" ID="{FD78466A-B8CF-441C-9AAA-A0C38646555B}"/>
+																				<CustomState Name="" ID="{464F65CC-6E98-4191-9C1C-5B8F8D7BA3C9}" ShortID="1069550573"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="incorrect" ID="{EC69AA65-74FB-4690-A594-4CE04D26DEEA}"/>
+																				<CustomState Name="" ID="{41013AEF-2DEA-4F37-8F1A-BF85AB0C1FFA}" ShortID="850010993"/>
+																			</CustomState>
+																		</CustomStateList>
+																	</StateInfo>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="pirate_correct_letter" ID="{482F1B03-FB43-439D-A910-21A6A80825BA}" ShortID="808933970">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="pirate_correct_letter-001" ID="{A2C9B336-C7E3-4DEA-AFF3-6FA41A4D1DCD}" ShortID="126539365">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_correct_letter-001" ID="{86352E0C-7D4F-401B-9802-41DA5830B156}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.0980573790420617"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.0727522489666912"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.803437879893022"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="3.25803549720399"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_correct_letter-001.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="877172340"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_correct_letter-001" ID="{86352E0C-7D4F-401B-9802-41DA5830B156}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_correct_letter-002" ID="{7B9A0572-585B-4EFB-9361-DCF75351B544}" ShortID="753327586">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_correct_letter-002" ID="{7660628E-BCE6-4BE5-BF18-CAE2EC29C1A9}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.149886700705081"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.156699732555312"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.27933430585947"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="3.05564478482859"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_correct_letter-002.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="75921870"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_correct_letter-002" ID="{7660628E-BCE6-4BE5-BF18-CAE2EC29C1A9}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_correct_letter-003" ID="{F32BFBE1-36C4-465D-9981-09030239A9DA}" ShortID="765490256">
+																			<PropertyList>
+																				<Property Name="Highpass" Type="int16">
+																					<ValueList>
+																						<Value>23</Value>
+																					</ValueList>
+																				</Property>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_correct_letter-003" ID="{945F866A-534E-40B3-9E12-441F59086D74}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.0912472647702406"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.127746170678337"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="1.09131728665208"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="3.09510722100656"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_correct_letter-003.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="667407715"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_correct_letter-003" ID="{945F866A-534E-40B3-9E12-441F59086D74}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_correct_letter-004" ID="{1A2DC629-9BCE-46F1-923F-11425CC084B8}" ShortID="806393117">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_correct_letter-004" ID="{16A9421D-D0AF-4F24-A21D-09748D43B30C}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.233592997811816"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.0912472647702405"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.98182056892779"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="3.35059956236324"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_correct_letter-004.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="643294803"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_correct_letter-004" ID="{16A9421D-D0AF-4F24-A21D-09748D43B30C}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																	<StateInfo>
+																		<StateGroupList>
+																			<StateGroupInfo>
+																				<StateGroupRef Name="letter_state" ID="{EBCB9B3B-32A2-426A-8F17-3553F624C445}"/>
+																			</StateGroupInfo>
+																		</StateGroupList>
+																		<CustomStateList>
+																			<CustomState>
+																				<StateRef Name="correct" ID="{FD78466A-B8CF-441C-9AAA-A0C38646555B}"/>
+																				<CustomState Name="" ID="{5A2B1641-80AA-4822-85F6-6E20246FE63D}" ShortID="827850246"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="incorrect" ID="{EC69AA65-74FB-4690-A594-4CE04D26DEEA}"/>
+																				<CustomState Name="" ID="{A7B33A24-B1EB-43E0-8FA7-BD71E6D2C048}" ShortID="794500625"/>
+																			</CustomState>
+																		</CustomStateList>
+																	</StateInfo>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<StateInfo>
+																<StateGroupList>
+																	<StateGroupInfo>
+																		<StateGroupRef Name="letter_state" ID="{EBCB9B3B-32A2-426A-8F17-3553F624C445}"/>
+																	</StateGroupInfo>
+																</StateGroupList>
+																<CustomStateList>
+																	<CustomState>
+																		<StateRef Name="correct" ID="{FD78466A-B8CF-441C-9AAA-A0C38646555B}"/>
+																		<CustomState Name="" ID="{506DA1F9-0B03-48E1-95EB-FC5EC97AE9D3}" ShortID="1025847510"/>
+																	</CustomState>
+																	<CustomState>
+																		<StateRef Name="incorrect" ID="{EC69AA65-74FB-4690-A594-4CE04D26DEEA}"/>
+																		<CustomState Name="" ID="{60EA2593-6997-4052-AF51-37283EF29E63}" ShortID="290929785"/>
+																	</CustomState>
+																</CustomStateList>
+															</StateInfo>
+															<GroupingInfo>
+																<GroupingBehaviorList>
+																	<GroupingBehavior>
+																		<ItemRef Name="pirate_correct_letter" ID="{482F1B03-FB43-439D-A910-21A6A80825BA}"/>
+																		<PropertyList>
+																			<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+																		</PropertyList>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="pirate_incorrect_letter" ID="{C0205CFD-166F-4561-B518-6DBF0DDF2EEC}"/>
+																		<PropertyList>
+																			<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+																		</PropertyList>
+																	</GroupingBehavior>
+																</GroupingBehaviorList>
+																<GroupingList>
+																	<Grouping>
+																		<SwitchRef Name="incorrect" ID="{EC69AA65-74FB-4690-A594-4CE04D26DEEA}"/>
+																		<ItemList>
+																			<ItemRef Name="pirate_incorrect_letter" ID="{C0205CFD-166F-4561-B518-6DBF0DDF2EEC}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="correct" ID="{FD78466A-B8CF-441C-9AAA-A0C38646555B}"/>
+																		<ItemList>
+																			<ItemRef Name="pirate_correct_letter" ID="{482F1B03-FB43-439D-A910-21A6A80825BA}"/>
+																		</ItemList>
+																	</Grouping>
+																</GroupingList>
+															</GroupingInfo>
+														</SwitchContainer>
+														<SwitchContainer Name="letter_request" ID="{BBDA8980-DC36-4207-9662-B10524D52707}" ShortID="927693618">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																</Reference>
+																<Reference Name="DefaultSwitchOrState">
+																	<ObjectRef Name="None" ID="{68C57A75-91CA-4B0E-B7AA-C6EFC1DEE88E}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																</Reference>
+																<Reference Name="SwitchGroupOrStateGroup">
+																	<ObjectRef Name="letter_request" ID="{7983228A-5B93-482E-BB85-AD634A2D5F2A}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="pirate_request_a" ID="{FB686265-093F-44F6-A047-6CACEFB9BE14}" ShortID="746890582">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="pirate_request_a-001" ID="{9D5537EB-A142-4656-BB4D-8FCF9EDCD71A}" ShortID="113094974">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_request_a-001" ID="{689407AC-0A2C-48A6-A1D1-B308A3FE9D0C}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.0858779327741308"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.18560714502796"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.329660451616825"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="2.93647124969609"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_request_a-001.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="239556192"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_request_a-001" ID="{689407AC-0A2C-48A6-A1D1-B308A3FE9D0C}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_request_a-002" ID="{F70A04CC-0DA2-4C04-BDC1-FDCD9BCB7DFD}" ShortID="286482113">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_request_a-002" ID="{797F97B9-156B-4E21-8AC4-F0AC24331812}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.176338818988573"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.211606582786287"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.234049705203015"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="2.93684287624605"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_request_a-002.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="951176894"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_request_a-002" ID="{797F97B9-156B-4E21-8AC4-F0AC24331812}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_request_a-003" ID="{0DBF6B52-C420-4ADE-9D0D-9DEDEF5E73BC}" ShortID="386945126">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_request_a-003" ID="{211BC883-7958-4847-96BA-161A6A4DE8C1}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.136124194626793"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.132958515681984"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.386212831266715"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="2.54204019268174"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_request_a-003.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="753537672"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_request_a-003" ID="{211BC883-7958-4847-96BA-161A6A4DE8C1}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="pirate_request_a-004" ID="{6DF86BBB-FC91-4733-93DE-2FDE06E0A693}" ShortID="893874639">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="pirate_request_a-004" ID="{7000A882-468C-4CDE-9943-232E76483D36}">
+																					<PropertyList>
+																						<Property Name="FadeInDuration" Type="Real64" Value="0.177162047167518"/>
+																						<Property Name="FadeOutDuration" Type="Real64" Value="0.245611019936786"/>
+																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																						<Property Name="TrimBegin" Type="Real64" Value="0.354324094335035"/>
+																						<Property Name="TrimEnd" Type="Real64" Value="3.03188685266229"/>
+																					</PropertyList>
+																					<Language>English(US)</Language>
+																					<AudioFile>pirate_request_a-004.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="883495680"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="pirate_request_a-004" ID="{7000A882-468C-4CDE-9943-232E76483D36}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																	<StateInfo>
+																		<StateGroupList>
+																			<StateGroupInfo>
+																				<StateGroupRef Name="letter_request" ID="{7983228A-5B93-482E-BB85-AD634A2D5F2A}"/>
+																			</StateGroupInfo>
+																		</StateGroupList>
+																		<CustomStateList>
+																			<CustomState>
+																				<StateRef Name="d_request" ID="{79C6C00B-76CD-4322-AD7D-29A7031D37A1}"/>
+																				<CustomState Name="" ID="{CEE2302C-EC73-400F-980C-C37E24BF7D5C}" ShortID="1032334960"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="a_request" ID="{8A756C11-F588-460D-9D68-15B5EC6CF79E}"/>
+																				<CustomState Name="" ID="{B400BA26-6C47-41B1-AA7A-C360F97EFF0F}" ShortID="508427116"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="g_request" ID="{87028E47-CE46-47E5-B605-3BA1F0AD515C}"/>
+																				<CustomState Name="" ID="{62604037-A133-41DE-AB54-CA9986674A91}" ShortID="556752568"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="f_request" ID="{32CC86F2-3B23-4AA2-9F36-BD38602F54C0}"/>
+																				<CustomState Name="" ID="{0F0AE226-44C1-4149-B3DB-8A5F031600BD}" ShortID="994502802"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="e_request" ID="{4F12732B-4174-4AC5-AFFF-C5231E087ACE}"/>
+																				<CustomState Name="" ID="{AF4FF98F-41CD-4DB3-9F49-87784C031021}" ShortID="713546359"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="random_request" ID="{7B34A2F0-61FE-4B89-A116-80F76B439830}"/>
+																				<CustomState Name="" ID="{498FFCE0-20C5-4295-9C63-F43C808D2796}" ShortID="266670863"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="b_request" ID="{6BE53570-5BAF-4E1E-8458-9F7FDCC16258}"/>
+																				<CustomState Name="" ID="{94924360-0917-4A77-9E0C-A5469D029A3B}" ShortID="945668430"/>
+																			</CustomState>
+																			<CustomState>
+																				<StateRef Name="c_request" ID="{C5FCBFCE-FFDE-4F44-A957-C8825B72FA97}"/>
+																				<CustomState Name="" ID="{DDCFA2CA-ED21-444B-B661-3A6590081226}" ShortID="653621467"/>
+																			</CustomState>
+																		</CustomStateList>
+																	</StateInfo>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<GroupingInfo>
+																<GroupingBehaviorList>
+																	<GroupingBehavior>
+																		<ItemRef Name="pirate_request_a" ID="{FB686265-093F-44F6-A047-6CACEFB9BE14}"/>
+																		<PropertyList>
+																			<Property Name="FirstOccurenceOnly" Type="bool" Value="True"/>
+																		</PropertyList>
+																	</GroupingBehavior>
+																</GroupingBehaviorList>
+																<GroupingList>
+																	<Grouping>
+																		<SwitchRef Name="a_request" ID="{8A756C11-F588-460D-9D68-15B5EC6CF79E}"/>
+																		<ItemList>
+																			<ItemRef Name="pirate_request_a" ID="{FB686265-093F-44F6-A047-6CACEFB9BE14}"/>
+																		</ItemList>
+																	</Grouping>
+																</GroupingList>
+															</GroupingInfo>
+														</SwitchContainer>
 													</ChildrenList>
+													<Playlist>
+														<ItemRef Name="letter_state" ID="{3A8C9B00-7466-41D3-9144-F006CFDA828A}"/>
+														<ItemRef Name="letter_id" ID="{ACF5E78C-DDD9-4387-A6B2-AE5B2130A9C7}"/>
+														<ItemRef Name="letter_request" ID="{BBDA8980-DC36-4207-9662-B10524D52707}"/>
+													</Playlist>
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</ActorMixer>

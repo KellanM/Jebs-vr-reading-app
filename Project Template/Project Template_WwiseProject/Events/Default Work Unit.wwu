@@ -500,8 +500,65 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="New_Event" ID="{1899AB96-3B36-430D-B9B6-EA22E4466CA9}"/>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Set_State_correct" ID="{53A50560-8873-4602-98FA-75C9E1562D6A}">
+					<ChildrenList>
+						<Action Name="" ID="{81BF1EF0-47E6-4F5F-861B-4B28F0DF8F74}" ShortID="1002134229">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pirate_correct_letter" ID="{482F1B03-FB43-439D-A910-21A6A80825BA}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_incorrect" ID="{E9C03DC0-4306-432E-9D21-C1B3AF5C67FE}">
+					<ChildrenList>
+						<Action Name="" ID="{DF815CB2-D600-4119-9CD7-73B1366247C1}" ShortID="887371920">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="20"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_correct_01" ID="{D3A195C0-8F8A-4368-85B4-983A88ED0AFB}">
+					<ChildrenList>
+						<Action Name="" ID="{79296087-1B41-408D-B182-985B55FC33E8}" ShortID="226497609">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="correct" ID="{FD78466A-B8CF-441C-9AAA-A0C38646555B}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4A72A8D6-80F2-418D-A23B-37AE7FEA5F15}" ShortID="688512327">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="pirate_correct_letter" ID="{482F1B03-FB43-439D-A910-21A6A80825BA}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_a_identify" ID="{33F39E00-94FC-4F59-B9E5-0319461442DC}">
+					<ChildrenList>
+						<Action Name="" ID="{AB14D96D-C332-4A42-B99B-2002950EB219}" ShortID="465477863">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="a_identify" ID="{1CC70001-2240-4E41-829E-95D25D452C00}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

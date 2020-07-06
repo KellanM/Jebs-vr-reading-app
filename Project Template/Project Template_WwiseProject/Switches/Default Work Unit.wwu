@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{54A5DE67-9B8E-4850-9ACB-0B3F373E196A}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{54A5DE67-9B8E-4850-9ACB-0B3F373E196A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{54A5DE67-9B8E-4850-9ACB-0B3F373E196A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Dialogue" ID="{C0E561B1-E013-46B6-880B-E15CC0F60198}" ShortID="691247467"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>
