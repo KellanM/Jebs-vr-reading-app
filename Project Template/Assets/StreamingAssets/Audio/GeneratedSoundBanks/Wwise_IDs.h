@@ -15,6 +15,9 @@ namespace AK
     {
         static const AkUniqueID PLAY__CRAB_FIGHT_MUSIC = 459954740U;
         static const AkUniqueID PLAY_CORRECT_LETTER_FOUND = 2761178770U;
+        static const AkUniqueID PLAY_DX_PIRATE_FINDMEA_01 = 2272357131U;
+        static const AkUniqueID PLAY_DX_PIRATE_FINDMEB_01 = 3042798378U;
+        static const AkUniqueID PLAY_DX_PIRATE_FINDMEC_01 = 2414237601U;
         static const AkUniqueID PLAY_DX_PIRATE_STILLLOOKINGFORC_01 = 1797949198U;
         static const AkUniqueID PLAY_DX_PIRATE_THATSLETTERA_01 = 3515435268U;
         static const AkUniqueID PLAY_DX_PIRATE_THATSLETTERB_01 = 3617558033U;
@@ -49,13 +52,16 @@ namespace AK
         static const AkUniqueID PLAY_LETTER_NAMES_X = 1990152942U;
         static const AkUniqueID PLAY_LETTER_NAMES_Y = 1990152943U;
         static const AkUniqueID PLAY_LETTER_NAMES_Z = 1990152940U;
+        static const AkUniqueID PLAY_LETTER_TURN_IN_RESULT = 3261928562U;
         static const AkUniqueID PLAY_SFX_CANNONFIRE_01 = 661707113U;
-        static const AkUniqueID PLAY_SFX_CHEST_CLOSE_01 = 1345257814U;
-        static const AkUniqueID PLAY_SFX_CHEST_DIG_HIT_01 = 37127528U;
-        static const AkUniqueID PLAY_SFX_CHEST_OPEN_01 = 1285693754U;
         static const AkUniqueID PLAY_SFX_POPLETTERBAD_01 = 3842358642U;
         static const AkUniqueID PLAY_SFX_POPLETTERGOOD_01 = 122831938U;
     } // namespace EVENTS
+
+    namespace DIALOGUE_EVENTS
+    {
+        static const AkUniqueID LETTER_TURN_IN = 2262387833U;
+    } // namespace DIALOGUE_EVENTS
 
     namespace STATES
     {
