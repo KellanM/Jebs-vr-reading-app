@@ -1,10 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
-	122831938	Play_SFX_PopLetterGood_01			\Default Work Unit\Play_SFX_PopLetterGood_01	
-	661707113	Play_SFX_CannonFire_01			\Default Work Unit\Play_SFX_CannonFire_01	
-	3842358642	Play_SFX_PopLetterBad_01			\Default Work Unit\Play_SFX_PopLetterBad_01	
+	122831938	Play_SFX_PopLetterGood_01			\Default Work Unit\Testing\Play_SFX_PopLetterGood_01	
+	661707113	Play_SFX_CannonFire_01			\Default Work Unit\Testing\Play_SFX_CannonFire_01	
+	3842358642	Play_SFX_PopLetterBad_01			\Default Work Unit\Testing\Play_SFX_PopLetterBad_01	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	587292714	SFX_PopLetterGood_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\SFX_PopLetterGood_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Spaceship\3D SFX\LetterPops\SFX_PopLetterGood_01		61202
-	651156814	SFX_CannonFire_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\SFX_CannonFire_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Spaceship\3D SFX\LetterCannons\SFX_CannonFire_01		31598
-	1065915354	SFX_PopLetterBad_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\SFX_PopLetterBad_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Spaceship\3D SFX\LetterPops\SFX_PopLetterBad_01		61202
+	587292714	SFX_PopLetterGood_01	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\SFX_PopLetterGood_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Spaceship\3D SFX\LetterPops\SFX_PopLetterGood_01		61202
+	651156814	SFX_CannonFire_01	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\SFX_CannonFire_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Spaceship\3D SFX\LetterCannons\SFX_CannonFire_01		31598
+	1065915354	SFX_PopLetterBad_01	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\SFX_PopLetterBad_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Spaceship\3D SFX\LetterPops\SFX_PopLetterBad_01		61202
 

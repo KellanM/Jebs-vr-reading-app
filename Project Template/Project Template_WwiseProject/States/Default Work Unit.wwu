@@ -6,6 +6,9 @@
 				<Folder Name="beach_letter_result" ID="{B52AD088-C61A-4BAF-A875-C642240592B3}" ShortID="101948766">
 					<ChildrenList>
 						<StateGroup Name="letter_state" ID="{EBCB9B3B-32A2-426A-8F17-3553F624C445}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+							</PropertyList>
 							<ChildrenList>
 								<State Name="None" ID="{5A091C8C-8D8D-4D02-B1AC-5DB20E4E9528}"/>
 								<State Name="correct" ID="{FD78466A-B8CF-441C-9AAA-A0C38646555B}"/>
@@ -13,6 +16,9 @@
 							</ChildrenList>
 						</StateGroup>
 						<StateGroup Name="letter_identify" ID="{E42A615E-D721-44B5-B390-ACDBDBD19D39}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+							</PropertyList>
 							<ChildrenList>
 								<State Name="None" ID="{171C96CE-4930-4BA0-9E4E-15EA894A5868}"/>
 								<State Name="a_identify" ID="{1CC70001-2240-4E41-829E-95D25D452C00}"/>
@@ -25,6 +31,9 @@
 							</ChildrenList>
 						</StateGroup>
 						<StateGroup Name="letter_request" ID="{7983228A-5B93-482E-BB85-AD634A2D5F2A}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+							</PropertyList>
 							<ChildrenList>
 								<State Name="None" ID="{68C57A75-91CA-4B0E-B7AA-C6EFC1DEE88E}"/>
 								<State Name="a_request" ID="{8A756C11-F588-460D-9D68-15B5EC6CF79E}"/>

@@ -51,14 +51,8 @@
 				</SoundBank>
 				<SoundBank Name="Beach" ID="{321961B2-5220-43AC-81D8-F12D2A11BEE9}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_DX_Pirate_ThatsLetterC_01" ID="{5BC0C69C-50EB-41FE-A60E-65D9704111A6}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_SFX_Chest_Close_01" ID="{B398D3DE-B933-42DD-BDAA-2E40C6F58805}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_SFX_Chest_Open_01" ID="{E8587D8C-3066-42E3-B168-1A3D0A09832F}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DX_Pirate_ThatsLetterB_01" ID="{651670EF-E225-4838-A22E-A6FDD2F03143}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_SFX_Chest_Dig_Hit_01" ID="{EE38C420-7EDD-484E-B2BE-9A1BC07C8A19}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DX_Pirate_ThatsLetterA_01" ID="{5A7A2606-13D9-48F5-BEF0-EF7CE6EABC0F}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_DX_Pirate_StillLookingForC_01" ID="{20639D0C-6786-49FC-BA86-32E88646D1D6}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Correct_Letter_Found" ID="{E71FC2AE-84A1-4FC4-B355-128964420349}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="letter_turn_in" ID="{1950D7FF-DDBB-40F5-8B96-5CEAC79DFD8D}" WorkUnitID="{8A4E718A-3B29-42EE-90DF-AB92C2D17169}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Beach" ID="{5CCD4DB7-9B54-41E1-8ABA-CBDFABAB0C49}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
