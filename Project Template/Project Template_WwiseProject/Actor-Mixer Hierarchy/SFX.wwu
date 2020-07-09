@@ -344,6 +344,111 @@
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
+								<RandomSequenceContainer Name="amb_beack_background_loop" ID="{02A4A47E-7AF7-44E4-A51A-D70342F17CF9}" ShortID="510172298">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="amb_beach_background_loop-002" ID="{5EDF7F73-A3F6-4B6E-91F9-C7CA30BBD8D6}" ShortID="371719678">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_beach_background_loop-002" ID="{D91E381C-5C11-4548-BCB4-7AD09836F1D4}">
+													<Language>SFX</Language>
+													<AudioFile>amb_beach_background_loop-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="843409113"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_beach_background_loop-002" ID="{D91E381C-5C11-4548-BCB4-7AD09836F1D4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_beach_background_loop-003" ID="{D6CDB2DD-A393-4762-8D06-A19EE78F7E3B}" ShortID="502711479">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_beach_background_loop-003" ID="{FE34CBD3-FE87-4913-A0D1-DE155C20AA5A}">
+													<Language>SFX</Language>
+													<AudioFile>amb_beach_background_loop-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="482026619"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_beach_background_loop-003" ID="{FE34CBD3-FE87-4913-A0D1-DE155C20AA5A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_beach_background_loop-001" ID="{326C7DC4-0685-46B6-B9E6-9981B345980D}" ShortID="669490748">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_beach_background_loop-001" ID="{609278F0-B201-4440-8CB6-CDEFF12D6BAA}">
+													<Language>SFX</Language>
+													<AudioFile>amb_beach_background_loop-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="146513308"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_beach_background_loop-001" ID="{609278F0-B201-4440-8CB6-CDEFF12D6BAA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="amb_beach_background_loop-004" ID="{E19F2674-4C50-4AB3-A940-4322DE7AF098}" ShortID="1058207176">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="amb_beach_background_loop-004" ID="{C4976D5A-DC21-400E-ACE0-E04C7517ED8A}">
+													<Language>SFX</Language>
+													<AudioFile>amb_beach_background_loop-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="680454472"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="amb_beach_background_loop-004" ID="{C4976D5A-DC21-400E-ACE0-E04C7517ED8A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

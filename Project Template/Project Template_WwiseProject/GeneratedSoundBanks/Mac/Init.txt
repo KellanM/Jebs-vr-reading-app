@@ -1,3 +1,30 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	642578536	letter_identify			\Default Work Unit\beach_letter_result\letter_identify	
+	710661739	letter_state			\Default Work Unit\beach_letter_result\letter_state	
+	3350046007	letter_request			\Default Work Unit\beach_letter_result\letter_request	
+
+State	ID	Name	State Group			Notes
+	615801387	c_identify	letter_identify			
+	616268773	a_identify	letter_identify			
+	622822280	f_identify	letter_identify			
+	748895195	None	letter_identify			
+	822704874	d_identify	letter_identify			
+	1026594175	g_identify	letter_identify			
+	2739495657	e_identify	letter_identify			
+	4149877012	b_identify	letter_identify			
+	748895195	None	letter_state			
+	3691826278	incorrect	letter_state			
+	4126251273	correct	letter_state			
+	215271383	f_request	letter_request			
+	270256323	b_request	letter_request			
+	748895195	None	letter_request			
+	1175714870	g_request	letter_request			
+	1916577556	e_request	letter_request			
+	2678637886	random_request	letter_request			
+	3564163789	d_request	letter_request			
+	3870699296	a_request	letter_request			
+	3915368578	c_request	letter_request			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	355137661	2D Audio			\Default Work Unit\Master Audio Bus\2D Audio	
 	472226230	2D_Dialog			\Default Work Unit\Master Audio Bus\2D Audio\2D_Dialog	

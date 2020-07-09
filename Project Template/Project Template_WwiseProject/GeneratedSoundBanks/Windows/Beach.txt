@@ -1,24 +1,3 @@
-Event	ID	Name			Wwise Object Path	Notes
-	37127528	Play_SFX_Chest_Dig_Hit_01			\Default Work Unit\Play_SFX_Chest_Dig_Hit_01	
-	1285693754	Play_SFX_Chest_Open_01			\Default Work Unit\Play_SFX_Chest_Open_01	
-	1345257814	Play_SFX_Chest_Close_01			\Default Work Unit\Play_SFX_Chest_Close_01	
-	1797949198	Play_DX_Pirate_StillLookingForC_01			\Default Work Unit\Play_DX_Pirate_StillLookingForC_01	
-	2088240986	Play_DX_Pirate_ThatsLetterC_01			\Default Work Unit\Play_DX_Pirate_ThatsLetterC_01	
-	2761178770	Play_Correct_Letter_Found			\Default Work Unit\Play_Correct_Letter_Found	
-	3515435268	Play_DX_Pirate_ThatsLetterA_01			\Default Work Unit\Play_DX_Pirate_ThatsLetterA_01	
-	3617558033	Play_DX_Pirate_ThatsLetterB_01			\Default Work Unit\Play_DX_Pirate_ThatsLetterB_01	
-
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	64104581	DX_Pirate_CorrectLetter_02	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\SFX\DX_Pirate_CorrectLetter_02_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\Beach\2D Dialog\Pirate\Letter Search\Correct Letter Found\DX_Pirate_CorrectLetter_02		313180
-	102799088	DX_Pirate_CorrectLetter_03	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\SFX\DX_Pirate_CorrectLetter_03_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\Beach\2D Dialog\Pirate\Letter Search\Correct Letter Found\DX_Pirate_CorrectLetter_03		243870
-	133787045	SFX_Chest_Dig_Hit_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\SFX\SFX_Chest_Dig_Hit_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Beach\3D SFX\Treasure Chest\SFX_Chest_Dig_Hit_01		97778
-	135275204	DX_Pirate_ThatsLetterA_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\SFX\DX_Pirate_ThatsLetterA_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\Beach\2D Dialog\Pirate\Letter Search\Thats The Letter _\DX_Pirate_ThatsLetterA_01		545658
-	273400121	SFX_Chest_Open_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\SFX\SFX_Chest_Open_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Beach\3D SFX\Treasure Chest\SFX_Chest_Open_01		193064
-	368120319	DX_Pirate_ThatsLetterB_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\SFX\DX_Pirate_ThatsLetterB_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\Beach\2D Dialog\Pirate\Letter Search\Thats The Letter _\DX_Pirate_ThatsLetterB_01		716194
-	474669687	DX_Pirate_CorrectLetter_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\SFX\DX_Pirate_CorrectLetter_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\Beach\2D Dialog\Pirate\Letter Search\Correct Letter Found\DX_Pirate_CorrectLetter_01		385470
-	586350733	DX_Pirate_StillLookingForC_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\SFX\DX_Pirate_StillLookingForC_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\Beach\2D Dialog\Pirate\Letter Search\We're Still Looking For The Letter _\DX_Pirate_StillLookingForC_01		371730
-	604484223	DX_Pirate_CorrectLetter_04	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\SFX\DX_Pirate_CorrectLetter_04_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\Beach\2D Dialog\Pirate\Letter Search\Correct Letter Found\DX_Pirate_CorrectLetter_04		395490
-	861371255	SFX_Chest_Close_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\SFX\SFX_Chest_Close_01_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Beach\3D SFX\Treasure Chest\SFX_Chest_Close_01		96596
-	994503425	DX_Pirate_CorrectLetter_05	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\SFX\DX_Pirate_CorrectLetter_05_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\Beach\2D Dialog\Pirate\Letter Search\Correct Letter Found\DX_Pirate_CorrectLetter_05		371146
-	1048041803	DX_Pirate_ThatsLetterC_01	D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\SFX\DX_Pirate_ThatsLetterC_01_10C4C929.wem		\Actor-Mixer Hierarchy\Dialog\Beach\2D Dialog\Pirate\Letter Search\Thats The Letter _\DX_Pirate_ThatsLetterC_01		956496
+Dialogue Event	ID	Name			Wwise Object Path	Notes
+	3601192283	letter_id			\Chests\letter_id	
 
