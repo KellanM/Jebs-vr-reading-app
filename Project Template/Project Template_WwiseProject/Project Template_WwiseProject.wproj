@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="97" WwiseVersion="v2019.2.1" WwiseBuild="7250">
+<WwiseDocument Type="Project" SchemaVersion="97" WwiseVersion="v2019.2.2" WwiseBuild="7275">
 	<ProjectInfo>
 		<Project Name="Project Template_WwiseProject" ID="{5AE83343-DD77-4F30-B7A1-F93D359DEB5D}">
 			<Platforms>
@@ -21,6 +21,19 @@
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9Ijg0MTMiIG1hc2s9IklNVVc1NTMzIiBlbmM9IjAiPjxsaWNl
+bnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDEw
+IiBleHBpcmVzPSIyMDIwLTA5LTAxIiAgLz48bGljZW5zZSBpZD0iMjEiIG5hbWU9
+Ik1haW50ZW5hbmNlIiB0eXBlPSIzIiBwbGF0Zm9ybXM9IjIsMTAiIGV4cGlyZXM9
+IjIwMjAtMDktMDEiICAvPjxsaWNlbnNlIGlkPSIyMiIgbmFtZT0iTGV2ZWwgQSBM
+aWNlbnNlIiB0eXBlPSIzIiBwbGF0Zm9ybXM9IjIiIGV4cGlyZXM9IjIwMjAtMDkt
+MDEiICAvPjwvcHJvamVjdD4=|0Nc+GBwTt3b0PkRlvPr9IzZbsNK/l9rhQqQTORD
+LhJJQ05MwSkhTb2i5hW4cEApavNxUlfY+4a4ByjoYkzN2tl1gjMKvkSWuFaBp4KR
+ND5izvjqcG3PFWsAEecnmVjoGBpIxWbrMleESENAzJxs1i2UWWq9fTj6iUoY03Jk
+gGQfRkbcEzyJnXLHeK0xcxy5A1zyUclRoXhFo4elF65CchFGETlq9AbVaGcT5cKJ
+eSX6i2lilRSGX2jTigq/41rw+35MUlb5Vme13JOTwewpzRXRMgaj9iR9NJI4eGgs
+fnFDs8tm2zuVZiF31RPqWwnuDDLELx/ScLfHmdXS0TT1udg==
+"/>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
