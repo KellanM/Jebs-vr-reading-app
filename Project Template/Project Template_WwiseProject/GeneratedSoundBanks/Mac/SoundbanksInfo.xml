@@ -7,9 +7,7 @@
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
 		<ExternalSourcesOutputRoot>C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
-	<DialogueEvents>
-		<DialogueEvent Id="3601192283" Name="letter_id" ObjectPath="\Dynamic Dialogue\Chests\letter_id"/>
-	</DialogueEvents>
+	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
@@ -31,30 +29,6 @@
 						<File Id="849942311" Language="SFX">
 							<ShortName>Example01.wav</ShortName>
 							<Path>SFX\Example01_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="790832349" Name="Play_Letername_A_01" ObjectPath="\Events\Default Work Unit\Testing\Play_Letername_A_01" DurationType="OneShot" DurationMin="1.247146" DurationMax="1.247146">
-					<IncludedMemoryFiles>
-						<File Id="193728657" Language="SFX">
-							<ShortName>Letername_A_01.wav</ShortName>
-							<Path>SFX\Letername_A_01_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2846587504" Name="Play_Letername_B_01" ObjectPath="\Events\Default Work Unit\Testing\Play_Letername_B_01" DurationType="OneShot" DurationMin="1.197688" DurationMax="1.197688">
-					<IncludedMemoryFiles>
-						<File Id="934173128" Language="SFX">
-							<ShortName>Letername_B_01.wav</ShortName>
-							<Path>SFX\Letername_B_01_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="80937159" Name="Play_Letername_C_01" ObjectPath="\Events\Default Work Unit\Testing\Play_Letername_C_01" DurationType="OneShot" DurationMin="1.334917" DurationMax="1.334917">
-					<IncludedMemoryFiles>
-						<File Id="482533939" Language="SFX">
-							<ShortName>Letername_C_01.wav</ShortName>
-							<Path>SFX\Letername_C_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -307,13 +281,602 @@
 				<AuxBus Id="2645524322" Name="Spaceship_Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\3D Audio\Spaceship_Reverb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="4075332698" Language="SFX">
+		<SoundBank Id="4075332698" Language="English(US)">
 			<ObjectPath>\SoundBanks\Default Work Unit\Beach</ObjectPath>
 			<ShortName>Beach</ShortName>
-			<Path>Beach.bnk</Path>
-			<IncludedDialogueEvents>
-				<DialogueEvent Id="3601192283" Name="letter_id" ObjectPath="\Dynamic Dialogue\Chests\letter_id"/>
-			</IncludedDialogueEvents>
+			<Path>English(US)\Beach.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3261928562" Name="Play_letter_turn_in_result" ObjectPath="\Events\Default Work Unit\chests_events\Play_letter_turn_in_result" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="5.715270" DurationMax="13.594433">
+					<IncludedMemoryFiles>
+						<File Id="31430241" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-003_112C00B9.wem</Path>
+						</File>
+						<File Id="48205813" Language="English(US)">
+							<ShortName>pirate_identify_a-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_a-001_1B0B8EC8.wem</Path>
+						</File>
+						<File Id="66429965" Language="English(US)">
+							<ShortName>pirate_identify_c\pirate_identify_c-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_c\pirate_identify_c-003_09961616.wem</Path>
+						</File>
+						<File Id="75921870" Language="English(US)">
+							<ShortName>pirate_correct_letter-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_correct_letter-002_C91FEB23.wem</Path>
+						</File>
+						<File Id="94609553" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-001_10C4C929.wem</Path>
+						</File>
+						<File Id="107562032" Language="English(US)">
+							<ShortName>pirate_identify_f\pirate_identify_f-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_f\pirate_identify_f-001_00AD8CE7.wem</Path>
+						</File>
+						<File Id="136853588" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-001_10C4C929.wem</Path>
+						</File>
+						<File Id="145322150" Language="English(US)">
+							<ShortName>pirate_request_g\pirate_request_g-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-002_10C4C929.wem</Path>
+						</File>
+						<File Id="148295233" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-002_10C4C929.wem</Path>
+						</File>
+						<File Id="157975529" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-004_10C4C929.wem</Path>
+						</File>
+						<File Id="173033634" Language="English(US)">
+							<ShortName>pirate_request_g\pirate_request_g-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-002_35128D20.wem</Path>
+						</File>
+						<File Id="173504264" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-004_10C4C929.wem</Path>
+						</File>
+						<File Id="175844512" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-003_4C5E1246.wem</Path>
+						</File>
+						<File Id="178076439" Language="English(US)">
+							<ShortName>pirate_request_g\pirate_request_g-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-001_10C4C929.wem</Path>
+						</File>
+						<File Id="179040910" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-001_9A08678F.wem</Path>
+						</File>
+						<File Id="180994931" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-004_14B55EE2.wem</Path>
+						</File>
+						<File Id="199659122" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-003_10C4C929.wem</Path>
+						</File>
+						<File Id="203697890" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-003_AA89D753.wem</Path>
+						</File>
+						<File Id="209002632" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-003_10C4C929.wem</Path>
+						</File>
+						<File Id="211112019" Language="English(US)">
+							<ShortName>pirate_incorrect_letter-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_incorrect_letter-002_6FAE168E.wem</Path>
+						</File>
+						<File Id="213134246" Language="English(US)">
+							<ShortName>pirate_identify_c\pirate_identify_c-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_c\pirate_identify_c-001_9148FA62.wem</Path>
+						</File>
+						<File Id="238812417" Language="English(US)">
+							<ShortName>pirate_identify_e\pirate_identify_e-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_e\pirate_identify_e-003_4B10B865.wem</Path>
+						</File>
+						<File Id="239556192" Language="English(US)">
+							<ShortName>pirate_request_a-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_a-001_08056AE2.wem</Path>
+						</File>
+						<File Id="245420146" Language="English(US)">
+							<ShortName>pirate_identify_b\pirate_identify_b-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_b\pirate_identify_b-004_7A04D665.wem</Path>
+						</File>
+						<File Id="249799003" Language="English(US)">
+							<ShortName>pirate_identify_a-005.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_a-005_C0E839FD.wem</Path>
+						</File>
+						<File Id="263891325" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-001_10C4C929.wem</Path>
+						</File>
+						<File Id="283268826" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-001_131C960B.wem</Path>
+						</File>
+						<File Id="284895842" Language="English(US)">
+							<ShortName>pirate_identify_a-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_a-002_57E34355.wem</Path>
+						</File>
+						<File Id="288756422" Language="English(US)">
+							<ShortName>pirate_identify_b\pirate_identify_b-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_b\pirate_identify_b-002_BC40D7B6.wem</Path>
+						</File>
+						<File Id="297166281" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-004_10C4C929.wem</Path>
+						</File>
+						<File Id="301779918" Language="English(US)">
+							<ShortName>pirate_identify_d\pirate_identify_d-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_d\pirate_identify_d-003_45C49B22.wem</Path>
+						</File>
+						<File Id="311783929" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-004_55E5A2BD.wem</Path>
+						</File>
+						<File Id="320032428" Language="English(US)">
+							<ShortName>pirate_identify_g\pirate_identify_g-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_g\pirate_identify_g-004_FD775C2D.wem</Path>
+						</File>
+						<File Id="325384048" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-002_10C4C929.wem</Path>
+						</File>
+						<File Id="363940549" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-004_F8A6BFC9.wem</Path>
+						</File>
+						<File Id="370104920" Language="English(US)">
+							<ShortName>pirate_identify_e\pirate_identify_e-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_e\pirate_identify_e-002_B9C2A8E8.wem</Path>
+						</File>
+						<File Id="414792595" Language="English(US)">
+							<ShortName>pirate_identify_f\pirate_identify_f-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_f\pirate_identify_f-003_8C41B8CA.wem</Path>
+						</File>
+						<File Id="421831169" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-004_3BF1B1C3.wem</Path>
+						</File>
+						<File Id="432827642" Language="English(US)">
+							<ShortName>pirate_request_g\pirate_request_g-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-001_B842344B.wem</Path>
+						</File>
+						<File Id="456929457" Language="English(US)">
+							<ShortName>pirate_identify_g\pirate_identify_g-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_g\pirate_identify_g-002_E9AD090A.wem</Path>
+						</File>
+						<File Id="466661053" Language="English(US)">
+							<ShortName>pirate_incorrect_letter-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_incorrect_letter-003_24D35162.wem</Path>
+						</File>
+						<File Id="499005672" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-001_A926F3CB.wem</Path>
+						</File>
+						<File Id="500488921" Language="English(US)">
+							<ShortName>pirate_identify_f\pirate_identify_f-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_f\pirate_identify_f-004_59A3518F.wem</Path>
+						</File>
+						<File Id="510214520" Language="English(US)">
+							<ShortName>pirate_identify_c\pirate_identify_c-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_c\pirate_identify_c-002_075CA308.wem</Path>
+						</File>
+						<File Id="512155788" Language="English(US)">
+							<ShortName>pirate_identify_e\pirate_identify_e-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_e\pirate_identify_e-001_4DB051FE.wem</Path>
+						</File>
+						<File Id="515444235" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-001_10C4C929.wem</Path>
+						</File>
+						<File Id="554598878" Language="English(US)">
+							<ShortName>pirate_identify_g\pirate_identify_g-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_g\pirate_identify_g-003_7C2E1C62.wem</Path>
+						</File>
+						<File Id="572123336" Language="English(US)">
+							<ShortName>pirate_identify_g\pirate_identify_g-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_g\pirate_identify_g-001_F453C5FE.wem</Path>
+						</File>
+						<File Id="589279699" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-004_10C4C929.wem</Path>
+						</File>
+						<File Id="606829139" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-002_4AC49A74.wem</Path>
+						</File>
+						<File Id="643294803" Language="English(US)">
+							<ShortName>pirate_correct_letter-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_correct_letter-004_A78ED3AA.wem</Path>
+						</File>
+						<File Id="644392942" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-001_79196E57.wem</Path>
+						</File>
+						<File Id="667407715" Language="English(US)">
+							<ShortName>pirate_correct_letter-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_correct_letter-003_F089A1C3.wem</Path>
+						</File>
+						<File Id="675718865" Language="English(US)">
+							<ShortName>pirate_identify_d\pirate_identify_d-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_d\pirate_identify_d-002_FB9D6783.wem</Path>
+						</File>
+						<File Id="698238349" Language="English(US)">
+							<ShortName>pirate_identify_a-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_a-004_2454C0E8.wem</Path>
+						</File>
+						<File Id="705532773" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-002_10C4C929.wem</Path>
+						</File>
+						<File Id="707886641" Language="English(US)">
+							<ShortName>pirate_identify_b\pirate_identify_b-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_b\pirate_identify_b-003_998E0F09.wem</Path>
+						</File>
+						<File Id="720423860" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-004_10C4C929.wem</Path>
+						</File>
+						<File Id="721573298" Language="English(US)">
+							<ShortName>pirate_incorrect_letter-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_incorrect_letter-001_DE180FBA.wem</Path>
+						</File>
+						<File Id="737499940" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-003_C24669FC.wem</Path>
+						</File>
+						<File Id="745411505" Language="English(US)">
+							<ShortName>pirate_identify_e\pirate_identify_e-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_e\pirate_identify_e-004_E71C4CBB.wem</Path>
+						</File>
+						<File Id="751810950" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-003_10C4C929.wem</Path>
+						</File>
+						<File Id="753537672" Language="English(US)">
+							<ShortName>pirate_request_a-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_a-003_460B3264.wem</Path>
+						</File>
+						<File Id="765530576" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-002_5033B41E.wem</Path>
+						</File>
+						<File Id="802139754" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-003_38994C2B.wem</Path>
+						</File>
+						<File Id="805061636" Language="English(US)">
+							<ShortName>pirate_identify_f\pirate_identify_f-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_f\pirate_identify_f-002_5A299D1E.wem</Path>
+						</File>
+						<File Id="805832761" Language="English(US)">
+							<ShortName>pirate_request_g\pirate_request_g-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-003_10C4C929.wem</Path>
+						</File>
+						<File Id="807215645" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-002_10C4C929.wem</Path>
+						</File>
+						<File Id="845539895" Language="English(US)">
+							<ShortName>pirate_request_g\pirate_request_g-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-004_10C4C929.wem</Path>
+						</File>
+						<File Id="859638157" Language="English(US)">
+							<ShortName>pirate_identify_b\pirate_identify_b-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_b\pirate_identify_b-001_F18AFE59.wem</Path>
+						</File>
+						<File Id="877074726" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-003_10C4C929.wem</Path>
+						</File>
+						<File Id="877172340" Language="English(US)">
+							<ShortName>pirate_correct_letter-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_correct_letter-001_7B6C5419.wem</Path>
+						</File>
+						<File Id="883495680" Language="English(US)">
+							<ShortName>pirate_request_a-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_a-004_5CA74F35.wem</Path>
+						</File>
+						<File Id="885748174" Language="English(US)">
+							<ShortName>pirate_identify_d\pirate_identify_d-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_d\pirate_identify_d-001_87AFCA5F.wem</Path>
+						</File>
+						<File Id="889387531" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-002_10C4C929.wem</Path>
+						</File>
+						<File Id="902031826" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-003_10C4C929.wem</Path>
+						</File>
+						<File Id="904558806" Language="English(US)">
+							<ShortName>pirate_identify_d\pirate_identify_d-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_d\pirate_identify_d-004_EF61E984.wem</Path>
+						</File>
+						<File Id="906883059" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-002_94BA13E6.wem</Path>
+						</File>
+						<File Id="951176894" Language="English(US)">
+							<ShortName>pirate_request_a-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_a-002_3B8F3AEA.wem</Path>
+						</File>
+						<File Id="956423771" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-002_F89A8855.wem</Path>
+						</File>
+						<File Id="972005717" Language="English(US)">
+							<ShortName>pirate_identify_a-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_a-003_252C9871.wem</Path>
+						</File>
+						<File Id="1010261887" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-002_DD53EB98.wem</Path>
+						</File>
+						<File Id="1013384649" Language="English(US)">
+							<ShortName>pirate_identify_c\pirate_identify_c-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_identify_c\pirate_identify_c-004_ED395B32.wem</Path>
+						</File>
+						<File Id="1024165224" Language="English(US)">
+							<ShortName>pirate_incorrect_letter-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_incorrect_letter-004_1C1F7239.wem</Path>
+						</File>
+						<File Id="1035264335" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-001_10C4C929.wem</Path>
+						</File>
+						<File Id="1060552425" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-001_A87F582D.wem</Path>
+						</File>
+						<File Id="1065133031" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-004_D6F88762.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{1CC70001-2240-4E41-829E-95D25D452C00}">
+							<Media>
+								<File Id="48205813"/>
+								<File Id="284895842"/>
+								<File Id="972005717"/>
+								<File Id="698238349"/>
+								<File Id="249799003"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{10D59C7E-D6D4-48E9-816C-3AFF5DDFA02E}">
+							<Media>
+								<File Id="213134246"/>
+								<File Id="510214520"/>
+								<File Id="66429965"/>
+								<File Id="1013384649"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{38BAB3A6-E811-49AE-9EED-3B3E28D4D5BF}">
+							<Media>
+								<File Id="512155788"/>
+								<File Id="370104920"/>
+								<File Id="238812417"/>
+								<File Id="745411505"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{E5E7350E-019B-4633-A1AA-FBC3F11D9A75}">
+							<Media>
+								<File Id="885748174"/>
+								<File Id="675718865"/>
+								<File Id="301779918"/>
+								<File Id="904558806"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4EA0A3BD-2F21-499C-A1DF-3067FED665C3}">
+							<Media>
+								<File Id="107562032"/>
+								<File Id="805061636"/>
+								<File Id="414792595"/>
+								<File Id="500488921"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{3F001E55-BC62-4537-8787-80D656F16F18}">
+							<Media>
+								<File Id="859638157"/>
+								<File Id="288756422"/>
+								<File Id="707886641"/>
+								<File Id="245420146"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{849C1A17-6DFE-485B-B32E-898FE01AEEEB}">
+							<Media>
+								<File Id="572123336"/>
+								<File Id="456929457"/>
+								<File Id="554598878"/>
+								<File Id="320032428"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{EC69AA65-74FB-4690-A594-4CE04D26DEEA}">
+							<Media>
+								<File Id="721573298"/>
+								<File Id="211112019"/>
+								<File Id="466661053"/>
+								<File Id="1024165224"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{FD78466A-B8CF-441C-9AAA-A0C38646555B}">
+							<Media>
+								<File Id="877172340"/>
+								<File Id="75921870"/>
+								<File Id="667407715"/>
+								<File Id="643294803"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{8A756C11-F588-460D-9D68-15B5EC6CF79E}">
+							<Media>
+								<File Id="239556192"/>
+								<File Id="951176894"/>
+								<File Id="753537672"/>
+								<File Id="883495680"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6BE53570-5BAF-4E1E-8458-9F7FDCC16258}">
+							<Media>
+								<File Id="179040910"/>
+								<File Id="956423771"/>
+								<File Id="31430241"/>
+								<File Id="1065133031"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C5FCBFCE-FFDE-4F44-A957-C8825B72FA97}">
+							<Media>
+								<File Id="1060552425"/>
+								<File Id="1010261887"/>
+								<File Id="203697890"/>
+								<File Id="311783929"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{79C6C00B-76CD-4322-AD7D-29A7031D37A1}">
+							<Media>
+								<File Id="499005672"/>
+								<File Id="906883059"/>
+								<File Id="802139754"/>
+								<File Id="363940549"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4F12732B-4174-4AC5-AFFF-C5231E087ACE}">
+							<Media>
+								<File Id="644392942"/>
+								<File Id="765530576"/>
+								<File Id="175844512"/>
+								<File Id="421831169"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{32CC86F2-3B23-4AA2-9F36-BD38602F54C0}">
+							<Media>
+								<File Id="283268826"/>
+								<File Id="606829139"/>
+								<File Id="737499940"/>
+								<File Id="180994931"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{87028E47-CE46-47E5-B605-3BA1F0AD515C}">
+							<Media>
+								<File Id="432827642"/>
+								<File Id="173033634"/>
+								<File Id="805832761"/>
+								<File Id="845539895"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7B34A2F0-61FE-4B89-A116-80F76B439830}">
+							<Media>
+								<File Id="239556192"/>
+								<File Id="951176894"/>
+								<File Id="753537672"/>
+								<File Id="883495680"/>
+								<File Id="178076439"/>
+								<File Id="145322150"/>
+								<File Id="805832761"/>
+								<File Id="845539895"/>
+								<File Id="263891325"/>
+								<File Id="705532773"/>
+								<File Id="199659122"/>
+								<File Id="157975529"/>
+								<File Id="136853588"/>
+								<File Id="325384048"/>
+								<File Id="209002632"/>
+								<File Id="720423860"/>
+								<File Id="515444235"/>
+								<File Id="807215645"/>
+								<File Id="902031826"/>
+								<File Id="173504264"/>
+								<File Id="94609553"/>
+								<File Id="148295233"/>
+								<File Id="751810950"/>
+								<File Id="589279699"/>
+								<File Id="1035264335"/>
+								<File Id="889387531"/>
+								<File Id="877074726"/>
+								<File Id="297166281"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1345257814" Name="Play_SFX_Chest_Close_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Close_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742">
+					<IncludedMemoryFiles>
+						<File Id="861371255" Language="SFX">
+							<ShortName>SFX_Chest_Close_01.wav</ShortName>
+							<Path>SFX\SFX_Chest_Close_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="37127528" Name="Play_SFX_Chest_Dig_Hit_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Dig_Hit_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.107143" DurationMax="1.107143">
+					<IncludedMemoryFiles>
+						<File Id="133787045" Language="SFX">
+							<ShortName>SFX_Chest_Dig_Hit_01.wav</ShortName>
+							<Path>SFX\SFX_Chest_Dig_Hit_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1285693754" Name="Play_SFX_Chest_Open_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Open_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742">
+					<IncludedMemoryFiles>
+						<File Id="273400121" Language="SFX">
+							<ShortName>SFX_Chest_Open_01.wav</ShortName>
+							<Path>SFX\SFX_Chest_Open_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3586137436" Name="Set_State_a_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_a_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3355553019" Name="Set_State_a_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_a_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2273117453" Name="Set_State_b_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_b_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3869419544" Name="Set_State_b_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_b_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2173814366" Name="Set_State_c_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_c_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1361500753" Name="Set_State_c_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_c_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2582429414" Name="Set_State_correct" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_correct" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2202624967" Name="Set_State_d_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_d_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="970437422" Name="Set_State_d_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_d_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="987058800" Name="Set_State_e_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_e_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2996851727" Name="Set_State_e_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_e_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2256942993" Name="Set_State_f_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_f_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2940092780" Name="Set_State_f_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_f_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2658181330" Name="Set_State_g_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_g_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3017026757" Name="Set_State_g_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_g_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3973431821" Name="Set_State_incorrect" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_incorrect" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3992176551" Name="Set_State_random_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_random_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="642578536" Name="letter_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\None"/>
+						<State Id="616268773" Name="a_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\a_identify"/>
+						<State Id="4149877012" Name="b_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\b_identify"/>
+						<State Id="615801387" Name="c_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\c_identify"/>
+						<State Id="822704874" Name="d_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\d_identify"/>
+						<State Id="2739495657" Name="e_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\e_identify"/>
+						<State Id="622822280" Name="f_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\f_identify"/>
+						<State Id="1026594175" Name="g_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\g_identify"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="710661739" Name="letter_state" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\None"/>
+						<State Id="4126251273" Name="correct" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\correct"/>
+						<State Id="3691826278" Name="incorrect" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\incorrect"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3350046007" Name="letter_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\None"/>
+						<State Id="3870699296" Name="a_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\a_request"/>
+						<State Id="270256323" Name="b_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\b_request"/>
+						<State Id="3915368578" Name="c_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\c_request"/>
+						<State Id="3564163789" Name="d_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\d_request"/>
+						<State Id="1916577556" Name="e_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\e_request"/>
+						<State Id="215271383" Name="f_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\f_request"/>
+						<State Id="1175714870" Name="g_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\g_request"/>
+						<State Id="2678637886" Name="random_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\random_request"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

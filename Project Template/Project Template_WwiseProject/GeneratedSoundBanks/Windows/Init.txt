@@ -1,7 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	642578536	letter_identify			\Default Work Unit\beach_letter_result\letter_identify	
-	710661739	letter_state			\Default Work Unit\beach_letter_result\letter_state	
-	3350046007	letter_request			\Default Work Unit\beach_letter_result\letter_request	
+	642578536	letter_identify			\Default Work Unit\beach_letter_states\letter_identify	
+	710661739	letter_state			\Default Work Unit\beach_letter_states\letter_state	
+	3350046007	letter_request			\Default Work Unit\beach_letter_states\letter_request	
 
 State	ID	Name	State Group			Notes
 	615801387	c_identify	letter_identify			

@@ -449,11 +449,17 @@
 											<ChildrenList>
 												<RandomSequenceContainer Name="letter_turn_in_result" ID="{14132A2A-1940-435B-A363-364B958916CD}" ShortID="906613321">
 													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="60"/>
 													</PropertyList>
 													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Pirate" ID="{B3784810-99E0-4DF8-86FE-05AB27110C4B}" WorkUnitID="{0942876A-8F5D-4B5C-A202-5AA8FB2853C0}"/>
+														</Reference>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
 														</Reference>
@@ -468,13 +474,13 @@
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
 																</Reference>
 																<Reference Name="DefaultSwitchOrState">
-																	<ObjectRef Name="None" ID="{171C96CE-4930-4BA0-9E4E-15EA894A5868}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+																	<ObjectRef Name="None" ID="{171C96CE-4930-4BA0-9E4E-15EA894A5868}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="letter_identify" ID="{E42A615E-D721-44B5-B390-ACDBDBD19D39}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+																	<ObjectRef Name="letter_identify" ID="{E42A615E-D721-44B5-B390-ACDBDBD19D39}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -1542,13 +1548,13 @@
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
 																</Reference>
 																<Reference Name="DefaultSwitchOrState">
-																	<ObjectRef Name="None" ID="{5A091C8C-8D8D-4D02-B1AC-5DB20E4E9528}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+																	<ObjectRef Name="None" ID="{5A091C8C-8D8D-4D02-B1AC-5DB20E4E9528}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="letter_state" ID="{EBCB9B3B-32A2-426A-8F17-3553F624C445}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+																	<ObjectRef Name="letter_state" ID="{EBCB9B3B-32A2-426A-8F17-3553F624C445}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -1899,13 +1905,13 @@
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
 																</Reference>
 																<Reference Name="DefaultSwitchOrState">
-																	<ObjectRef Name="None" ID="{68C57A75-91CA-4B0E-B7AA-C6EFC1DEE88E}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+																	<ObjectRef Name="None" ID="{68C57A75-91CA-4B0E-B7AA-C6EFC1DEE88E}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="letter_request" ID="{7983228A-5B93-482E-BB85-AD634A2D5F2A}" WorkUnitID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}"/>
+																	<ObjectRef Name="letter_request" ID="{7983228A-5B93-482E-BB85-AD634A2D5F2A}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>

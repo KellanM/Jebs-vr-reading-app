@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<WwiseDocument Type="WorkUnit" ID="{C03D1771-2C1B-4219-80B4-C9B4D45B1D4E}" SchemaVersion="97" RootDocumentID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}">
+	<States>
+		<WorkUnit Name="beach_letter_states" ID="{C03D1771-2C1B-4219-80B4-C9B4D45B1D4E}" OwnerID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}" PersistMode="Nested">
+			<ChildrenList>
+				<StateGroup Name="letter_request" ID="{7983228A-5B93-482E-BB85-AD634A2D5F2A}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{68C57A75-91CA-4B0E-B7AA-C6EFC1DEE88E}"/>
+						<State Name="a_request" ID="{8A756C11-F588-460D-9D68-15B5EC6CF79E}"/>
+						<State Name="b_request" ID="{6BE53570-5BAF-4E1E-8458-9F7FDCC16258}"/>
+						<State Name="c_request" ID="{C5FCBFCE-FFDE-4F44-A957-C8825B72FA97}"/>
+						<State Name="d_request" ID="{79C6C00B-76CD-4322-AD7D-29A7031D37A1}"/>
+						<State Name="e_request" ID="{4F12732B-4174-4AC5-AFFF-C5231E087ACE}"/>
+						<State Name="f_request" ID="{32CC86F2-3B23-4AA2-9F36-BD38602F54C0}"/>
+						<State Name="g_request" ID="{87028E47-CE46-47E5-B605-3BA1F0AD515C}"/>
+						<State Name="random_request" ID="{7B34A2F0-61FE-4B89-A116-80F76B439830}"/>
+					</ChildrenList>
+				</StateGroup>
+=======
+<WwiseDocument Type="WorkUnit" ID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}" SchemaVersion="97" RootDocumentID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}">
+	<States>
+		<WorkUnit Name="beach_letter_states" ID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}" OwnerID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}" PersistMode="Nested">
+			<ChildrenList>
+>>>>>>> sound
+				<StateGroup Name="letter_identify" ID="{E42A615E-D721-44B5-B390-ACDBDBD19D39}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{171C96CE-4930-4BA0-9E4E-15EA894A5868}"/>
+						<State Name="a_identify" ID="{1CC70001-2240-4E41-829E-95D25D452C00}"/>
+						<State Name="b_identify" ID="{3F001E55-BC62-4537-8787-80D656F16F18}"/>
+						<State Name="c_identify" ID="{10D59C7E-D6D4-48E9-816C-3AFF5DDFA02E}"/>
+						<State Name="d_identify" ID="{E5E7350E-019B-4633-A1AA-FBC3F11D9A75}"/>
+						<State Name="e_identify" ID="{38BAB3A6-E811-49AE-9EED-3B3E28D4D5BF}"/>
+						<State Name="f_identify" ID="{4EA0A3BD-2F21-499C-A1DF-3067FED665C3}"/>
+						<State Name="g_identify" ID="{849C1A17-6DFE-485B-B32E-898FE01AEEEB}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="letter_state" ID="{EBCB9B3B-32A2-426A-8F17-3553F624C445}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{5A091C8C-8D8D-4D02-B1AC-5DB20E4E9528}"/>
+						<State Name="correct" ID="{FD78466A-B8CF-441C-9AAA-A0C38646555B}"/>
+						<State Name="incorrect" ID="{EC69AA65-74FB-4690-A594-4CE04D26DEEA}"/>
+					</ChildrenList>
+				</StateGroup>
+<<<<<<< HEAD
+=======
+				<StateGroup Name="letter_request" ID="{7983228A-5B93-482E-BB85-AD634A2D5F2A}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{68C57A75-91CA-4B0E-B7AA-C6EFC1DEE88E}"/>
+						<State Name="a_request" ID="{8A756C11-F588-460D-9D68-15B5EC6CF79E}"/>
+						<State Name="b_request" ID="{6BE53570-5BAF-4E1E-8458-9F7FDCC16258}"/>
+						<State Name="c_request" ID="{C5FCBFCE-FFDE-4F44-A957-C8825B72FA97}"/>
+						<State Name="d_request" ID="{79C6C00B-76CD-4322-AD7D-29A7031D37A1}"/>
+						<State Name="e_request" ID="{4F12732B-4174-4AC5-AFFF-C5231E087ACE}"/>
+						<State Name="f_request" ID="{32CC86F2-3B23-4AA2-9F36-BD38602F54C0}"/>
+						<State Name="g_request" ID="{87028E47-CE46-47E5-B605-3BA1F0AD515C}"/>
+						<State Name="random_request" ID="{7B34A2F0-61FE-4B89-A116-80F76B439830}"/>
+					</ChildrenList>
+				</StateGroup>
+>>>>>>> sound
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
