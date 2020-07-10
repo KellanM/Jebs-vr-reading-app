@@ -5,7 +5,6 @@
 			<ChildrenList>
 				<SoundBank Name="General" ID="{996F0978-A2C3-44D7-B065-02FD2B47163C}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Letername_A_01" ID="{287D0551-E021-4085-87DE-BC9195A07CCC}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_letter_names_Y" ID="{41568555-860E-4094-A8D3-05313A965ED7}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Example01" ID="{E37E64A6-A17C-40A7-8832-1C83AF9A6CDB}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_letter_names_L" ID="{DA010A25-7A4C-40D7-9EC4-348A9C655418}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
@@ -13,7 +12,6 @@
 						<ObjectRef Name="Play_letter_names_O" ID="{0FDF7829-656B-41EC-9296-B7B89E7D2A03}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_letter_names_T" ID="{01DD1E34-C657-424F-8368-866F5C65604F}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_letter_names_M" ID="{A9EA169A-C701-43B9-936E-CFF1BBCDD331}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Letername_B_01" ID="{00FEBDAC-4793-43E4-B09E-D43107C45248}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_letter_names_K" ID="{729A4E82-11D8-4437-9FDE-C30BFBAE42C3}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_letter_names_W" ID="{AE33A95E-E8CC-44D6-A9D2-DF1C63FFB975}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_letter_names_Q" ID="{152EE2A9-572D-4626-829E-2E74B6B39D43}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
@@ -33,7 +31,6 @@
 						<ObjectRef Name="Play_letter_names_E" ID="{B4ADC2BA-B395-4C2A-9BFD-694EB06FEF9C}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_letter_names_X" ID="{BBDDD1F5-80E6-4C94-AF3B-593BD4FCA58A}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_letter_names_J" ID="{A007A594-E874-4D36-BAF3-C62ACC08E67A}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Letername_C_01" ID="{CE8D4C49-D514-4E05-B244-20BA0482FB7A}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_letter_names_F" ID="{B4DF7A37-8C08-4E20-A914-B95F47DAE3B5}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_letter_names_V" ID="{C62643FC-199D-4FA5-B726-C941B524E1C2}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
@@ -50,10 +47,15 @@
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Beach" ID="{321961B2-5220-43AC-81D8-F12D2A11BEE9}">
+					<PropertyList>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ObjectInclusionList>
-						<ObjectRef Name="letter_turn_in" ID="{1950D7FF-DDBB-40F5-8B96-5CEAC79DFD8D}" WorkUnitID="{8A4E718A-3B29-42EE-90DF-AB92C2D17169}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Beach" ID="{5CCD4DB7-9B54-41E1-8ABA-CBDFABAB0C49}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Chests" ID="{8A4E718A-3B29-42EE-90DF-AB92C2D17169}" WorkUnitID="{8A4E718A-3B29-42EE-90DF-AB92C2D17169}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_turn_in_result" ID="{740A07DF-96E5-40C2-9871-22B0D93017FA}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SFX_Chest_Close_01" ID="{B398D3DE-B933-42DD-BDAA-2E40C6F58805}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SFX_Chest_Open_01" ID="{E8587D8C-3066-42E3-B168-1A3D0A09832F}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SFX_Chest_Dig_Hit_01" ID="{EE38C420-7EDD-484E-B2BE-9A1BC07C8A19}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="chests_events" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -291,95 +291,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="New_Event" ID="{1899AB96-3B36-430D-B9B6-EA22E4466CA9}"/>
-						<Event Name="Play_DX_Pirate_ThatsLetterC_01" ID="{5BC0C69C-50EB-41FE-A60E-65D9704111A6}">
-							<ChildrenList>
-								<Action Name="" ID="{50AA50C0-1BC0-48F0-A85C-E757F2A0842A}" ShortID="624177760">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="DX_Pirate_ThatsLetterC_01" ID="{AD4107BE-9CDA-4F2D-821E-D132537D750F}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_DX_Pirate_FindMeC_01" ID="{60452999-D793-409E-B941-6C135321629F}">
-							<ChildrenList>
-								<Action Name="" ID="{11CD1774-A0F5-41BC-A8FC-3CA4799AAD78}" ShortID="104409184">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="DX_Pirate_FindMeC_01" ID="{C9A787D1-FCA8-48C1-ABFC-69A8CEDDC8AC}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_DX_Pirate_FindMeB_01" ID="{325938F8-0C9D-4D47-B99B-D60EFC0910A6}">
-							<ChildrenList>
-								<Action Name="" ID="{3D45C9C0-B64B-4542-8489-4D462F59391D}" ShortID="87665485">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="DX_Pirate_FindMeB_01" ID="{22037C0B-4DCB-455C-988B-AE03ED6A8FC6}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_DX_Pirate_StillLookingForC_01" ID="{20639D0C-6786-49FC-BA86-32E88646D1D6}">
-							<ChildrenList>
-								<Action Name="" ID="{E8BDCB68-13AC-4062-BC24-3CC0572BE8BC}" ShortID="327738481">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="DX_Pirate_StillLookingForC_01" ID="{754E609B-D76A-46C7-92C8-C524AAE1D389}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Correct_Letter_Found" ID="{E71FC2AE-84A1-4FC4-B355-128964420349}">
-							<ChildrenList>
-								<Action Name="" ID="{16B17059-0E2C-45F7-8BD2-7CBD39F24B79}" ShortID="742947647">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Correct Letter Found" ID="{D01ADA0E-8A06-4A7A-BD72-F0E287F6E37D}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_DX_Pirate_ThatsLetterA_01" ID="{5A7A2606-13D9-48F5-BEF0-EF7CE6EABC0F}">
-							<ChildrenList>
-								<Action Name="" ID="{F4961266-5542-4916-9CA3-FB9E54A52FC4}" ShortID="772776400">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="DX_Pirate_ThatsLetterA_01" ID="{C3F3E121-BA19-4F72-A917-C4005EE642E4}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_DX_Pirate_ThatsLetterB_01" ID="{651670EF-E225-4838-A22E-A6FDD2F03143}">
-							<ChildrenList>
-								<Action Name="" ID="{CF7DC780-DD90-4421-8CCB-85A0A5F7F1E2}" ShortID="53140964">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="DX_Pirate_ThatsLetterB_01" ID="{8AB83B41-7E75-481C-BC60-2137B66848E5}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Letername_C_01" ID="{CE8D4C49-D514-4E05-B244-20BA0482FB7A}">
-							<ChildrenList>
-								<Action Name="" ID="{818FF56C-8B6C-4A2B-BF17-9E6BEE2B7D58}" ShortID="435609741">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="DX_Letername_C_01" ID="{64CD414F-650B-4AA4-B322-ACE63543003F}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_SFX_Chest_Open_01" ID="{E8587D8C-3066-42E3-B168-1A3D0A09832F}">
 							<ChildrenList>
 								<Action Name="" ID="{2B277C37-E0FC-48DB-A371-6254B123F69E}" ShortID="628172189">
@@ -391,34 +302,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_DX_Pirate_FindMeA_01" ID="{BD10719A-02CD-404B-9C11-A0675300C8A1}">
-							<ChildrenList>
-								<Action Name="" ID="{15DAAC0C-C7E8-4F46-A4C6-B4598EFACE25}" ShortID="1026907212">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="DX_Pirate_FindMeA_01" ID="{FAC1CADB-A576-453C-ADAD-364EA775914A}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_SFX_CannonFire_01" ID="{DF61201E-3DAC-462F-9CED-9CC1F4871A25}">
 							<ChildrenList>
 								<Action Name="" ID="{E9C306C4-23B2-4F44-9145-2EAD7C34B74D}" ShortID="329741522">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_CannonFire_01" ID="{DAD4CA71-148E-49DA-83FA-93E378746971}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Letername_A_01" ID="{287D0551-E021-4085-87DE-BC9195A07CCC}">
-							<ChildrenList>
-								<Action Name="" ID="{04DE8ED3-C8C1-4EF0-8446-C0238AD064E8}" ShortID="224476787">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="DX_Letername_A_01" ID="{2105E8D5-4BAA-41DD-A40E-0B086612C125}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -490,24 +379,9 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Letername_B_01" ID="{00FEBDAC-4793-43E4-B09E-D43107C45248}">
-							<ChildrenList>
-								<Action Name="" ID="{2E3CBC28-2DBF-4088-BFB8-3DDC7626A55C}" ShortID="835387383">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="DX_Letername_B_01" ID="{6FDF51BF-B9AD-40BB-B4CF-4D167B3910B9}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="chests" ID="{206FD462-FFBA-4160-8BA2-3734A1596176}" ShortID="211305053">
-					<ChildrenList>
-						<WorkUnit Name="chests_events" ID="{B8A82DCB-D8ED-42DC-94EF-6FC3D3992775}" PersistMode="Reference"/>
-					</ChildrenList>
-				</Folder>
+				<WorkUnit Name="chests_events" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

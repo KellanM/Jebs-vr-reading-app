@@ -3,7 +3,7 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}" PersistMode="Standalone">
 			<ChildrenList>
-				<WorkUnit Name="beach_letter_states" ID="{C03D1771-2C1B-4219-80B4-C9B4D45B1D4E}" PersistMode="Reference"/>
+				<WorkUnit Name="beach_letter_states" ID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
