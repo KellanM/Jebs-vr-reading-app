@@ -9,9 +9,9 @@
 	</RootPaths>
 	<DialogueEvents>
 		<DialogueEvent Id="2262387833" Name="letter_turn_in" ObjectPath="\Dynamic Dialogue\Chests\letter_turn_in">
-			<Argument Id="710661739" Name="letter_state" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_state"/>
-			<Argument Id="642578536" Name="letter_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify"/>
-			<Argument Id="3350046007" Name="letter_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request"/>
+			<Argument Id="710661739" Name="letter_state" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state"/>
+			<Argument Id="642578536" Name="letter_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify"/>
+			<Argument Id="3350046007" Name="letter_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request"/>
 		</DialogueEvent>
 	</DialogueEvents>
 	<StreamedFiles/>
@@ -324,7 +324,7 @@
 				<Event Id="3515435268" Name="Play_DX_Pirate_ThatsLetterA_01" ObjectPath="\Events\Default Work Unit\Testing\Play_DX_Pirate_ThatsLetterA_01" DurationType="OneShot" DurationMin="5.683271" DurationMax="5.683271"/>
 				<Event Id="3617558033" Name="Play_DX_Pirate_ThatsLetterB_01" ObjectPath="\Events\Default Work Unit\Testing\Play_DX_Pirate_ThatsLetterB_01" DurationType="OneShot" DurationMin="7.459688" DurationMax="7.459688"/>
 				<Event Id="2088240986" Name="Play_DX_Pirate_ThatsLetterC_01" ObjectPath="\Events\Default Work Unit\Testing\Play_DX_Pirate_ThatsLetterC_01" DurationType="OneShot" DurationMin="9.962833" DurationMax="9.962833"/>
-				<Event Id="3261928562" Name="Play_letter_turn_in_result" ObjectPath="\Events\Default Work Unit\chests\Play_letter_turn_in_result" DurationType="OneShot" DurationMin="5.715270" DurationMax="13.594433"/>
+				<Event Id="3261928562" Name="Play_letter_turn_in_result" ObjectPath="\Events\Default Work Unit\chests\chests_events\Play_letter_turn_in_result" DurationType="OneShot" DurationMin="5.715270" DurationMax="13.594433"/>
 			</IncludedEvents>
 			<IncludedDialogueEvents>
 				<DialogueEvent Id="2262387833" Name="letter_turn_in" ObjectPath="\Dynamic Dialogue\Chests\letter_turn_in"/>
@@ -728,36 +728,36 @@
 				</File>
 			</IncludedMemoryFiles>
 			<StateGroups>
-				<StateGroup Id="642578536" Name="letter_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify">
+				<StateGroup Id="642578536" Name="letter_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\None"/>
-						<State Id="616268773" Name="a_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\a_identify"/>
-						<State Id="4149877012" Name="b_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\b_identify"/>
-						<State Id="615801387" Name="c_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\c_identify"/>
-						<State Id="822704874" Name="d_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\d_identify"/>
-						<State Id="2739495657" Name="e_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\e_identify"/>
-						<State Id="622822280" Name="f_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\f_identify"/>
-						<State Id="1026594175" Name="g_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\g_identify"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\None"/>
+						<State Id="616268773" Name="a_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\a_identify"/>
+						<State Id="4149877012" Name="b_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\b_identify"/>
+						<State Id="615801387" Name="c_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\c_identify"/>
+						<State Id="822704874" Name="d_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\d_identify"/>
+						<State Id="2739495657" Name="e_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\e_identify"/>
+						<State Id="622822280" Name="f_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\f_identify"/>
+						<State Id="1026594175" Name="g_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\g_identify"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="710661739" Name="letter_state" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_state">
+				<StateGroup Id="710661739" Name="letter_state" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_state\None"/>
-						<State Id="4126251273" Name="correct" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_state\correct"/>
-						<State Id="3691826278" Name="incorrect" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_state\incorrect"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\None"/>
+						<State Id="4126251273" Name="correct" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\correct"/>
+						<State Id="3691826278" Name="incorrect" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\incorrect"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="3350046007" Name="letter_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request">
+				<StateGroup Id="3350046007" Name="letter_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\None"/>
-						<State Id="3870699296" Name="a_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\a_request"/>
-						<State Id="270256323" Name="b_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\b_request"/>
-						<State Id="3915368578" Name="c_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\c_request"/>
-						<State Id="3564163789" Name="d_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\d_request"/>
-						<State Id="1916577556" Name="e_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\e_request"/>
-						<State Id="215271383" Name="f_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\f_request"/>
-						<State Id="1175714870" Name="g_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\g_request"/>
-						<State Id="2678637886" Name="random_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\random_request"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\None"/>
+						<State Id="3870699296" Name="a_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\a_request"/>
+						<State Id="270256323" Name="b_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\b_request"/>
+						<State Id="3915368578" Name="c_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\c_request"/>
+						<State Id="3564163789" Name="d_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\d_request"/>
+						<State Id="1916577556" Name="e_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\e_request"/>
+						<State Id="215271383" Name="f_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\f_request"/>
+						<State Id="1175714870" Name="g_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\g_request"/>
+						<State Id="2678637886" Name="random_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\random_request"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
