@@ -48,6 +48,23 @@ namespace AK
         static const AkUniqueID PLAY_SFX_CHEST_OPEN_01 = 1285693754U;
         static const AkUniqueID PLAY_SFX_POPLETTERBAD_01 = 3842358642U;
         static const AkUniqueID PLAY_SFX_POPLETTERGOOD_01 = 122831938U;
+        static const AkUniqueID SET_STATE_A_IDENTIFY = 3586137436U;
+        static const AkUniqueID SET_STATE_A_REQUEST = 3355553019U;
+        static const AkUniqueID SET_STATE_B_IDENTIFY = 2273117453U;
+        static const AkUniqueID SET_STATE_B_REQUEST = 3869419544U;
+        static const AkUniqueID SET_STATE_C_IDENTIFY = 2173814366U;
+        static const AkUniqueID SET_STATE_C_REQUEST = 1361500753U;
+        static const AkUniqueID SET_STATE_CORRECT = 2582429414U;
+        static const AkUniqueID SET_STATE_D_IDENTIFY = 2202624967U;
+        static const AkUniqueID SET_STATE_D_REQUEST = 970437422U;
+        static const AkUniqueID SET_STATE_E_IDENTIFY = 987058800U;
+        static const AkUniqueID SET_STATE_E_REQUEST = 2996851727U;
+        static const AkUniqueID SET_STATE_F_IDENTIFY = 2256942993U;
+        static const AkUniqueID SET_STATE_F_REQUEST = 2940092780U;
+        static const AkUniqueID SET_STATE_G_IDENTIFY = 2658181330U;
+        static const AkUniqueID SET_STATE_G_REQUEST = 3017026757U;
+        static const AkUniqueID SET_STATE_INCORRECT = 3973431821U;
+        static const AkUniqueID SET_STATE_RANDOM_REQUEST = 3992176551U;
     } // namespace EVENTS
 
     namespace STATES

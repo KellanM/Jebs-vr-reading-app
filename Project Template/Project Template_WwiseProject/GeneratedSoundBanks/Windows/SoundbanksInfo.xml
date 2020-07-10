@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -286,7 +286,7 @@
 			<ShortName>Beach</ShortName>
 			<Path>English(US)\Beach.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3261928562" Name="Play_letter_turn_in_result" ObjectPath="\Events\Default Work Unit\chests\Play_letter_turn_in_result" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="5.715270" DurationMax="13.594433">
+				<Event Id="3261928562" Name="Play_letter_turn_in_result" ObjectPath="\Events\Default Work Unit\chests_events\Play_letter_turn_in_result" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="5.715270" DurationMax="13.594433">
 					<IncludedMemoryFiles>
 						<File Id="31430241" Language="English(US)">
 							<ShortName>pirate_request_b\pirate_request_b-003.wav</ShortName>
@@ -825,38 +825,55 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3586137436" Name="Set_State_a_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_a_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3355553019" Name="Set_State_a_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_a_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2273117453" Name="Set_State_b_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_b_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3869419544" Name="Set_State_b_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_b_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2173814366" Name="Set_State_c_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_c_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1361500753" Name="Set_State_c_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_c_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2582429414" Name="Set_State_correct" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_correct" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2202624967" Name="Set_State_d_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_d_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="970437422" Name="Set_State_d_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_d_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="987058800" Name="Set_State_e_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_e_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2996851727" Name="Set_State_e_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_e_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2256942993" Name="Set_State_f_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_f_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2940092780" Name="Set_State_f_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_f_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2658181330" Name="Set_State_g_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_g_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3017026757" Name="Set_State_g_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_g_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3973431821" Name="Set_State_incorrect" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_incorrect" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3992176551" Name="Set_State_random_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_random_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<StateGroups>
-				<StateGroup Id="642578536" Name="letter_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify">
+				<StateGroup Id="642578536" Name="letter_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\None"/>
-						<State Id="616268773" Name="a_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\a_identify"/>
-						<State Id="4149877012" Name="b_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\b_identify"/>
-						<State Id="615801387" Name="c_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\c_identify"/>
-						<State Id="822704874" Name="d_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\d_identify"/>
-						<State Id="2739495657" Name="e_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\e_identify"/>
-						<State Id="622822280" Name="f_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\f_identify"/>
-						<State Id="1026594175" Name="g_identify" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_identify\g_identify"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\None"/>
+						<State Id="616268773" Name="a_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\a_identify"/>
+						<State Id="4149877012" Name="b_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\b_identify"/>
+						<State Id="615801387" Name="c_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\c_identify"/>
+						<State Id="822704874" Name="d_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\d_identify"/>
+						<State Id="2739495657" Name="e_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\e_identify"/>
+						<State Id="622822280" Name="f_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\f_identify"/>
+						<State Id="1026594175" Name="g_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\g_identify"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="710661739" Name="letter_state" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_state">
+				<StateGroup Id="710661739" Name="letter_state" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_state\None"/>
-						<State Id="4126251273" Name="correct" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_state\correct"/>
-						<State Id="3691826278" Name="incorrect" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_state\incorrect"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\None"/>
+						<State Id="4126251273" Name="correct" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\correct"/>
+						<State Id="3691826278" Name="incorrect" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\incorrect"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="3350046007" Name="letter_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request">
+				<StateGroup Id="3350046007" Name="letter_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request">
 					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\None"/>
-						<State Id="3870699296" Name="a_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\a_request"/>
-						<State Id="270256323" Name="b_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\b_request"/>
-						<State Id="3915368578" Name="c_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\c_request"/>
-						<State Id="3564163789" Name="d_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\d_request"/>
-						<State Id="1916577556" Name="e_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\e_request"/>
-						<State Id="215271383" Name="f_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\f_request"/>
-						<State Id="1175714870" Name="g_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\g_request"/>
-						<State Id="2678637886" Name="random_request" ObjectPath="\States\Default Work Unit\beach_letter_result\letter_request\random_request"/>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\None"/>
+						<State Id="3870699296" Name="a_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\a_request"/>
+						<State Id="270256323" Name="b_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\b_request"/>
+						<State Id="3915368578" Name="c_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\c_request"/>
+						<State Id="3564163789" Name="d_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\d_request"/>
+						<State Id="1916577556" Name="e_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\e_request"/>
+						<State Id="215271383" Name="f_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\f_request"/>
+						<State Id="1175714870" Name="g_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\g_request"/>
+						<State Id="2678637886" Name="random_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\random_request"/>
 					</States>
 				</StateGroup>
 			</StateGroups>

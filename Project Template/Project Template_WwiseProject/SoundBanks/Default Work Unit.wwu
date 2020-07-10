@@ -51,10 +51,11 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_letter_turn_in_result" ID="{740A07DF-96E5-40C2-9871-22B0D93017FA}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_letter_turn_in_result" ID="{740A07DF-96E5-40C2-9871-22B0D93017FA}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_Chest_Close_01" ID="{B398D3DE-B933-42DD-BDAA-2E40C6F58805}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_Chest_Open_01" ID="{E8587D8C-3066-42E3-B168-1A3D0A09832F}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_SFX_Chest_Dig_Hit_01" ID="{EE38C420-7EDD-484E-B2BE-9A1BC07C8A19}" WorkUnitID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="chests_events" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" SchemaVersion="97" RootDocumentID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}">
+	<Events>
+		<WorkUnit Name="chests_events" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" OwnerID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Set_State_a_identify" ID="{ECCC46E0-69BE-4E8A-9940-9F9848934EB3}">
+					<ChildrenList>
+						<Action Name="" ID="{C093B70B-BFCE-4C9F-9CD3-3418CBDF0932}" ShortID="666630689">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="a_identify" ID="{1CC70001-2240-4E41-829E-95D25D452C00}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_f_request" ID="{BA956F87-7B4D-4624-8B00-B9B0E5B9B992}">
+					<ChildrenList>
+						<Action Name="" ID="{6178D8A2-B316-4820-B2D0-21C849155BD5}" ShortID="268920109">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="f_request" ID="{32CC86F2-3B23-4AA2-9F36-BD38602F54C0}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_b_identify" ID="{4E48F354-E4E4-401C-B8F7-240662E3DF5D}">
+					<ChildrenList>
+						<Action Name="" ID="{0F1F5CCC-7882-44E1-A9CA-002E9B018D7B}" ShortID="67971205">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="b_identify" ID="{3F001E55-BC62-4537-8787-80D656F16F18}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_e_request" ID="{43F2352C-2475-4D17-AE1A-0D8B5C25871E}">
+					<ChildrenList>
+						<Action Name="" ID="{89171B93-E0A0-4212-9E39-5EEC38ECF1C1}" ShortID="200795829">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="e_request" ID="{4F12732B-4174-4AC5-AFFF-C5231E087ACE}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_d_request" ID="{505EB362-4369-45FD-88A2-F4EDBAEF1256}">
+					<ChildrenList>
+						<Action Name="" ID="{4124069C-B453-401E-B47B-8B8CF9D6C103}" ShortID="687917211">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="d_request" ID="{79C6C00B-76CD-4322-AD7D-29A7031D37A1}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_e_identify" ID="{57140A78-DEF0-4072-9160-C19BDE22E248}">
+					<ChildrenList>
+						<Action Name="" ID="{12E0E79A-270C-4D87-A274-3ADA63DD0A9D}" ShortID="199874664">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="e_identify" ID="{38BAB3A6-E811-49AE-9EED-3B3E28D4D5BF}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_b_request" ID="{7F1166E5-2219-4A8F-87CD-B6DC39E562A6}">
+					<ChildrenList>
+						<Action Name="" ID="{E81CB5A4-DDF2-4E80-9189-769A3674603D}" ShortID="710980104">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="b_request" ID="{6BE53570-5BAF-4E1E-8458-9F7FDCC16258}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_a_request" ID="{A4359BA3-89C3-4778-BB49-625EBBF91ADF}">
+					<ChildrenList>
+						<Action Name="" ID="{F90B8F3B-43B5-4E40-8020-48C287355818}" ShortID="595352713">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="a_request" ID="{8A756C11-F588-460D-9D68-15B5EC6CF79E}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_f_identify" ID="{3806190F-2323-4140-80BE-3F31D94F0136}">
+					<ChildrenList>
+						<Action Name="" ID="{598711E9-533C-4056-A93F-C61495FEFDC1}" ShortID="231494650">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="f_identify" ID="{4EA0A3BD-2F21-499C-A1DF-3067FED665C3}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_g_identify" ID="{1E02F249-200D-4B49-A94A-189F2F069D32}">
+					<ChildrenList>
+						<Action Name="" ID="{6D1DD9C9-2155-48B0-A9F4-3F96DE1802CE}" ShortID="103414374">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="g_identify" ID="{849C1A17-6DFE-485B-B32E-898FE01AEEEB}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_d_identify" ID="{D2DA8A1B-C6A5-406F-851E-000AD88790A9}">
+					<ChildrenList>
+						<Action Name="" ID="{97CEEFD8-9B24-433A-B4B4-78852191936C}" ShortID="980899202">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="d_identify" ID="{E5E7350E-019B-4633-A1AA-FBC3F11D9A75}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_letter_turn_in_result" ID="{740A07DF-96E5-40C2-9871-22B0D93017FA}">
+					<ChildrenList>
+						<Action Name="" ID="{1460324D-9702-4196-93A7-FD63E9403B9A}" ShortID="87596398">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="letter_turn_in_result" ID="{14132A2A-1940-435B-A363-364B958916CD}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_c_request" ID="{4EF52441-76E9-4109-A190-DA7AFB2F0173}">
+					<ChildrenList>
+						<Action Name="" ID="{F67AD79C-E822-4349-9984-A87660BE10CC}" ShortID="322818984">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="c_request" ID="{C5FCBFCE-FFDE-4F44-A957-C8825B72FA97}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_c_identify" ID="{89EE8C51-D53A-486F-9A73-DFF2B6E00901}">
+					<ChildrenList>
+						<Action Name="" ID="{BA4DB2C0-B61D-4AF5-AE21-AB7B0255B315}" ShortID="487047186">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="c_identify" ID="{10D59C7E-D6D4-48E9-816C-3AFF5DDFA02E}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_correct" ID="{73C9F0D1-2CFF-4054-A700-69449A6C1ABA}">
+					<ChildrenList>
+						<Action Name="" ID="{A0EB2EA6-D39A-4571-912D-F3D00A98B35D}" ShortID="828057970">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="correct" ID="{FD78466A-B8CF-441C-9AAA-A0C38646555B}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_random_request" ID="{02FFB194-236B-4AF1-BB75-412078A984E4}">
+					<ChildrenList>
+						<Action Name="" ID="{B8FFCBD4-FAFD-43E8-863E-946136528975}" ShortID="802014365">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="random_request" ID="{7B34A2F0-61FE-4B89-A116-80F76B439830}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_incorrect" ID="{4E202C3A-0EAD-4EA2-9434-94E4D3CC4D51}">
+					<ChildrenList>
+						<Action Name="" ID="{92E6B6FF-7659-446E-9E81-B09C2E44DBCA}" ShortID="165432457">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="incorrect" ID="{EC69AA65-74FB-4690-A594-4CE04D26DEEA}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_g_request" ID="{FB2B6C4B-D16B-4E57-ADD4-D1706578A1FF}">
+					<ChildrenList>
+						<Action Name="" ID="{09690A58-ACD2-4C0D-8823-CAF44BB0D16B}" ShortID="6889759">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="g_request" ID="{87028E47-CE46-47E5-B605-3BA1F0AD515C}" WorkUnitID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
