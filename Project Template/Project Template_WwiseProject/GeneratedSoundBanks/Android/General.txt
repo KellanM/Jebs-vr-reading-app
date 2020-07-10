@@ -1,7 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
-	80937159	Play_Letername_C_01			\Default Work Unit\Play_Letername_C_01	
-	459954740	Play__Crab_Fight_Music			\Default Work Unit\Play__Crab_Fight_Music	
-	790832349	Play_Letername_A_01			\Default Work Unit\Play_Letername_A_01	
+	80937159	Play_Letername_C_01			\Default Work Unit\Testing\Play_Letername_C_01	
+	459954740	Play__Crab_Fight_Music			\Default Work Unit\Testing\Play__Crab_Fight_Music	
+	790832349	Play_Letername_A_01			\Default Work Unit\Testing\Play_Letername_A_01	
 	1990152928	Play_letter_names_V			\Default Work Unit\Testing\Play_letter_names_V	
 	1990152929	Play_letter_names_W			\Default Work Unit\Testing\Play_letter_names_W	
 	1990152930	Play_letter_names_T			\Default Work Unit\Testing\Play_letter_names_T	
@@ -28,8 +28,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	1990152957	Play_letter_names_K			\Default Work Unit\Testing\Play_letter_names_K	
 	1990152958	Play_letter_names_H			\Default Work Unit\Testing\Play_letter_names_H	
 	1990152959	Play_letter_names_I			\Default Work Unit\Testing\Play_letter_names_I	
-	2846587504	Play_Letername_B_01			\Default Work Unit\Play_Letername_B_01	
-	3776612809	Play_Example01			\Default Work Unit\Play_Example01	
+	2846587504	Play_Letername_B_01			\Default Work Unit\Testing\Play_Letername_B_01	
+	3776612809	Play_Example01			\Default Work Unit\Testing\Play_Example01	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	120590934	letter_names_N	C:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Android\SFX\letter_names_N_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Testing\Letter Names\letter_names_N		180204
