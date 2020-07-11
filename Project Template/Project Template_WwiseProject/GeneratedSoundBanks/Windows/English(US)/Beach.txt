@@ -5,7 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2414237601	Play_DX_Pirate_FindMeC_01			\Default Work Unit\Testing\Play_DX_Pirate_FindMeC_01	
 	2761178770	Play_Correct_Letter_Found			\Default Work Unit\Testing\Play_Correct_Letter_Found	
 	3042798378	Play_DX_Pirate_FindMeB_01			\Default Work Unit\Testing\Play_DX_Pirate_FindMeB_01	
-	3261928562	Play_letter_turn_in_result			\Default Work Unit\chests\Play_letter_turn_in_result	
+	3261928562	Play_letter_turn_in_result			\Default Work Unit\chests\chests_events\Play_letter_turn_in_result	
 	3515435268	Play_DX_Pirate_ThatsLetterA_01			\Default Work Unit\Testing\Play_DX_Pirate_ThatsLetterA_01	
 	3617558033	Play_DX_Pirate_ThatsLetterB_01			\Default Work Unit\Testing\Play_DX_Pirate_ThatsLetterB_01	
 
@@ -13,9 +13,9 @@ Dialogue Event	ID	Name			Wwise Object Path	Notes
 	2262387833	letter_turn_in			\Chests\letter_turn_in	
 
 State Group	ID	Name			Wwise Object Path	Notes
-	642578536	letter_identify			\Default Work Unit\beach_letter_result\letter_identify	
-	710661739	letter_state			\Default Work Unit\beach_letter_result\letter_state	
-	3350046007	letter_request			\Default Work Unit\beach_letter_result\letter_request	
+	642578536	letter_identify			\Default Work Unit\beach_letter_states\letter_identify	
+	710661739	letter_state			\Default Work Unit\beach_letter_states\letter_state	
+	3350046007	letter_request			\Default Work Unit\beach_letter_states\letter_request	
 
 State	ID	Name	State Group			Notes
 	615801387	c_identify	letter_identify			
