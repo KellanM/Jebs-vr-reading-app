@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	37127528	Play_SFX_Chest_Dig_Hit_01			\Default Work Unit\Testing\Play_SFX_Chest_Dig_Hit_01	
+	283731184	Play_tutorial			\Default Work Unit\chests_events\Play_tutorial	
 	970437422	Set_State_d_request			\Default Work Unit\chests_events\Set_State_d_request	
 	987058800	Set_State_e_identify			\Default Work Unit\chests_events\Set_State_e_identify	
 	1285693754	Play_SFX_Chest_Open_01			\Default Work Unit\Testing\Play_SFX_Chest_Open_01	
