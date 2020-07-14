@@ -431,6 +431,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_tutorial" ID="{3073A525-F992-494A-919B-76A60BBF87D6}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
