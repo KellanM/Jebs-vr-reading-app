@@ -252,7 +252,18 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_tutorial" ID="{3073A525-F992-494A-919B-76A60BBF87D6}"/>
+				<Event Name="PlayBeachAmbience" ID="{3CC70503-9329-4269-89C7-1BA976005766}">
+					<ChildrenList>
+						<Action Name="" ID="{4723AE6B-026E-4347-B56A-824D21D1B855}" ShortID="393203949">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AmbBeach" ID="{219F5FBE-D115-43CA-97EE-355ED2AC3EDE}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayAmbWater" ID="{7BAA7735-28F9-498F-BD5D-ED4863551A19}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

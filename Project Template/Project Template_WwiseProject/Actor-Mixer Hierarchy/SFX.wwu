@@ -344,11 +344,23 @@
 										</Sound>
 									</ChildrenList>
 								</ActorMixer>
-								<RandomSequenceContainer Name="amb_beack_background_loop" ID="{02A4A47E-7AF7-44E4-A51A-D70342F17CF9}" ShortID="510172298">
+								<BlendContainer Name="AmbBeach" ID="{219F5FBE-D115-43CA-97EE-355ED2AC3EDE}" ShortID="963061315">
 									<PropertyList>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E972CC48-9369-4CFA-AE08-18206A2E4013}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{33B91E61-356B-4B62-9047-66907DBCEEEE}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -359,7 +371,550 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="amb_beach_background_loop-002" ID="{5EDF7F73-A3F6-4B6E-91F9-C7CA30BBD8D6}" ShortID="371719678">
+										<RandomSequenceContainer Name="AmbBeachLoop" ID="{B0DD8B91-EBD3-49C1-A54F-1A8C5D8E05F7}" ShortID="44564924">
+											<PropertyList>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C7A396CE-F893-4C5C-927D-3C0B7B7EAEF0}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AmbBeachLoop-001" ID="{E108EEB5-299A-4688-8CDB-E6DA40C893FB}" ShortID="24207585">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{C60790C0-59CB-4932-8486-091DD58A88BC}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AmbBeachLoop-001" ID="{1CE1BF50-17C1-45E1-B0AC-EB025A62A8FC}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0409385617214043"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0716424830124573"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.0716424830124575"/>
+																<Property Name="LoopEnd" Type="Real64" Value="7.94208097395244"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0614078425821065"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.98301953567384"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AmbBeachLoop-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="953780778"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AmbBeachLoop-001" ID="{1CE1BF50-17C1-45E1-B0AC-EB025A62A8FC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AmbBeachLoop-002" ID="{CD64F980-4B21-4112-84BE-B4ABA0DADE44}" ShortID="728761807">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{1014EA10-0FB3-4E69-BE23-C260EB8DF326}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AmbBeachLoop-002" ID="{F78C5D45-DFA8-4ABC-81D1-00A0AAF030AB}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0572982729331823"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0763976972442428"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.0286491364665912"/>
+																<Property Name="LoopEnd" Type="Real64" Value="7.37237778406946"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.40102692053606"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AmbBeachLoop-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="853880796"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AmbBeachLoop-002" ID="{F78C5D45-DFA8-4ABC-81D1-00A0AAF030AB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AmbBeachLoop-003" ID="{371AA28E-BCC0-442D-A35D-DF0335E4D8CC}" ShortID="303690099">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{E2F7C5F1-8055-4E6A-B4CF-F7CC5941F0E8}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AmbBeachLoop-003" ID="{9C80FEED-2EC6-4D0D-B196-5ED7284C42C3}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.105865656851642"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.211731313703284"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.0529328284258211"/>
+																<Property Name="LoopEnd" Type="Real64" Value="14.503594988675"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="14.5918163693847"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AmbBeachLoop-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="626398858"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AmbBeachLoop-003" ID="{9C80FEED-2EC6-4D0D-B196-5ED7284C42C3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AmbBeachLoop-004" ID="{50FEBF54-AFFC-4F5A-B471-D998C00063FC}" ShortID="750507194">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{B32D0B8E-1026-4AD5-A2DE-D5322CB937C3}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AmbBeachLoop-004" ID="{FCC69A59-A276-4C0F-9EF3-40193AB7DC21}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.179769535673839"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2.06734966024915"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.0898847678369196"/>
+																<Property Name="LoopEnd" Type="Real64" Value="25.3475045300113"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AmbBeachLoop-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="902816222"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AmbBeachLoop-004" ID="{FCC69A59-A276-4C0F-9EF3-40193AB7DC21}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="AmbBeachBird_01" ID="{928D4425-5C85-4277-AF1D-36DE99DD868B}" ShortID="427530138">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>16</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8B8CA6D0-AACC-47B7-89EA-C64E7DC1D2F8}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{0CCFB976-A558-438A-9B63-6D0D9146324B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="884"/>
+																	<Property Name="Min" Type="Real64" Value="-808"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1A6BED24-E228-47F3-A8E9-177F5B81E324}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="4"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-5</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A335BF75-FB04-4C39-A88D-A62D99F84637}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="6"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AmbBeachBird-001" ID="{AEAF3F4B-2070-4F71-8A3D-A2B5054E494A}" ShortID="416584233">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{B093177D-0FCF-47BF-AD7E-E36827B19667}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="3"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{089F83CB-A9F2-4CD2-B34A-895FA83A967F}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AmbBeachBird-001" ID="{29C62B6A-64A2-4370-BF3F-78C7F288DA52}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.109127972819932"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.392860702151755"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.589291053227633"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.05956058890146"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AmbBeachBird-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="249515089"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AmbBeachBird-001" ID="{29C62B6A-64A2-4370-BF3F-78C7F288DA52}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AmbBeachBird-002" ID="{9DEA7861-2A38-410D-A0D9-C32BA0598E3E}" ShortID="80484941">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{C746FF04-3C56-4317-A856-0023A95B5C0A}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="3"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{F8E6F656-B8FD-46A3-B1A6-F2754BA84E3A}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AmbBeachBird-001" ID="{9BA7D411-3267-49E0-A060-321FA204D76B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.109127972819932"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.392860702151755"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="4.95440996602492"/>
+																<Property Name="TrimEnd" Type="Real64" Value="9.36318006795015"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AmbBeachBird-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="423316506"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AmbBeachBird-001" ID="{9BA7D411-3267-49E0-A060-321FA204D76B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AmbBeachBird-003" ID="{74C83FBB-9E94-4C23-97C5-A702D1B620A1}" ShortID="336981160">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{AAE869E6-0A8E-4A8E-B742-B26278F5F0EE}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="3"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{A61098BA-6DCA-43D1-A8F2-1263D5F27B7C}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AmbBeachBird-001" ID="{43ECF12C-CCDF-426D-B698-AD27E704C835}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.109127972819932"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.392860702151755"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="9.55961041902606"/>
+																<Property Name="TrimEnd" Type="Real64" Value="11.6330419026047"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AmbBeachBird-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="240164511"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AmbBeachBird-001" ID="{43ECF12C-CCDF-426D-B698-AD27E704C835}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AmbBeachBird-004" ID="{E6902D37-1839-45DD-A5FC-32B445D9BD84}" ShortID="218513882">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{116D4827-D772-45FB-8A02-2A4A35CF50C1}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="4"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AmbBeachBird-001" ID="{C7B48940-A729-4BFE-8121-C86A3E40690A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.349209513023783"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.392860702151755"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="14.492194790487"/>
+																<Property Name="TrimEnd" Type="Real64" Value="17.5041268403171"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AmbBeachBird-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="373369330"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AmbBeachBird-001" ID="{C7B48940-A729-4BFE-8121-C86A3E40690A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="AmbBeachBirds_02" ID="{10CB2EA3-D8EA-4BD8-BBD2-5BDFB22C69D5}" ShortID="57271883">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>16</Value>
+													</ValueList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F6BD3003-0969-41B5-A5FF-AA3A022CDEC9}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{715EABD1-6E95-4F32-8F0F-7E7E33459D4C}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="884"/>
+																	<Property Name="Min" Type="Real64" Value="-808"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{10F28BFC-0E27-4964-85EF-68432C250B8E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="4"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{09993DBE-0233-47A6-9100-B1B35F81A88B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="6"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
@@ -369,86 +924,253 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="amb_beach_background_loop-002" ID="{D91E381C-5C11-4548-BCB4-7AD09836F1D4}">
-													<Language>SFX</Language>
-													<AudioFile>amb_beach_background_loop-002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="843409113"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="AmbBeachBird-005" ID="{BFE7F2CE-11D7-452E-A98B-E98DDAFEFDA9}" ShortID="98890236">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{B31DAEB9-6AAB-489F-9822-A8672F06E891}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="3"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AmbBeachBird-002" ID="{6EC8241A-B3FF-4CBB-B66F-7924DBD43EB3}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.225730464326161"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.841359003397508"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.39542468856172"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.34491506228766"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AmbBeachBird-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="48568839"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AmbBeachBird-002" ID="{6EC8241A-B3FF-4CBB-B66F-7924DBD43EB3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AmbBeachBird-006" ID="{EB3B57F8-D3C2-4849-94FF-677F86A70663}" ShortID="859878509">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{4F3357FE-18E1-47E3-B44C-D7A75C9BA48E}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="3"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AmbBeachBird-002" ID="{2EFB05EC-7F10-4547-9198-CBE11C3CCB2A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.225730464326161"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.841359003397508"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.56117780294451"/>
+																<Property Name="TrimEnd" Type="Real64" Value="7.92108720271801"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AmbBeachBird-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="706327664"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AmbBeachBird-002" ID="{2EFB05EC-7F10-4547-9198-CBE11C3CCB2A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AmbBeachBird-007" ID="{195CF46E-7A74-47F8-99C1-B8480A2ACE62}" ShortID="482077982">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{7842CAE7-60CB-4413-B6DA-20A47523BCDE}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AmbBeachBird-002" ID="{28571CBB-376F-4E8E-BAE1-D857F7A6B914}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.225730464326161"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.841359003397508"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.90056625141563"/>
+																<Property Name="TrimEnd" Type="Real64" Value="11.5122536806342"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AmbBeachBird-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="73427262"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AmbBeachBird-002" ID="{28571CBB-376F-4E8E-BAE1-D857F7A6B914}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AmbBeachBird-008" ID="{37686A6E-90F1-4439-A36F-8BD50FD11C53}" ShortID="159253908">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{811CD2B0-D828-493E-A9DA-8BD5EC48608D}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="2"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AmbBeachBird-002" ID="{353821D9-8F3C-485D-BCED-BBBEBA90B616}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.225730464326161"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.841359003397508"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="12.805073612684"/>
+																<Property Name="TrimEnd" Type="Real64" Value="16.9708267270668"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AmbBeachBird-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="701287292"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AmbBeachBird-002" ID="{353821D9-8F3C-485D-BCED-BBBEBA90B616}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_beach_background_loop-002" ID="{D91E381C-5C11-4548-BCB4-7AD09836F1D4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_beach_background_loop-003" ID="{D6CDB2DD-A393-4762-8D06-A19EE78F7E3B}" ShortID="502711479">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_beach_background_loop-003" ID="{FE34CBD3-FE87-4913-A0D1-DE155C20AA5A}">
-													<Language>SFX</Language>
-													<AudioFile>amb_beach_background_loop-003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="482026619"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_beach_background_loop-003" ID="{FE34CBD3-FE87-4913-A0D1-DE155C20AA5A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_beach_background_loop-001" ID="{326C7DC4-0685-46B6-B9E6-9981B345980D}" ShortID="669490748">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_beach_background_loop-001" ID="{609278F0-B201-4440-8CB6-CDEFF12D6BAA}">
-													<Language>SFX</Language>
-													<AudioFile>amb_beach_background_loop-001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="146513308"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_beach_background_loop-001" ID="{609278F0-B201-4440-8CB6-CDEFF12D6BAA}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="amb_beach_background_loop-004" ID="{E19F2674-4C50-4AB3-A940-4322DE7AF098}" ShortID="1058207176">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="amb_beach_background_loop-004" ID="{C4976D5A-DC21-400E-ACE0-E04C7517ED8A}">
-													<Language>SFX</Language>
-													<AudioFile>amb_beach_background_loop-004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="680454472"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="amb_beach_background_loop-004" ID="{C4976D5A-DC21-400E-ACE0-E04C7517ED8A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
 									</ChildrenList>
-								</RandomSequenceContainer>
+									<BlendTrackList>
+										<BlendTrack Name="New Blend Track" ID="{5B73BAA7-AAC9-4E56-8E19-2B509AB98F35}" ShortID="388701445"/>
+									</BlendTrackList>
+								</BlendContainer>
+								<Sound Name="AmbBeachWater" ID="{81304FDA-30DA-4262-8C94-D1C14EE17BEB}" ShortID="21675176">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F1E198A5-D484-49F7-A212-5E1C9D2F2893}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AmbBeachWater" ID="{E1C38CE0-6CB8-4740-8C74-0218820FA27C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="1.05700887127218"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.924882762363154"/>
+												<Property Name="LoopEnd" Type="Real64" Value="114.421210315213"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="114.81758864194"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AmbBeachWater.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="476723056"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AmbBeachWater" ID="{E1C38CE0-6CB8-4740-8C74-0218820FA27C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
