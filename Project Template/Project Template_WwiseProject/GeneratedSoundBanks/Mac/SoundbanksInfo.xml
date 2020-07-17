@@ -801,27 +801,66 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1345257814" Name="Play_SFX_Chest_Close_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Close_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742">
+				<Event Id="1345257814" Name="Play_SFX_Chest_Close_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Close_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
+				<Event Id="37127528" Name="Play_SFX_Chest_Dig_Hit_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Dig_Hit_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.107143" DurationMax="1.107143"/>
+				<Event Id="1285693754" Name="Play_SFX_Chest_Open_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Open_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
+				<Event Id="401291550" Name="PlayAmbWater" ObjectPath="\Events\Default Work Unit\chests_events\PlayAmbWater" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="861371255" Language="SFX">
-							<ShortName>SFX_Chest_Close_01.wav</ShortName>
-							<Path>SFX\SFX_Chest_Close_01_10C4C929.wem</Path>
+						<File Id="476723056" Language="SFX">
+							<ShortName>AmbBeachWater.wav</ShortName>
+							<Path>SFX\AmbBeachWater_DB5432DE.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="37127528" Name="Play_SFX_Chest_Dig_Hit_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Dig_Hit_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.107143" DurationMax="1.107143">
+				<Event Id="4080469328" Name="PlayBeachAmbience" ObjectPath="\Events\Default Work Unit\chests_events\PlayBeachAmbience" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="133787045" Language="SFX">
-							<ShortName>SFX_Chest_Dig_Hit_01.wav</ShortName>
-							<Path>SFX\SFX_Chest_Dig_Hit_01_10C4C929.wem</Path>
+						<File Id="48568839" Language="SFX">
+							<ShortName>AmbBeachBird-002.wav</ShortName>
+							<Path>SFX\AmbBeachBird-002_3378C44C.wem</Path>
 						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1285693754" Name="Play_SFX_Chest_Open_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Open_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742">
-					<IncludedMemoryFiles>
-						<File Id="273400121" Language="SFX">
-							<ShortName>SFX_Chest_Open_01.wav</ShortName>
-							<Path>SFX\SFX_Chest_Open_01_10C4C929.wem</Path>
+						<File Id="73427262" Language="SFX">
+							<ShortName>AmbBeachBird-002.wav</ShortName>
+							<Path>SFX\AmbBeachBird-002_2A162123.wem</Path>
+						</File>
+						<File Id="240164511" Language="SFX">
+							<ShortName>AmbBeachBird-001.wav</ShortName>
+							<Path>SFX\AmbBeachBird-001_8F4AB080.wem</Path>
+						</File>
+						<File Id="249515089" Language="SFX">
+							<ShortName>AmbBeachBird-001.wav</ShortName>
+							<Path>SFX\AmbBeachBird-001_6C81B3A4.wem</Path>
+						</File>
+						<File Id="373369330" Language="SFX">
+							<ShortName>AmbBeachBird-001.wav</ShortName>
+							<Path>SFX\AmbBeachBird-001_83583D98.wem</Path>
+						</File>
+						<File Id="423316506" Language="SFX">
+							<ShortName>AmbBeachBird-001.wav</ShortName>
+							<Path>SFX\AmbBeachBird-001_5DD3F01E.wem</Path>
+						</File>
+						<File Id="626398858" Language="SFX">
+							<ShortName>AmbBeachLoop-003.wav</ShortName>
+							<Path>SFX\AmbBeachLoop-003_B2976F12.wem</Path>
+						</File>
+						<File Id="701287292" Language="SFX">
+							<ShortName>AmbBeachBird-002.wav</ShortName>
+							<Path>SFX\AmbBeachBird-002_7168AC5D.wem</Path>
+						</File>
+						<File Id="706327664" Language="SFX">
+							<ShortName>AmbBeachBird-002.wav</ShortName>
+							<Path>SFX\AmbBeachBird-002_8A62AFEC.wem</Path>
+						</File>
+						<File Id="853880796" Language="SFX">
+							<ShortName>AmbBeachLoop-002.wav</ShortName>
+							<Path>SFX\AmbBeachLoop-002_0EEED308.wem</Path>
+						</File>
+						<File Id="902816222" Language="SFX">
+							<ShortName>AmbBeachLoop-004.wav</ShortName>
+							<Path>SFX\AmbBeachLoop-004_B184AD94.wem</Path>
+						</File>
+						<File Id="953780778" Language="SFX">
+							<ShortName>AmbBeachLoop-001.wav</ShortName>
+							<Path>SFX\AmbBeachLoop-001_418BA3C0.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -843,6 +882,72 @@
 				<Event Id="3973431821" Name="Set_State_incorrect" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_incorrect" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3992176551" Name="Set_State_random_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_random_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="48568839" Language="SFX">
+					<ShortName>AmbBeachBird-002.wav</ShortName>
+					<Path>SFX\AmbBeachBird-002_3378C44C.wem</Path>
+				</File>
+				<File Id="73427262" Language="SFX">
+					<ShortName>AmbBeachBird-002.wav</ShortName>
+					<Path>SFX\AmbBeachBird-002_2A162123.wem</Path>
+				</File>
+				<File Id="133787045" Language="SFX">
+					<ShortName>SFX_Chest_Dig_Hit_01.wav</ShortName>
+					<Path>SFX\SFX_Chest_Dig_Hit_01_10C4C929.wem</Path>
+				</File>
+				<File Id="240164511" Language="SFX">
+					<ShortName>AmbBeachBird-001.wav</ShortName>
+					<Path>SFX\AmbBeachBird-001_8F4AB080.wem</Path>
+				</File>
+				<File Id="249515089" Language="SFX">
+					<ShortName>AmbBeachBird-001.wav</ShortName>
+					<Path>SFX\AmbBeachBird-001_6C81B3A4.wem</Path>
+				</File>
+				<File Id="273400121" Language="SFX">
+					<ShortName>SFX_Chest_Open_01.wav</ShortName>
+					<Path>SFX\SFX_Chest_Open_01_10C4C929.wem</Path>
+				</File>
+				<File Id="373369330" Language="SFX">
+					<ShortName>AmbBeachBird-001.wav</ShortName>
+					<Path>SFX\AmbBeachBird-001_83583D98.wem</Path>
+				</File>
+				<File Id="423316506" Language="SFX">
+					<ShortName>AmbBeachBird-001.wav</ShortName>
+					<Path>SFX\AmbBeachBird-001_5DD3F01E.wem</Path>
+				</File>
+				<File Id="476723056" Language="SFX">
+					<ShortName>AmbBeachWater.wav</ShortName>
+					<Path>SFX\AmbBeachWater_DB5432DE.wem</Path>
+				</File>
+				<File Id="626398858" Language="SFX">
+					<ShortName>AmbBeachLoop-003.wav</ShortName>
+					<Path>SFX\AmbBeachLoop-003_B2976F12.wem</Path>
+				</File>
+				<File Id="701287292" Language="SFX">
+					<ShortName>AmbBeachBird-002.wav</ShortName>
+					<Path>SFX\AmbBeachBird-002_7168AC5D.wem</Path>
+				</File>
+				<File Id="706327664" Language="SFX">
+					<ShortName>AmbBeachBird-002.wav</ShortName>
+					<Path>SFX\AmbBeachBird-002_8A62AFEC.wem</Path>
+				</File>
+				<File Id="853880796" Language="SFX">
+					<ShortName>AmbBeachLoop-002.wav</ShortName>
+					<Path>SFX\AmbBeachLoop-002_0EEED308.wem</Path>
+				</File>
+				<File Id="861371255" Language="SFX">
+					<ShortName>SFX_Chest_Close_01.wav</ShortName>
+					<Path>SFX\SFX_Chest_Close_01_10C4C929.wem</Path>
+				</File>
+				<File Id="902816222" Language="SFX">
+					<ShortName>AmbBeachLoop-004.wav</ShortName>
+					<Path>SFX\AmbBeachLoop-004_B184AD94.wem</Path>
+				</File>
+				<File Id="953780778" Language="SFX">
+					<ShortName>AmbBeachLoop-001.wav</ShortName>
+					<Path>SFX\AmbBeachLoop-001_418BA3C0.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 			<StateGroups>
 				<StateGroup Id="642578536" Name="letter_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify">
 					<States>
