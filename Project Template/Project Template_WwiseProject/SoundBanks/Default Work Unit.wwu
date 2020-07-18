@@ -51,29 +51,10 @@
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ObjectInclusionList>
-						<ObjectRef Name="Set_State_b_identify" ID="{4E48F354-E4E4-401C-B8F7-240662E3DF5D}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_correct" ID="{73C9F0D1-2CFF-4054-A700-69449A6C1ABA}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_d_identify" ID="{D2DA8A1B-C6A5-406F-851E-000AD88790A9}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_e_identify" ID="{57140A78-DEF0-4072-9160-C19BDE22E248}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_letter_turn_in_result" ID="{740A07DF-96E5-40C2-9871-22B0D93017FA}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_c_request" ID="{4EF52441-76E9-4109-A190-DA7AFB2F0173}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_f_identify" ID="{3806190F-2323-4140-80BE-3F31D94F0136}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AmbBeachWater" ID="{81304FDA-30DA-4262-8C94-D1C14EE17BEB}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="PlayBeachAmbience" ID="{3CC70503-9329-4269-89C7-1BA976005766}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="AmbBeach" ID="{219F5FBE-D115-43CA-97EE-355ED2AC3EDE}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_d_request" ID="{505EB362-4369-45FD-88A2-F4EDBAEF1256}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_f_request" ID="{BA956F87-7B4D-4624-8B00-B9B0E5B9B992}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_a_request" ID="{A4359BA3-89C3-4778-BB49-625EBBF91ADF}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Treasure Chest" ID="{C421B91F-18BD-47F2-ACE9-CB648C76A773}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_c_identify" ID="{89EE8C51-D53A-486F-9A73-DFF2B6E00901}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="PlayAmbWater" ID="{7BAA7735-28F9-498F-BD5D-ED4863551A19}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_b_request" ID="{7F1166E5-2219-4A8F-87CD-B6DC39E562A6}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_random_request" ID="{02FFB194-236B-4AF1-BB75-412078A984E4}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_g_identify" ID="{1E02F249-200D-4B49-A94A-189F2F069D32}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_e_request" ID="{43F2352C-2475-4D17-AE1A-0D8B5C25871E}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_g_request" ID="{FB2B6C4B-D16B-4E57-ADD4-D1706578A1FF}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_a_identify" ID="{ECCC46E0-69BE-4E8A-9940-9F9848934EB3}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Set_State_incorrect" ID="{4E202C3A-0EAD-4EA2-9434-94E4D3CC4D51}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Beach" ID="{5CCD4DB7-9B54-41E1-8ABA-CBDFABAB0C49}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Chests" ID="{8A4E718A-3B29-42EE-90DF-AB92C2D17169}" WorkUnitID="{8A4E718A-3B29-42EE-90DF-AB92C2D17169}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="chests_events" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Beach" ID="{8D490279-B2FD-4F73-972B-69DFAAD08997}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

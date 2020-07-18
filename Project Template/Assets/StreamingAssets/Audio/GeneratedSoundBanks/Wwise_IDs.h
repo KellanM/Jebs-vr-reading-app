@@ -69,6 +69,11 @@ namespace AK
         static const AkUniqueID SET_STATE_RANDOM_REQUEST = 3992176551U;
     } // namespace EVENTS
 
+    namespace DIALOGUE_EVENTS
+    {
+        static const AkUniqueID LETTER_TURN_IN = 2262387833U;
+    } // namespace DIALOGUE_EVENTS
+
     namespace STATES
     {
         namespace LETTER_IDENTIFY
