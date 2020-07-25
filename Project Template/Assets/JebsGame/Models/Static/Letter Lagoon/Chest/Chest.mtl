@@ -1,0 +1,15 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.151580502)
+
+newmtl Metal
+kd 0 0.8 0.0136565
+illum 1
+
+newmtl Wood
+kd 0.00556603 0 0.8
+illum 1
+
+newmtl Lock
+kd 0.798249 0.8 0
+illum 1
+
