@@ -264,6 +264,7 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="UnityTestEvent" ID="{8D84B87C-2AAB-4D59-B9ED-0223C019E18D}"/>
+				<Event Name="FML" ID="{7FBE27DB-9466-44CC-A272-791A85F476CB}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

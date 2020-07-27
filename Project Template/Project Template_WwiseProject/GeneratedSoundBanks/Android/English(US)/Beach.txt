@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	950645520	UnityTestEvent			\Default Work Unit\chests_events\UnityTestEvent	
 	970437422	Set_State_d_request			\Default Work Unit\chests_events\Set_State_d_request	
 	987058800	Set_State_e_identify			\Default Work Unit\chests_events\Set_State_e_identify	
+	1116692942	FML			\Default Work Unit\chests_events\FML	
 	1285693754	Play_SFX_Chest_Open_01			\Default Work Unit\Testing\Play_SFX_Chest_Open_01	
 	1345257814	Play_SFX_Chest_Close_01			\Default Work Unit\Testing\Play_SFX_Chest_Close_01	
 	1361500753	Set_State_c_request			\Default Work Unit\chests_events\Set_State_c_request	
