@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>F:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>F:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>F:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>F:\Unity Projects\Jebs-vr-reading-app-master\Jebs-vr-reading-app\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents>
 		<DialogueEvent Id="2262387833" Name="letter_turn_in" ObjectPath="\Dynamic Dialogue\Chests\letter_turn_in">
@@ -292,6 +292,7 @@
 			<ShortName>Beach</ShortName>
 			<Path>English(US)\Beach.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1116692942" Name="FML" ObjectPath="\Events\Default Work Unit\chests_events\FML" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3261928562" Name="Play_letter_turn_in_result" ObjectPath="\Events\Default Work Unit\chests_events\Play_letter_turn_in_result" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="5.715270" DurationMax="13.594433">
 					<IncludedMemoryFiles>
 						<File Id="31430241" Language="English(US)">
