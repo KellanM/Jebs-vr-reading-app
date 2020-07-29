@@ -255,6 +255,9 @@
 				<Event Name="PlayBeachAmbience" ID="{3CC70503-9329-4269-89C7-1BA976005766}">
 					<ChildrenList>
 						<Action Name="" ID="{4723AE6B-026E-4347-B56A-824D21D1B855}" ShortID="393203949">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="AmbBeach" ID="{219F5FBE-D115-43CA-97EE-355ED2AC3EDE}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}"/>
@@ -264,7 +267,6 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="UnityTestEvent" ID="{8D84B87C-2AAB-4D59-B9ED-0223C019E18D}"/>
-				<Event Name="FML" ID="{7FBE27DB-9466-44CC-A272-791A85F476CB}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

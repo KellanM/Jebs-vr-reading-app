@@ -292,7 +292,6 @@
 			<ShortName>Beach</ShortName>
 			<Path>English(US)\Beach.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1116692942" Name="FML" ObjectPath="\Events\Default Work Unit\chests_events\FML" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3261928562" Name="Play_letter_turn_in_result" ObjectPath="\Events\Default Work Unit\chests_events\Play_letter_turn_in_result" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="5.715270" DurationMax="13.594433">
 					<IncludedMemoryFiles>
 						<File Id="31430241" Language="English(US)">
@@ -811,7 +810,7 @@
 				<Event Id="1345257814" Name="Play_SFX_Chest_Close_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Close_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
 				<Event Id="37127528" Name="Play_SFX_Chest_Dig_Hit_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Dig_Hit_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.107143" DurationMax="1.107143"/>
 				<Event Id="1285693754" Name="Play_SFX_Chest_Open_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Open_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
-				<Event Id="4080469328" Name="PlayBeachAmbience" ObjectPath="\Events\Default Work Unit\chests_events\PlayBeachAmbience" MaxAttenuation="50.000000" DurationType="Infinite">
+				<Event Id="4080469328" Name="PlayBeachAmbience" ObjectPath="\Events\Default Work Unit\chests_events\PlayBeachAmbience" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="151.257843" DurationMax="151.257843">
 					<IncludedMemoryFiles>
 						<File Id="48568839" Language="SFX">
 							<ShortName>AmbBeachBird-002.wav</ShortName>
@@ -845,17 +844,9 @@
 							<ShortName>AmbBeachBird-001.wav</ShortName>
 							<Path>SFX\AmbBeachBird-001_5DD3F01E.wem</Path>
 						</File>
-						<File Id="476723056" Language="SFX">
-							<ShortName>AmbBeachWater.wav</ShortName>
-							<Path>SFX\AmbBeachWater_DB5432DE.wem</Path>
-						</File>
 						<File Id="580974529" Language="SFX">
 							<ShortName>AmbBeachInsects.wav</ShortName>
 							<Path>SFX\AmbBeachInsects_BC7752D5.wem</Path>
-						</File>
-						<File Id="626398858" Language="SFX">
-							<ShortName>AmbBeachLoop-003.wav</ShortName>
-							<Path>SFX\AmbBeachLoop-003_B2976F12.wem</Path>
 						</File>
 						<File Id="701287292" Language="SFX">
 							<ShortName>AmbBeachBird-002.wav</ShortName>
@@ -869,25 +860,13 @@
 							<ShortName>AmbBeachWind-002.wav</ShortName>
 							<Path>SFX\AmbBeachWind-002_10C4C929.wem</Path>
 						</File>
-						<File Id="853880796" Language="SFX">
-							<ShortName>AmbBeachLoop-002.wav</ShortName>
-							<Path>SFX\AmbBeachLoop-002_0EEED308.wem</Path>
-						</File>
 						<File Id="891422877" Language="SFX">
 							<ShortName>AmbBeachInsects.wav</ShortName>
 							<Path>SFX\AmbBeachInsects_C851170B.wem</Path>
 						</File>
-						<File Id="902816222" Language="SFX">
-							<ShortName>AmbBeachLoop-004.wav</ShortName>
-							<Path>SFX\AmbBeachLoop-004_B184AD94.wem</Path>
-						</File>
 						<File Id="950617136" Language="SFX">
 							<ShortName>AmbBeachInsects.wav</ShortName>
 							<Path>SFX\AmbBeachInsects_A1FFD0C2.wem</Path>
-						</File>
-						<File Id="953780778" Language="SFX">
-							<ShortName>AmbBeachLoop-001.wav</ShortName>
-							<Path>SFX\AmbBeachLoop-001_418BA3C0.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1206,10 +1185,6 @@
 					<ShortName>DX_Pirate_FindMeC_01.wav</ShortName>
 					<Path>SFX\DX_Pirate_FindMeC_01_10C4C929.wem</Path>
 				</File>
-				<File Id="626398858" Language="SFX">
-					<ShortName>AmbBeachLoop-003.wav</ShortName>
-					<Path>SFX\AmbBeachLoop-003_B2976F12.wem</Path>
-				</File>
 				<File Id="643294803" Language="English(US)">
 					<ShortName>pirate_correct_letter-004.wav</ShortName>
 					<Path>Voices\English(US)\pirate_correct_letter-004_A78ED3AA.wem</Path>
@@ -1298,10 +1273,6 @@
 					<ShortName>pirate_request_g\pirate_request_g-004.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_g\pirate_request_g-004_10C4C929.wem</Path>
 				</File>
-				<File Id="853880796" Language="SFX">
-					<ShortName>AmbBeachLoop-002.wav</ShortName>
-					<Path>SFX\AmbBeachLoop-002_0EEED308.wem</Path>
-				</File>
 				<File Id="859638157" Language="English(US)">
 					<ShortName>pirate_identify_b\pirate_identify_b-001.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_b\pirate_identify_b-001_F18AFE59.wem</Path>
@@ -1338,10 +1309,6 @@
 					<ShortName>pirate_request_c\pirate_request_c-003.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_c\pirate_request_c-003_10C4C929.wem</Path>
 				</File>
-				<File Id="902816222" Language="SFX">
-					<ShortName>AmbBeachLoop-004.wav</ShortName>
-					<Path>SFX\AmbBeachLoop-004_B184AD94.wem</Path>
-				</File>
 				<File Id="904558806" Language="English(US)">
 					<ShortName>pirate_identify_d\pirate_identify_d-004.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_d\pirate_identify_d-004_EF61E984.wem</Path>
@@ -1357,10 +1324,6 @@
 				<File Id="951176894" Language="English(US)">
 					<ShortName>pirate_request_a-002.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_a-002_3B8F3AEA.wem</Path>
-				</File>
-				<File Id="953780778" Language="SFX">
-					<ShortName>AmbBeachLoop-001.wav</ShortName>
-					<Path>SFX\AmbBeachLoop-001_418BA3C0.wem</Path>
 				</File>
 				<File Id="956423771" Language="English(US)">
 					<ShortName>pirate_request_b\pirate_request_b-002.wav</ShortName>

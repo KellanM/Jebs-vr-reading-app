@@ -13,7 +13,6 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID FML = 1116692942U;
         static const AkUniqueID PLAY__CRAB_FIGHT_MUSIC = 459954740U;
         static const AkUniqueID PLAY_EXAMPLE01 = 3776612809U;
         static const AkUniqueID PLAY_LETTER_NAMES_A = 1990152951U;
