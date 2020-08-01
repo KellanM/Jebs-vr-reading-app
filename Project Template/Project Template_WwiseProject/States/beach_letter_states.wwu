@@ -1,31 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<WwiseDocument Type="WorkUnit" ID="{C03D1771-2C1B-4219-80B4-C9B4D45B1D4E}" SchemaVersion="97" RootDocumentID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}">
-	<States>
-		<WorkUnit Name="beach_letter_states" ID="{C03D1771-2C1B-4219-80B4-C9B4D45B1D4E}" OwnerID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}" PersistMode="Nested">
-			<ChildrenList>
-				<StateGroup Name="letter_request" ID="{7983228A-5B93-482E-BB85-AD634A2D5F2A}">
-					<PropertyList>
-						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
-					</PropertyList>
-					<ChildrenList>
-						<State Name="None" ID="{68C57A75-91CA-4B0E-B7AA-C6EFC1DEE88E}"/>
-						<State Name="a_request" ID="{8A756C11-F588-460D-9D68-15B5EC6CF79E}"/>
-						<State Name="b_request" ID="{6BE53570-5BAF-4E1E-8458-9F7FDCC16258}"/>
-						<State Name="c_request" ID="{C5FCBFCE-FFDE-4F44-A957-C8825B72FA97}"/>
-						<State Name="d_request" ID="{79C6C00B-76CD-4322-AD7D-29A7031D37A1}"/>
-						<State Name="e_request" ID="{4F12732B-4174-4AC5-AFFF-C5231E087ACE}"/>
-						<State Name="f_request" ID="{32CC86F2-3B23-4AA2-9F36-BD38602F54C0}"/>
-						<State Name="g_request" ID="{87028E47-CE46-47E5-B605-3BA1F0AD515C}"/>
-						<State Name="random_request" ID="{7B34A2F0-61FE-4B89-A116-80F76B439830}"/>
-					</ChildrenList>
-				</StateGroup>
-=======
 <WwiseDocument Type="WorkUnit" ID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}" SchemaVersion="97" RootDocumentID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}">
 	<States>
 		<WorkUnit Name="beach_letter_states" ID="{E3AC9648-9BCF-494B-97B8-4E086E6D0271}" OwnerID="{E68937FE-BE68-4A0B-AF81-BDA49EAF0F52}" PersistMode="Nested">
 			<ChildrenList>
->>>>>>> sound
 				<StateGroup Name="letter_identify" ID="{E42A615E-D721-44B5-B390-ACDBDBD19D39}">
 					<PropertyList>
 						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
@@ -51,8 +28,6 @@
 						<State Name="incorrect" ID="{EC69AA65-74FB-4690-A594-4CE04D26DEEA}"/>
 					</ChildrenList>
 				</StateGroup>
-<<<<<<< HEAD
-=======
 				<StateGroup Name="letter_request" ID="{7983228A-5B93-482E-BB85-AD634A2D5F2A}">
 					<PropertyList>
 						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
@@ -69,7 +44,6 @@
 						<State Name="random_request" ID="{7B34A2F0-61FE-4B89-A116-80F76B439830}"/>
 					</ChildrenList>
 				</StateGroup>
->>>>>>> sound
 			</ChildrenList>
 		</WorkUnit>
 	</States>

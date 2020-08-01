@@ -1,3 +1,0 @@
-Dialogue Event	ID	Name			Wwise Object Path	Notes
-	3601192283	letter_id			\Chests\letter_id	
-
