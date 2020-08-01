@@ -260,6 +260,9 @@
 							<Path>SFX\SFX_CannonFire_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2645524322" Name="Spaceship_Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\3D Audio\Spaceship_Reverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3842358642" Name="Play_SFX_PopLetterBad_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_PopLetterBad_01" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.550266" DurationMax="0.715671">
 					<IncludedMemoryFiles>
@@ -268,6 +271,9 @@
 							<Path>SFX\SFX_PopLetterBad_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2645524322" Name="Spaceship_Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\3D Audio\Spaceship_Reverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="122831938" Name="Play_SFX_PopLetterGood_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_PopLetterGood_01" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.475726" DurationMax="0.715671">
 					<IncludedMemoryFiles>
@@ -276,6 +282,9 @@
 							<Path>SFX\SFX_PopLetterGood_01_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="2645524322" Name="Spaceship_Reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\3D Audio\Spaceship_Reverb"/>
+					</AuxBusSends>
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
@@ -643,6 +652,7 @@
 							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-004_D6F88762.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{68C57A75-91CA-4B0E-B7AA-C6EFC1DEE88E}</DefaultSwitchValue>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{1CC70001-2240-4E41-829E-95D25D452C00}">
 							<Media>
@@ -870,23 +880,91 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3586137436" Name="Set_State_a_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_a_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3355553019" Name="Set_State_a_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_a_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2273117453" Name="Set_State_b_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_b_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3869419544" Name="Set_State_b_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_b_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2173814366" Name="Set_State_c_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_c_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1361500753" Name="Set_State_c_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_c_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2582429414" Name="Set_State_correct" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_correct" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2202624967" Name="Set_State_d_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_d_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="970437422" Name="Set_State_d_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_d_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="987058800" Name="Set_State_e_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_e_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2996851727" Name="Set_State_e_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_e_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2256942993" Name="Set_State_f_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_f_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2940092780" Name="Set_State_f_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_f_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2658181330" Name="Set_State_g_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_g_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3017026757" Name="Set_State_g_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_g_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3973431821" Name="Set_State_incorrect" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_incorrect" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3992176551" Name="Set_State_random_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_random_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3586137436" Name="Set_State_a_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_a_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="616268773" Name="a_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\a_identify"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3355553019" Name="Set_State_a_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_a_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3870699296" Name="a_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\a_request"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2273117453" Name="Set_State_b_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_b_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="4149877012" Name="b_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\b_identify"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3869419544" Name="Set_State_b_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_b_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="270256323" Name="b_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\b_request"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2173814366" Name="Set_State_c_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_c_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="615801387" Name="c_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\c_identify"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1361500753" Name="Set_State_c_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_c_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3915368578" Name="c_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\c_request"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2582429414" Name="Set_State_correct" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_correct" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="4126251273" Name="correct" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\correct"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2202624967" Name="Set_State_d_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_d_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="822704874" Name="d_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\d_identify"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="970437422" Name="Set_State_d_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_d_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3564163789" Name="d_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\d_request"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="987058800" Name="Set_State_e_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_e_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2739495657" Name="e_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\e_identify"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2996851727" Name="Set_State_e_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_e_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1916577556" Name="e_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\e_request"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2256942993" Name="Set_State_f_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_f_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="622822280" Name="f_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\f_identify"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2940092780" Name="Set_State_f_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_f_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="215271383" Name="f_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\f_request"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2658181330" Name="Set_State_g_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_g_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1026594175" Name="g_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\g_identify"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3017026757" Name="Set_State_g_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_g_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1175714870" Name="g_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\g_request"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3973431821" Name="Set_State_incorrect" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_incorrect" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3691826278" Name="incorrect" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\incorrect"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3992176551" Name="Set_State_random_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_random_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2678637886" Name="random_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\random_request"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="950645520" Name="UnityTestEvent" ObjectPath="\Events\Default Work Unit\chests_events\UnityTestEvent" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedDialogueEvents>
@@ -1367,6 +1445,21 @@
 				</File>
 			</IncludedMemoryFiles>
 			<StateGroups>
+				<StateGroup Id="215271383" Name="f_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\f_request">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="270256323" Name="b_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\b_request">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="615801387" Name="c_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\c_identify">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="616268773" Name="a_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\a_identify">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="622822280" Name="f_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\f_identify">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="642578536" Name="letter_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\None"/>
@@ -1386,6 +1479,24 @@
 						<State Id="3691826278" Name="incorrect" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\incorrect"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="822704874" Name="d_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\d_identify">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1026594175" Name="g_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\g_identify">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1175714870" Name="g_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\g_request">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1916577556" Name="e_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\e_request">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2678637886" Name="random_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\random_request">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="2739495657" Name="e_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\e_identify">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="3350046007" Name="letter_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\None"/>
@@ -1398,6 +1509,24 @@
 						<State Id="1175714870" Name="g_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\g_request"/>
 						<State Id="2678637886" Name="random_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\random_request"/>
 					</States>
+				</StateGroup>
+				<StateGroup Id="3564163789" Name="d_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\d_request">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3691826278" Name="incorrect" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\incorrect">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3870699296" Name="a_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\a_request">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3915368578" Name="c_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\c_request">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="4126251273" Name="correct" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\correct">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="4149877012" Name="b_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\b_identify">
+					<States/>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
