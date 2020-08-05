@@ -1,17 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63921192d24b49a4bb08c2348bbb739f, type: 3}
-  m_Name: E0D3A2C3-D19E-4BE3-906C-818EB2BDD96C
-  m_EditorClassIdentifier: 
-  objectName: Play__Crab_Fight_Music
-  id: 459954740
-  guid: E0D3A2C3-D19E-4BE3-906C-818EB2BDD96C
+version https://git-lfs.github.com/spec/v1
+oid sha256:ea1387ba7eb460bafdef5ef39486fc0cf5f583b875ba8f8904ee1d7f3884a5f0
+size 523
