@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents>
 		<DialogueEvent Id="2262387833" Name="letter_turn_in" ObjectPath="\Dynamic Dialogue\Chests\letter_turn_in">
@@ -810,15 +810,7 @@
 				<Event Id="1345257814" Name="Play_SFX_Chest_Close_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Close_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
 				<Event Id="37127528" Name="Play_SFX_Chest_Dig_Hit_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Dig_Hit_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.107143" DurationMax="1.107143"/>
 				<Event Id="1285693754" Name="Play_SFX_Chest_Open_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Open_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
-				<Event Id="401291550" Name="PlayAmbWater" ObjectPath="\Events\Default Work Unit\chests_events\PlayAmbWater" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="476723056" Language="SFX">
-							<ShortName>AmbBeachWater.wav</ShortName>
-							<Path>SFX\AmbBeachWater_DB5432DE.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="4080469328" Name="PlayBeachAmbience" ObjectPath="\Events\Default Work Unit\chests_events\PlayBeachAmbience" DurationType="Infinite">
+				<Event Id="4080469328" Name="PlayBeachAmbience" ObjectPath="\Events\Default Work Unit\chests_events\PlayBeachAmbience" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="151.257843" DurationMax="151.257843">
 					<IncludedMemoryFiles>
 						<File Id="48568839" Language="SFX">
 							<ShortName>AmbBeachBird-002.wav</ShortName>
@@ -836,6 +828,14 @@
 							<ShortName>AmbBeachBird-001.wav</ShortName>
 							<Path>SFX\AmbBeachBird-001_6C81B3A4.wem</Path>
 						</File>
+						<File Id="295867322" Language="SFX">
+							<ShortName>AmbBeachInsects.wav</ShortName>
+							<Path>SFX\AmbBeachInsects_984E0311.wem</Path>
+						</File>
+						<File Id="329006972" Language="SFX">
+							<ShortName>AmbBeachWind-001.wav</ShortName>
+							<Path>SFX\AmbBeachWind-001_10C4C929.wem</Path>
+						</File>
 						<File Id="373369330" Language="SFX">
 							<ShortName>AmbBeachBird-001.wav</ShortName>
 							<Path>SFX\AmbBeachBird-001_83583D98.wem</Path>
@@ -844,9 +844,9 @@
 							<ShortName>AmbBeachBird-001.wav</ShortName>
 							<Path>SFX\AmbBeachBird-001_5DD3F01E.wem</Path>
 						</File>
-						<File Id="626398858" Language="SFX">
-							<ShortName>AmbBeachLoop-003.wav</ShortName>
-							<Path>SFX\AmbBeachLoop-003_B2976F12.wem</Path>
+						<File Id="580974529" Language="SFX">
+							<ShortName>AmbBeachInsects.wav</ShortName>
+							<Path>SFX\AmbBeachInsects_BC7752D5.wem</Path>
 						</File>
 						<File Id="701287292" Language="SFX">
 							<ShortName>AmbBeachBird-002.wav</ShortName>
@@ -856,17 +856,17 @@
 							<ShortName>AmbBeachBird-002.wav</ShortName>
 							<Path>SFX\AmbBeachBird-002_8A62AFEC.wem</Path>
 						</File>
-						<File Id="853880796" Language="SFX">
-							<ShortName>AmbBeachLoop-002.wav</ShortName>
-							<Path>SFX\AmbBeachLoop-002_0EEED308.wem</Path>
+						<File Id="798128332" Language="SFX">
+							<ShortName>AmbBeachWind-002.wav</ShortName>
+							<Path>SFX\AmbBeachWind-002_10C4C929.wem</Path>
 						</File>
-						<File Id="902816222" Language="SFX">
-							<ShortName>AmbBeachLoop-004.wav</ShortName>
-							<Path>SFX\AmbBeachLoop-004_B184AD94.wem</Path>
+						<File Id="891422877" Language="SFX">
+							<ShortName>AmbBeachInsects.wav</ShortName>
+							<Path>SFX\AmbBeachInsects_C851170B.wem</Path>
 						</File>
-						<File Id="953780778" Language="SFX">
-							<ShortName>AmbBeachLoop-001.wav</ShortName>
-							<Path>SFX\AmbBeachLoop-001_418BA3C0.wem</Path>
+						<File Id="950617136" Language="SFX">
+							<ShortName>AmbBeachInsects.wav</ShortName>
+							<Path>SFX\AmbBeachInsects_A1FFD0C2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -887,6 +887,7 @@
 				<Event Id="3017026757" Name="Set_State_g_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_g_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3973431821" Name="Set_State_incorrect" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_incorrect" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3992176551" Name="Set_State_random_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_random_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="950645520" Name="UnityTestEvent" ObjectPath="\Events\Default Work Unit\chests_events\UnityTestEvent" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedDialogueEvents>
 				<DialogueEvent Id="2262387833" Name="letter_turn_in" ObjectPath="\Dynamic Dialogue\Chests\letter_turn_in"/>
@@ -923,6 +924,10 @@
 				<File Id="75921870" Language="English(US)">
 					<ShortName>pirate_correct_letter-002.wav</ShortName>
 					<Path>Voices\English(US)\pirate_correct_letter-002_C91FEB23.wem</Path>
+				</File>
+				<File Id="80019788" Language="SFX">
+					<ShortName>AmbBeachShipCreak.wav</ShortName>
+					<Path>SFX\AmbBeachShipCreak_10C4C929.wem</Path>
 				</File>
 				<File Id="94609553" Language="English(US)">
 					<ShortName>pirate_request_e\pirate_request_e-001.wav</ShortName>
@@ -1048,6 +1053,10 @@
 					<ShortName>pirate_identify_b\pirate_identify_b-002.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_b\pirate_identify_b-002_BC40D7B6.wem</Path>
 				</File>
+				<File Id="295867322" Language="SFX">
+					<ShortName>AmbBeachInsects.wav</ShortName>
+					<Path>SFX\AmbBeachInsects_984E0311.wem</Path>
+				</File>
 				<File Id="297166281" Language="English(US)">
 					<ShortName>pirate_request_d\pirate_request_d-004.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_d\pirate_request_d-004_10C4C929.wem</Path>
@@ -1067,6 +1076,10 @@
 				<File Id="325384048" Language="English(US)">
 					<ShortName>pirate_request_f\pirate_request_f-002.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_f\pirate_request_f-002_10C4C929.wem</Path>
+				</File>
+				<File Id="329006972" Language="SFX">
+					<ShortName>AmbBeachWind-001.wav</ShortName>
+					<Path>SFX\AmbBeachWind-001_10C4C929.wem</Path>
 				</File>
 				<File Id="363940549" Language="English(US)">
 					<ShortName>pirate_request_d\pirate_request_d-004.wav</ShortName>
@@ -1148,6 +1161,10 @@
 					<ShortName>pirate_identify_g\pirate_identify_g-001.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_g\pirate_identify_g-001_F453C5FE.wem</Path>
 				</File>
+				<File Id="580974529" Language="SFX">
+					<ShortName>AmbBeachInsects.wav</ShortName>
+					<Path>SFX\AmbBeachInsects_BC7752D5.wem</Path>
+				</File>
 				<File Id="586350733" Language="SFX">
 					<ShortName>DX_Pirate_StillLookingForC_01.wav</ShortName>
 					<Path>SFX\DX_Pirate_StillLookingForC_01_10C4C929.wem</Path>
@@ -1167,10 +1184,6 @@
 				<File Id="615843219" Language="SFX">
 					<ShortName>DX_Pirate_FindMeC_01.wav</ShortName>
 					<Path>SFX\DX_Pirate_FindMeC_01_10C4C929.wem</Path>
-				</File>
-				<File Id="626398858" Language="SFX">
-					<ShortName>AmbBeachLoop-003.wav</ShortName>
-					<Path>SFX\AmbBeachLoop-003_B2976F12.wem</Path>
 				</File>
 				<File Id="643294803" Language="English(US)">
 					<ShortName>pirate_correct_letter-004.wav</ShortName>
@@ -1236,6 +1249,10 @@
 					<ShortName>pirate_request_e\pirate_request_e-002.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_e\pirate_request_e-002_5033B41E.wem</Path>
 				</File>
+				<File Id="798128332" Language="SFX">
+					<ShortName>AmbBeachWind-002.wav</ShortName>
+					<Path>SFX\AmbBeachWind-002_10C4C929.wem</Path>
+				</File>
 				<File Id="802139754" Language="English(US)">
 					<ShortName>pirate_request_d\pirate_request_d-003.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_d\pirate_request_d-003_38994C2B.wem</Path>
@@ -1255,10 +1272,6 @@
 				<File Id="845539895" Language="English(US)">
 					<ShortName>pirate_request_g\pirate_request_g-004.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_g\pirate_request_g-004_10C4C929.wem</Path>
-				</File>
-				<File Id="853880796" Language="SFX">
-					<ShortName>AmbBeachLoop-002.wav</ShortName>
-					<Path>SFX\AmbBeachLoop-002_0EEED308.wem</Path>
 				</File>
 				<File Id="859638157" Language="English(US)">
 					<ShortName>pirate_identify_b\pirate_identify_b-001.wav</ShortName>
@@ -1288,13 +1301,13 @@
 					<ShortName>pirate_request_d\pirate_request_d-002.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_d\pirate_request_d-002_10C4C929.wem</Path>
 				</File>
+				<File Id="891422877" Language="SFX">
+					<ShortName>AmbBeachInsects.wav</ShortName>
+					<Path>SFX\AmbBeachInsects_C851170B.wem</Path>
+				</File>
 				<File Id="902031826" Language="English(US)">
 					<ShortName>pirate_request_c\pirate_request_c-003.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_c\pirate_request_c-003_10C4C929.wem</Path>
-				</File>
-				<File Id="902816222" Language="SFX">
-					<ShortName>AmbBeachLoop-004.wav</ShortName>
-					<Path>SFX\AmbBeachLoop-004_B184AD94.wem</Path>
 				</File>
 				<File Id="904558806" Language="English(US)">
 					<ShortName>pirate_identify_d\pirate_identify_d-004.wav</ShortName>
@@ -1304,13 +1317,13 @@
 					<ShortName>pirate_request_d\pirate_request_d-002.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_d\pirate_request_d-002_94BA13E6.wem</Path>
 				</File>
+				<File Id="950617136" Language="SFX">
+					<ShortName>AmbBeachInsects.wav</ShortName>
+					<Path>SFX\AmbBeachInsects_A1FFD0C2.wem</Path>
+				</File>
 				<File Id="951176894" Language="English(US)">
 					<ShortName>pirate_request_a-002.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_a-002_3B8F3AEA.wem</Path>
-				</File>
-				<File Id="953780778" Language="SFX">
-					<ShortName>AmbBeachLoop-001.wav</ShortName>
-					<Path>SFX\AmbBeachLoop-001_418BA3C0.wem</Path>
 				</File>
 				<File Id="956423771" Language="English(US)">
 					<ShortName>pirate_request_b\pirate_request_b-002.wav</ShortName>
