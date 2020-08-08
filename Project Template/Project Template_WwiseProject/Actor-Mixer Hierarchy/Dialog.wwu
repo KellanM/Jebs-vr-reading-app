@@ -455,6 +455,13 @@
 														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 														<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 														<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="60"/>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{479524C9-4271-4DA3-A7F8-6730D8B47CA4}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Attenuation">
