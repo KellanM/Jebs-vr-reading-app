@@ -26,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8750112762805278528}
-  m_LocalRotation: {x: 0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.7071067, y: -0, z: -0, w: 0.70710695}
+  m_LocalPosition: {x: 0, y: 0.0563, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8750112764219988638}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!33 &8750112762805278532
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -40,7 +40,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8750112762805278528}
-  m_Mesh: {fileID: 1912725317099127634, guid: 43956d9979b9c6a46a075b700af90f78, type: 3}
+  m_Mesh: {fileID: 6084859299356392426, guid: 358986708968a9c4f8a8e59da30ee6d7, type: 3}
 --- !u!23 &8750112762805278533
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 3549775518345845901}
   - component: {fileID: 7810225332642457086}
   m_Layer: 0
-  m_Name: Letter_c
+  m_Name: Letter_e
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a63812a41ab12344a1790ee45529b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 99
+  value: 101
   currentInteractor: {fileID: 0}
 --- !u!1183024399 &7810225332642457086
 LookAtConstraint:
