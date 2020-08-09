@@ -204,6 +204,16 @@
 				</Attenuation>
 				<Attenuation Name="Pirate" ID="{B3784810-99E0-4DF8-86FE-05AB27110C4B}" ShortID="139655384">
 					<PropertyList>
+						<Property Name="ConeAttenuation" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+						<Property Name="ConeUse" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="RadiusMax" Type="Real64" Value="25"/>
 					</PropertyList>
 					<CurveUsageInfoList>
