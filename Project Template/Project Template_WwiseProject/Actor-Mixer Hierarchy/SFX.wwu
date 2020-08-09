@@ -262,35 +262,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="SFX_Chest_Dig_Hit_01" ID="{B102EBD9-0E00-40CF-B439-FD32FC469A9F}" ShortID="405364383">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>3.3</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="SFX_Chest_Dig_Hit_01" ID="{A4476341-63C6-48CC-9EDD-58A38245AD04}">
-													<Language>SFX</Language>
-													<AudioFile>SFX_Chest_Dig_Hit_01.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="133787045"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="SFX_Chest_Dig_Hit_01" ID="{A4476341-63C6-48CC-9EDD-58A38245AD04}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="SFX_Chest_Close_01" ID="{C4B0FCD1-D59D-47B1-B2CC-FE1C61E96424}" ShortID="352538967">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
@@ -1309,6 +1280,359 @@
 										<ActiveSource Name="AmbBeachWater" ID="{E1C38CE0-6CB8-4740-8C74-0218820FA27C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<ActorMixer Name="Shovel" ID="{CDA5D74A-5FF7-4A76-BB09-3AB0460BC2FD}" ShortID="738483117">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="ShovelHitChest" ID="{16CF62BA-0564-4C8E-9B3B-D0835818AF04}" ShortID="142726181">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{D040660A-C76D-4A44-9F69-78FCC6E1AA4B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="600"/>
+																	<Property Name="Min" Type="Real64" Value="-600"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="60"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="TreasureChest" ID="{4FE842C6-F6EF-4685-BAEC-F877565046E1}" WorkUnitID="{0942876A-8F5D-4B5C-A202-5AA8FB2853C0}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_Shovel_Hit_Chest-001" ID="{14DC3B72-A465-4E69-BFD3-E82FF92380CE}" ShortID="862328593">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{8BCB0141-443D-4D26-9D0A-877C55B4CFCA}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Shovel_Hit_Chest-001" ID="{73F50152-BC8A-47EA-886C-B72274FC4D8C}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Shovel_Hit_Chest-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="860675882"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Shovel_Hit_Chest-001" ID="{73F50152-BC8A-47EA-886C-B72274FC4D8C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_Shovel_Hit_Chest-002" ID="{620721E0-7752-487B-94FF-290E45AFDA2A}" ShortID="499997491">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-8</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Shovel_Hit_Chest-002" ID="{B84933FC-31BF-46DF-B01B-00871C78A114}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Shovel_Hit_Chest-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="543646248"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Shovel_Hit_Chest-002" ID="{B84933FC-31BF-46DF-B01B-00871C78A114}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_Shovel_Hit_Chest-003" ID="{BCB789AB-140C-4598-9F60-D7D7788A2283}" ShortID="979720144">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Shovel_Hit_Chest-003" ID="{ED4EA84A-1EBD-4EDB-8B90-F85849F7A3AA}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Shovel_Hit_Chest-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="774079740"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Shovel_Hit_Chest-003" ID="{ED4EA84A-1EBD-4EDB-8B90-F85849F7A3AA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_Shovel_Hit_Chest-004" ID="{A417FA65-6B50-474C-90A2-5553F0E8030B}" ShortID="268075190">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-13</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Shovel_Hit_Chest-004" ID="{5B260155-55A0-48B0-9EB2-057E4833E9ED}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Shovel_Hit_Chest-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="411032074"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Shovel_Hit_Chest-004" ID="{5B260155-55A0-48B0-9EB2-057E4833E9ED}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_Shovel_Hit_Chest-005" ID="{C0BCE89B-773E-4F05-B715-4D4F4DFC93ED}" ShortID="606184137">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-11</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Shovel_Hit_Chest-005" ID="{36BE24A3-C851-410B-A280-D7899BBF9187}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Shovel_Hit_Chest-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="35749590"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Shovel_Hit_Chest-005" ID="{36BE24A3-C851-410B-A280-D7899BBF9187}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="ShovelHitSand" ID="{4F645F66-C837-436B-A7D6-C40D11DBDCF6}" ShortID="62853597">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{627F72C6-69F8-4EA7-A1F0-3CDA64A78A4F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="600"/>
+																	<Property Name="Min" Type="Real64" Value="-600"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_Shovel_Hit_Sand-001" ID="{83625B90-BB69-4D5C-B0A3-AC42DD662EBF}" ShortID="122084976">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Shovel_Hit_Sand-001" ID="{BCB54F72-CE3D-4F92-9E4A-94A0C0399830}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Shovel_Hit_Sand-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="166368745"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Shovel_Hit_Sand-001" ID="{BCB54F72-CE3D-4F92-9E4A-94A0C0399830}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_Shovel_Hit_Sand-002" ID="{20132DFF-69BC-4515-86A9-4873F509E73E}" ShortID="49225269">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Shovel_Hit_Sand-002" ID="{48AA0143-F5CD-42D2-AD3E-86DE4231BF1B}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Shovel_Hit_Sand-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="196935096"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Shovel_Hit_Sand-002" ID="{48AA0143-F5CD-42D2-AD3E-86DE4231BF1B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_Shovel_Hit_Sand-003" ID="{5D903778-6638-461A-BAB8-F6EA7F68B1A0}" ShortID="221229918">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Shovel_Hit_Sand-003" ID="{F3642DD9-08A7-4CD5-939F-286F0DD70EFB}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Shovel_Hit_Sand-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="936378801"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Shovel_Hit_Sand-003" ID="{F3642DD9-08A7-4CD5-939F-286F0DD70EFB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_Shovel_Hit_Sand-004" ID="{8DEEF0A0-D142-4994-912A-3285D57A5858}" ShortID="622841483">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Shovel_Hit_Sand-004" ID="{7B3055B1-FB32-469D-B9B6-C02728659846}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Shovel_Hit_Sand-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="627201645"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Shovel_Hit_Sand-004" ID="{7B3055B1-FB32-469D-B9B6-C02728659846}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_Shovel_Hit_Sand-005" ID="{B6B0EF0C-76A4-4C16-82E6-97575800925C}" ShortID="317826028">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Shovel_Hit_Sand-005" ID="{901B4B89-072D-46CC-BFEA-B52D2D9DD657}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Shovel_Hit_Sand-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="512900244"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Shovel_Hit_Sand-005" ID="{901B4B89-072D-46CC-BFEA-B52D2D9DD657}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</ActorMixer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
