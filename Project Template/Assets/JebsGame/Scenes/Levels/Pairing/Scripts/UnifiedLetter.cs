@@ -31,9 +31,10 @@ public class UnifiedLetter : MonoBehaviour
     }
     public void SetPhysicsFollow(Transform followTransform)
     {
-        var letterPhysics = GetComponentInParent<PhysicsTransform>();
+        var letterPhysics = GetComponentInParent<MimicTransform>();
+        //var letterPhysics = GetComponentInParent<PhysicsTransform>();
         if (letterPhysics != null)
-            letterPhysics.follow = followTransform;
+            letterPhysics.other = followTransform;
         else
             Debug.LogError("UnifiedLetter: Could not find PhysicsTransform component on letter " + name);
     }
