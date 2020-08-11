@@ -19,6 +19,7 @@ public class CrabFactory : MonoBehaviour
     public float chestProbability;
 
     public Transform chestDestination;
+    public ChestLetter currentLetter;
 
     bool crabsAreRunning = true;
 
@@ -46,8 +47,6 @@ public class CrabFactory : MonoBehaviour
 
         if (crabs.Count < numOfCrabs)
         {
-            Debug.Log("Total: " + homes.Count);
-
             int doorNumber = 0;
             CrabHome spawnPoint = homes[doorNumber];
             GameObject newBornCrab = Instantiate(crabPrefab,spawnPoint.transform.position,Quaternion.identity);
@@ -59,9 +58,6 @@ public class CrabFactory : MonoBehaviour
 
             availableNewDestinations.Remove(spawnPoint);
             smolBrain.homeDestination = homes[1];
-            Debug.Log("Available: " + availableNewDestinations.Count);
-
-            Debug.Log("Bron at " + spawnPoint.name + ", goes to " + smolBrain.homeDestination.name);
 
             if (Random.value < chestProbability)
                 smolBrain.CarryChest();
@@ -75,6 +71,8 @@ public class CrabFactory : MonoBehaviour
 
     public void Restart()
     {
+        currentLetter.Destroy();
+
         for (int i = 0; i < transform.childCount; i++)
         {
             Destroy(transform.GetChild(i).gameObject);
