@@ -44,12 +44,11 @@ namespace AK
         static const AkUniqueID PLAY_LETTER_TURN_IN_RESULT = 3261928562U;
         static const AkUniqueID PLAY_SFX_CANNONFIRE_01 = 661707113U;
         static const AkUniqueID PLAY_SFX_CHEST_CLOSE_01 = 1345257814U;
+        static const AkUniqueID PLAY_SFX_CHEST_DIG_HIT_01 = 37127528U;
         static const AkUniqueID PLAY_SFX_CHEST_OPEN_01 = 1285693754U;
         static const AkUniqueID PLAY_SFX_POPLETTERBAD_01 = 3842358642U;
         static const AkUniqueID PLAY_SFX_POPLETTERGOOD_01 = 122831938U;
         static const AkUniqueID PLAYBEACHAMBIENCE = 4080469328U;
-        static const AkUniqueID PLAYSHOVELHITCHEST = 711844212U;
-        static const AkUniqueID PLAYSHOVELHITSAND = 3574019415U;
         static const AkUniqueID SET_STATE_A_IDENTIFY = 3586137436U;
         static const AkUniqueID SET_STATE_A_REQUEST = 3355553019U;
         static const AkUniqueID SET_STATE_B_IDENTIFY = 2273117453U;

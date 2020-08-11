@@ -267,28 +267,6 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="UnityTestEvent" ID="{8D84B87C-2AAB-4D59-B9ED-0223C019E18D}"/>
-				<Event Name="PlayShovelHitChest" ID="{C5C543A6-76EC-450B-803F-259B9CC3D9D4}">
-					<ChildrenList>
-						<Action Name="" ID="{A68B233B-F9C0-4D3B-9BCA-92578B8B70B2}" ShortID="207625142">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="ShovelHitChest" ID="{16CF62BA-0564-4C8E-9B3B-D0835818AF04}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="PlayShovelHitSand" ID="{79DEFEED-6543-41CA-B8FF-F807C232ED0C}">
-					<ChildrenList>
-						<Action Name="" ID="{FAC659B8-EF79-44D9-AC29-609C6F2F93E4}" ShortID="655980174">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="ShovelHitSand" ID="{4F645F66-C837-436B-A7D6-C40D11DBDCF6}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
