@@ -8,6 +8,10 @@
 		<ExternalSourcesOutputRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents>
+		<DialogueEvent Id="2365499286" Name="letter_check_in" ObjectPath="\Dynamic Dialogue\Chests\letter_check_in">
+			<Argument Id="2125177228" Name="PlayerStreak" ObjectPath="\States\Default Work Unit\beach_letter_states\PlayerStreak"/>
+			<Argument Id="3350046007" Name="letter_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request"/>
+		</DialogueEvent>
 		<DialogueEvent Id="2262387833" Name="letter_turn_in" ObjectPath="\Dynamic Dialogue\Chests\letter_turn_in">
 			<Argument Id="710661739" Name="letter_state" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state"/>
 			<Argument Id="642578536" Name="letter_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify"/>
@@ -301,6 +305,362 @@
 			<ShortName>Beach</ShortName>
 			<Path>English(US)\Beach.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4222181760" Name="Play_AmbBeachWater" ObjectPath="\Events\Default Work Unit\chests_events\Play_AmbBeachWater" MaxAttenuation="50.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="476723056" Language="SFX">
+							<ShortName>AmbBeachWater.wav</ShortName>
+							<Path>SFX\AmbBeachWater_DB5432DE.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1120221787" Name="Play_AMBShipCreaks" ObjectPath="\Events\Default Work Unit\chests_events\Play_AMBShipCreaks" DurationType="OneShot" DurationMin="0.000000" DurationMax="67.948341">
+					<IncludedMemoryFiles>
+						<File Id="36905139" Language="SFX">
+							<ShortName>AmbBeachShipCreak.wav</ShortName>
+							<Path>SFX\AmbBeachShipCreak_069FEB9E.wem</Path>
+						</File>
+						<File Id="80019788" Language="SFX">
+							<ShortName>AmbBeachShipCreak.wav</ShortName>
+							<Path>SFX\AmbBeachShipCreak_5D7B43D3.wem</Path>
+						</File>
+						<File Id="384034639" Language="SFX">
+							<ShortName>AmbBeachShipCreak.wav</ShortName>
+							<Path>SFX\AmbBeachShipCreak_BC206BA9.wem</Path>
+						</File>
+						<File Id="1019822477" Language="SFX">
+							<ShortName>AmbBeachShipCreak.wav</ShortName>
+							<Path>SFX\AmbBeachShipCreak_FF9A5E1A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2886500637" Name="Play_letter_check_in_result" ObjectPath="\Events\Default Work Unit\chests_events\Play_letter_check_in_result" DurationType="OneShot" DurationMin="5.811930" DurationMax="12.379688">
+					<IncludedMemoryFiles>
+						<File Id="31430241" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-003_112C00B9.wem</Path>
+						</File>
+						<File Id="62158131" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Cheer-002.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Cheer-002_10C4C929.wem</Path>
+						</File>
+						<File Id="94609553" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-001_10C4C929.wem</Path>
+						</File>
+						<File Id="120302403" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Encourage-002.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Encourage-002_10C4C929.wem</Path>
+						</File>
+						<File Id="136853588" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-001_10C4C929.wem</Path>
+						</File>
+						<File Id="145322150" Language="English(US)">
+							<ShortName>pirate_request_g\pirate_request_g-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-002_10C4C929.wem</Path>
+						</File>
+						<File Id="148295233" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-002_10C4C929.wem</Path>
+						</File>
+						<File Id="157975529" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-004_10C4C929.wem</Path>
+						</File>
+						<File Id="173033634" Language="English(US)">
+							<ShortName>pirate_request_g\pirate_request_g-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-002_35128D20.wem</Path>
+						</File>
+						<File Id="173504264" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-004_10C4C929.wem</Path>
+						</File>
+						<File Id="175844512" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-003_4C5E1246.wem</Path>
+						</File>
+						<File Id="178076439" Language="English(US)">
+							<ShortName>pirate_request_g\pirate_request_g-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-001_10C4C929.wem</Path>
+						</File>
+						<File Id="179040910" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-001_9A08678F.wem</Path>
+						</File>
+						<File Id="180994931" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-004_14B55EE2.wem</Path>
+						</File>
+						<File Id="199659122" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-003_10C4C929.wem</Path>
+						</File>
+						<File Id="203697890" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-003_AA89D753.wem</Path>
+						</File>
+						<File Id="209002632" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-003_10C4C929.wem</Path>
+						</File>
+						<File Id="239556192" Language="English(US)">
+							<ShortName>pirate_request_a-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_a-001_08056AE2.wem</Path>
+						</File>
+						<File Id="260731948" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Cheer-001.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Cheer-001_10C4C929.wem</Path>
+						</File>
+						<File Id="263891325" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-001_10C4C929.wem</Path>
+						</File>
+						<File Id="283268826" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-001_131C960B.wem</Path>
+						</File>
+						<File Id="297166281" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-004_10C4C929.wem</Path>
+						</File>
+						<File Id="311783929" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-004_55E5A2BD.wem</Path>
+						</File>
+						<File Id="325384048" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-002_10C4C929.wem</Path>
+						</File>
+						<File Id="363940549" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-004_F8A6BFC9.wem</Path>
+						</File>
+						<File Id="421831169" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-004_3BF1B1C3.wem</Path>
+						</File>
+						<File Id="432827642" Language="English(US)">
+							<ShortName>pirate_request_g\pirate_request_g-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-001_B842344B.wem</Path>
+						</File>
+						<File Id="499005672" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-001_A926F3CB.wem</Path>
+						</File>
+						<File Id="515444235" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-001_10C4C929.wem</Path>
+						</File>
+						<File Id="522324742" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Encourage-003.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Encourage-003_10C4C929.wem</Path>
+						</File>
+						<File Id="589279699" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-004_10C4C929.wem</Path>
+						</File>
+						<File Id="606829139" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-002_4AC49A74.wem</Path>
+						</File>
+						<File Id="644392942" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-001_79196E57.wem</Path>
+						</File>
+						<File Id="705532773" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-002_10C4C929.wem</Path>
+						</File>
+						<File Id="720423860" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-004_10C4C929.wem</Path>
+						</File>
+						<File Id="737499940" Language="English(US)">
+							<ShortName>pirate_request_f\pirate_request_f-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_f\pirate_request_f-003_C24669FC.wem</Path>
+						</File>
+						<File Id="751810950" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-003_10C4C929.wem</Path>
+						</File>
+						<File Id="753537672" Language="English(US)">
+							<ShortName>pirate_request_a-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_a-003_460B3264.wem</Path>
+						</File>
+						<File Id="765530576" Language="English(US)">
+							<ShortName>pirate_request_e\pirate_request_e-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_e\pirate_request_e-002_5033B41E.wem</Path>
+						</File>
+						<File Id="802139754" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-003_38994C2B.wem</Path>
+						</File>
+						<File Id="805832761" Language="English(US)">
+							<ShortName>pirate_request_g\pirate_request_g-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-003_10C4C929.wem</Path>
+						</File>
+						<File Id="807215645" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-002_10C4C929.wem</Path>
+						</File>
+						<File Id="845539895" Language="English(US)">
+							<ShortName>pirate_request_g\pirate_request_g-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-004_10C4C929.wem</Path>
+						</File>
+						<File Id="877074726" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-003_10C4C929.wem</Path>
+						</File>
+						<File Id="883495680" Language="English(US)">
+							<ShortName>pirate_request_a-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_a-004_5CA74F35.wem</Path>
+						</File>
+						<File Id="888363919" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Encourage-001.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Encourage-001_10C4C929.wem</Path>
+						</File>
+						<File Id="889387531" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-002_10C4C929.wem</Path>
+						</File>
+						<File Id="902031826" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-003.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-003_10C4C929.wem</Path>
+						</File>
+						<File Id="906883059" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-002_94BA13E6.wem</Path>
+						</File>
+						<File Id="951176894" Language="English(US)">
+							<ShortName>pirate_request_a-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_a-002_3B8F3AEA.wem</Path>
+						</File>
+						<File Id="956423771" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-002_F89A8855.wem</Path>
+						</File>
+						<File Id="1010261887" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-002.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-002_DD53EB98.wem</Path>
+						</File>
+						<File Id="1035264335" Language="English(US)">
+							<ShortName>pirate_request_d\pirate_request_d-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_d\pirate_request_d-001_10C4C929.wem</Path>
+						</File>
+						<File Id="1060552425" Language="English(US)">
+							<ShortName>pirate_request_c\pirate_request_c-001.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_c\pirate_request_c-001_A87F582D.wem</Path>
+						</File>
+						<File Id="1065133031" Language="English(US)">
+							<ShortName>pirate_request_b\pirate_request_b-004.wav</ShortName>
+							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-004_D6F88762.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{1EBE2EAE-A044-4442-B4DA-7E39D167796F}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{8A756C11-F588-460D-9D68-15B5EC6CF79E}">
+							<Media>
+								<File Id="239556192"/>
+								<File Id="951176894"/>
+								<File Id="753537672"/>
+								<File Id="883495680"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{6BE53570-5BAF-4E1E-8458-9F7FDCC16258}">
+							<Media>
+								<File Id="179040910"/>
+								<File Id="956423771"/>
+								<File Id="31430241"/>
+								<File Id="1065133031"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C5FCBFCE-FFDE-4F44-A957-C8825B72FA97}">
+							<Media>
+								<File Id="1060552425"/>
+								<File Id="1010261887"/>
+								<File Id="203697890"/>
+								<File Id="311783929"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{79C6C00B-76CD-4322-AD7D-29A7031D37A1}">
+							<Media>
+								<File Id="499005672"/>
+								<File Id="906883059"/>
+								<File Id="802139754"/>
+								<File Id="363940549"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4F12732B-4174-4AC5-AFFF-C5231E087ACE}">
+							<Media>
+								<File Id="644392942"/>
+								<File Id="765530576"/>
+								<File Id="175844512"/>
+								<File Id="421831169"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{32CC86F2-3B23-4AA2-9F36-BD38602F54C0}">
+							<Media>
+								<File Id="283268826"/>
+								<File Id="606829139"/>
+								<File Id="737499940"/>
+								<File Id="180994931"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{87028E47-CE46-47E5-B605-3BA1F0AD515C}">
+							<Media>
+								<File Id="432827642"/>
+								<File Id="173033634"/>
+								<File Id="805832761"/>
+								<File Id="845539895"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7B34A2F0-61FE-4B89-A116-80F76B439830}">
+							<Media>
+								<File Id="239556192"/>
+								<File Id="951176894"/>
+								<File Id="753537672"/>
+								<File Id="883495680"/>
+								<File Id="178076439"/>
+								<File Id="145322150"/>
+								<File Id="805832761"/>
+								<File Id="845539895"/>
+								<File Id="263891325"/>
+								<File Id="705532773"/>
+								<File Id="199659122"/>
+								<File Id="157975529"/>
+								<File Id="136853588"/>
+								<File Id="325384048"/>
+								<File Id="209002632"/>
+								<File Id="720423860"/>
+								<File Id="515444235"/>
+								<File Id="807215645"/>
+								<File Id="902031826"/>
+								<File Id="173504264"/>
+								<File Id="94609553"/>
+								<File Id="148295233"/>
+								<File Id="751810950"/>
+								<File Id="589279699"/>
+								<File Id="1035264335"/>
+								<File Id="889387531"/>
+								<File Id="877074726"/>
+								<File Id="297166281"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A3D7721C-75C1-4B80-9A99-6344577B8FB2}">
+							<Media>
+								<File Id="120302403"/>
+								<File Id="522324742"/>
+								<File Id="888363919"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{70084EE9-629E-4F7B-9CBE-C1182724A001}">
+							<Media>
+								<File Id="62158131"/>
+								<File Id="260731948"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="3261928562" Name="Play_letter_turn_in_result" ObjectPath="\Events\Default Work Unit\chests_events\Play_letter_turn_in_result" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="5.715270" DurationMax="13.594433">
 					<IncludedMemoryFiles>
 						<File Id="31430241" Language="English(US)">
@@ -817,10 +1177,58 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="4055814622" Name="Play_LetterDiscardCorrect" ObjectPath="\Events\Default Work Unit\chests_events\Play_LetterDiscardCorrect" DurationType="OneShot" DurationMin="3.767583" DurationMax="4.365729">
+					<IncludedMemoryFiles>
+						<File Id="699685593" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Discard_Correct-002.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Correct-002_10C4C929.wem</Path>
+						</File>
+						<File Id="961407739" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Discard_Correct-001.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Correct-001_10C4C929.wem</Path>
+						</File>
+						<File Id="980719981" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Discard_Correct-003.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Correct-003_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2790830821" Name="Play_LetterDiscardIncorrect" ObjectPath="\Events\Default Work Unit\chests_events\Play_LetterDiscardIncorrect" DurationType="OneShot" DurationMin="4.622792" DurationMax="6.890771">
+					<IncludedMemoryFiles>
+						<File Id="262765872" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Discard_Incorrect-001.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Incorrect-001_10C4C929.wem</Path>
+						</File>
+						<File Id="629526900" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Discard_Incorrect-002.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Incorrect-002_10C4C929.wem</Path>
+						</File>
+						<File Id="1015927822" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Discard_Incorrect-003.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Incorrect-003_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1345257814" Name="Play_SFX_Chest_Close_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Close_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
 				<Event Id="37127528" Name="Play_SFX_Chest_Dig_Hit_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Dig_Hit_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.107143" DurationMax="1.107143"/>
 				<Event Id="1285693754" Name="Play_SFX_Chest_Open_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Open_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
-				<Event Id="4080469328" Name="PlayBeachAmbience" ObjectPath="\Events\Default Work Unit\chests_events\PlayBeachAmbience" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="151.257843" DurationMax="151.257843">
+				<Event Id="2567115144" Name="Play_SFXChestHitShovel" ObjectPath="\Events\Default Work Unit\chests_events\Play_SFXChestHitShovel" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.326194" DurationMax="2.265510">
+					<IncludedMemoryFiles>
+						<File Id="35052418" Language="SFX">
+							<ShortName>SFX_Chest_Hit_Shovel-001.wav</ShortName>
+							<Path>SFX\SFX_Chest_Hit_Shovel-001_10C4C929.wem</Path>
+						</File>
+						<File Id="153065981" Language="SFX">
+							<ShortName>SFX_Chest_Hit_Shovel-003.wav</ShortName>
+							<Path>SFX\SFX_Chest_Hit_Shovel-003_10C4C929.wem</Path>
+						</File>
+						<File Id="865896452" Language="SFX">
+							<ShortName>SFX_Chest_Hit_Shovel-002.wav</ShortName>
+							<Path>SFX\SFX_Chest_Hit_Shovel-002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4080469328" Name="PlayBeachAmbience" ObjectPath="\Events\Default Work Unit\chests_events\PlayBeachAmbience" DurationType="OneShot" DurationMin="134.435287" DurationMax="134.435287">
 					<IncludedMemoryFiles>
 						<File Id="48568839" Language="SFX">
 							<ShortName>AmbBeachBird-002.wav</ShortName>
@@ -844,7 +1252,7 @@
 						</File>
 						<File Id="329006972" Language="SFX">
 							<ShortName>AmbBeachWind-001.wav</ShortName>
-							<Path>SFX\AmbBeachWind-001_10C4C929.wem</Path>
+							<Path>SFX\AmbBeachWind-001_65D2950E.wem</Path>
 						</File>
 						<File Id="373369330" Language="SFX">
 							<ShortName>AmbBeachBird-001.wav</ShortName>
@@ -868,7 +1276,7 @@
 						</File>
 						<File Id="798128332" Language="SFX">
 							<ShortName>AmbBeachWind-002.wav</ShortName>
-							<Path>SFX\AmbBeachWind-002_10C4C929.wem</Path>
+							<Path>SFX\AmbBeachWind-002_C8F2A076.wem</Path>
 						</File>
 						<File Id="891422877" Language="SFX">
 							<ShortName>AmbBeachInsects.wav</ShortName>
@@ -880,94 +1288,10 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3586137436" Name="Set_State_a_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_a_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="616268773" Name="a_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\a_identify"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="3355553019" Name="Set_State_a_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_a_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="3870699296" Name="a_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\a_request"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="2273117453" Name="Set_State_b_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_b_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="4149877012" Name="b_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\b_identify"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="3869419544" Name="Set_State_b_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_b_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="270256323" Name="b_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\b_request"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="2173814366" Name="Set_State_c_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_c_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="615801387" Name="c_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\c_identify"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="1361500753" Name="Set_State_c_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_c_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="3915368578" Name="c_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\c_request"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="2582429414" Name="Set_State_correct" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_correct" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="4126251273" Name="correct" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\correct"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="2202624967" Name="Set_State_d_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_d_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="822704874" Name="d_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\d_identify"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="970437422" Name="Set_State_d_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_d_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="3564163789" Name="d_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\d_request"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="987058800" Name="Set_State_e_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_e_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="2739495657" Name="e_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\e_identify"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="2996851727" Name="Set_State_e_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_e_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="1916577556" Name="e_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\e_request"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="2256942993" Name="Set_State_f_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_f_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="622822280" Name="f_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\f_identify"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="2940092780" Name="Set_State_f_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_f_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="215271383" Name="f_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\f_request"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="2658181330" Name="Set_State_g_identify" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_g_identify" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="1026594175" Name="g_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\g_identify"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="3017026757" Name="Set_State_g_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_g_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="1175714870" Name="g_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\g_request"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="3973431821" Name="Set_State_incorrect" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_incorrect" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="3691826278" Name="incorrect" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\incorrect"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="3992176551" Name="Set_State_random_request" ObjectPath="\Events\Default Work Unit\chests_events\Set_State_random_request" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="2678637886" Name="random_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\random_request"/>
-					</ActionSetState>
-				</Event>
 				<Event Id="950645520" Name="UnityTestEvent" ObjectPath="\Events\Default Work Unit\chests_events\UnityTestEvent" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedDialogueEvents>
+				<DialogueEvent Id="2365499286" Name="letter_check_in" ObjectPath="\Dynamic Dialogue\Chests\letter_check_in"/>
 				<DialogueEvent Id="2262387833" Name="letter_turn_in" ObjectPath="\Dynamic Dialogue\Chests\letter_turn_in"/>
 			</IncludedDialogueEvents>
 			<IncludedMemoryFiles>
@@ -979,6 +1303,14 @@
 					<ShortName>pirate_request_b\pirate_request_b-003.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_b\pirate_request_b-003_112C00B9.wem</Path>
 				</File>
+				<File Id="35052418" Language="SFX">
+					<ShortName>SFX_Chest_Hit_Shovel-001.wav</ShortName>
+					<Path>SFX\SFX_Chest_Hit_Shovel-001_10C4C929.wem</Path>
+				</File>
+				<File Id="36905139" Language="SFX">
+					<ShortName>AmbBeachShipCreak.wav</ShortName>
+					<Path>SFX\AmbBeachShipCreak_069FEB9E.wem</Path>
+				</File>
 				<File Id="48205813" Language="English(US)">
 					<ShortName>pirate_identify_a-001.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_a-001_1B0B8EC8.wem</Path>
@@ -986,6 +1318,10 @@
 				<File Id="48568839" Language="SFX">
 					<ShortName>AmbBeachBird-002.wav</ShortName>
 					<Path>SFX\AmbBeachBird-002_3378C44C.wem</Path>
+				</File>
+				<File Id="62158131" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Cheer-002.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Cheer-002_10C4C929.wem</Path>
 				</File>
 				<File Id="64104581" Language="SFX">
 					<ShortName>DX_Pirate_CorrectLetter_02.wav</ShortName>
@@ -1005,7 +1341,7 @@
 				</File>
 				<File Id="80019788" Language="SFX">
 					<ShortName>AmbBeachShipCreak.wav</ShortName>
-					<Path>SFX\AmbBeachShipCreak_10C4C929.wem</Path>
+					<Path>SFX\AmbBeachShipCreak_5D7B43D3.wem</Path>
 				</File>
 				<File Id="94609553" Language="English(US)">
 					<ShortName>pirate_request_e\pirate_request_e-001.wav</ShortName>
@@ -1018,6 +1354,10 @@
 				<File Id="107562032" Language="English(US)">
 					<ShortName>pirate_identify_f\pirate_identify_f-001.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_f\pirate_identify_f-001_00AD8CE7.wem</Path>
+				</File>
+				<File Id="120302403" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Encourage-002.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Encourage-002_10C4C929.wem</Path>
 				</File>
 				<File Id="133787045" Language="SFX">
 					<ShortName>SFX_Chest_Dig_Hit_01.wav</ShortName>
@@ -1038,6 +1378,10 @@
 				<File Id="148295233" Language="English(US)">
 					<ShortName>pirate_request_e\pirate_request_e-002.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_e\pirate_request_e-002_10C4C929.wem</Path>
+				</File>
+				<File Id="153065981" Language="SFX">
+					<ShortName>SFX_Chest_Hit_Shovel-003.wav</ShortName>
+					<Path>SFX\SFX_Chest_Hit_Shovel-003_10C4C929.wem</Path>
 				</File>
 				<File Id="157975529" Language="English(US)">
 					<ShortName>pirate_request_b\pirate_request_b-004.wav</ShortName>
@@ -1111,6 +1455,14 @@
 					<ShortName>pirate_identify_a-005.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_a-005_C0E839FD.wem</Path>
 				</File>
+				<File Id="260731948" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Cheer-001.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Cheer-001_10C4C929.wem</Path>
+				</File>
+				<File Id="262765872" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Discard_Incorrect-001.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Incorrect-001_10C4C929.wem</Path>
+				</File>
 				<File Id="263891325" Language="English(US)">
 					<ShortName>pirate_request_b\pirate_request_b-001.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_b\pirate_request_b-001_10C4C929.wem</Path>
@@ -1157,7 +1509,7 @@
 				</File>
 				<File Id="329006972" Language="SFX">
 					<ShortName>AmbBeachWind-001.wav</ShortName>
-					<Path>SFX\AmbBeachWind-001_10C4C929.wem</Path>
+					<Path>SFX\AmbBeachWind-001_65D2950E.wem</Path>
 				</File>
 				<File Id="363940549" Language="English(US)">
 					<ShortName>pirate_request_d\pirate_request_d-004.wav</ShortName>
@@ -1174,6 +1526,10 @@
 				<File Id="373369330" Language="SFX">
 					<ShortName>AmbBeachBird-001.wav</ShortName>
 					<Path>SFX\AmbBeachBird-001_83583D98.wem</Path>
+				</File>
+				<File Id="384034639" Language="SFX">
+					<ShortName>AmbBeachShipCreak.wav</ShortName>
+					<Path>SFX\AmbBeachShipCreak_BC206BA9.wem</Path>
 				</File>
 				<File Id="414792595" Language="English(US)">
 					<ShortName>pirate_identify_f\pirate_identify_f-003.wav</ShortName>
@@ -1227,6 +1583,10 @@
 					<ShortName>pirate_request_c\pirate_request_c-001.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_c\pirate_request_c-001_10C4C929.wem</Path>
 				</File>
+				<File Id="522324742" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Encourage-003.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Encourage-003_10C4C929.wem</Path>
+				</File>
 				<File Id="554598878" Language="English(US)">
 					<ShortName>pirate_identify_g\pirate_identify_g-003.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_g\pirate_identify_g-003_7C2E1C62.wem</Path>
@@ -1263,6 +1623,10 @@
 					<ShortName>DX_Pirate_FindMeC_01.wav</ShortName>
 					<Path>SFX\DX_Pirate_FindMeC_01_10C4C929.wem</Path>
 				</File>
+				<File Id="629526900" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Discard_Incorrect-002.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Incorrect-002_10C4C929.wem</Path>
+				</File>
 				<File Id="643294803" Language="English(US)">
 					<ShortName>pirate_correct_letter-004.wav</ShortName>
 					<Path>Voices\English(US)\pirate_correct_letter-004_A78ED3AA.wem</Path>
@@ -1282,6 +1646,10 @@
 				<File Id="698238349" Language="English(US)">
 					<ShortName>pirate_identify_a-004.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_a-004_2454C0E8.wem</Path>
+				</File>
+				<File Id="699685593" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Discard_Correct-002.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Correct-002_10C4C929.wem</Path>
 				</File>
 				<File Id="701287292" Language="SFX">
 					<ShortName>AmbBeachBird-002.wav</ShortName>
@@ -1329,7 +1697,7 @@
 				</File>
 				<File Id="798128332" Language="SFX">
 					<ShortName>AmbBeachWind-002.wav</ShortName>
-					<Path>SFX\AmbBeachWind-002_10C4C929.wem</Path>
+					<Path>SFX\AmbBeachWind-002_C8F2A076.wem</Path>
 				</File>
 				<File Id="802139754" Language="English(US)">
 					<ShortName>pirate_request_d\pirate_request_d-003.wav</ShortName>
@@ -1359,6 +1727,10 @@
 					<ShortName>SFX_Chest_Close_01.wav</ShortName>
 					<Path>SFX\SFX_Chest_Close_01_10C4C929.wem</Path>
 				</File>
+				<File Id="865896452" Language="SFX">
+					<ShortName>SFX_Chest_Hit_Shovel-002.wav</ShortName>
+					<Path>SFX\SFX_Chest_Hit_Shovel-002_10C4C929.wem</Path>
+				</File>
 				<File Id="877074726" Language="English(US)">
 					<ShortName>pirate_request_d\pirate_request_d-003.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_d\pirate_request_d-003_10C4C929.wem</Path>
@@ -1374,6 +1746,10 @@
 				<File Id="885748174" Language="English(US)">
 					<ShortName>pirate_identify_d\pirate_identify_d-001.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_d\pirate_identify_d-001_87AFCA5F.wem</Path>
+				</File>
+				<File Id="888363919" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Encourage-001.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Encourage-001_10C4C929.wem</Path>
 				</File>
 				<File Id="889387531" Language="English(US)">
 					<ShortName>pirate_request_d\pirate_request_d-002.wav</ShortName>
@@ -1407,9 +1783,17 @@
 					<ShortName>pirate_request_b\pirate_request_b-002.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_b\pirate_request_b-002_F89A8855.wem</Path>
 				</File>
+				<File Id="961407739" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Discard_Correct-001.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Correct-001_10C4C929.wem</Path>
+				</File>
 				<File Id="972005717" Language="English(US)">
 					<ShortName>pirate_identify_a-003.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_a-003_252C9871.wem</Path>
+				</File>
+				<File Id="980719981" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Discard_Correct-003.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Correct-003_10C4C929.wem</Path>
 				</File>
 				<File Id="994503425" Language="SFX">
 					<ShortName>DX_Pirate_CorrectLetter_05.wav</ShortName>
@@ -1422,6 +1806,14 @@
 				<File Id="1013384649" Language="English(US)">
 					<ShortName>pirate_identify_c\pirate_identify_c-004.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_c\pirate_identify_c-004_ED395B32.wem</Path>
+				</File>
+				<File Id="1015927822" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Discard_Incorrect-003.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Incorrect-003_10C4C929.wem</Path>
+				</File>
+				<File Id="1019822477" Language="SFX">
+					<ShortName>AmbBeachShipCreak.wav</ShortName>
+					<Path>SFX\AmbBeachShipCreak_FF9A5E1A.wem</Path>
 				</File>
 				<File Id="1024165224" Language="English(US)">
 					<ShortName>pirate_incorrect_letter-004.wav</ShortName>
@@ -1445,21 +1837,6 @@
 				</File>
 			</IncludedMemoryFiles>
 			<StateGroups>
-				<StateGroup Id="215271383" Name="f_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\f_request">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="270256323" Name="b_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\b_request">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="615801387" Name="c_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\c_identify">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="616268773" Name="a_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\a_identify">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="622822280" Name="f_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\f_identify">
-					<States/>
-				</StateGroup>
 				<StateGroup Id="642578536" Name="letter_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\None"/>
@@ -1479,23 +1856,12 @@
 						<State Id="3691826278" Name="incorrect" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\incorrect"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="822704874" Name="d_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\d_identify">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="1026594175" Name="g_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\g_identify">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="1175714870" Name="g_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\g_request">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="1916577556" Name="e_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\e_request">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="2678637886" Name="random_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\random_request">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="2739495657" Name="e_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\e_identify">
-					<States/>
+				<StateGroup Id="2125177228" Name="PlayerStreak" ObjectPath="\States\Default Work Unit\beach_letter_states\PlayerStreak">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\beach_letter_states\PlayerStreak\None"/>
+						<State Id="1082843450" Name="Hot" ObjectPath="\States\Default Work Unit\beach_letter_states\PlayerStreak\Hot"/>
+						<State Id="3687161267" Name="Cold" ObjectPath="\States\Default Work Unit\beach_letter_states\PlayerStreak\Cold"/>
+					</States>
 				</StateGroup>
 				<StateGroup Id="3350046007" Name="letter_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request">
 					<States>
@@ -1509,24 +1875,6 @@
 						<State Id="1175714870" Name="g_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\g_request"/>
 						<State Id="2678637886" Name="random_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\random_request"/>
 					</States>
-				</StateGroup>
-				<StateGroup Id="3564163789" Name="d_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\d_request">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="3691826278" Name="incorrect" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\incorrect">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="3870699296" Name="a_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\a_request">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="3915368578" Name="c_request" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_request\c_request">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="4126251273" Name="correct" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_state\correct">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="4149877012" Name="b_identify" ObjectPath="\States\Default Work Unit\beach_letter_states\letter_identify\b_identify">
-					<States/>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>

@@ -44,6 +44,13 @@
 						<State Name="random_request" ID="{7B34A2F0-61FE-4B89-A116-80F76B439830}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="PlayerStreak" ID="{9E359568-2D89-4820-9031-9ED4FCAEC54C}">
+					<ChildrenList>
+						<State Name="None" ID="{1EBE2EAE-A044-4442-B4DA-7E39D167796F}"/>
+						<State Name="Hot" ID="{70084EE9-629E-4F7B-9CBE-C1182724A001}"/>
+						<State Name="Cold" ID="{A3D7721C-75C1-4B80-9A99-6344577B8FB2}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

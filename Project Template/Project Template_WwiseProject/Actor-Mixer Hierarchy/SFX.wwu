@@ -349,6 +349,105 @@
 												<ActiveSource Name="SFX_Chest_Open_01" ID="{4AF68388-BC21-48F2-BEB9-C9B48437C723}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<RandomSequenceContainer Name="SFXChestHitShovel" ID="{E7D782DF-97F3-4E61-B44A-8835FF6BA93F}" ShortID="593898292">
+											<PropertyList>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{265E7685-F3CF-45B4-93A2-6FAADFA0079A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="227"/>
+																	<Property Name="Min" Type="Real64" Value="-177"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="SFX_Chest_Hit_Shovel-001" ID="{08733531-AB7D-4AD6-A950-D9F9D82E8B8C}" ShortID="628204249">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Chest_Hit_Shovel-001" ID="{8A5EC116-517E-4223-A03C-A7B54C845957}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Chest_Hit_Shovel-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="35052418"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Chest_Hit_Shovel-001" ID="{8A5EC116-517E-4223-A03C-A7B54C845957}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_Chest_Hit_Shovel-002" ID="{9F585E2E-7F75-4859-BBD9-0C3A261BB938}" ShortID="198001231">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Chest_Hit_Shovel-002" ID="{59AB9906-EB72-49AB-91F5-970D4E46F256}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Chest_Hit_Shovel-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="865896452"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Chest_Hit_Shovel-002" ID="{59AB9906-EB72-49AB-91F5-970D4E46F256}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="SFX_Chest_Hit_Shovel-003" ID="{8484E39D-E550-4F3F-B4FC-12CC65E3D455}" ShortID="22108598">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="SFX_Chest_Hit_Shovel-003" ID="{2F85410B-CD64-48DC-A362-721D4806E5F8}">
+															<Language>SFX</Language>
+															<AudioFile>SFX_Chest_Hit_Shovel-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="153065981"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="SFX_Chest_Hit_Shovel-003" ID="{2F85410B-CD64-48DC-A362-721D4806E5F8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 								</ActorMixer>
 								<BlendContainer Name="AmbBeach" ID="{219F5FBE-D115-43CA-97EE-355ED2AC3EDE}" ShortID="963061315">
@@ -362,7 +461,6 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -372,7 +470,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-5</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -440,7 +538,7 @@
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-4</Value>
+														<Value>-9</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
@@ -711,7 +809,7 @@
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-2</Value>
+														<Value>-7</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
@@ -950,7 +1048,7 @@
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-4</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
@@ -1159,6 +1257,9 @@
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{02E6719A-CC72-419B-91C6-4CA1C4EB0671}"/>
@@ -1186,6 +1287,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="AmbBeachWind-002" ID="{3DB18E4C-C9D6-4076-BF6E-A36AC7AE1F45}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="3.48369982394366"/>
+																<Property Name="LoopEnd" Type="Real64" Value="56.5238142605634"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.45231514084507"/>
+																<Property Name="TrimEnd" Type="Real64" Value="56.9631998239437"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>AmbBeachWind-002.wav</AudioFile>
 															<MediaIDList>
@@ -1215,6 +1323,13 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="AmbBeachWind-001" ID="{1D411897-2E32-4B5D-8832-A3520EA3CAFA}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="6.36751060685098"/>
+																<Property Name="LoopEnd" Type="Real64" Value="86.4840992870805"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="6.03487945574682"/>
+																<Property Name="TrimEnd" Type="Real64" Value="86.9592866458007"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>AmbBeachWind-001.wav</AudioFile>
 															<MediaIDList>
@@ -1233,28 +1348,6 @@
 										<BlendTrack Name="New Blend Track" ID="{5B73BAA7-AAC9-4E56-8E19-2B509AB98F35}" ShortID="388701445"/>
 									</BlendTrackList>
 								</BlendContainer>
-								<Sound Name="AmbBeachShipCreak" ID="{863282F7-8BE7-4C6C-A150-E753E44461ED}" ShortID="327847281">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="AmbBeachShipCreak" ID="{AC48A1EA-0B1D-456C-B255-47644282E434}">
-											<Language>SFX</Language>
-											<AudioFile>AmbBeachShipCreak.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="80019788"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="AmbBeachShipCreak" ID="{AC48A1EA-0B1D-456C-B255-47644282E434}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 								<Sound Name="AmbBeachWater" ID="{81304FDA-30DA-4262-8C94-D1C14EE17BEB}" ShortID="21675176">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -1269,7 +1362,7 @@
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-6</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1309,6 +1402,204 @@
 										<ActiveSource Name="AmbBeachWater" ID="{E1C38CE0-6CB8-4740-8C74-0218820FA27C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="AMBShipCreaks" ID="{EA204F51-7F4C-418F-9E1E-784BA29A163A}" ShortID="568776658">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AE26ECBA-648F-472B-B067-472C901F8822}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="23"/>
+															<Property Name="Min" Type="Real64" Value="-37"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7867D2B4-AD84-49D5-A599-68B0B2C404A2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="202"/>
+															<Property Name="Min" Type="Real64" Value="-253"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E2BEF177-B412-4789-8670-D20D4790AA62}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AmbBeachShipCreak_01" ID="{AEDBF81C-FC9A-4670-9DA8-438B4CE393A1}" ShortID="59798215">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>28</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AmbBeachShipCreak" ID="{B0C48282-5943-4818-BBEA-BB5F4DD77ACA}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.9276308250739"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AmbBeachShipCreak.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="80019788"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AmbBeachShipCreak" ID="{B0C48282-5943-4818-BBEA-BB5F4DD77ACA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AmbBeachShipCreak_02" ID="{80117DCC-5EAB-42C2-AC07-B4B50AA0AAFD}" ShortID="529711572">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AmbBeachShipCreak" ID="{464F7AE7-0846-4EAB-912E-B8D185E59141}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.09581338028169"/>
+														<Property Name="TrimEnd" Type="Real64" Value="5.14897361328465"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AmbBeachShipCreak.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="384034639"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AmbBeachShipCreak" ID="{464F7AE7-0846-4EAB-912E-B8D185E59141}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AmbBeachShipCreak_03" ID="{C0BAD1F3-E8E6-4468-A38B-529304A7DE5D}" ShortID="535658894">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AmbBeachShipCreak" ID="{82C62260-48AA-4161-98BD-1A2A40DBD2F2}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="7.86576873587202"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.323821465832"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AmbBeachShipCreak.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="36905139"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AmbBeachShipCreak" ID="{82C62260-48AA-4161-98BD-1A2A40DBD2F2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AmbBeachShipCreak_04" ID="{256BB836-CB64-4A4B-95A6-EF92A1674136}" ShortID="553629748">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>34</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}" WorkUnitID="{1316B974-AD5B-4A9E-84E9-D502D2407312}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AmbBeachShipCreak" ID="{8F738275-B92C-4390-9AE3-55CB2D6E5FC0}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="16.5336388888889"/>
+														<Property Name="TrimEnd" Type="Real64" Value="19.4186165666841"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AmbBeachShipCreak.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1019822477"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AmbBeachShipCreak" ID="{8F738275-B92C-4390-9AE3-55CB2D6E5FC0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
