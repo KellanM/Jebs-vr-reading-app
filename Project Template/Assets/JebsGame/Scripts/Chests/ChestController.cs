@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -26,6 +27,7 @@ public class ChestController : MonoBehaviour
     public int chestStrength = 3;
 
     public Transform letterSpawn;
+    public TextMeshPro[] letterSigns;
 
     public Transform pivot;
     public Vector3 pivotRot;
@@ -117,6 +119,12 @@ public class ChestController : MonoBehaviour
     {
         SetInteractable(true);
         myLetter = letterGen.Generate(letterSpawn);
+        CrabFactory.factory.currentLetter = myLetter;
+
+        for (int i = 0; i < letterSigns.Length; i++)
+        {
+            letterSigns[i].text = myLetter.value.ToString();
+        }
     }
 
     public void SetInteractable(bool b)

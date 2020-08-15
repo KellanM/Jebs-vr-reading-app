@@ -301,6 +301,34 @@
 			<ShortName>Beach</ShortName>
 			<Path>English(US)\Beach.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4222181760" Name="Play_AmbBeachWater" ObjectPath="\Events\Default Work Unit\chests_events\Play_AmbBeachWater" MaxAttenuation="50.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="476723056" Language="SFX">
+							<ShortName>AmbBeachWater.wav</ShortName>
+							<Path>SFX\AmbBeachWater_DB5432DE.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1120221787" Name="Play_AMBShipCreaks" ObjectPath="\Events\Default Work Unit\chests_events\Play_AMBShipCreaks" DurationType="OneShot" DurationMin="0.000000" DurationMax="67.948341">
+					<IncludedMemoryFiles>
+						<File Id="36905139" Language="SFX">
+							<ShortName>AmbBeachShipCreak.wav</ShortName>
+							<Path>SFX\AmbBeachShipCreak_069FEB9E.wem</Path>
+						</File>
+						<File Id="80019788" Language="SFX">
+							<ShortName>AmbBeachShipCreak.wav</ShortName>
+							<Path>SFX\AmbBeachShipCreak_5D7B43D3.wem</Path>
+						</File>
+						<File Id="384034639" Language="SFX">
+							<ShortName>AmbBeachShipCreak.wav</ShortName>
+							<Path>SFX\AmbBeachShipCreak_BC206BA9.wem</Path>
+						</File>
+						<File Id="1019822477" Language="SFX">
+							<ShortName>AmbBeachShipCreak.wav</ShortName>
+							<Path>SFX\AmbBeachShipCreak_FF9A5E1A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3261928562" Name="Play_letter_turn_in_result" ObjectPath="\Events\Default Work Unit\chests_events\Play_letter_turn_in_result" MaxAttenuation="25.000000" DurationType="OneShot" DurationMin="5.715270" DurationMax="13.594433">
 					<IncludedMemoryFiles>
 						<File Id="31430241" Language="English(US)">
@@ -820,7 +848,23 @@
 				<Event Id="1345257814" Name="Play_SFX_Chest_Close_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Close_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
 				<Event Id="37127528" Name="Play_SFX_Chest_Dig_Hit_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Dig_Hit_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.107143" DurationMax="1.107143"/>
 				<Event Id="1285693754" Name="Play_SFX_Chest_Open_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Open_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
-				<Event Id="4080469328" Name="PlayBeachAmbience" ObjectPath="\Events\Default Work Unit\chests_events\PlayBeachAmbience" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="151.257843" DurationMax="151.257843">
+				<Event Id="2567115144" Name="Play_SFXChestHitShovel" ObjectPath="\Events\Default Work Unit\chests_events\Play_SFXChestHitShovel" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.326194" DurationMax="2.265510">
+					<IncludedMemoryFiles>
+						<File Id="35052418" Language="SFX">
+							<ShortName>SFX_Chest_Hit_Shovel-001.wav</ShortName>
+							<Path>SFX\SFX_Chest_Hit_Shovel-001_10C4C929.wem</Path>
+						</File>
+						<File Id="153065981" Language="SFX">
+							<ShortName>SFX_Chest_Hit_Shovel-003.wav</ShortName>
+							<Path>SFX\SFX_Chest_Hit_Shovel-003_10C4C929.wem</Path>
+						</File>
+						<File Id="865896452" Language="SFX">
+							<ShortName>SFX_Chest_Hit_Shovel-002.wav</ShortName>
+							<Path>SFX\SFX_Chest_Hit_Shovel-002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4080469328" Name="PlayBeachAmbience" ObjectPath="\Events\Default Work Unit\chests_events\PlayBeachAmbience" DurationType="OneShot" DurationMin="134.435287" DurationMax="134.435287">
 					<IncludedMemoryFiles>
 						<File Id="48568839" Language="SFX">
 							<ShortName>AmbBeachBird-002.wav</ShortName>
@@ -844,7 +888,7 @@
 						</File>
 						<File Id="329006972" Language="SFX">
 							<ShortName>AmbBeachWind-001.wav</ShortName>
-							<Path>SFX\AmbBeachWind-001_10C4C929.wem</Path>
+							<Path>SFX\AmbBeachWind-001_65D2950E.wem</Path>
 						</File>
 						<File Id="373369330" Language="SFX">
 							<ShortName>AmbBeachBird-001.wav</ShortName>
@@ -868,7 +912,7 @@
 						</File>
 						<File Id="798128332" Language="SFX">
 							<ShortName>AmbBeachWind-002.wav</ShortName>
-							<Path>SFX\AmbBeachWind-002_10C4C929.wem</Path>
+							<Path>SFX\AmbBeachWind-002_C8F2A076.wem</Path>
 						</File>
 						<File Id="891422877" Language="SFX">
 							<ShortName>AmbBeachInsects.wav</ShortName>
@@ -979,6 +1023,14 @@
 					<ShortName>pirate_request_b\pirate_request_b-003.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_b\pirate_request_b-003_112C00B9.wem</Path>
 				</File>
+				<File Id="35052418" Language="SFX">
+					<ShortName>SFX_Chest_Hit_Shovel-001.wav</ShortName>
+					<Path>SFX\SFX_Chest_Hit_Shovel-001_10C4C929.wem</Path>
+				</File>
+				<File Id="36905139" Language="SFX">
+					<ShortName>AmbBeachShipCreak.wav</ShortName>
+					<Path>SFX\AmbBeachShipCreak_069FEB9E.wem</Path>
+				</File>
 				<File Id="48205813" Language="English(US)">
 					<ShortName>pirate_identify_a-001.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_a-001_1B0B8EC8.wem</Path>
@@ -1005,7 +1057,7 @@
 				</File>
 				<File Id="80019788" Language="SFX">
 					<ShortName>AmbBeachShipCreak.wav</ShortName>
-					<Path>SFX\AmbBeachShipCreak_10C4C929.wem</Path>
+					<Path>SFX\AmbBeachShipCreak_5D7B43D3.wem</Path>
 				</File>
 				<File Id="94609553" Language="English(US)">
 					<ShortName>pirate_request_e\pirate_request_e-001.wav</ShortName>
@@ -1038,6 +1090,10 @@
 				<File Id="148295233" Language="English(US)">
 					<ShortName>pirate_request_e\pirate_request_e-002.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_e\pirate_request_e-002_10C4C929.wem</Path>
+				</File>
+				<File Id="153065981" Language="SFX">
+					<ShortName>SFX_Chest_Hit_Shovel-003.wav</ShortName>
+					<Path>SFX\SFX_Chest_Hit_Shovel-003_10C4C929.wem</Path>
 				</File>
 				<File Id="157975529" Language="English(US)">
 					<ShortName>pirate_request_b\pirate_request_b-004.wav</ShortName>
@@ -1157,7 +1213,7 @@
 				</File>
 				<File Id="329006972" Language="SFX">
 					<ShortName>AmbBeachWind-001.wav</ShortName>
-					<Path>SFX\AmbBeachWind-001_10C4C929.wem</Path>
+					<Path>SFX\AmbBeachWind-001_65D2950E.wem</Path>
 				</File>
 				<File Id="363940549" Language="English(US)">
 					<ShortName>pirate_request_d\pirate_request_d-004.wav</ShortName>
@@ -1174,6 +1230,10 @@
 				<File Id="373369330" Language="SFX">
 					<ShortName>AmbBeachBird-001.wav</ShortName>
 					<Path>SFX\AmbBeachBird-001_83583D98.wem</Path>
+				</File>
+				<File Id="384034639" Language="SFX">
+					<ShortName>AmbBeachShipCreak.wav</ShortName>
+					<Path>SFX\AmbBeachShipCreak_BC206BA9.wem</Path>
 				</File>
 				<File Id="414792595" Language="English(US)">
 					<ShortName>pirate_identify_f\pirate_identify_f-003.wav</ShortName>
@@ -1329,7 +1389,7 @@
 				</File>
 				<File Id="798128332" Language="SFX">
 					<ShortName>AmbBeachWind-002.wav</ShortName>
-					<Path>SFX\AmbBeachWind-002_10C4C929.wem</Path>
+					<Path>SFX\AmbBeachWind-002_C8F2A076.wem</Path>
 				</File>
 				<File Id="802139754" Language="English(US)">
 					<ShortName>pirate_request_d\pirate_request_d-003.wav</ShortName>
@@ -1358,6 +1418,10 @@
 				<File Id="861371255" Language="SFX">
 					<ShortName>SFX_Chest_Close_01.wav</ShortName>
 					<Path>SFX\SFX_Chest_Close_01_10C4C929.wem</Path>
+				</File>
+				<File Id="865896452" Language="SFX">
+					<ShortName>SFX_Chest_Hit_Shovel-002.wav</ShortName>
+					<Path>SFX\SFX_Chest_Hit_Shovel-002_10C4C929.wem</Path>
 				</File>
 				<File Id="877074726" Language="English(US)">
 					<ShortName>pirate_request_d\pirate_request_d-003.wav</ShortName>
@@ -1422,6 +1486,10 @@
 				<File Id="1013384649" Language="English(US)">
 					<ShortName>pirate_identify_c\pirate_identify_c-004.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_c\pirate_identify_c-004_ED395B32.wem</Path>
+				</File>
+				<File Id="1019822477" Language="SFX">
+					<ShortName>AmbBeachShipCreak.wav</ShortName>
+					<Path>SFX\AmbBeachShipCreak_FF9A5E1A.wem</Path>
 				</File>
 				<File Id="1024165224" Language="English(US)">
 					<ShortName>pirate_incorrect_letter-004.wav</ShortName>

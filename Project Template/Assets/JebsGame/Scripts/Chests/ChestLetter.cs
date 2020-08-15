@@ -28,4 +28,9 @@ public class ChestLetter : MonoBehaviour
     {
         currentInteractor = null;
     }
+
+    public void Destroy()
+    {
+        gameObject.SetActive(false);
+    }
 }
