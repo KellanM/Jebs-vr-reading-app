@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" SchemaVersion="97" RootDocumentID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}">
 	<Events>
-		<WorkUnit Name="chests_events" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" OwnerID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" PersistMode="Nested">
+		<WorkUnit Name="ChestsEvents" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" OwnerID="{AC02C4A9-29A8-472D-B38C-04FE185FC76D}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="Play_letter_turn_in_result" ID="{740A07DF-96E5-40C2-9871-22B0D93017FA}">
-					<ChildrenList>
-						<Action Name="" ID="{1460324D-9702-4196-93A7-FD63E9403B9A}" ShortID="87596398">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="letter_turn_in_result" ID="{14132A2A-1940-435B-A363-364B958916CD}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="PlayBeachAmbience" ID="{3CC70503-9329-4269-89C7-1BA976005766}">
 					<ChildrenList>
 						<Action Name="" ID="{4723AE6B-026E-4347-B56A-824D21D1B855}" ShortID="393203949">
@@ -62,34 +51,26 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_letter_check_in_result" ID="{B0A9D0BB-DECC-4622-A61C-4EA1AD472E38}">
+				<Event Name="Play_LetterDiscardResult" ID="{C28154BD-F64E-41B7-8C48-2549B5426F3B}">
 					<ChildrenList>
-						<Action Name="" ID="{A7DD8C30-700B-446C-8D97-BF072DAB9A1F}" ShortID="688115997">
+						<Action Name="" ID="{0640B3C4-E538-4EA5-B2B3-0F469A2BD1FA}" ShortID="36498260">
+							<PropertyList>
+								<Property Name="Probability" Type="Real64" Value="50"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
+									<ObjectRef Name="LetterDiscardResult" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_LetterDiscardCorrect" ID="{4C570752-43DE-4DE0-9B69-91FAC68EEACE}">
+				<Event Name="Play_LetterTurnInResult" ID="{02CE5B0B-4C21-409F-B76B-0D668BC5C312}">
 					<ChildrenList>
-						<Action Name="" ID="{441801D8-F667-4D0B-8F2A-B13A5373E26F}" ShortID="945165743">
+						<Action Name="" ID="{9D87E795-3889-4729-BFC3-F92FC3A17F9D}" ShortID="891959216">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="LetterDiscardCorrect" ID="{E79F989E-FD5B-48F4-B3F2-C8648F4A3E5F}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_LetterDiscardIncorrect" ID="{4D138E40-D24C-4C39-9020-E966DBF7C78E}">
-					<ChildrenList>
-						<Action Name="" ID="{C939AB55-93BF-44AD-A86E-25B8329BF3C9}" ShortID="173105875">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="LetterDiscardIncorrect" ID="{F41D74FF-5FE4-4AE3-9EAE-D79CFE1F1502}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
+									<ObjectRef Name="LetterTurnInResult" ID="{14132A2A-1940-435B-A363-364B958916CD}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

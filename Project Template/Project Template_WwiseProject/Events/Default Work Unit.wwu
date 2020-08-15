@@ -381,7 +381,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<WorkUnit Name="chests_events" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" PersistMode="Reference"/>
+				<WorkUnit Name="ChestsEvents" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

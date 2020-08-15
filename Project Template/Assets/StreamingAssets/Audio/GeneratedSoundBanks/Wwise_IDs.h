@@ -17,7 +17,6 @@ namespace AK
         static const AkUniqueID PLAY_AMBBEACHWATER = 4222181760U;
         static const AkUniqueID PLAY_AMBSHIPCREAKS = 1120221787U;
         static const AkUniqueID PLAY_EXAMPLE01 = 3776612809U;
-        static const AkUniqueID PLAY_LETTER_CHECK_IN_RESULT = 2886500637U;
         static const AkUniqueID PLAY_LETTER_NAMES_A = 1990152951U;
         static const AkUniqueID PLAY_LETTER_NAMES_B = 1990152948U;
         static const AkUniqueID PLAY_LETTER_NAMES_C = 1990152949U;
@@ -44,9 +43,8 @@ namespace AK
         static const AkUniqueID PLAY_LETTER_NAMES_X = 1990152942U;
         static const AkUniqueID PLAY_LETTER_NAMES_Y = 1990152943U;
         static const AkUniqueID PLAY_LETTER_NAMES_Z = 1990152940U;
-        static const AkUniqueID PLAY_LETTER_TURN_IN_RESULT = 3261928562U;
-        static const AkUniqueID PLAY_LETTERDISCARDCORRECT = 4055814622U;
-        static const AkUniqueID PLAY_LETTERDISCARDINCORRECT = 2790830821U;
+        static const AkUniqueID PLAY_LETTERDISCARDRESULT = 3756627735U;
+        static const AkUniqueID PLAY_LETTERTURNINRESULT = 2915774497U;
         static const AkUniqueID PLAY_SFX_CANNONFIRE_01 = 661707113U;
         static const AkUniqueID PLAY_SFX_CHEST_CLOSE_01 = 1345257814U;
         static const AkUniqueID PLAY_SFX_CHEST_DIG_HIT_01 = 37127528U;
@@ -60,58 +58,60 @@ namespace AK
 
     namespace DIALOGUE_EVENTS
     {
-        static const AkUniqueID LETTER_CHECK_IN = 2365499286U;
-        static const AkUniqueID LETTER_TURN_IN = 2262387833U;
+        static const AkUniqueID LETTERDISCARDRESULT = 3577256490U;
+        static const AkUniqueID LETTERTURNINRESULT = 1324115218U;
     } // namespace DIALOGUE_EVENTS
 
     namespace STATES
     {
-        namespace LETTER_IDENTIFY
+        namespace LETTERIDENTIFY
         {
-            static const AkUniqueID GROUP = 642578536U;
+            static const AkUniqueID GROUP = 1443861201U;
 
             namespace STATE
             {
-                static const AkUniqueID A_IDENTIFY = 616268773U;
-                static const AkUniqueID B_IDENTIFY = 4149877012U;
-                static const AkUniqueID C_IDENTIFY = 615801387U;
-                static const AkUniqueID D_IDENTIFY = 822704874U;
-                static const AkUniqueID E_IDENTIFY = 2739495657U;
-                static const AkUniqueID F_IDENTIFY = 622822280U;
-                static const AkUniqueID G_IDENTIFY = 1026594175U;
+                static const AkUniqueID IDENTIFYA = 3757802718U;
+                static const AkUniqueID IDENTIFYB = 3757802717U;
+                static const AkUniqueID IDENTIFYC = 3757802716U;
+                static const AkUniqueID IDENTIFYD = 3757802715U;
+                static const AkUniqueID IDENTIFYE = 3757802714U;
+                static const AkUniqueID IDENTIFYF = 3757802713U;
+                static const AkUniqueID IDENTIFYG = 3757802712U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
-        } // namespace LETTER_IDENTIFY
+        } // namespace LETTERIDENTIFY
 
-        namespace LETTER_REQUEST
+        namespace LETTERREQUEST
         {
-            static const AkUniqueID GROUP = 3350046007U;
+            static const AkUniqueID GROUP = 4149575596U;
 
             namespace STATE
             {
-                static const AkUniqueID A_REQUEST = 3870699296U;
-                static const AkUniqueID B_REQUEST = 270256323U;
-                static const AkUniqueID C_REQUEST = 3915368578U;
-                static const AkUniqueID D_REQUEST = 3564163789U;
-                static const AkUniqueID E_REQUEST = 1916577556U;
-                static const AkUniqueID F_REQUEST = 215271383U;
-                static const AkUniqueID G_REQUEST = 1175714870U;
                 static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID RANDOM_REQUEST = 2678637886U;
+                static const AkUniqueID REQUESTA = 2001144001U;
+                static const AkUniqueID REQUESTB = 2001144002U;
+                static const AkUniqueID REQUESTC = 2001144003U;
+                static const AkUniqueID REQUESTD = 2001144004U;
+                static const AkUniqueID REQUESTE = 2001144005U;
+                static const AkUniqueID REQUESTF = 2001144006U;
+                static const AkUniqueID REQUESTG = 2001144007U;
+                static const AkUniqueID REQUESTRANDOM = 3774701181U;
             } // namespace STATE
-        } // namespace LETTER_REQUEST
+        } // namespace LETTERREQUEST
 
-        namespace LETTER_STATE
+        namespace LETTERSTATE
         {
-            static const AkUniqueID GROUP = 710661739U;
+            static const AkUniqueID GROUP = 423709012U;
 
             namespace STATE
             {
-                static const AkUniqueID CORRECT = 4126251273U;
-                static const AkUniqueID INCORRECT = 3691826278U;
+                static const AkUniqueID CORRECTDISCARD = 790084397U;
+                static const AkUniqueID CORRECTSTORAGE = 2157173928U;
+                static const AkUniqueID INCORRECTDISCARD = 228683484U;
+                static const AkUniqueID INCORRECTSTORAGE = 151513773U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
-        } // namespace LETTER_STATE
+        } // namespace LETTERSTATE
 
         namespace PLAYERSTREAK
         {

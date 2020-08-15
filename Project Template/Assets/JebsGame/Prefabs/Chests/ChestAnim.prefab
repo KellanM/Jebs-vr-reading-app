@@ -5844,7 +5844,7 @@ MonoBehaviour:
   ChestHit:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c2e1fb0c1afafaf4db2a1c3be30ec0fc,
+    WwiseObjectReference: {fileID: 11400000, guid: f412dfcdcd9e1c643a58d4401d96a348,
       type: 2}
   ChestOpen:
     idInternal: 0
