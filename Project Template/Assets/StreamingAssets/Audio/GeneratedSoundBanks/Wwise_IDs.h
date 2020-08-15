@@ -14,7 +14,10 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY__CRAB_FIGHT_MUSIC = 459954740U;
+        static const AkUniqueID PLAY_AMBBEACHWATER = 4222181760U;
+        static const AkUniqueID PLAY_AMBSHIPCREAKS = 1120221787U;
         static const AkUniqueID PLAY_EXAMPLE01 = 3776612809U;
+        static const AkUniqueID PLAY_LETTER_CHECK_IN_RESULT = 2886500637U;
         static const AkUniqueID PLAY_LETTER_NAMES_A = 1990152951U;
         static const AkUniqueID PLAY_LETTER_NAMES_B = 1990152948U;
         static const AkUniqueID PLAY_LETTER_NAMES_C = 1990152949U;
@@ -42,36 +45,22 @@ namespace AK
         static const AkUniqueID PLAY_LETTER_NAMES_Y = 1990152943U;
         static const AkUniqueID PLAY_LETTER_NAMES_Z = 1990152940U;
         static const AkUniqueID PLAY_LETTER_TURN_IN_RESULT = 3261928562U;
+        static const AkUniqueID PLAY_LETTERDISCARDCORRECT = 4055814622U;
+        static const AkUniqueID PLAY_LETTERDISCARDINCORRECT = 2790830821U;
         static const AkUniqueID PLAY_SFX_CANNONFIRE_01 = 661707113U;
         static const AkUniqueID PLAY_SFX_CHEST_CLOSE_01 = 1345257814U;
+        static const AkUniqueID PLAY_SFX_CHEST_DIG_HIT_01 = 37127528U;
         static const AkUniqueID PLAY_SFX_CHEST_OPEN_01 = 1285693754U;
         static const AkUniqueID PLAY_SFX_POPLETTERBAD_01 = 3842358642U;
         static const AkUniqueID PLAY_SFX_POPLETTERGOOD_01 = 122831938U;
+        static const AkUniqueID PLAY_SFXCHESTHITSHOVEL = 2567115144U;
         static const AkUniqueID PLAYBEACHAMBIENCE = 4080469328U;
-        static const AkUniqueID PLAYSHOVELHITCHEST = 711844212U;
-        static const AkUniqueID PLAYSHOVELHITSAND = 3574019415U;
-        static const AkUniqueID SET_STATE_A_IDENTIFY = 3586137436U;
-        static const AkUniqueID SET_STATE_A_REQUEST = 3355553019U;
-        static const AkUniqueID SET_STATE_B_IDENTIFY = 2273117453U;
-        static const AkUniqueID SET_STATE_B_REQUEST = 3869419544U;
-        static const AkUniqueID SET_STATE_C_IDENTIFY = 2173814366U;
-        static const AkUniqueID SET_STATE_C_REQUEST = 1361500753U;
-        static const AkUniqueID SET_STATE_CORRECT = 2582429414U;
-        static const AkUniqueID SET_STATE_D_IDENTIFY = 2202624967U;
-        static const AkUniqueID SET_STATE_D_REQUEST = 970437422U;
-        static const AkUniqueID SET_STATE_E_IDENTIFY = 987058800U;
-        static const AkUniqueID SET_STATE_E_REQUEST = 2996851727U;
-        static const AkUniqueID SET_STATE_F_IDENTIFY = 2256942993U;
-        static const AkUniqueID SET_STATE_F_REQUEST = 2940092780U;
-        static const AkUniqueID SET_STATE_G_IDENTIFY = 2658181330U;
-        static const AkUniqueID SET_STATE_G_REQUEST = 3017026757U;
-        static const AkUniqueID SET_STATE_INCORRECT = 3973431821U;
-        static const AkUniqueID SET_STATE_RANDOM_REQUEST = 3992176551U;
         static const AkUniqueID UNITYTESTEVENT = 950645520U;
     } // namespace EVENTS
 
     namespace DIALOGUE_EVENTS
     {
+        static const AkUniqueID LETTER_CHECK_IN = 2365499286U;
         static const AkUniqueID LETTER_TURN_IN = 2262387833U;
     } // namespace DIALOGUE_EVENTS
 
@@ -123,6 +112,18 @@ namespace AK
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace LETTER_STATE
+
+        namespace PLAYERSTREAK
+        {
+            static const AkUniqueID GROUP = 2125177228U;
+
+            namespace STATE
+            {
+                static const AkUniqueID COLD = 3687161267U;
+                static const AkUniqueID HOT = 1082843450U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace PLAYERSTREAK
 
     } // namespace STATES
 
