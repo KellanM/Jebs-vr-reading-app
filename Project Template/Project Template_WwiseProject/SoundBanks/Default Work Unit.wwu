@@ -53,7 +53,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Beach" ID="{5CCD4DB7-9B54-41E1-8ABA-CBDFABAB0C49}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Chests" ID="{8A4E718A-3B29-42EE-90DF-AB92C2D17169}" WorkUnitID="{8A4E718A-3B29-42EE-90DF-AB92C2D17169}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="chests_events" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ChestsEvents" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Beach" ID="{8D490279-B2FD-4F73-972B-69DFAAD08997}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
