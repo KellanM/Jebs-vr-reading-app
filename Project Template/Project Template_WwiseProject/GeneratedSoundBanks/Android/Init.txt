@@ -1,6 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	642578536	letter_identify			\Default Work Unit\beach_letter_states\letter_identify	
 	710661739	letter_state			\Default Work Unit\beach_letter_states\letter_state	
+	2125177228	PlayerStreak			\Default Work Unit\beach_letter_states\PlayerStreak	
 	3350046007	letter_request			\Default Work Unit\beach_letter_states\letter_request	
 
 State	ID	Name	State Group			Notes
@@ -15,6 +16,9 @@ State	ID	Name	State Group			Notes
 	748895195	None	letter_state			
 	3691826278	incorrect	letter_state			
 	4126251273	correct	letter_state			
+	748895195	None	PlayerStreak			
+	1082843450	Hot	PlayerStreak			
+	3687161267	Cold	PlayerStreak			
 	215271383	f_request	letter_request			
 	270256323	b_request	letter_request			
 	748895195	None	letter_request			
@@ -40,6 +44,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2645524322	Spaceship_Reverb			\Default Work Unit\Master Audio Bus\3D Audio\Spaceship_Reverb	
 
 Effect plug-ins	ID	Name	Type				Notes
+	1063298963	Wwise Meter (Custom)	Wwise Meter			
 	2645524322	Spaceship_Reverb	Wwise Matrix Reverb			
 
 Audio Devices	ID	Name	Type				Notes

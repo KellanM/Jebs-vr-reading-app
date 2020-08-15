@@ -1482,6 +1482,176 @@
 						</Entry>
 					</EntryList>
 				</DialogueEvent>
+				<DialogueEvent Name="letter_check_in" ID="{5318DBA3-07E6-4D9B-85E4-2892AE245B5B}">
+					<ArgumentList>
+						<ArgumentRef Name="PlayerStreak" ID="{9E359568-2D89-4820-9031-9ED4FCAEC54C}"/>
+						<ArgumentRef Name="letter_request" ID="{7983228A-5B93-482E-BB85-AD634A2D5F2A}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Cold" ID="{A3D7721C-75C1-4B80-9A99-6344577B8FB2}"/>
+								<PathElementRef Name="d_request" ID="{79C6C00B-76CD-4322-AD7D-29A7031D37A1}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Cold" ID="{A3D7721C-75C1-4B80-9A99-6344577B8FB2}"/>
+								<PathElementRef Name="b_request" ID="{6BE53570-5BAF-4E1E-8458-9F7FDCC16258}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Cold" ID="{A3D7721C-75C1-4B80-9A99-6344577B8FB2}"/>
+								<PathElementRef Name="c_request" ID="{C5FCBFCE-FFDE-4F44-A957-C8825B72FA97}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Cold" ID="{A3D7721C-75C1-4B80-9A99-6344577B8FB2}"/>
+								<PathElementRef Name="None" ID="{68C57A75-91CA-4B0E-B7AA-C6EFC1DEE88E}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Cold" ID="{A3D7721C-75C1-4B80-9A99-6344577B8FB2}"/>
+								<PathElementRef Name="random_request" ID="{7B34A2F0-61FE-4B89-A116-80F76B439830}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Cold" ID="{A3D7721C-75C1-4B80-9A99-6344577B8FB2}"/>
+								<PathElementRef Name="f_request" ID="{32CC86F2-3B23-4AA2-9F36-BD38602F54C0}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Cold" ID="{A3D7721C-75C1-4B80-9A99-6344577B8FB2}"/>
+								<PathElementRef Name="e_request" ID="{4F12732B-4174-4AC5-AFFF-C5231E087ACE}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Cold" ID="{A3D7721C-75C1-4B80-9A99-6344577B8FB2}"/>
+								<PathElementRef Name="g_request" ID="{87028E47-CE46-47E5-B605-3BA1F0AD515C}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Cold" ID="{A3D7721C-75C1-4B80-9A99-6344577B8FB2}"/>
+								<PathElementRef Name="a_request" ID="{8A756C11-F588-460D-9D68-15B5EC6CF79E}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Hot" ID="{70084EE9-629E-4F7B-9CBE-C1182724A001}"/>
+								<PathElementRef Name="d_request" ID="{79C6C00B-76CD-4322-AD7D-29A7031D37A1}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Hot" ID="{70084EE9-629E-4F7B-9CBE-C1182724A001}"/>
+								<PathElementRef Name="b_request" ID="{6BE53570-5BAF-4E1E-8458-9F7FDCC16258}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Hot" ID="{70084EE9-629E-4F7B-9CBE-C1182724A001}"/>
+								<PathElementRef Name="c_request" ID="{C5FCBFCE-FFDE-4F44-A957-C8825B72FA97}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Hot" ID="{70084EE9-629E-4F7B-9CBE-C1182724A001}"/>
+								<PathElementRef Name="None" ID="{68C57A75-91CA-4B0E-B7AA-C6EFC1DEE88E}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Hot" ID="{70084EE9-629E-4F7B-9CBE-C1182724A001}"/>
+								<PathElementRef Name="random_request" ID="{7B34A2F0-61FE-4B89-A116-80F76B439830}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Hot" ID="{70084EE9-629E-4F7B-9CBE-C1182724A001}"/>
+								<PathElementRef Name="f_request" ID="{32CC86F2-3B23-4AA2-9F36-BD38602F54C0}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Hot" ID="{70084EE9-629E-4F7B-9CBE-C1182724A001}"/>
+								<PathElementRef Name="e_request" ID="{4F12732B-4174-4AC5-AFFF-C5231E087ACE}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Hot" ID="{70084EE9-629E-4F7B-9CBE-C1182724A001}"/>
+								<PathElementRef Name="g_request" ID="{87028E47-CE46-47E5-B605-3BA1F0AD515C}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="Hot" ID="{70084EE9-629E-4F7B-9CBE-C1182724A001}"/>
+								<PathElementRef Name="a_request" ID="{8A756C11-F588-460D-9D68-15B5EC6CF79E}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="letter_check_in_result" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
+				</DialogueEvent>
 			</ChildrenList>
 		</WorkUnit>
 	</DynamicDialogue>
