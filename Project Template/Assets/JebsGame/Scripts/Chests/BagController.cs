@@ -23,6 +23,10 @@ public class BagController : MonoBehaviour
 
     CrabFactory factory;
 
+    public int positiveStreak = 0;
+    public int negativeStreak = 0;
+    int streakState = 0;
+
     private void Awake()
     {
         if (!bag) bag = this;
@@ -52,29 +56,53 @@ public class BagController : MonoBehaviour
 
     public void Evaluate(ChestLetter letter, bool accepted)
     {
+        bool correctAction;
+
         if (letter.value == searchForLetter && accepted)
         {
             NextLetter();
-            
-            pirate.PlayDialogue(letter.value, letter.value,true,searchForLetter);
 
-            positiveEvent.Post(gameObject);
+            positiveStreak++;
+            negativeStreak = 0;
+            correctAction = true;
+
+            // positiveEvent.Post(gameObject);
             positiveFeedback.Invoke();
         }    
         else if (letter.value != searchForLetter && !accepted)
         {
-            pirate.PlayDialogue(searchForLetter, letter.value, true, searchForLetter);
+            positiveStreak++;
+            negativeStreak = 0;
+            correctAction = true;
 
-            positiveEvent.Post(gameObject);
+            // positiveEvent.Post(gameObject);
             positiveFeedback.Invoke();
         }
         else
         {
-            pirate.PlayDialogue(searchForLetter, letter.value, false, searchForLetter);
+            negativeStreak++;
+            positiveStreak = 0;
+            correctAction = false;
 
-            negativeEvent.Post(gameObject);
+            // negativeEvent.Post(gameObject);
             negativeFeedback.Invoke();
         }
+
+        streakState = 0;
+        if (positiveStreak >= 3)
+        {
+            streakState = 1;
+            positiveStreak = 0;
+        }        
+        else if (negativeStreak >= 3)
+        {
+            streakState = -1;
+            negativeStreak = 0;
+        }
+            
+
+        pirate.PlayDialogue(searchForLetter, letter.value, correctAction, searchForLetter, streakState);
+
 
         factory.Restart();
     }

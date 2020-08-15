@@ -31,16 +31,44 @@ public class WwisePirateDialogue : MonoBehaviour
     public string stateStateGroup;
     public string correct;
     public string incorrect;
+    public AK.Wwise.Event discardedCorrectEvent;
+    public AK.Wwise.Event discardedIncorrectEvent;
 
-    public void PlayDialogue(char desiredLetter, char currentLetter, bool correctAction, char nextDesiredLetter)
+    [Header("Strikes")]
+    public string strikesStateGroup;
+    public string positiveStrike;
+    public string negativeStrike;
+
+    public void PlayDialogue(char desiredLetter, char currentLetter, bool correctAction, char nextDesiredLetter, int streakState)
     {
-        if (correctAction)
-            AkSoundEngine.SetState(stateStateGroup, correct);
-        else
-            AkSoundEngine.SetState(stateStateGroup, incorrect);
+        // Streak sentences
+        if (streakState > 0)
+            // Hot
+            AkSoundEngine.SetState(strikesStateGroup, positiveStrike);
+        else if (streakState < 0)
+            // Cold
+            AkSoundEngine.SetState(strikesStateGroup, negativeStrike);
 
+        /*
+        // Action result
+        if (correctAction && desiredLetter != currentLetter)
+            // Correct discarded
+            discardedCorrectEvent.Post(mouth);
+        else if (correctAction && desiredLetter == currentLetter)
+            // Correct sotred
+            AkSoundEngine.SetState(stateStateGroup, correct);
+        else if (!correctAction && desiredLetter != currentLetter)
+            // Incorrect stored
+            AkSoundEngine.SetState(stateStateGroup, incorrect);
+        else if (!correctAction && desiredLetter == currentLetter)
+            // Incorrect discarded
+            discardedIncorrectEvent.Post(mouth);
+            */
+
+        // Identify used letter
         AkSoundEngine.SetState(identifyStateGroup, GetState(identifyStateGroup, currentLetter));
 
+        // Request new letter if needed
         if (!(currentLetter == desiredLetter && correctAction) || desiredLetter != nextDesiredLetter)
             AkSoundEngine.SetState(requestStateGroup, GetState(requestStateGroup, nextDesiredLetter));
 
