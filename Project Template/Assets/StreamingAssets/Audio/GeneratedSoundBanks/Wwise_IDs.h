@@ -55,7 +55,6 @@ namespace AK
         static const AkUniqueID PLAY_SFX_POPLETTERGOOD_01 = 122831938U;
         static const AkUniqueID PLAY_SFXCHESTHITSHOVEL = 2567115144U;
         static const AkUniqueID PLAYBEACHAMBIENCE = 4080469328U;
-        static const AkUniqueID UNITYTESTEVENT = 950645520U;
     } // namespace EVENTS
 
     namespace DIALOGUE_EVENTS

@@ -305,7 +305,7 @@
 			<ShortName>Beach</ShortName>
 			<Path>English(US)\Beach.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4222181760" Name="Play_AmbBeachWater" ObjectPath="\Events\Default Work Unit\chests_events\Play_AmbBeachWater" MaxAttenuation="50.000000" DurationType="Infinite">
+				<Event Id="4222181760" Name="Play_AmbBeachWater" ObjectPath="\Events\Default Work Unit\chests_events\Play_AmbBeachWater" MaxAttenuation="27.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="476723056" Language="SFX">
 							<ShortName>AmbBeachWater.wav</ShortName>
@@ -313,7 +313,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1120221787" Name="Play_AMBShipCreaks" ObjectPath="\Events\Default Work Unit\chests_events\Play_AMBShipCreaks" DurationType="OneShot" DurationMin="0.000000" DurationMax="67.948341">
+				<Event Id="1120221787" Name="Play_AMBShipCreaks" ObjectPath="\Events\Default Work Unit\chests_events\Play_AMBShipCreaks" MaxAttenuation="30.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="36905139" Language="SFX">
 							<ShortName>AmbBeachShipCreak.wav</ShortName>
@@ -1212,7 +1212,7 @@
 				<Event Id="1345257814" Name="Play_SFX_Chest_Close_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Close_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
 				<Event Id="37127528" Name="Play_SFX_Chest_Dig_Hit_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Dig_Hit_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.107143" DurationMax="1.107143"/>
 				<Event Id="1285693754" Name="Play_SFX_Chest_Open_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Open_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
-				<Event Id="2567115144" Name="Play_SFXChestHitShovel" ObjectPath="\Events\Default Work Unit\chests_events\Play_SFXChestHitShovel" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.326194" DurationMax="2.265510">
+				<Event Id="2567115144" Name="Play_SFXChestHitShovel" ObjectPath="\Events\Default Work Unit\chests_events\Play_SFXChestHitShovel" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.362691" DurationMax="2.105266">
 					<IncludedMemoryFiles>
 						<File Id="35052418" Language="SFX">
 							<ShortName>SFX_Chest_Hit_Shovel-001.wav</ShortName>
@@ -1288,7 +1288,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="950645520" Name="UnityTestEvent" ObjectPath="\Events\Default Work Unit\chests_events\UnityTestEvent" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedDialogueEvents>
 				<DialogueEvent Id="2365499286" Name="letter_check_in" ObjectPath="\Dynamic Dialogue\Chests\letter_check_in"/>
