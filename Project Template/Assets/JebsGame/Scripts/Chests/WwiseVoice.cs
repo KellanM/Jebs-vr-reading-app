@@ -13,11 +13,19 @@ public class WwiseVoice : MonoBehaviour
     public AK.Wwise.Event TT_LetterA;
     public AK.Wwise.Event TT_LetterB;
     public AK.Wwise.Event TT_LetterC;
+    public AK.Wwise.Event TT_LetterD;
+    public AK.Wwise.Event TT_LetterE;
+    public AK.Wwise.Event TT_LetterF;
+    public AK.Wwise.Event TT_LetterG;
 
     [Header("Please Give Me")]
     public AK.Wwise.Event PGM_LetterA;
     public AK.Wwise.Event PGM_LetterB;
     public AK.Wwise.Event PGM_LetterC;
+    public AK.Wwise.Event PGM_LetterD;
+    public AK.Wwise.Event PGM_LetterE;
+    public AK.Wwise.Event PGM_LetterF;
+    public AK.Wwise.Event PGM_LetterG;
 
     void Start()
     {
@@ -41,6 +49,18 @@ public class WwiseVoice : MonoBehaviour
             case 'c':
                 TT_LetterC.Post(characterMouth);
                 break;
+            case 'd':
+                TT_LetterD.Post(characterMouth);
+                break;
+            case 'e':
+                TT_LetterE.Post(characterMouth);
+                break;
+            case 'f':
+                TT_LetterF.Post(characterMouth);
+                break;
+            case 'g':
+                TT_LetterG.Post(characterMouth);
+                break;
         }
     }
 
@@ -56,6 +76,18 @@ public class WwiseVoice : MonoBehaviour
                 break;
             case 'c':
                 PGM_LetterC.Post(characterMouth);
+                break;
+            case 'd':
+                PGM_LetterD.Post(characterMouth);
+                break;
+            case 'e':
+                PGM_LetterE.Post(characterMouth);
+                break;
+            case 'f':
+                PGM_LetterF.Post(characterMouth);
+                break;
+            case 'g':
+                PGM_LetterG.Post(characterMouth);
                 break;
         }
     }
