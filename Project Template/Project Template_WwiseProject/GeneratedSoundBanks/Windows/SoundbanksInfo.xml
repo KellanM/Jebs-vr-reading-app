@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents>
 		<DialogueEvent Id="3577256490" Name="LetterDiscardResult" ObjectPath="\Dynamic Dialogue\Chests\LetterDiscardResult">
