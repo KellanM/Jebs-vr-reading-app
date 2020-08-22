@@ -576,6 +576,10 @@
 							<ShortName>pirate_identify_a-004.wav</ShortName>
 							<Path>Voices\English(US)\pirate_identify_a-004_2454C0E8.wem</Path>
 						</File>
+						<File Id="699685593" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Discard_Correct-002.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Correct-002_BC5F66A4.wem</Path>
+						</File>
 						<File Id="705532773" Language="English(US)">
 							<ShortName>pirate_request_b\pirate_request_b-002.wav</ShortName>
 							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-002_10C4C929.wem</Path>
@@ -676,9 +680,17 @@
 							<ShortName>pirate_request_b\pirate_request_b-002.wav</ShortName>
 							<Path>Voices\English(US)\pirate_request_b\pirate_request_b-002_F89A8855.wem</Path>
 						</File>
+						<File Id="961407739" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Discard_Correct-001.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Correct-001_BF903C83.wem</Path>
+						</File>
 						<File Id="967976132" Language="English(US)">
 							<ShortName>pirate_request_g\pirate_request_g-004.wav</ShortName>
 							<Path>Voices\English(US)\pirate_request_g\pirate_request_g-004_DC43E633.wem</Path>
+						</File>
+						<File Id="980719981" Language="English(US)">
+							<ShortName>DX_Pirate_Chests_Discard_Correct-003.wav</ShortName>
+							<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Correct-003_B7893ED1.wem</Path>
 						</File>
 						<File Id="987388035" Language="English(US)">
 							<ShortName>pirate_identify_c\pirate_identify_c-001.wav</ShortName>
@@ -898,6 +910,13 @@
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{31487121-8C2B-43E3-B9B6-4A4966716392}">
+							<Media>
+								<File Id="699685593"/>
+								<File Id="961407739"/>
+								<File Id="980719981"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{FFA01985-2C0C-4491-A80F-3D89FD8895A5}">
 							<Media>
 								<File Id="262765872"/>
 								<File Id="629526900"/>
@@ -1343,6 +1362,10 @@
 					<ShortName>pirate_identify_a-004.wav</ShortName>
 					<Path>Voices\English(US)\pirate_identify_a-004_2454C0E8.wem</Path>
 				</File>
+				<File Id="699685593" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Discard_Correct-002.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Correct-002_BC5F66A4.wem</Path>
+				</File>
 				<File Id="701287292" Language="SFX">
 					<ShortName>AmbBeachBird-002.wav</ShortName>
 					<Path>SFX\AmbBeachBird-002_7168AC5D.wem</Path>
@@ -1471,9 +1494,17 @@
 					<ShortName>pirate_request_b\pirate_request_b-002.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_b\pirate_request_b-002_F89A8855.wem</Path>
 				</File>
+				<File Id="961407739" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Discard_Correct-001.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Correct-001_BF903C83.wem</Path>
+				</File>
 				<File Id="967976132" Language="English(US)">
 					<ShortName>pirate_request_g\pirate_request_g-004.wav</ShortName>
 					<Path>Voices\English(US)\pirate_request_g\pirate_request_g-004_DC43E633.wem</Path>
+				</File>
+				<File Id="980719981" Language="English(US)">
+					<ShortName>DX_Pirate_Chests_Discard_Correct-003.wav</ShortName>
+					<Path>Voices\English(US)\DX_Pirate_Chests_Discard_Correct-003_B7893ED1.wem</Path>
 				</File>
 				<File Id="987388035" Language="English(US)">
 					<ShortName>pirate_identify_c\pirate_identify_c-001.wav</ShortName>

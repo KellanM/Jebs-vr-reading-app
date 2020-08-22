@@ -3951,7 +3951,7 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<RandomSequenceContainer Name="pirate_incorrect_letter" ID="{EBD73C5F-AFD9-4816-9ACA-3562CB633224}" ShortID="27286302">
+																<RandomSequenceContainer Name="LetterStoreIcorrect" ID="{EBD73C5F-AFD9-4816-9ACA-3562CB633224}" ShortID="27286302">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
@@ -4112,7 +4112,7 @@
 																		</CustomStateList>
 																	</StateInfo>
 																</RandomSequenceContainer>
-																<RandomSequenceContainer Name="pirate_correct_letter" ID="{27ECF395-C06B-43D0-A7A3-C34AE8804143}" ShortID="97429646">
+																<RandomSequenceContainer Name="LetterStoreCorrect" ID="{27ECF395-C06B-43D0-A7A3-C34AE8804143}" ShortID="97429646">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{EBF493FB-4BA7-4FA6-9B3D-F98A798C0BCA}"/>
@@ -4536,10 +4536,10 @@
 															<GroupingInfo>
 																<GroupingBehaviorList>
 																	<GroupingBehavior>
-																		<ItemRef Name="pirate_incorrect_letter" ID="{EBD73C5F-AFD9-4816-9ACA-3562CB633224}"/>
+																		<ItemRef Name="LetterStoreIcorrect" ID="{EBD73C5F-AFD9-4816-9ACA-3562CB633224}"/>
 																	</GroupingBehavior>
 																	<GroupingBehavior>
-																		<ItemRef Name="pirate_correct_letter" ID="{27ECF395-C06B-43D0-A7A3-C34AE8804143}"/>
+																		<ItemRef Name="LetterStoreCorrect" ID="{27ECF395-C06B-43D0-A7A3-C34AE8804143}"/>
 																	</GroupingBehavior>
 																	<GroupingBehavior>
 																		<ItemRef Name="LetterDiscardCorrect" ID="{E79F989E-FD5B-48F4-B3F2-C8648F4A3E5F}"/>
@@ -4552,19 +4552,19 @@
 																	<Grouping>
 																		<SwitchRef Name="CorrectDiscard" ID="{31487121-8C2B-43E3-B9B6-4A4966716392}"/>
 																		<ItemList>
-																			<ItemRef Name="LetterDiscardIncorrect" ID="{F41D74FF-5FE4-4AE3-9EAE-D79CFE1F1502}"/>
+																			<ItemRef Name="LetterDiscardCorrect" ID="{E79F989E-FD5B-48F4-B3F2-C8648F4A3E5F}"/>
 																		</ItemList>
 																	</Grouping>
 																	<Grouping>
 																		<SwitchRef Name="IncorrectStorage" ID="{EC69AA65-74FB-4690-A594-4CE04D26DEEA}"/>
 																		<ItemList>
-																			<ItemRef Name="pirate_incorrect_letter" ID="{EBD73C5F-AFD9-4816-9ACA-3562CB633224}"/>
+																			<ItemRef Name="LetterStoreIcorrect" ID="{EBD73C5F-AFD9-4816-9ACA-3562CB633224}"/>
 																		</ItemList>
 																	</Grouping>
 																	<Grouping>
 																		<SwitchRef Name="CorrectStorage" ID="{FD78466A-B8CF-441C-9AAA-A0C38646555B}"/>
 																		<ItemList>
-																			<ItemRef Name="pirate_correct_letter" ID="{27ECF395-C06B-43D0-A7A3-C34AE8804143}"/>
+																			<ItemRef Name="LetterStoreCorrect" ID="{27ECF395-C06B-43D0-A7A3-C34AE8804143}"/>
 																		</ItemList>
 																	</Grouping>
 																	<Grouping>
