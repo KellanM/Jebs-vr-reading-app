@@ -56,7 +56,9 @@
 						<ObjectRef Name="ChestsEvents" ID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" WorkUnitID="{6B96E1FD-C3B4-4EC7-B5A0-5DA5BFA64958}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Beach" ID="{8D490279-B2FD-4F73-972B-69DFAAD08997}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
-					<ObjectExclusionList/>
+					<ObjectExclusionList>
+						<ObjectRef Name="LetterDiscardResult" ID="{5318DBA3-07E6-4D9B-85E4-2892AE245B5B}" WorkUnitID="{8A4E718A-3B29-42EE-90DF-AB92C2D17169}"/>
+					</ObjectExclusionList>
 					<GameSyncExclusionList/>
 				</SoundBank>
 			</ChildrenList>

@@ -46,6 +46,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	2645524322	Spaceship_Reverb			\Default Work Unit\Master Audio Bus\3D Audio\Spaceship_Reverb	
 
 Effect plug-ins	ID	Name	Type				Notes
+	889475134	Dialog_Leveler_Hard_(Custom)	Wwise Compressor			
 	1063298963	Wwise Meter (Custom)	Wwise Meter			
 	2645524322	Spaceship_Reverb	Wwise Matrix Reverb			
 

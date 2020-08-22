@@ -2,6 +2,7 @@
 <PluginInfo Project="Project Template_WwiseProject" Platform="Android" BasePlatform="Android">
 	<Plugins>
 		<Plugin Name="Wwise Silence" ID="6619138" DLL="AkSilenceGenerator"/>
+		<Plugin Name="Wwise Compressor" ID="7077891" DLL="AkCompressor"/>
 		<Plugin Name="Wwise Matrix Reverb" ID="7536643" DLL="AkMatrixReverb"/>
 		<Plugin Name="Wwise Meter" ID="8454147" DLL="AkSoundEngineDLL"/>
 		<Plugin Name="System" ID="11403271" DLL="DefaultSink"/>
