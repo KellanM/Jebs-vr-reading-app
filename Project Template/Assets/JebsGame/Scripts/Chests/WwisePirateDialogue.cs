@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 public class WwisePirateDialogue : MonoBehaviour
@@ -17,7 +16,6 @@ public class WwisePirateDialogue : MonoBehaviour
     public string e_identify;
     public string f_identify;
     public string g_identify;
-    public string none_identify;
 
     [Header("Request")]
     public string requestStateGroup;
@@ -28,99 +26,58 @@ public class WwisePirateDialogue : MonoBehaviour
     public string e_request;
     public string f_request;
     public string g_request;
-    public string none_request;
 
     [Header("State")]
     public string stateStateGroup;
-    public string storedCorrect;
-    public string storedIncorrect;
-    public string discardedCorrect;
-    public string discardedIncorrect;
-    public string noneState;
+    public string correct;
+    public string incorrect;
+    public AK.Wwise.Event discardedCorrectEvent;
+    public AK.Wwise.Event discardedIncorrectEvent;
 
     [Header("Strikes")]
     public string strikesStateGroup;
-    public string positiveStreak;
-    public string negativeStreak;
-    public string noneStreak;
-
-    [Header("Debug")]
-    public TextMeshPro tmpro;
+    public string positiveStrike;
+    public string negativeStrike;
 
     public void PlayDialogue(char desiredLetter, char currentLetter, bool correctAction, char nextDesiredLetter, int streakState)
     {
-        tmpro.text = "";
-
-        string stateStateName;
-        string identifyStateName;
-        string streakStateName;
-        string requestStateName;
-
-        // Action result
-        if (correctAction && desiredLetter != currentLetter)
-        {
-            stateStateName = discardedCorrect;
-        }
-        else if (correctAction && desiredLetter == currentLetter)
-        {
-            stateStateName = storedCorrect;
-        }
-        else if (!correctAction && desiredLetter != currentLetter)
-        {
-            stateStateName = storedIncorrect;
-        }
-        else if (!correctAction && desiredLetter == currentLetter)
-        {
-            stateStateName = discardedIncorrect;
-        }
-        else
-        {
-            stateStateName = noneState;
-        }
-        AkSoundEngine.SetState(stateStateGroup, stateStateName);
-        tmpro.text += "State: " + stateStateName + "\n";
-
-        // Identify used letter
-        identifyStateName = c_identify;
-        AkSoundEngine.SetState(identifyStateGroup, identifyStateName);
-        tmpro.text += "State: " + identifyStateName + "\n";
-
         // Streak sentences
         if (streakState > 0)
-        {
-            streakStateName = positiveStreak;
-        }
+            // Hot
+            AkSoundEngine.SetState(strikesStateGroup, positiveStrike);
         else if (streakState < 0)
-        {
-            streakStateName = negativeStreak;
-        }
-        else
-        {
-            streakStateName = noneStreak;
-        }
-        AkSoundEngine.SetState(strikesStateGroup, streakStateName);
-        tmpro.text += "Streak: " + streakStateName + "\n";
+            // Cold
+            AkSoundEngine.SetState(strikesStateGroup, negativeStrike);
+
+        /*
+        // Action result
+        if (correctAction && desiredLetter != currentLetter)
+            // Correct discarded
+            discardedCorrectEvent.Post(mouth);
+        else if (correctAction && desiredLetter == currentLetter)
+            // Correct sotred
+            AkSoundEngine.SetState(stateStateGroup, correct);
+        else if (!correctAction && desiredLetter != currentLetter)
+            // Incorrect stored
+            AkSoundEngine.SetState(stateStateGroup, incorrect);
+        else if (!correctAction && desiredLetter == currentLetter)
+            // Incorrect discarded
+            discardedIncorrectEvent.Post(mouth);
+            */
+
+        // Identify used letter
+        AkSoundEngine.SetState(identifyStateGroup, GetState(identifyStateGroup, currentLetter));
 
         // Request new letter if needed
         if (!(currentLetter == desiredLetter && correctAction) || desiredLetter != nextDesiredLetter)
-        {
-            requestStateName = GetState(requestStateGroup, nextDesiredLetter);
-        }
-        else
-        {
-            requestStateName = none_request;
-        }
-        AkSoundEngine.SetState(requestStateGroup, requestStateName);
-        tmpro.text += "Request: " + requestStateName + "\n";
+            AkSoundEngine.SetState(requestStateGroup, GetState(requestStateGroup, nextDesiredLetter));
 
         playEvent.Post(mouth);
     }
 
     public void RequestDialogue(char nextDesiredLetter)
     {
-        string requestStateName = GetState(requestStateGroup, nextDesiredLetter);
-        AkSoundEngine.SetState(requestStateGroup, requestStateName);
-        tmpro.text = "Request: " + requestStateName + "\n";
+        AkSoundEngine.SetState(requestStateGroup, GetState(requestStateGroup, nextDesiredLetter));
         playEvent.Post(mouth);
     }
 

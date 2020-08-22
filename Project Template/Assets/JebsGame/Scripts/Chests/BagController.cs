@@ -57,7 +57,6 @@ public class BagController : MonoBehaviour
     public void Evaluate(ChestLetter letter, bool accepted)
     {
         bool correctAction;
-        char previousCorrectLetter = searchForLetter;
 
         if (letter.value == searchForLetter && accepted)
         {
@@ -102,7 +101,7 @@ public class BagController : MonoBehaviour
         }
             
 
-        pirate.PlayDialogue(previousCorrectLetter, letter.value, correctAction, searchForLetter, streakState);
+        pirate.PlayDialogue(searchForLetter, letter.value, correctAction, searchForLetter, streakState);
 
 
         factory.Restart();
