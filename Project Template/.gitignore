@@ -59,7 +59,7 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Wwise
-Project Template/Project Template_WwiseProject/Assets/Wwise/Editor/ProjectData/
+Project Template/Assets/Wwise/Editor/ProjectData/
 Project Template/Project Template_WwiseProject/.cache
 Project Template/Project Template_WwiseProject/.backup
 *.akd
