@@ -29,10 +29,10 @@ public class WwisePirateDialogue : MonoBehaviour
 
     [Header("State")]
     public string stateStateGroup;
-    public string correct;
-    public string incorrect;
-    public AK.Wwise.Event discardedCorrectEvent;
-    public AK.Wwise.Event discardedIncorrectEvent;
+    public string storedCorrect;
+    public string storedIncorrect;
+    public string discardedCorrect;
+    public string discardedIncorrect;
 
     [Header("Strikes")]
     public string strikesStateGroup;
@@ -49,22 +49,19 @@ public class WwisePirateDialogue : MonoBehaviour
             // Cold
             AkSoundEngine.SetState(strikesStateGroup, negativeStrike);
 
-        /*
         // Action result
         if (correctAction && desiredLetter != currentLetter)
             // Correct discarded
-            discardedCorrectEvent.Post(mouth);
+            AkSoundEngine.SetState(stateStateGroup, discardedCorrect);
         else if (correctAction && desiredLetter == currentLetter)
             // Correct sotred
-            AkSoundEngine.SetState(stateStateGroup, correct);
+            AkSoundEngine.SetState(stateStateGroup, storedCorrect);
         else if (!correctAction && desiredLetter != currentLetter)
             // Incorrect stored
-            AkSoundEngine.SetState(stateStateGroup, incorrect);
+            AkSoundEngine.SetState(stateStateGroup, storedIncorrect);
         else if (!correctAction && desiredLetter == currentLetter)
             // Incorrect discarded
-            discardedIncorrectEvent.Post(mouth);
-            */
-
+            AkSoundEngine.SetState(stateStateGroup, discardedIncorrect);
         // Identify used letter
         AkSoundEngine.SetState(identifyStateGroup, GetState(identifyStateGroup, currentLetter));
 
