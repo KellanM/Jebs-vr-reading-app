@@ -43,7 +43,6 @@ namespace AK
         static const AkUniqueID PLAY_LETTER_NAMES_X = 1990152942U;
         static const AkUniqueID PLAY_LETTER_NAMES_Y = 1990152943U;
         static const AkUniqueID PLAY_LETTER_NAMES_Z = 1990152940U;
-        static const AkUniqueID PLAY_LETTERDISCARDRESULT = 3756627735U;
         static const AkUniqueID PLAY_LETTERTURNINRESULT = 2915774497U;
         static const AkUniqueID PLAY_SFX_CANNONFIRE_01 = 661707113U;
         static const AkUniqueID PLAY_SFX_CHEST_CLOSE_01 = 1345257814U;
@@ -58,7 +57,6 @@ namespace AK
 
     namespace DIALOGUE_EVENTS
     {
-        static const AkUniqueID LETTERDISCARDRESULT = 3577256490U;
         static const AkUniqueID LETTERTURNINRESULT = 1324115218U;
     } // namespace DIALOGUE_EVENTS
 
