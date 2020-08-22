@@ -51,26 +51,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_LetterDiscardResult" ID="{C28154BD-F64E-41B7-8C48-2549B5426F3B}">
+				<Event Name="Play_LetterTurnInResult" ID="{B9438387-6C2A-489C-B8B9-1ECA29352D02}">
 					<ChildrenList>
-						<Action Name="" ID="{0640B3C4-E538-4EA5-B2B3-0F469A2BD1FA}" ShortID="36498260">
-							<PropertyList>
-								<Property Name="Probability" Type="Real64" Value="50"/>
-							</PropertyList>
+						<Action Name="" ID="{603F0BC8-EAE2-4B21-96FA-CA8E69D5A429}" ShortID="690611341">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="LetterDiscardResult" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_LetterTurnInResult" ID="{02CE5B0B-4C21-409F-B76B-0D668BC5C312}">
-					<ChildrenList>
-						<Action Name="" ID="{9D87E795-3889-4729-BFC3-F92FC3A17F9D}" ShortID="891959216">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="LetterTurnInResult" ID="{14132A2A-1940-435B-A363-364B958916CD}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
+									<ObjectRef Name="LetterTurnInResult" ID="{7C7F4764-041A-4308-84A8-031E6C1D3163}" WorkUnitID="{82F01272-1101-4581-BC9E-1087C6D76238}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

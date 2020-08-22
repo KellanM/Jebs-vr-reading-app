@@ -9,6 +9,19 @@
 							<ObjectRef Name="System" ID="{2AC690F5-243E-4D2D-B5E9-65149AF72075}" WorkUnitID="{373A58E0-B9BF-41B4-9F33-E437F6AF416F}"/>
 						</Reference>
 						<Reference Name="Effect0">
+							<Custom CreatedFrom="{865FB36F-8717-4D30-AD05-14E56375CD40}">
+								<Effect Name="Dialog_Leveler_Hard_(Custom)" ID="{D164FCF2-EC5F-4438-8676-CEED03765BE1}" ShortID="889475134" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<PropertyList>
+										<Property Name="AttackTime" Type="Real32" Value="0.89"/>
+										<Property Name="OutputGain" Type="Real32" Value="1.8"/>
+										<Property Name="Ratio" Type="Real32" Value="6"/>
+										<Property Name="ReleaseTime" Type="Real32" Value="1.22"/>
+										<Property Name="Threshold" Type="Real32" Value="-15.7"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect1">
 							<Custom>
 								<Effect Name="Wwise Meter (Custom)" ID="{ACFF9AA1-3AF6-4747-8774-FB10A8611EBF}" ShortID="1063298963" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
 							</Custom>
