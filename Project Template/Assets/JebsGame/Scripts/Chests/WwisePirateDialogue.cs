@@ -81,7 +81,7 @@ public class WwisePirateDialogue : MonoBehaviour
         tmpro.text += "State: " + stateStateName + "\n";
 
         // Identify used letter
-        identifyStateName = c_identify;
+        identifyStateName = GetState(identifyStateGroup, currentLetter);
         AkSoundEngine.SetState(identifyStateGroup, identifyStateName);
         tmpro.text += "State: " + identifyStateName + "\n";
 
