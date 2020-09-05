@@ -18,6 +18,9 @@ public class BagController : MonoBehaviour
     public AK.Wwise.Event positiveEvent;
     public AK.Wwise.Event negativeEvent;
 
+    public ParticleSystem bagParticles;
+    public ParticleSystem chestParticles;
+
     public UnityEvent positiveFeedback;
     public UnityEvent negativeFeedback;
 
@@ -59,6 +62,8 @@ public class BagController : MonoBehaviour
         bool correctAction;
         char previousCorrectLetter = searchForLetter;
 
+        ParticleSystem particleSys = null;
+
         if (letter.value == searchForLetter && accepted)
         {
             NextLetter();
@@ -67,7 +72,8 @@ public class BagController : MonoBehaviour
             negativeStreak = 0;
             correctAction = true;
 
-            // positiveEvent.Post(gameObject);
+            particleSys = bagParticles;
+
             positiveFeedback.Invoke();
         }    
         else if (letter.value != searchForLetter && !accepted)
@@ -76,7 +82,8 @@ public class BagController : MonoBehaviour
             negativeStreak = 0;
             correctAction = true;
 
-            // positiveEvent.Post(gameObject);
+            particleSys = chestParticles;
+
             positiveFeedback.Invoke();
         }
         else
@@ -85,7 +92,6 @@ public class BagController : MonoBehaviour
             positiveStreak = 0;
             correctAction = false;
 
-            // negativeEvent.Post(gameObject);
             negativeFeedback.Invoke();
         }
 
@@ -94,11 +100,34 @@ public class BagController : MonoBehaviour
         {
             streakState = 1;
             positiveStreak = 0;
-        }        
+
+            CrabFactory.factory.crabsSpeed += CrabFactory.factory.speedIncrease;
+
+            if (particleSys) {
+                ParticleSystem.Burst burst = particleSys.emission.GetBurst(0);
+                burst.count = 10;
+                particleSys.emission.SetBurst(0,burst);
+                particleSys.Play();
+            }
+        }
+        else if (positiveStreak > 0)
+        {
+            if (particleSys)
+            {
+                ParticleSystem.Burst burst = particleSys.emission.GetBurst(0);
+                burst.count = 1;
+                particleSys.emission.SetBurst(0, burst);
+                particleSys.Play();
+            }
+        }
         else if (negativeStreak >= 3)
         {
             streakState = -1;
             negativeStreak = 0;
+        }
+        else if (negativeStreak > 0)
+        {
+
         }
             
 

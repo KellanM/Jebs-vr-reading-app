@@ -17,6 +17,8 @@ public class CrabBrain : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         agent.SetDestination(homeDestination.transform.position);
+
+        agent.speed = CrabFactory.factory.crabsSpeed;
     }
 
     void Update()
