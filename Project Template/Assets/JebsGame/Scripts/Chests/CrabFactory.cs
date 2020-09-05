@@ -9,6 +9,8 @@ public class CrabFactory : MonoBehaviour
     public static CrabFactory factory;
 
     public int numOfCrabs = 20;
+    public float crabsSpeed = 2.0f;
+    public float speedIncrease = 0.25f;
 
     public List<CrabBrain> crabs = new List<CrabBrain>();
     public List<CrabHome> homes = new List<CrabHome>();
@@ -47,7 +49,8 @@ public class CrabFactory : MonoBehaviour
 
         if (crabs.Count < numOfCrabs)
         {
-            int doorNumber = 0;
+            int doorNumber = Random.Range(0, homes.Count);
+
             CrabHome spawnPoint = homes[doorNumber];
             GameObject newBornCrab = Instantiate(crabPrefab,spawnPoint.transform.position,Quaternion.identity);
             newBornCrab.transform.parent = transform;
@@ -56,8 +59,11 @@ public class CrabFactory : MonoBehaviour
 
             List<CrabHome> availableNewDestinations = new List<CrabHome>(homes);
 
-            availableNewDestinations.Remove(spawnPoint);
-            smolBrain.homeDestination = homes[1];
+            availableNewDestinations.RemoveAt(doorNumber);
+
+            doorNumber = Random.Range(0, availableNewDestinations.Count);
+
+            smolBrain.homeDestination = homes[doorNumber];
 
             if (Random.value < chestProbability)
                 smolBrain.CarryChest();
