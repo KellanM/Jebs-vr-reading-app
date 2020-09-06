@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using UnityHelpers;
 using System.Collections.Generic;
+using System.Linq;
 
 public class LettersSpawner : MonoBehaviour
 {
     public string lettersPoolName = "Letters";
     public SpawnPicker spawnPicker;
+    [Tooltip("How many letter pairs to spawn (make sure there are enough spawn points in SpawnPicker)")]
     public int letterPairs = 4;
+    [Tooltip("The indices of the letters that can be spawned (0-25)")]
+    public List<int> spawnableIndices = new List<int>(new int[] { 0, 1, 2, 3, 4, 5, 6 });
     
-    private int[] allLetterIndices = new int[] { 0, 1, 2, 3 };
     private List<int> pickedLetters = new List<int>();
     private ObjectPool<Transform> lettersPool;
     private List<UnifiedLetter> spawnedLetters = new List<UnifiedLetter>();
@@ -49,17 +52,15 @@ public class LettersSpawner : MonoBehaviour
     private int PickRandomLetter()
     {
         int letterIndex = -1;
-        if (pickedLetters.Count != allLetterIndices.Length)
+        if (pickedLetters.Count != spawnableIndices.Count)
         {
-            List<int> availableLetterIndices = new List<int>(allLetterIndices);
-            pickedLetters.Sort();
+            List<int> availableLetters = new List<int>(spawnableIndices);
             for (int i = pickedLetters.Count - 1; i >= 0; i--)
-                availableLetterIndices.RemoveAt(pickedLetters[i]);
+                availableLetters.Remove(pickedLetters[i]);
             
-            int randomIndex = Random.Range(0, availableLetterIndices.Count);
-            letterIndex = availableLetterIndices[randomIndex];
-            int actualIndex = System.Array.IndexOf(allLetterIndices, letterIndex);
-            pickedLetters.Add(actualIndex);
+            int randomIndex = Random.Range(0, availableLetters.Count);
+            letterIndex = availableLetters[randomIndex];
+            pickedLetters.Add(availableLetters[randomIndex]);
         }
 
         return letterIndex;
