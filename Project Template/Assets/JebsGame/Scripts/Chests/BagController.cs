@@ -18,10 +18,17 @@ public class BagController : MonoBehaviour
     public AK.Wwise.Event positiveEvent;
     public AK.Wwise.Event negativeEvent;
 
+    public ParticleSystem bagParticles;
+    public ParticleSystem chestParticles;
+
     public UnityEvent positiveFeedback;
     public UnityEvent negativeFeedback;
 
     CrabFactory factory;
+
+    public int positiveStreak = 0;
+    public int negativeStreak = 0;
+    int streakState = 0;
 
     private void Awake()
     {
@@ -52,29 +59,80 @@ public class BagController : MonoBehaviour
 
     public void Evaluate(ChestLetter letter, bool accepted)
     {
+        bool correctAction;
+        char previousCorrectLetter = searchForLetter;
+
+        ParticleSystem particleSys = null;
+
         if (letter.value == searchForLetter && accepted)
         {
             NextLetter();
-            
-            pirate.PlayDialogue(letter.value, letter.value,true,searchForLetter);
 
-            positiveEvent.Post(gameObject);
+            positiveStreak++;
+            negativeStreak = 0;
+            correctAction = true;
+
+            particleSys = bagParticles;
+
             positiveFeedback.Invoke();
         }    
         else if (letter.value != searchForLetter && !accepted)
         {
-            pirate.PlayDialogue(searchForLetter, letter.value, true, searchForLetter);
+            positiveStreak++;
+            negativeStreak = 0;
+            correctAction = true;
 
-            positiveEvent.Post(gameObject);
+            particleSys = chestParticles;
+
             positiveFeedback.Invoke();
         }
         else
         {
-            pirate.PlayDialogue(searchForLetter, letter.value, false, searchForLetter);
+            negativeStreak++;
+            positiveStreak = 0;
+            correctAction = false;
 
-            negativeEvent.Post(gameObject);
             negativeFeedback.Invoke();
         }
+
+        streakState = 0;
+        if (positiveStreak >= 3)
+        {
+            streakState = 1;
+            positiveStreak = 0;
+
+            CrabFactory.factory.crabsSpeed += CrabFactory.factory.speedIncrease;
+
+            if (particleSys) {
+                ParticleSystem.Burst burst = particleSys.emission.GetBurst(0);
+                burst.count = 10;
+                particleSys.emission.SetBurst(0,burst);
+                particleSys.Play();
+            }
+        }
+        else if (positiveStreak > 0)
+        {
+            if (particleSys)
+            {
+                ParticleSystem.Burst burst = particleSys.emission.GetBurst(0);
+                burst.count = 1;
+                particleSys.emission.SetBurst(0, burst);
+                particleSys.Play();
+            }
+        }
+        else if (negativeStreak >= 3)
+        {
+            streakState = -1;
+            negativeStreak = 0;
+        }
+        else if (negativeStreak > 0)
+        {
+
+        }
+            
+
+        pirate.PlayDialogue(previousCorrectLetter, letter.value, correctAction, searchForLetter, streakState);
+
 
         factory.Restart();
     }

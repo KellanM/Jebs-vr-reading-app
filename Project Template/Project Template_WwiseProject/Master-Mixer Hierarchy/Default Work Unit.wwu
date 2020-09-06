@@ -8,6 +8,24 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{2AC690F5-243E-4D2D-B5E9-65149AF72075}" WorkUnitID="{373A58E0-B9BF-41B4-9F33-E437F6AF416F}"/>
 						</Reference>
+						<Reference Name="Effect0">
+							<Custom CreatedFrom="{865FB36F-8717-4D30-AD05-14E56375CD40}">
+								<Effect Name="Dialog_Leveler_Hard_(Custom)" ID="{D164FCF2-EC5F-4438-8676-CEED03765BE1}" ShortID="889475134" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<PropertyList>
+										<Property Name="AttackTime" Type="Real32" Value="0.89"/>
+										<Property Name="OutputGain" Type="Real32" Value="1.8"/>
+										<Property Name="Ratio" Type="Real32" Value="6"/>
+										<Property Name="ReleaseTime" Type="Real32" Value="1.22"/>
+										<Property Name="Threshold" Type="Real32" Value="-15.7"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect1">
+							<Custom>
+								<Effect Name="Wwise Meter (Custom)" ID="{ACFF9AA1-3AF6-4747-8774-FB10A8611EBF}" ShortID="1063298963" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
+							</Custom>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="2D Audio" ID="{F539B2E4-1BE9-439A-8EA5-45E2EC676AFC}">
@@ -19,7 +37,6 @@
 							</ChildrenList>
 						</Bus>
 						<Bus Name="3D Audio" ID="{26BC5A05-6373-4437-A44F-D12A6AE65D1C}">
-							<ReferenceList/>
 							<ChildrenList>
 								<Bus Name="3D_Dialog" ID="{D299AB54-3FE9-4AD6-AD93-F3D060BFBD30}"/>
 								<Bus Name="3D_SFX" ID="{A31DAF25-5345-4CA6-A32E-5F8E7026112B}"/>

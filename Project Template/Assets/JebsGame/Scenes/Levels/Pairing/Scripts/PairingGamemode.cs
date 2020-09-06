@@ -2,6 +2,7 @@
 using System.Linq;
 using TMPro;
 using UnityHelpers;
+using System.Collections;
 
 public class PairingGamemode : MonoBehaviour
 {
@@ -11,10 +12,25 @@ public class PairingGamemode : MonoBehaviour
     private float gameStartedTime = float.MinValue;
     private PairedLetter[] spawnedLetters;
 
+    [Header("Feedback")]
+    public Material positive;
+    public Material negative;
+    public Material neutral;
+    public MeshRenderer feedback;
+
     void Update()
     {
-        if (Time.time - gameStartedTime > gameTime || AreAllLettersMatched())
+        if (Time.time - gameStartedTime > gameTime)
+        {
+            StartCoroutine(SetFeedback(negative, 2.0f));
             RestartGame();
+        }
+        else if (AreAllLettersMatched())
+        {
+            StartCoroutine(SetFeedback(positive, 2.0f));
+            RestartGame();
+        }
+        
 
         timeLeftLabel.text = MathHelpers.SetDecimalPlaces((gameTime - (Time.time - gameStartedTime)), 1).ToString();
     }
@@ -58,6 +74,17 @@ public class PairingGamemode : MonoBehaviour
             //Paired something that is not the same letter or has the same case so disconnect
             //caller.GetComponentInParent<MagneticPairing>().Disconnect();
             lettersSpawner.UnpairAll();
+
+            StartCoroutine(SetFeedback(negative,2.0f));
         }
+    }
+
+    IEnumerator SetFeedback(Material mat, float seconds)
+    {
+        feedback.material = mat;
+
+        yield return new WaitForSeconds(seconds);
+
+        feedback.material = neutral;
     }
 }

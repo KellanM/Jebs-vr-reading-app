@@ -59,10 +59,9 @@ sysinfo.txt
 crashlytics-build.properties
 
 # Wwise
+Project Template/Assets/Wwise/Editor/ProjectData/
 Project Template/Project Template_WwiseProject/.cache
 Project Template/Project Template_WwiseProject/.backup
 *.akd
 *.validationcache
 *.wsettings
-*.asset
-*.asset.meta
