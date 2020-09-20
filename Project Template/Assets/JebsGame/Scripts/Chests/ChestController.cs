@@ -46,8 +46,9 @@ public class ChestController : MonoBehaviour
     public bool chestIsOpen = false;
 
     CrabFactory factory;
-    LetterGenerator letterGen;
-    ChestLetter myLetter;
+    ContentSpawner contentGen;
+    Spawnable myContent;
+
 
     float startTime, journeyLength, distCovered, fractionOfJourney;
 
@@ -57,7 +58,7 @@ public class ChestController : MonoBehaviour
         SetInteractable(false);
 
         factory = CrabFactory.factory;
-        letterGen = LetterGenerator.letterGen;
+        contentGen = ContentSpawner.conentGen;
     }
 
     void Update()
@@ -81,11 +82,11 @@ public class ChestController : MonoBehaviour
 
         if (pivotRot.x <= closedAngle && pivotRot.x >= semiClosedAngle && chestIsOpen)
         {
-            if (interiorTrigger.bounds.Contains(myLetter.transform.position))
+            if (interiorTrigger.bounds.Contains(myContent.transform.position))
             {
                 chestIsOpen = false;
 
-                BagController.bag.Evaluate(myLetter,false);
+                BagController.bag.Evaluate(myContent, false);
 
                 /*
                 factory.ToggleCrabs(true);
@@ -118,12 +119,16 @@ public class ChestController : MonoBehaviour
     public void ChestReady()
     {
         SetInteractable(true);
-        myLetter = letterGen.Generate(letterSpawn);
-        CrabFactory.factory.currentLetter = myLetter;
+        myContent = contentGen.Generate(letterSpawn);
 
-        for (int i = 0; i < letterSigns.Length; i++)
+        CrabFactory.factory.currentContent = myContent;
+
+        if (myContent is ChestLetter)
         {
-            letterSigns[i].text = myLetter.value.ToString();
+            for (int i = 0; i < letterSigns.Length; i++)
+            {
+                letterSigns[i].text = (myContent as ChestLetter).value.ToString();
+            }
         }
     }
 
@@ -163,9 +168,9 @@ public class ChestController : MonoBehaviour
 
             onClose.Invoke();
 
-            if (interiorTrigger.bounds.Contains(myLetter.transform.position))
+            if (interiorTrigger.bounds.Contains(myContent.transform.position))
             {
-                BagController.bag.Evaluate(myLetter, false);
+                BagController.bag.Evaluate(myContent, false);
 
                 /*
                 factory.ToggleCrabs(true);

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 184aadf4447222d498e0a3bee1c33d2a
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Ladylike BB
+  fontNames:
+  - Ladylike BB
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 00800a27cfd8caa4d8d39b79598979d5, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
