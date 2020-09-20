@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class ChestLetter : MonoBehaviour
+public class Spawnable : MonoBehaviour
 {
-    public char value;
-
     public XRBaseInteractor currentInteractor;
     XRBaseInteractor previousInteractor;
 

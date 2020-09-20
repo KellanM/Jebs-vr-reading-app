@@ -68,7 +68,6 @@ public class HandPresence : MonoBehaviour
         }
 
         handAnimator = handModel.GetComponent<Animator>();
-        Debug.LogWarning("HandModel name is " + handModel.name);
     }
 
     // Update is called once per frame

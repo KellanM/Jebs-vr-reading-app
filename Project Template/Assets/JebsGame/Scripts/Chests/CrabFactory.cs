@@ -21,7 +21,7 @@ public class CrabFactory : MonoBehaviour
     public float chestProbability;
 
     public Transform chestDestination;
-    public ChestLetter currentLetter;
+    public Spawnable currentContent;
 
     bool crabsAreRunning = true;
 
@@ -77,7 +77,7 @@ public class CrabFactory : MonoBehaviour
 
     public void Restart()
     {
-        currentLetter.Destroy();
+        currentContent.Destroy();
 
         for (int i = 0; i < transform.childCount; i++)
         {
