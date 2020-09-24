@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2922882914732978757}
   - component: {fileID: 2611282365779428722}
   - component: {fileID: 3244024530175026519}
-  - component: {fileID: 1087332836977849584}
+  - component: {fileID: 6459847886162462932}
   m_Layer: 0
   m_Name: Letter_Base
   m_TagString: Letter_Normal
@@ -178,7 +178,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.25, y: 0.25, z: 0.25}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1087332836977849584
+--- !u!114 &6459847886162462932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,11 +187,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2922882914732978758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7eab21e63587c724aa0889472e9fe25c, type: 3}
+  m_Script: {fileID: 11500000, guid: c6000f2316b15af46a38201fb61a6c97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosion: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56, type: 3}
-  whatLetter: A
+  explosion: {fileID: 0}
+  whatLetter: 
 --- !u!1 &4195773620172305044
 GameObject:
   m_ObjectHideFlags: 0
