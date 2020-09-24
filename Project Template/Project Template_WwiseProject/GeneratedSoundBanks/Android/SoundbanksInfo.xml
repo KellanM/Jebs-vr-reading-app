@@ -925,6 +925,38 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="731299122" Name="Play_NegativeFeedback" ObjectPath="\Events\Default Work Unit\ChestsEvents\Play_NegativeFeedback" DurationType="OneShot" DurationMin="3.360000" DurationMax="3.893333">
+					<IncludedMemoryFiles>
+						<File Id="127380389" Language="SFX">
+							<ShortName>Error_Magic_01_User_Interface_UI-498.wav</ShortName>
+							<Path>SFX\Error_Magic_01_User_Interface_UI-498_10C4C929.wem</Path>
+						</File>
+						<File Id="356124158" Language="SFX">
+							<ShortName>Error_Magic_03_User_Interface_UI-500.wav</ShortName>
+							<Path>SFX\Error_Magic_03_User_Interface_UI-500_10C4C929.wem</Path>
+						</File>
+						<File Id="462460767" Language="SFX">
+							<ShortName>Error_Magic_02_User_Interface_UI-499.wav</ShortName>
+							<Path>SFX\Error_Magic_02_User_Interface_UI-499_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2928908110" Name="Play_PositiveFeedback" ObjectPath="\Events\Default Work Unit\ChestsEvents\Play_PositiveFeedback" DurationType="OneShot" DurationMin="1.834667" DurationMax="1.941333">
+					<IncludedMemoryFiles>
+						<File Id="17876024" Language="SFX">
+							<ShortName>Affirmative_Crystalline_02_User_Interface_UI-521.wav</ShortName>
+							<Path>SFX\Affirmative_Crystalline_02_User_Interface_UI-521_10C4C929.wem</Path>
+						</File>
+						<File Id="739917940" Language="SFX">
+							<ShortName>Affirmative_Crystalline_01_User_Interface_UI-520.wav</ShortName>
+							<Path>SFX\Affirmative_Crystalline_01_User_Interface_UI-520_10C4C929.wem</Path>
+						</File>
+						<File Id="791304553" Language="SFX">
+							<ShortName>Affirmative_Crystalline_03_User_Interface_UI-522.wav</ShortName>
+							<Path>SFX\Affirmative_Crystalline_03_User_Interface_UI-522_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1345257814" Name="Play_SFX_Chest_Close_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Close_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>
 				<Event Id="37127528" Name="Play_SFX_Chest_Dig_Hit_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Dig_Hit_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.107143" DurationMax="1.107143"/>
 				<Event Id="1285693754" Name="Play_SFX_Chest_Open_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_Chest_Open_01" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="1.093742" DurationMax="1.093742"/>

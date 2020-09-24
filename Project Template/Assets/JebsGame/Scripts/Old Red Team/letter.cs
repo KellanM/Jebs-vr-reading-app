@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class letter : MonoBehaviour
+public class Letter : MonoBehaviour
 {
 
     public GameObject explosion;
@@ -14,11 +14,11 @@ public class letter : MonoBehaviour
 
     private bool was_grabbed_before = false;
 
-    private LetterManager letter_manager;
+    private LetterManager Letter_manager;
 
-    public LetterManager letter_Manager
+    public LetterManager Letter_Manager
     {
-        set { letter_manager = value; }
+        set { Letter_manager = value; }
     }
 
 
