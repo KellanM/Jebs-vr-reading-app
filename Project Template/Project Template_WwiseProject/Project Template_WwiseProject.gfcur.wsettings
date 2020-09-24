@@ -36,6 +36,7 @@
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
 				<Property Name="General\LatestPlatform" Type="string" Value="Android"/>
+				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="UK86Vgp560O3asNS4s7j3LjCw3+1w4JBkn18ZG1SzJs="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="smEZMiBSrEOB2PEtKhG+6XgJb5nDotdEsGUC/StHFjw="/>
@@ -69,10 +70,10 @@
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="t03NXFSb4UGKusvfq6sMSWRHf3waBAhDhKgDHmwdMWNyEvCCARGBRbyeEIfG12I4ZXP/g1v/bki5RVuT7RxHXdCmJZ8wJUJJl1iOzvjWEW20KaLfKU4aSpff1piuVY6TqpsarS0E+kqV6c98pGROKhP4GS7FuaRMsoTiFEDBE0ekYMn3b+X8TJk/Cy/bLG/qU4VhqaxJkk6vUCBCh9eQ7PiGj/j2079OllInA4rrQPYAzjgExabZT4MzGu9xIyWl"/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="t03NXFSb4UGKusvfq6sMSWRHf3waBAhDhKgDHmwdMWNyEvCCARGBRbyeEIfG12I4ZXP/g1v/bki5RVuT7RxHXdCmJZ8wJUJJl1iOzvjWEW20KaLfKU4aSpff1piuVY6TqpsarS0E+kqV6c98pGROKhP4GS7FuaRMsoTiFEDBE0ekYMn3b+X8TJk/Cy/bLG/qFQRr8pKrfk22m0cuWhbwO1OFYamsSZJOr1AgQofXkOz4ho/49tO/TpZSJwOK60D2eQJJjf2yc0+XK2nfqtCJlwDOOATFptlPgzMa73EjJaU="/>
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="qcQCrKgpLUezjAT+GF/Hbf3hlmu0w8dOtaBdpb+mSVg="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value="O5vL66IyakKPFzVT9iTERV5hKuQh17VEs5Cs29vRnTlolTWeiS0gSJAxntT8rsVMiiKDeZNbLki7ha1jSi1fKkiWrOPPm0tJl7hOCG5tAnH+N4nmaL4LSq+BvaSerw9S"/>
+				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value="O5vL66IyakKPFzVT9iTERV5hKuQh17VEs5Cs29vRnTlolTWeiS0gSJAxntT8rsVMiiKDeZNbLki7ha1jSi1fKv43ieZovgtKr4G9pJ6vD1I="/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
