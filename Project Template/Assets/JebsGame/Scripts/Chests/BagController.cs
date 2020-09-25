@@ -16,8 +16,9 @@ public class BagController : MonoBehaviour
     public char searchForLetter;
 
     public WwisePirateDialogue pirate;
-    public AK.Wwise.Event positiveEvent;
-    public AK.Wwise.Event negativeEvent;
+    public AK.Wwise.Event positiveWwiseEvent;
+    public AK.Wwise.Event negativeWwiseEvent;
+    public AkGameObj bagSoundSource;
 
     public ParticleSystem bagParticles;
     public ParticleSystem chestParticles;
@@ -184,6 +185,16 @@ public class BagController : MonoBehaviour
             bagParticles.Play();
         }
 
+    }
+
+    public void PositiveSoundFeedback()
+    {
+        positiveWwiseEvent.Post(bagSoundSource.gameObject);
+    }
+
+    public void NegativeSoundFeedback()
+    {
+        negativeWwiseEvent.Post(bagSoundSource.gameObject);
     }
 
 }
