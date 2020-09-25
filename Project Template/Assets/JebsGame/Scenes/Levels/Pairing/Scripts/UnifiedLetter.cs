@@ -3,7 +3,7 @@ using UnityHelpers;
 
 public class UnifiedLetter : MonoBehaviour
 {
-    public Letter[] availableLetters;
+    public letter[] availableLetters;
 
     private int currentIndex = -1;
     private bool isUppercase;
