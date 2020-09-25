@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Letter : MonoBehaviour
+public class letter : MonoBehaviour
 {
 
     public GameObject explosion;
