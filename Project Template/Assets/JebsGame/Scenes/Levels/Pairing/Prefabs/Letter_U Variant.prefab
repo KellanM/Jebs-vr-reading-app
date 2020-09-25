@@ -130,7 +130,7 @@ PrefabInstance:
     - target: {fileID: 2922882914732978758, guid: d7d564b9528e6044785745f6c25038d2,
         type: 3}
       propertyPath: m_Name
-      value: Letter_U
+      value: Letter_U Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4195773620172305044, guid: d7d564b9528e6044785745f6c25038d2,
         type: 3}
@@ -143,6 +143,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6142797775721319962, guid: 5ff414227648e9a4a8738de58945b795,
         type: 3}
+    - target: {fileID: 6459847886162462932, guid: d7d564b9528e6044785745f6c25038d2,
+        type: 3}
+      propertyPath: whatLetter
+      value: U
+      objectReference: {fileID: 0}
     - target: {fileID: 8224984354138918658, guid: d7d564b9528e6044785745f6c25038d2,
         type: 3}
       propertyPath: m_Name
