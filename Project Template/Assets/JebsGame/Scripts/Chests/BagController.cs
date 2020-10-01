@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -15,8 +16,9 @@ public class BagController : MonoBehaviour
     public char searchForLetter;
 
     public WwisePirateDialogue pirate;
-    public AK.Wwise.Event positiveEvent;
-    public AK.Wwise.Event negativeEvent;
+    public AK.Wwise.Event positiveWwiseEvent;
+    public AK.Wwise.Event negativeWwiseEvent;
+    public AkGameObj bagSoundSource;
 
     public ParticleSystem bagParticles;
     public ParticleSystem chestParticles;
@@ -26,9 +28,15 @@ public class BagController : MonoBehaviour
 
     CrabFactory factory;
 
+    [Header("Streak")]
+    public int streakNumber = 3;
     public int positiveStreak = 0;
     public int negativeStreak = 0;
     int streakState = 0;
+
+    public ImageFiller streakBar;
+    int goldBarCounter = 0;
+    public TextMeshPro goldBarTmpro;
 
     private void Awake()
     {
@@ -62,8 +70,6 @@ public class BagController : MonoBehaviour
         bool correctAction;
         char previousCorrectLetter = searchForLetter;
 
-        ParticleSystem particleSys = null;
-
         if (spawnable is ChestLetter)
         {
             ChestLetter letter = spawnable as ChestLetter;
@@ -76,8 +82,6 @@ public class BagController : MonoBehaviour
                 negativeStreak = 0;
                 correctAction = true;
 
-                particleSys = bagParticles;
-
                 positiveFeedback.Invoke();
             }
             else if (letter.value != searchForLetter && !accepted)
@@ -85,8 +89,6 @@ public class BagController : MonoBehaviour
                 positiveStreak++;
                 negativeStreak = 0;
                 correctAction = true;
-
-                particleSys = chestParticles;
 
                 positiveFeedback.Invoke();
             }
@@ -100,73 +102,62 @@ public class BagController : MonoBehaviour
             }
 
             streakState = 0;
-            if (positiveStreak >= 3)
+            if (positiveStreak > 0)
             {
-                streakState = 1;
-                positiveStreak = 0;
-
-                CrabFactory.factory.crabsSpeed += CrabFactory.factory.speedIncrease;
-
-                if (particleSys)
+                if (positiveStreak >= streakNumber)
                 {
-                    ParticleSystem.Burst burst = particleSys.emission.GetBurst(0);
-                    burst.count = 10;
-                    particleSys.emission.SetBurst(0, burst);
-                    particleSys.Play();
+                    streakState = 1;
+
+                    CrabFactory.factory.crabsSpeed += CrabFactory.factory.speedIncrease;
+
+                    PlayParticleBurst(10);
+
+                    ContentSpawner.conentGen.willSpawnPrize = true;
                 }
-
-                ContentSpawner.conentGen.willSpawnPrize = true;
-
-            }
-            else if (positiveStreak > 0)
-            {
-                if (particleSys)
+                else
                 {
-                    ParticleSystem.Burst burst = particleSys.emission.GetBurst(0);
-                    burst.count = 1;
-                    particleSys.emission.SetBurst(0, burst);
-                    particleSys.Play();
+                    PlayParticleBurst(1);
                 }
-            }
-            else if (negativeStreak >= 3)
-            {
-                streakState = -1;
-                negativeStreak = 0;
             }
             else if (negativeStreak > 0)
             {
+                if (negativeStreak >= streakNumber)
+                {
+                    streakState = -1;
+                    negativeStreak = 0;
+                }
+                else
+                {
 
+                }
+
+                positiveStreak = 0;
             }
 
             pirate.PlayDialogue(previousCorrectLetter, letter.value, correctAction, searchForLetter, streakState);
-
-            factory.Restart();
         }
         else
         {
             if (accepted)
             {
                 // Storing the prize is the correct choice
-                particleSys = bagParticles;
-
                 positiveFeedback.Invoke();
 
                 streakState = 1;
                 positiveStreak = 0;
 
-                if (particleSys)
-                {
-                    ParticleSystem.Burst burst = particleSys.emission.GetBurst(0);
-                    burst.count = 5;
-                    particleSys.emission.SetBurst(0, burst);
-                    particleSys.Play();
-                }
+                PlayParticleBurst(5);
 
-                factory.Restart();
+                goldBarCounter++;
+                goldBarTmpro.text = "x" + goldBarCounter;
+
+                
             }
         }
-        
-        
+
+        streakBar.SetFillAmount((float)positiveStreak / (float)streakNumber);
+
+        factory.Restart();
     }
 
     void NextLetter()
@@ -182,6 +173,28 @@ public class BagController : MonoBehaviour
         }
 
         searchForLetter = ContentSpawner.conentGen.letters[letterIndex];
+    }
+
+    void PlayParticleBurst(int burstSize)
+    {
+        if (bagParticles)
+        {
+            ParticleSystem.Burst burst = bagParticles.emission.GetBurst(0);
+            burst.count = burstSize;
+            bagParticles.emission.SetBurst(0, burst);
+            bagParticles.Play();
+        }
+
+    }
+
+    public void PositiveSoundFeedback()
+    {
+        positiveWwiseEvent.Post(bagSoundSource.gameObject);
+    }
+
+    public void NegativeSoundFeedback()
+    {
+        negativeWwiseEvent.Post(bagSoundSource.gameObject);
     }
 
 }

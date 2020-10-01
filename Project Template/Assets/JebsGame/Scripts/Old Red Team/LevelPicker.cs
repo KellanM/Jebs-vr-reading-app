@@ -30,7 +30,7 @@ public class LevelPicker : MonoBehaviour
         //CHECK FOR LETTER OR RESTART/HOME OBJ PLACED ON THE PICKER
         if(other.tag == "Letter_Normal")
         {
-            Letter letterScript = other.GetComponent("letter") as Letter;
+            letter letterScript = other.GetComponent("letter") as letter;
             letterLvl = letterScript.whatLetter;
             mngScript.letterLvl = letterLvl;
             SceneManager.LoadScene("Letter_Room_Teach");
