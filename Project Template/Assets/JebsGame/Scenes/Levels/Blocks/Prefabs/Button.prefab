@@ -305,7 +305,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   top: {fileID: 2829117630423061272}
-  value: 0
+  clickValue: 0.6
+  onButtonDown:
+    m_PersistentCalls:
+      m_Calls: []
+  onButtonUp:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2829117630423061275
 GameObject:
   m_ObjectHideFlags: 0
