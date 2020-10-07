@@ -55,7 +55,7 @@ public class PhysicsTriggerButton : MonoBehaviour
         value = 0;
         if (values.Count > 0)
             value = values.Min();
-        var topBounds = top.GetTotalBounds(Space.Self);
+        var topBounds = top.GetTotalBounds(Space.Self, ~0, false, false, true);
         top.localPosition = -Vector3.up * topBounds.extents.y - Vector3.up * value * topBounds.extents.y;
         values.Clear();
     }
@@ -63,8 +63,8 @@ public class PhysicsTriggerButton : MonoBehaviour
     public void TriggerStay(TreeCollider.CollisionInfo colInfo)
     {
         Transform other = colInfo.otherCollider.transform;
-        var otherBounds = other.GetBounds(Space.World, true);
-        var selfBounds = colInfo.sender.transform.GetBounds(Space.Self, true);
+        var otherBounds = other.GetBounds(Space.World, true, true);
+        var selfBounds = colInfo.sender.transform.GetBounds(Space.Self, true, true);
 
         Vector3 closestPointToBtn = other.position - otherBounds.extents.Multiply(transform.up);
         float otherY = transform.InverseTransformPoint(closestPointToBtn).y;

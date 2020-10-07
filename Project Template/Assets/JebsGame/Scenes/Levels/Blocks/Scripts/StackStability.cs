@@ -32,7 +32,7 @@ public class StackStability : MonoBehaviour
             if (otherCube != null && otherCube.isGrounded)
             {
                 undercube = otherCube;
-                isStacked = GrabbableSelf.GetGrabCount() <= 0;
+                isStacked = true;
             }
             else
                 isStacked = false;
@@ -43,56 +43,33 @@ public class StackStability : MonoBehaviour
 
     private void AnchorToStack()
     {
-        if (isStacked)
+        if (GrabbableSelf.GetGrabCount() <= 0)
         {
-            if (!_prevStacked)
+            if (isStacked)
             {
                 var cubeBounds = undercube.transform.GetTotalBounds(Space.Self);
-                Vector3 upAlignedAxis = GetAxisAlignedTo(undercube.transform, Vector3.up);
+                Vector3 upAlignedAxis = undercube.transform.GetAxisAlignedTo(Vector3.up);
                 Vector3 stackedPosition = undercube.transform.position + upAlignedAxis * cubeBounds.size.y;
 
-                Vector3 selfUpAligned = GetAxisAlignedTo(transform, Vector3.up);
-                Vector3 selfForwardAligned = GetAxisAlignedTo(transform, Vector3.forward);
+                Vector3 selfUpAligned = transform.GetAxisAlignedTo(Vector3.up);
+                Vector3 selfForwardAligned = transform.GetAxisAlignedTo(Vector3.forward);
                 Quaternion stackedOrientation = Quaternion.LookRotation(selfForwardAligned, selfUpAligned);
 
                 PhysicsSelf.position = stackedPosition;
                 PhysicsSelf.rotation = stackedOrientation.Shorten();
-            }
 
-            PhysicsSelf.striveForPosition = true;
-            PhysicsSelf.striveForOrientation = true;
-        }
-        else
-        {
-            if (GrabbableSelf.GetGrabCount() <= 0)
+                PhysicsSelf.counteractGravity = true;
+                PhysicsSelf.striveForPosition = true;
+                PhysicsSelf.striveForOrientation = true;
+            }
+            else
             {
+                PhysicsSelf.counteractGravity = false;
                 PhysicsSelf.striveForPosition = false;
                 PhysicsSelf.striveForOrientation = false;
             }
         }
 
-        _prevStacked = isStacked;
-    }
-
-    public static Vector3 GetAxisAlignedTo(Transform orientedObject, Vector3 worldDirection)
-    {
-        Vector3 upAlignedAxis = orientedObject.up;
-        float closestDot = Vector3.Dot(upAlignedAxis, Vector3.up);
-        float otherDot = Vector3.Dot(orientedObject.right, Vector3.up);
-        if (Mathf.Abs(otherDot) > Mathf.Abs(closestDot))
-        {
-            upAlignedAxis = orientedObject.right;
-            closestDot = otherDot;
-        }
-        otherDot = Vector3.Dot(orientedObject.forward, Vector3.up);
-        if (Mathf.Abs(otherDot) > Mathf.Abs(closestDot))
-        {
-            upAlignedAxis = orientedObject.forward;
-            closestDot = otherDot;
-        }
-        if (otherDot < 0)
-            upAlignedAxis *= -1;
-
-        return upAlignedAxis;
+        // _prevStacked = isStacked;
     }
 }
