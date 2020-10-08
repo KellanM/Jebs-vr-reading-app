@@ -9,10 +9,10 @@ public class StackStability : MonoBehaviour
     private PhysicsTransform _physicsSelf;
 
     public float groundDistDetection = 0.001f;
-    public bool isGrounded;
-    public bool isStacked;
+    public bool isGrounded { get; private set; }
+    public bool isStacked { get; private set; }
     private bool _prevStacked;
-    private StackStability undercube;
+    public StackStability undercube { get; private set; }
 
     void Update()
     {
@@ -35,10 +35,16 @@ public class StackStability : MonoBehaviour
                 isStacked = true;
             }
             else
+            {
                 isStacked = false;
+                undercube = null;
+            }
         }
         else
+        {
             isStacked = false;
+            undercube = null;
+        }
     }
 
     private void AnchorToStack()
@@ -48,11 +54,11 @@ public class StackStability : MonoBehaviour
             if (isStacked)
             {
                 var cubeBounds = undercube.transform.GetTotalBounds(Space.Self);
-                Vector3 upAlignedAxis = undercube.transform.GetAxisAlignedTo(Vector3.up);
+                Vector3 upAlignedAxis = Vector3.up.GetAxisAlignedTo(undercube.transform);
                 Vector3 stackedPosition = undercube.transform.position + upAlignedAxis * cubeBounds.size.y;
 
-                Vector3 selfUpAligned = transform.GetAxisAlignedTo(Vector3.up);
-                Vector3 selfForwardAligned = transform.GetAxisAlignedTo(Vector3.forward);
+                Vector3 selfUpAligned = transform.up.GetAxisAlignedTo(undercube.transform);
+                Vector3 selfForwardAligned = transform.forward.GetAxisAlignedTo(undercube.transform);
                 Quaternion stackedOrientation = Quaternion.LookRotation(selfForwardAligned, selfUpAligned);
 
                 PhysicsSelf.position = stackedPosition;

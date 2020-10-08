@@ -17,10 +17,6 @@ public class LetterMatchMachine : MonoBehaviour
     private int spokenLetterIndex, shownLetterIndex;
     public int randomness = 1, otherLetterCount;
 
-    void Start()
-    {
-        ResetLetters();
-    }
     void Update()
     {
         if (Time.time - lastSpoken >= spokenFrequency)

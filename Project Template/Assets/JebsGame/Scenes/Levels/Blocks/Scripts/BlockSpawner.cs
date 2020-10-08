@@ -22,4 +22,9 @@ public class BlockSpawner : MonoBehaviour
         Vector3 spawnOffset = transform.right * randX + transform.forward * randZ;
         BlocksPool.Get((block) => { block.position = transform.position + spawnOffset; });
     }
+
+    public void DespawnAll()
+    {
+        BlocksPool.ReturnAll();
+    }
 }

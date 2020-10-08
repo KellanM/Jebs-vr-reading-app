@@ -8,8 +8,14 @@ public class BlocksGamemode : MonoBehaviour
 
     public LetterMatchMachine letterMachine;
     public BlockSpawner blockSpawner;
+    public GameLoop roundLoop;
     private int streak;
 
+    void Start()
+    {
+        RestartRound();
+    }
+    
     private void SetFeedbackColor(Color color)
     {
         if (colorRoutine != null)
@@ -39,5 +45,24 @@ public class BlocksGamemode : MonoBehaviour
     {
         streak = 0;
         SetFeedbackColor(Color.red);
+    }
+
+    public void HandleWin()
+    {
+        SetFeedbackColor(Color.green);
+        RestartRound();
+    }
+    public void HandleLose()
+    {
+        SetFeedbackColor(Color.red);
+        RestartRound();
+    }
+
+    public void RestartRound()
+    {
+        blockSpawner.DespawnAll();
+        streak = 0;
+        letterMachine.ResetLetters();
+        roundLoop.StartRound();
     }
 }
