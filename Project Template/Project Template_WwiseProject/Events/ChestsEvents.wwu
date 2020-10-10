@@ -62,6 +62,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_NegativeFeedback" ID="{8326C67F-8B44-4ECF-82FA-5B6321470F61}">
+					<ChildrenList>
+						<Action Name="" ID="{ADC5FFE5-6354-4A35-BE5E-14EDB3D869FD}" ShortID="503111910">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NegativeFeedback" ID="{0438CE00-A6C5-4FD9-8333-1AEF712325A5}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PositiveFeedback" ID="{4926E702-DA37-46D6-AC3F-85F3841B13B7}">
+					<ChildrenList>
+						<Action Name="" ID="{307D0BB9-A5CE-4C3F-81B4-A4D533E18840}" ShortID="650652534">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PositiveFeedback" ID="{83FF7365-FF5B-486E-B945-5B93ED1C475D}" WorkUnitID="{AD1A9BAA-042D-4AFA-95E9-CF7CA4644E2A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

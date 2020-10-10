@@ -3,6 +3,7 @@ using System.Linq;
 using TMPro;
 using UnityHelpers;
 using System.Collections;
+using UnityEngine.Events;
 
 public class PairingGamemode : MonoBehaviour
 {
@@ -13,21 +14,25 @@ public class PairingGamemode : MonoBehaviour
     private PairedLetter[] spawnedLetters;
 
     [Header("Feedback")]
-    public Material positive;
-    public Material negative;
-    public Material neutral;
+    public UnityEvent positiveFeedback;
+    public UnityEvent negativeFeedback;
+    public Material positiveMat;
+    public Material negativeMat;
+    public Material neutralMat;
     public MeshRenderer feedback;
 
     void Update()
     {
         if (Time.time - gameStartedTime > gameTime)
         {
-            StartCoroutine(SetFeedback(negative, 2.0f));
+            StartCoroutine(SetFeedback(negativeMat, 2.0f));
+            negativeFeedback.Invoke();
             RestartGame();
         }
         else if (AreAllLettersMatched())
         {
-            StartCoroutine(SetFeedback(positive, 2.0f));
+            StartCoroutine(SetFeedback(positiveMat, 2.0f));
+            positiveFeedback.Invoke();
             RestartGame();
         }
         
@@ -75,7 +80,13 @@ public class PairingGamemode : MonoBehaviour
             //caller.GetComponentInParent<MagneticPairing>().Disconnect();
             lettersSpawner.UnpairAll();
 
-            StartCoroutine(SetFeedback(negative,2.0f));
+            StartCoroutine(SetFeedback(negativeMat,2.0f));
+            negativeFeedback.Invoke();
+        }
+        else
+        {
+            StartCoroutine(SetFeedback(positiveMat, 0.5f));
+            positiveFeedback.Invoke();
         }
     }
 
@@ -85,6 +96,6 @@ public class PairingGamemode : MonoBehaviour
 
         yield return new WaitForSeconds(seconds);
 
-        feedback.material = neutral;
+        feedback.material = neutralMat;
     }
 }
