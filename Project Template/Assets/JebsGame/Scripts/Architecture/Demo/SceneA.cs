@@ -1,6 +1,7 @@
 ﻿using JebsReadingGame.CurrencySystem;
 using JebsReadingGame.GamemodeManager;
 using JebsReadingGame.Notifiers;
+using JebsReadingGame.SceneManager;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -43,7 +44,7 @@ public class SceneA : MonoBehaviour
 
                 // Check scene change
                 if (CurrencySystemView.singleton.viewModel.totalCoins >= coinsToChangeScene)
-                    SceneManager.LoadScene(pathForNextScene, LoadSceneMode.Single);
+                    SceneManagerView.singleton.onSceneChange.Invoke(pathForNextScene);
             }
         }
     }

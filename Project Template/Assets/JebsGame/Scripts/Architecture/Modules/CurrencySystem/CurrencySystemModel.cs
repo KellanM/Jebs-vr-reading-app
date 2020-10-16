@@ -25,10 +25,15 @@ namespace JebsReadingGame.CurrencySystem
     {
         string totalCoinsKey = "totalCoins";
 
-        public int totalCoins
+        public int totalCoins;
+
+        internal void LoadValues()
         {
-            get { return PlayerPrefs.GetInt(totalCoinsKey); }
-            set { PlayerPrefs.SetInt(totalCoinsKey, value); }
+            totalCoins = PlayerPrefs.GetInt(totalCoinsKey);
+        }
+        internal void SaveValues()
+        {
+            PlayerPrefs.SetInt(totalCoinsKey, totalCoins);
         }
     }
 
