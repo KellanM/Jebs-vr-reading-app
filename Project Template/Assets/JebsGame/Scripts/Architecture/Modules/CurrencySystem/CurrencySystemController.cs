@@ -1,4 +1,5 @@
 ﻿using JebsReadingGame.GamemodeManager;
+using JebsReadingGame.SceneManager;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,14 +20,21 @@ namespace JebsReadingGame.CurrencySystem
         {
             view.viewModel = new CurrencySystemView.ViewModel(model);
             model.view = view;
+            model.persistent.LoadValues();
         }
 
         private void Start()
         {
             // Subscribe to events
             GamemodeManagerView.singleton.onPositiveStreak.AddListener(EarnCoins);
+            SceneManagerView.singleton.onSceneChange.AddListener(SceneChanged);
         }
 
+        void SceneChanged(string sceneName)
+        {
+            model.persistent.SaveValues();
+        }
+        
         void EarnCoins()
         {
             model.persistent.totalCoins += model.streakCoins;
