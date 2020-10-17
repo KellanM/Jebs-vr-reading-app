@@ -6,8 +6,8 @@
 				<Effect Name="Spaceship_Reverb" ID="{2E44A19C-9563-4D29-8CB8-1B4A9AFD2009}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 					<PropertyList>
 						<Property Name="HFRatio" Type="Real32" Value="4"/>
-						<Property Name="ReverbTime" Type="Real32" Value="1.8"/>
-						<Property Name="WetLevel" Type="Real32" Value="-50"/>
+						<Property Name="ReverbTime" Type="Real32" Value="1.4"/>
+						<Property Name="WetLevel" Type="Real32" Value="-70"/>
 					</PropertyList>
 				</Effect>
 			</ChildrenList>

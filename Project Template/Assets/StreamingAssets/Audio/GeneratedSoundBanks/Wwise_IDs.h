@@ -64,6 +64,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_UI_ERROR_02 = 1286820232U;
         static const AkUniqueID PLAY_SFX_UI_GLASS_01 = 547774049U;
         static const AkUniqueID PLAY_SFX_UI_POP_01 = 1902291482U;
+        static const AkUniqueID PLAY_SFX_UI_POP_02 = 1902291481U;
         static const AkUniqueID PLAY_SFX_UI_TONE_01 = 3268106035U;
         static const AkUniqueID PLAY_SFXCHESTHITSHOVEL = 2567115144U;
         static const AkUniqueID PLAYBEACHAMBIENCE = 4080469328U;
