@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Unity Projects\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GitHub Repos\Jebs-vr-reading-app\Project Template\Project Template_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents>
 		<DialogueEvent Id="1324115218" Name="LetterTurnInResult" ObjectPath="\Dynamic Dialogue\Chests\LetterTurnInResult">
@@ -247,6 +247,118 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3403445548" Name="Play_SFX_UI_Bitcrushed_01" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Bitcrushed_01" DurationType="OneShot" DurationMin="0.449688" DurationMax="0.449688">
+					<IncludedMemoryFiles>
+						<File Id="750765082" Language="SFX">
+							<ShortName>SFX_UI_Bitcrushed_01.wav</ShortName>
+							<Path>SFX\SFX_UI_Bitcrushed_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="188072201" Name="Play_SFX_UI_Bubbly_01" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Bubbly_01" DurationType="OneShot" DurationMin="0.775312" DurationMax="0.775312">
+					<IncludedMemoryFiles>
+						<File Id="331098331" Language="SFX">
+							<ShortName>SFX_UI_Bubbly_01.wav</ShortName>
+							<Path>SFX\SFX_UI_Bubbly_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="188072202" Name="Play_SFX_UI_Bubbly_02" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Bubbly_02" DurationType="OneShot" DurationMin="0.452771" DurationMax="0.452771">
+					<IncludedMemoryFiles>
+						<File Id="565236857" Language="SFX">
+							<ShortName>SFX_UI_Bubbly_02.wav</ShortName>
+							<Path>SFX\SFX_UI_Bubbly_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="188072203" Name="Play_SFX_UI_Bubbly_03" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Bubbly_03" DurationType="OneShot" DurationMin="0.186188" DurationMax="0.186188">
+					<IncludedMemoryFiles>
+						<File Id="309944460" Language="SFX">
+							<ShortName>SFX_UI_Bubbly_03.wav</ShortName>
+							<Path>SFX\SFX_UI_Bubbly_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1505030773" Name="Play_SFX_UI_Click_01" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Click_01" DurationType="OneShot" DurationMin="0.066229" DurationMax="0.066229">
+					<IncludedMemoryFiles>
+						<File Id="314961034" Language="SFX">
+							<ShortName>SFX_UI_Click_01.wav</ShortName>
+							<Path>SFX\SFX_UI_Click_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1505030774" Name="Play_SFX_UI_Click_02" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Click_02" DurationType="OneShot" DurationMin="0.155958" DurationMax="0.155958">
+					<IncludedMemoryFiles>
+						<File Id="810614895" Language="SFX">
+							<ShortName>SFX_UI_Click_02.wav</ShortName>
+							<Path>SFX\SFX_UI_Click_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1505030775" Name="Play_SFX_UI_Click_03" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Click_03" DurationType="OneShot" DurationMin="0.175417" DurationMax="0.175417">
+					<IncludedMemoryFiles>
+						<File Id="715191493" Language="SFX">
+							<ShortName>SFX_UI_Click_03.wav</ShortName>
+							<Path>SFX\SFX_UI_Click_03_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1505030768" Name="Play_SFX_UI_Click_04" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Click_04" DurationType="OneShot" DurationMin="0.088771" DurationMax="0.088771">
+					<IncludedMemoryFiles>
+						<File Id="552057451" Language="SFX">
+							<ShortName>SFX_UI_Click_04.wav</ShortName>
+							<Path>SFX\SFX_UI_Click_04_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1286820235" Name="Play_SFX_UI_Error_01" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Error_01" DurationType="OneShot" DurationMin="0.126500" DurationMax="0.126500">
+					<IncludedMemoryFiles>
+						<File Id="818031079" Language="SFX">
+							<ShortName>SFX_UI_Error_01.wav</ShortName>
+							<Path>SFX\SFX_UI_Error_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1286820232" Name="Play_SFX_UI_Error_02" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Error_02" DurationType="OneShot" DurationMin="0.108583" DurationMax="0.108583">
+					<IncludedMemoryFiles>
+						<File Id="175534605" Language="SFX">
+							<ShortName>SFX_UI_Error_02.wav</ShortName>
+							<Path>SFX\SFX_UI_Error_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="547774049" Name="Play_SFX_UI_Glass_01" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Glass_01" DurationType="OneShot" DurationMin="0.234437" DurationMax="0.234437">
+					<IncludedMemoryFiles>
+						<File Id="210639316" Language="SFX">
+							<ShortName>SFX_UI_Glass_01.wav</ShortName>
+							<Path>SFX\SFX_UI_Glass_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1902291482" Name="Play_SFX_UI_Pop_01" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Pop_01" DurationType="OneShot" DurationMin="0.068021" DurationMax="0.068021">
+					<IncludedMemoryFiles>
+						<File Id="1059229970" Language="SFX">
+							<ShortName>SFX_UI_Pop_01.wav</ShortName>
+							<Path>SFX\SFX_UI_Pop_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1902291481" Name="Play_SFX_UI_Pop_02" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Pop_02" DurationType="OneShot" DurationMin="0.077021" DurationMax="0.077021">
+					<IncludedMemoryFiles>
+						<File Id="420529056" Language="SFX">
+							<ShortName>SFX_UI_Pop_02.wav</ShortName>
+							<Path>SFX\SFX_UI_Pop_02_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3268106035" Name="Play_SFX_UI_Tone_01" ObjectPath="\Events\Default Work Unit\Play_SFX_UI_Tone_01" DurationType="OneShot" DurationMin="0.317375" DurationMax="0.317375">
+					<IncludedMemoryFiles>
+						<File Id="607941654" Language="SFX">
+							<ShortName>SFX_UI_Tone_01.wav</ShortName>
+							<Path>SFX\SFX_UI_Tone_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="554650843" Language="SFX">
@@ -254,7 +366,7 @@
 			<ShortName>Spaceship</ShortName>
 			<Path>Spaceship.bnk</Path>
 			<IncludedEvents>
-				<Event Id="661707113" Name="Play_SFX_CannonFire_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_CannonFire_01" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.328479" DurationMax="0.328479">
+				<Event Id="661707113" Name="Play_SFX_CannonFire_01" ObjectPath="\Events\Default Work Unit\Testing\Play_SFX_CannonFire_01" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="0.300869" DurationMax="0.363839">
 					<IncludedMemoryFiles>
 						<File Id="651156814" Language="SFX">
 							<ShortName>SFX_CannonFire_01.wav</ShortName>
