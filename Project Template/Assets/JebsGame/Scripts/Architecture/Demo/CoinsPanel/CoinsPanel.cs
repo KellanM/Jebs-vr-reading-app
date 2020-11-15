@@ -1,4 +1,4 @@
-﻿using JebsReadingGame.CurrencySystem;
+﻿using JebsReadingGame.System.Currency;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -10,6 +10,6 @@ public class CoinsPanel : MonoBehaviour
 
     public void UpdateCoinsCounter()
     {
-        tmpro.text = "Coins: " + CurrencySystemView.singleton.viewModel.totalCoins;
+        tmpro.text = "Coins: " + CurrencyView.singleton.viewModel.totalCoins;
     }
 }
