@@ -1,12 +1,12 @@
-﻿using JebsReadingGame.CurrencySystem;
-using JebsReadingGame.GamemodeManager;
+﻿using JebsReadingGame.System.Currency;
+using JebsReadingGame.System.Gamemode;
 using JebsReadingGame.Notifiers;
-using JebsReadingGame.SceneManager;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using JebsReadingGame.System.Scene;
 
 public class SceneA : MonoBehaviour
 {
@@ -18,14 +18,13 @@ public class SceneA : MonoBehaviour
     public CoinsPanel coinsPanel;
 
     public int coinsToChangeScene = 50;
-    public string pathForNextScene;
 
     int hits = 0;
     
     void Start()
     {
         triggerNotifier.onEnterCollider.AddListener(OnHit);
-        CurrencySystemView.singleton.onCoinsEarned.AddListener(OnCoinsEarned);
+        CurrencyView.singleton.onCoinsEarned.AddListener(OnCoinsEarned);
 
         coinsPanel.UpdateCoinsCounter();
     }
@@ -36,15 +35,15 @@ public class SceneA : MonoBehaviour
         {
             hits++;
 
-            if (hits == GamemodeManagerView.singleton.viewModel.streakLength)
+            if (hits == GamemodeView.singleton.viewModel.streakLength)
             {
-                GamemodeManagerView.singleton.onPositiveStreak.Invoke();
+                GamemodeView.singleton.onPositiveStreakCompleted.Invoke();
 
                 hits = 0;
 
                 // Check scene change
-                if (CurrencySystemView.singleton.viewModel.totalCoins >= coinsToChangeScene)
-                    SceneManagerView.singleton.onSceneChange.Invoke(pathForNextScene);
+                if (CurrencyView.singleton.viewModel.totalCoins >= coinsToChangeScene)
+                    GamemodeView.singleton.onSceneChangeRequest.Invoke(GamemodeView.singleton.viewModel.availableScenes[0]);
             }
         }
     }

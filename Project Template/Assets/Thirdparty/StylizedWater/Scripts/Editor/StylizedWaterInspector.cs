@@ -219,7 +219,7 @@ namespace StylizedWaterShader
 
             Undo.undoRedoPerformed += ApplyChanges;
 
-            if (SceneView.currentDrawingSceneView != null) isOrtho = SceneView.currentDrawingSceneView.orthographic;
+            if (UnityEditor.SceneView.currentDrawingSceneView != null) isOrtho = UnityEditor.SceneView.currentDrawingSceneView.orthographic;
 
             #region Foldouts
 
