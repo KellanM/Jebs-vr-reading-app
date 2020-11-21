@@ -1,10 +1,9 @@
 ﻿using JesbReadingGame.Skeletons;
-using JebsReadingGame.Serializables;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using JebsReadingGame.Enums;
+using JebsReadingGame.Globals;
 
 namespace JebsReadingGame.System.Gamemode
 {
@@ -33,7 +32,7 @@ namespace JebsReadingGame.System.Gamemode
         public int gameplayLetterFails;
         public int gameplayLetterGroupWins;
         public int gameplayLetterGroupFails;
-        public Item nextEquipableItem;
+        //public Item nextEquipableItem;        -> Store system is not implemented yet
     }
 
     // Persistent model: Persistent between scenes

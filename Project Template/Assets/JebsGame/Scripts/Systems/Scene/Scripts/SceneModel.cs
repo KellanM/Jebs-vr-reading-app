@@ -1,11 +1,10 @@
 ﻿using JesbReadingGame.Skeletons;
-using JebsReadingGame.Serializables;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-using JebsReadingGame.Enums;
+using JebsReadingGame.Globals;
 
 namespace JebsReadingGame.System.Scene
 {

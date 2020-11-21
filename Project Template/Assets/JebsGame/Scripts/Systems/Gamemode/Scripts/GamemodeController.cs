@@ -1,5 +1,4 @@
-﻿using JebsReadingGame.Enums;
-using JebsReadingGame.Serializables;
+﻿using JebsReadingGame.Globals;
 using JebsReadingGame.System.Engagement;
 using JebsReadingGame.System.Learning;
 using JebsReadingGame.System.Progression;
@@ -47,11 +46,17 @@ namespace JebsReadingGame.System.Gamemode
 
             // Get letter group
             model.currentLetterGroup = ProgressionView.singleton.viewModel.GetLastUnlockedLevel(model.activity);
+            Debug.Log("LETTER GROUP: " + model.currentLetterGroup);
 
             // Get initial difficulty
             model.difficultyLerp = EngagementView.singleton.viewModel.GetDifficultyLerp(model.activity,model.currentLetterGroup);
+            Debug.Log("DIFFICULTY LERP: " + model.difficultyLerp);
 
             // ...
+
+            // Debug - Get learning lerp for this activity and this lettter group
+            float currentLetterGroupLearningLerp = LearningView.singleton.viewModel.GetLearningLerp(model.activity, model.currentLetterGroup);
+            Debug.Log("LETTER GROUP LEARNING LERP: " + currentLetterGroupLearningLerp);
 
         }
         
