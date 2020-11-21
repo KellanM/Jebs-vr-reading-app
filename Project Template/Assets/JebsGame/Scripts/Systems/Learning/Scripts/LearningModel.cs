@@ -1,10 +1,11 @@
 ﻿using JesbReadingGame.Skeletons;
-using JebsReadingGame.Serializables;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using JesbReadingGame.Helpers;
+using JebsReadingGame.System.Engagement;
 
 namespace JebsReadingGame.System.Learning
 {
@@ -21,7 +22,8 @@ namespace JebsReadingGame.System.Learning
     // Persistent model: Persistent between scenes
     public class LearningPersistent
     {
-        string path = "/LearningState.json";
+        string fileName = "LearningState.json";
+        bool resetOnError = true;
 
         LearningState _state;
         public LearningState state
@@ -29,37 +31,43 @@ namespace JebsReadingGame.System.Learning
             get
             {
                 if (_state == null)
-                    _state = LoadFromJson();
+                {
+                    try
+                    {
+                        _state = FileHelpers.ReadJson<LearningState>(fileName);
+
+                        if (_state == null)
+                        {
+                            Debug.LogWarning("State was empty. Resetting state!");
+                            _state = new LearningState();
+                            Save();
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        Debug.LogError("Exception found while getting state: " + e.Message);
+
+                        if (resetOnError)
+                        {
+                            Debug.LogWarning("Resetting state!");
+                            _state = new LearningState();
+                            Save();
+                        }
+                    }
+
+                }
                 return _state;
             }
             set
             {
                 _state = value;
-                SaveIntoJson(value);
+                //SaveIntoJson(value);      Doing this every write operation is very expensive. Please call Save() before leaving the scene
             }
         }
 
-        public void Save() // Needed to save changes when .state is not completelely reasigned but just modified
+        public void Save()
         {
-            SaveIntoJson(state);
-        }
-
-        LearningState LoadFromJson()
-        {
-            FileInfo file = new FileInfo(Application.persistentDataPath + path);
-            file.Directory.Create();
-            string stringifiedState = File.ReadAllText(Application.persistentDataPath + path);
-
-            return JsonUtility.FromJson<LearningState>(stringifiedState);
-        }
-
-        void SaveIntoJson(LearningState state)
-        {
-            string stringifiedState = JsonUtility.ToJson(state);
-
-            FileInfo file = new FileInfo(Application.persistentDataPath + path);
-            file.Directory.Create();
-            File.WriteAllText(Application.persistentDataPath + path, stringifiedState);
+            FileHelpers.WriteJson<LearningState>(fileName, _state);
         }
     }
 

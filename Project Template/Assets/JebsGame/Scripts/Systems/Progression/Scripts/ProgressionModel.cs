@@ -1,10 +1,10 @@
 ﻿using JesbReadingGame.Skeletons;
-using JebsReadingGame.Serializables;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using JesbReadingGame.Helpers;
 
 namespace JebsReadingGame.System.Progression
 {
@@ -21,7 +21,9 @@ namespace JebsReadingGame.System.Progression
     // Persistent model: Persistent between scenes
     public class ProgressionPersistent
     {
-        string path = "/ProgressionState.json";
+        string fileName = "ProgressionState.json";
+        bool resetOnError = true;
+        bool firstLevelUnlocked = true;
 
         ProgressionState _state;
         public ProgressionState state
@@ -29,37 +31,43 @@ namespace JebsReadingGame.System.Progression
             get
             {
                 if (_state == null)
-                    _state = LoadFromJson();
+                {
+                    try
+                    {
+                        _state = FileHelpers.ReadJson<ProgressionState>(fileName);
+
+                        if (_state == null)
+                        {
+                            Debug.LogWarning("State was empty. Resetting state!");
+                            _state = new ProgressionState(firstLevelUnlocked);
+                            Save();
+                        }
+                    }
+                    catch(Exception e)
+                    {
+                        Debug.LogError("Exception found while getting state: " + e.Message);
+
+                        if (resetOnError)
+                        {
+                            Debug.LogWarning("Resetting state!");
+                            _state = new ProgressionState(firstLevelUnlocked);
+                            Save();
+                        }
+                    }
+                    
+                }
                 return _state;
             }
             set
             {
                 _state = value;
-                SaveIntoJson(value);
+                //SaveIntoJson(value);      Doing this every write operation is very expensive. Please call Save() before leaving the scene
             }
         }
 
-        public void Save() // Needed to save changes when .state is not completelely reasigned but just modified
+        public void Save()
         {
-            SaveIntoJson(state);
-        }
-
-        ProgressionState LoadFromJson()
-        {
-            FileInfo file = new FileInfo(Application.persistentDataPath + path);
-            file.Directory.Create();
-            string stringifiedState = File.ReadAllText(Application.persistentDataPath + path);
-
-            return JsonUtility.FromJson<ProgressionState>(stringifiedState);
-        }
-
-        void SaveIntoJson(ProgressionState state)
-        {
-            string stringifiedState = JsonUtility.ToJson(state);
-
-            FileInfo file = new FileInfo(Application.persistentDataPath + path);
-            file.Directory.Create();
-            File.WriteAllText(Application.persistentDataPath + path, stringifiedState);
+            FileHelpers.WriteJson<ProgressionState>(fileName, _state);
         }
     }
 

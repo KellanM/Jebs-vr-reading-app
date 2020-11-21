@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace JebsReadingGame.Enums
+namespace JebsReadingGame.Globals
 {
+    public static class Constants
+    {
+        public const string alphabet = "abcdefghijklmnopqrstuvwxyz";
+    } 
+
     public enum Activity
     {
         None,

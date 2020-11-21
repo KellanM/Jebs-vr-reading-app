@@ -1,11 +1,10 @@
 ﻿using JesbReadingGame.Skeletons;
-using JebsReadingGame.Serializables;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using JebsReadingame.Events;
-using JebsReadingGame.Enums;
+using JebsReadingGame.Globals;
 
 namespace JebsReadingGame.System.Gamemode
 {
@@ -39,7 +38,7 @@ namespace JebsReadingGame.System.Gamemode
             public int streakLength { get { return model.streakLength; } }
             public int currentCombo { get { return model.currentCombo; } }
 
-            public Item nextEquipableItem { get { return model.nextEquipableItem; } }
+            // public Item nextEquipableItem { get { return model.nextEquipableItem; } } -> Store system is not implemented yet
 
             public int gameplayLetterWins { get { return model.gameplayLetterWins; } }
             public int gameplayLetterFails { get { return model.gameplayLetterFails; } }

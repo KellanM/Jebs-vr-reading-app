@@ -1,12 +1,11 @@
 ﻿using JesbReadingGame.Skeletons;
-using JebsReadingGame.Serializables;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using JebsReadingame.Events;
 using System;
-using JebsReadingGame.Enums;
+using JebsReadingGame.Globals;
 
 namespace JebsReadingGame.System.Progression
 {
@@ -49,7 +48,7 @@ namespace JebsReadingGame.System.Progression
                     {
                         if (persistent.state.gamemodeGroups[i].gamemodes[j].activity == activity)
                         {
-                            Serializables.Gamemode gamemode = persistent.state.gamemodeGroups[i].gamemodes[j];
+                            Gamemode gamemode = persistent.state.gamemodeGroups[i].gamemodes[j];
                             for (int k = 0; k < gamemode.levels.Length; k++)
                             {
                                 if (k == 0 && !gamemode.levels[k].unlocked)
@@ -93,7 +92,7 @@ namespace JebsReadingGame.System.Progression
                 {
                     if (persistent.state.gamemodeGroups[gamemodeGroup].gamemodes[i].activity == activity)
                     {
-                        Serializables.Gamemode gamemode = persistent.state.gamemodeGroups[gamemodeGroup].gamemodes[i];
+                        Gamemode gamemode = persistent.state.gamemodeGroups[gamemodeGroup].gamemodes[i];
                         return gamemode.unlocked;
                     }
                 }
@@ -114,7 +113,7 @@ namespace JebsReadingGame.System.Progression
                 {
                     if (persistent.state.gamemodeGroups[gamemodeGroup].gamemodes[i].activity == activity)
                     {
-                        Serializables.Gamemode gamemode = persistent.state.gamemodeGroups[gamemodeGroup].gamemodes[i];
+                        Gamemode gamemode = persistent.state.gamemodeGroups[gamemodeGroup].gamemodes[i];
                         for (int j = 0; j < gamemode.levels.Length; j++)
                         {
                             if (gamemode.levels[j].letterGroup == letterGroup)
