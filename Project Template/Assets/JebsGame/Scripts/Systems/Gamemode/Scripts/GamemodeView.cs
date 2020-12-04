@@ -72,5 +72,7 @@ namespace JebsReadingGame.System.Gamemode
         public FloatEvent onDifficultyUpdate = new FloatEvent();
 
         public StringEvent onSceneChangeRequest = new StringEvent();
+
+        public GamemodeEvent onGamemodeRepaired = new GamemodeEvent();
     }
 }

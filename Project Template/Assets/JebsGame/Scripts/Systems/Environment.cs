@@ -38,4 +38,16 @@ namespace JebsReadingGame.Globals
         Minigame,
         Paused
     }
+
+    public enum GamemodeUnlockingStrategy
+    {
+        UnlockAllLevelsToUnlockGamemode,
+        UnlockFirstLevelToUnlockGamemode
+    }
+
+    public enum LevelUnlockingStrategy
+    {
+        UnlockNextFromCurrent,
+        UnlockNextFromLearning
+    }
 }

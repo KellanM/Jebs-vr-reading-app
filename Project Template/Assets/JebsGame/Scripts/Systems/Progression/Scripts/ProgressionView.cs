@@ -31,7 +31,9 @@ namespace JebsReadingGame.System.Progression
 
             // Properties
             public ProgressionPersistent persistent { get { return model.persistent; } }
-            public int configurationValue { get { return model.asset.configurationValue; } } // placeholder
+            public GamemodeGroup currentGamemodeGroup { get { return model.currentGamemodeGroup; } }
+            public Gamemode currentGamemode { get { return model.currentGamemode; } }
+            public Level currentLevel { get { return model.currentLevel; } }
 
             // Constructor
             public ProgressionViewModel(ProgressionModel model)
@@ -40,7 +42,7 @@ namespace JebsReadingGame.System.Progression
             }
 
             // Functions
-            public LetterGroup GetLastUnlockedLevel(Activity activity)
+            public LetterGroup GetLastUnlockedLetterGroup(Activity activity)
             {
                 for (int i = 0; i < persistent.state.gamemodeGroups.Length; i++)
                 {
@@ -80,19 +82,29 @@ namespace JebsReadingGame.System.Progression
                 return persistent.state.gamemodeGroups[gamemodeGroup].unlocked;
             }
 
-            public bool IsUnlocked(int gamemodeGroup, Activity activity)
+            // Assuming that each there won't be gamemodes for the same activity
+            public bool IsUnlocked(Activity activity)
             {
+                /*
                 if (gamemodeGroup < 0 || gamemodeGroup > persistent.state.gamemodeGroups.Length - 1)
                 {
                     Debug.LogError("Gamemode group not found!");
                     return false;
                 }
+                */
 
-                for (int i = 0; i < persistent.state.gamemodeGroups[gamemodeGroup].gamemodes.Length; i++)
+                List<Gamemode> totalGamemodes = new List<Gamemode>();
+
+                for (int i = 0; i < persistent.state.gamemodeGroups.Length; i++)
                 {
-                    if (persistent.state.gamemodeGroups[gamemodeGroup].gamemodes[i].activity == activity)
+                    totalGamemodes.AddRange(persistent.state.gamemodeGroups[i].gamemodes);
+                }
+
+                for (int i = 0; i < totalGamemodes.Count; i++)
+                {
+                    if (totalGamemodes[i].activity == activity)
                     {
-                        Gamemode gamemode = persistent.state.gamemodeGroups[gamemodeGroup].gamemodes[i];
+                        Gamemode gamemode = totalGamemodes[i];
                         return gamemode.unlocked;
                     }
                 }
@@ -101,25 +113,31 @@ namespace JebsReadingGame.System.Progression
                 return false;
             }
 
-            public bool IsUnlocked(int gamemodeGroup, Activity activity, LetterGroup letterGroup)
+            // Assuming that each there won't be gamemodes for the same activity
+            public bool IsUnlocked(Activity activity, LetterGroup letterGroup)
             {
+                /*
                 if (gamemodeGroup < 0 || gamemodeGroup > persistent.state.gamemodeGroups.Length - 1)
                 {
                     Debug.LogError("Gamemode group not found!");
                     return false;
                 }
+                */
 
-                for (int i = 0; i < persistent.state.gamemodeGroups[gamemodeGroup].gamemodes.Length; i++)
+                List<Gamemode> totalGamemodes = new List<Gamemode>();
+
+                for (int i = 0; i < persistent.state.gamemodeGroups.Length; i++)
                 {
-                    if (persistent.state.gamemodeGroups[gamemodeGroup].gamemodes[i].activity == activity)
+                    totalGamemodes.AddRange(persistent.state.gamemodeGroups[i].gamemodes);
+                }
+
+                for (int i = 0; i < totalGamemodes.Count; i++)
+                {
+                    for (int j = 0; j < totalGamemodes[i].levels.Length; j++)
                     {
-                        Gamemode gamemode = persistent.state.gamemodeGroups[gamemodeGroup].gamemodes[i];
-                        for (int j = 0; j < gamemode.levels.Length; j++)
+                        if (totalGamemodes[i].levels[j].letterGroup == letterGroup)
                         {
-                            if (gamemode.levels[j].letterGroup == letterGroup)
-                            {
-                                return gamemode.levels[j].unlocked;
-                            }
+                            return totalGamemodes[i].levels[j].unlocked;
                         }
                     }
                 }
@@ -132,6 +150,14 @@ namespace JebsReadingGame.System.Progression
         public ProgressionViewModel viewModel;
 
         // Events
-        public UnityEvent onLevelUp = new UnityEvent();
+        public LevelEvent onLevelUp = new LevelEvent();
+        public GamemodeEvent onGamemodeUnlocked = new GamemodeEvent();
+        public GamemodeGroupEvent onGamemodeGroupUnlocked = new GamemodeGroupEvent();
+
+        // Due to favouritsm (learning) or due to trying to unlock a gamemode without having completed the previous ones (progression)
+        public GamemodeEvent onGamemodeBroken = new GamemodeEvent();
+
+        // All the levels, gamemodes and gamemode groups have been unlocked
+        public UnityEvent onGameFinished = new UnityEvent();
     }
 }

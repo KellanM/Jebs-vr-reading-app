@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using JesbReadingGame.Helpers;
+using JebsReadingGame.Globals;
 
 namespace JebsReadingGame.System.Progression
 {
@@ -16,6 +17,11 @@ namespace JebsReadingGame.System.Progression
         public ProgressionConfigurationAsset asset;
 
         public ProgressionPersistent persistent = new ProgressionPersistent();
+
+        [Header("Updated by Controller")]
+        public GamemodeGroup currentGamemodeGroup;
+        public Gamemode currentGamemode;
+        public Level currentLevel;
     }
 
     // Persistent model: Persistent between scenes
@@ -68,6 +74,7 @@ namespace JebsReadingGame.System.Progression
         public void Save()
         {
             FileHelpers.WriteJson<ProgressionState>(fileName, _state);
+            Debug.Log("ProgressionModel.peristent - SAVE!");
         }
     }
 
@@ -75,6 +82,7 @@ namespace JebsReadingGame.System.Progression
     [CreateAssetMenu(menuName = "JesbReadingGame/Progression Configuration Asset", order = 1)]
     public class ProgressionConfigurationAsset : ScriptableObject
     {
-        public int configurationValue = 0;
+        public GamemodeUnlockingStrategy howToUnlockGamemodes;
+        public LevelUnlockingStrategy howToUnlockLevels;
     }
 }

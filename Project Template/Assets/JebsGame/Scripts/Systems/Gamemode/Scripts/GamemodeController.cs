@@ -45,7 +45,7 @@ namespace JebsReadingGame.System.Gamemode
             SceneView.singleton.onSceneChange.AddListener(OnSceneChange);
 
             // Get letter group
-            model.currentLetterGroup = ProgressionView.singleton.viewModel.GetLastUnlockedLevel(model.activity);
+            model.currentLetterGroup = ProgressionView.singleton.viewModel.GetLastUnlockedLetterGroup(model.activity);
             Debug.Log("LETTER GROUP: " + model.currentLetterGroup);
 
             // Get initial difficulty
