@@ -50,8 +50,8 @@ namespace JebsReadingGame.Systems.Engagement
             GamemodeView.singleton.onSkillWin.AddListener(OnSkillWin);
             GamemodeView.singleton.onSkillFail.AddListener(OnSkillFail);
 
-            GamemodeView.singleton.onPositiveLetterGroupStreakCompleted.AddListener(OnPositiveStreak);
-            GamemodeView.singleton.onNegativeLetterGroupStreakCompleted.AddListener(OnNegativeStreak);
+            GamemodeView.singleton.onPositiveLetterGroupStreak.AddListener(OnPositiveStreak);
+            GamemodeView.singleton.onNegativeLetterGroupStreak.AddListener(OnNegativeStreak);
 
             SceneView.singleton.onSceneChange.AddListener(OnSceneChange); // Right before leaving the scene
         }
@@ -116,21 +116,21 @@ namespace JebsReadingGame.Systems.Engagement
             // Save only before leaving the scene
         }
 
-        void OnPositiveStreak()
+        void OnPositiveStreak(Activity activity, LetterGroup letterGroup, int streak)
         {
-            ActivityDifficultyState activityState = FindActivity(model.persistent.state.activities, GamemodeView.singleton.viewModel.activity);
+            ActivityDifficultyState activityState = FindActivity(model.persistent.state.activities, activity);
 
-            activityState.difficultyLerp += model.asset.streakDifficultyRate;
+            activityState.difficultyLerp += model.asset.streakDifficultyRate * streak;
             activityState.difficultyLerp = Mathf.Clamp(activityState.difficultyLerp, 0.0f, 1.0f);
 
             // Save only before leaving the scene
         }
 
-        void OnNegativeStreak()
+        void OnNegativeStreak(Activity activity, LetterGroup letterGroup, int streak)
         {
-            ActivityDifficultyState activityState = FindActivity(model.persistent.state.activities, GamemodeView.singleton.viewModel.activity);
+            ActivityDifficultyState activityState = FindActivity(model.persistent.state.activities, activity);
 
-            activityState.difficultyLerp -= model.asset.streakDifficultyRate;
+            activityState.difficultyLerp -= model.asset.streakDifficultyRate * streak;
             activityState.difficultyLerp = Mathf.Clamp(activityState.difficultyLerp, 0.0f, 1.0f);
 
             // Save only before leaving the scene

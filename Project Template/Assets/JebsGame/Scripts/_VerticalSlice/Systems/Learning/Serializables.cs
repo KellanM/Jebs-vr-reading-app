@@ -32,6 +32,8 @@ namespace JebsReadingGame.Systems.Learning
     public class LetterGroupLearningState
     {
         public LetterGroup letterGroup;
+        public int highestLetterGroupStreak;
+        public int lowestLetterGroupStreak;
         public float totalWins;
         public float totalFails;
         public float learningScore;
@@ -44,6 +46,8 @@ namespace JebsReadingGame.Systems.Learning
         public LetterGroupLearningState(LetterGroupLearningState state)
         {
             letterGroup = state.letterGroup;
+            highestLetterGroupStreak = state.highestLetterGroupStreak;
+            lowestLetterGroupStreak = state.lowestLetterGroupStreak;
             totalWins = state.totalWins;
             totalFails = state.totalFails;
             learningScore = state.learningScore;

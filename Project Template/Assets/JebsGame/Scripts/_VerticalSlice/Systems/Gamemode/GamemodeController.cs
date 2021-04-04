@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using JebsReadingGame.Log;
+using JebsReadingGame.Systems.Currency;
 
 namespace JebsReadingGame.Systems.Gamemode
 {
@@ -57,32 +58,12 @@ namespace JebsReadingGame.Systems.Gamemode
             Debug.Log("ACTIVITY DIFFICULTY LERP: " + EngagementView.singleton.viewModel.currentDifficultyLerp);
 
             // Debug - Get learning lerp for this activity and this lettter group
-            Debug.Log("LETTER-GROUP LEARNING LERP: " + LearningView.singleton.viewModel.currentLetterGroupLearningLerp);
-
         }
 
         private void Update()
         {
             UpdateLog();
             logPanel.text = log;
-
-            if (model.currentLetterGroupCombo >= model.asset.letterGroupStreakLength)
-            {
-                view.onPositiveLetterGroupStreakCompleted.Invoke();
-
-                LogService.singleton.Log("POSITIVE LETTER GROUP STREAK COMPLETED! Activity: " + model.activity.ToString() + " - Letter Group: " + ProgressionView.singleton.viewModel.currentLetterGroup.ToString());
-
-                model.currentLetterGroupCombo = 0;
-            }
-
-            if (model.currentLetterGroupCombo <= -model.asset.letterGroupStreakLength)
-            {
-                view.onNegativeLetterGroupStreakCompleted.Invoke();
-
-                LogService.singleton.Log("NEGATIVE LETTER GROUP STREAK COMPLETED! Activity: " + model.activity.ToString() + " - Letter Group: " + ProgressionView.singleton.viewModel.currentLetterGroup.ToString());
-
-                model.currentLetterGroupCombo = 0;
-            }
         }
 
         private void OnApplicationPause()
@@ -108,10 +89,9 @@ namespace JebsReadingGame.Systems.Gamemode
                 + "Activity: " + view.viewModel.activity + "\n"
                 + "Letter wins: " + view.viewModel.gameplayLetterWins + "\n"
                 + "Letter fails: " + view.viewModel.gameplayLetterFails + "\n"
-                + "Letter group combo: " + view.viewModel.currentLetterGroupCombo + "\n"
+                + "Letter group streak: " + view.viewModel.currentLetterGroupStreak + "\n"
                 + "Letter group wins: " + view.viewModel.gameplayLetterGroupWins + "\n"
                 + "Letter group fails: " + view.viewModel.gameplayLetterGroupFails + "\n"
-                + "Letter group streak length: " + view.viewModel.letterGroupStreakLength+ "\n"
                 + "Inbox: " + inbox;
         }
     }

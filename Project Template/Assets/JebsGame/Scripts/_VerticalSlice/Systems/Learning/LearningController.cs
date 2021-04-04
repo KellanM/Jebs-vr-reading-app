@@ -48,6 +48,8 @@ namespace JebsReadingGame.Systems.Learning
             GamemodeView.singleton.onLetterGroupFail.AddListener(OnLetterGroupFail);
             GamemodeView.singleton.onLetterWin.AddListener(OnLetterWin);
             GamemodeView.singleton.onLetterFail.AddListener(OnLetterFail);
+            GamemodeView.singleton.onPositiveLetterGroupStreak.AddListener(OnPositiveLetterGroupStreak);
+            GamemodeView.singleton.onNegativeLetterGroupStreak.AddListener(OnNegativeLetterGroupStreak);
         }
 
         private void Update()
@@ -120,6 +122,32 @@ namespace JebsReadingGame.Systems.Learning
             model.persistent.Save();
         }
 
+        void OnPositiveLetterGroupStreak(Activity activity, LetterGroup letterGroup, int streak)
+        {
+            ActivityLearningState activityState = FindActivity(model.persistent.state.activities, activity);
+            LetterGroupLearningState letterGroupState = FindLetterGroup(activityState.letterGroups, letterGroup);
+
+            if (streak > letterGroupState.highestLetterGroupStreak)
+            {
+                letterGroupState.highestLetterGroupStreak = streak;
+                view.onNewHighestStreak.Invoke(activity, letterGroup, streak);
+                model.persistent.Save();
+            } 
+        }
+
+        void OnNegativeLetterGroupStreak(Activity activity, LetterGroup letterGroup, int streak)
+        {
+            ActivityLearningState activityState = FindActivity(model.persistent.state.activities, activity);
+            LetterGroupLearningState letterGroupState = FindLetterGroup(activityState.letterGroups, letterGroup);
+
+            if (streak < letterGroupState.lowestLetterGroupStreak)
+            {
+                letterGroupState.lowestLetterGroupStreak = streak;
+                view.onNewLowestStreak.Invoke(activity, letterGroup, streak);
+                model.persistent.Save();
+            }
+        }
+
         // To do: Implement log/registry and register time elapsed between letter group win/fails
         float CalculateLearningScore(LetterLearningState letterState)
         {
@@ -128,6 +156,7 @@ namespace JebsReadingGame.Systems.Learning
             else
                 return 0.0f;
         }
+
         float CalculateLearningScore(LetterGroupLearningState letterGroupState)
         {
             if (letterGroupState.totalWins + letterGroupState.totalFails > model.asset.updateLearningScoreFrom)
@@ -187,6 +216,8 @@ namespace JebsReadingGame.Systems.Learning
                 + "\t\t Learning lerp: " + (letterGroupState.learningScore * 100.0f).ToString("F1") + "%\n"
                 + "\t\t Total wins: " + letterGroupState.totalWins + " - Total fails: " + letterGroupState.totalFails + "\n"
                 + "From worst to best: " + view.viewModel.GetLettersFromWorstToBest(activity, letterGroup) + "\n"
+                + "Highest letter group streak: " + letterGroupState.highestLetterGroupStreak + "\n"
+                + "Lowest letter group streak: " + letterGroupState.lowestLetterGroupStreak + "\n"
                 + "Inbox: " + inbox;
         }
 
