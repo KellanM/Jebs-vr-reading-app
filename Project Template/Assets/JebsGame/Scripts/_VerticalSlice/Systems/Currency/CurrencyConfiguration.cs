@@ -10,7 +10,7 @@ namespace JebsReadingGame.Systems.Currency
     {
         public int letterWinPrice = 5;
         public int letterGroupWinPrice = 5;
-        public int positiveStreakPrice = 100;
+        public int coinsPerStreakValue = 100;
         public int tipPrice = 3;
     }
 }

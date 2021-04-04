@@ -21,7 +21,7 @@ namespace JebsReadingGame.Systems.Gamemode
         [Header("Updated by Controller")]
         public int gameplayLetterWins;
         public int gameplayLetterFails;
-        public int currentLetterGroupCombo;
+        public int currentLetterGroupStreak;
         public int gameplayLetterGroupWins;
         public int gameplayLetterGroupFails;
         // public Item nextEquipableItem;        -> Store system is not implemented yet

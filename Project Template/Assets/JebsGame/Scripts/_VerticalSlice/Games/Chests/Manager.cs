@@ -77,7 +77,7 @@ namespace JebsReadingGame.Games.Chests
             if (IsCorrect(letter.letter) && accepted)
             {
                 DebugHelpers.LogEvent("(GamemodeSys) onLetterWin!", ref inbox);
-                GamemodeView.singleton.DoLetterWin(GamemodeView.singleton.viewModel.activity, letterSequence[correctLetterIndex]);
+                GamemodeView.singleton.DoLetterWin(GamemodeView.singleton.viewModel.activity, ProgressionView.singleton.viewModel.currentLetterGroup, letterSequence[correctLetterIndex]);
 
                 NextLetter(wasLetterWin, true);
 
@@ -90,7 +90,7 @@ namespace JebsReadingGame.Games.Chests
             else
             {
                 DebugHelpers.LogEvent("(GamemodeSys) onLetterFail!", ref inbox);
-                GamemodeView.singleton.DoLetterFail(GamemodeView.singleton.viewModel.activity, letterSequence[correctLetterIndex]);
+                GamemodeView.singleton.DoLetterFail(GamemodeView.singleton.viewModel.activity, ProgressionView.singleton.viewModel.currentLetterGroup, letterSequence[correctLetterIndex]);
 
                 NextLetter(wasLetterWin, false);
 
@@ -117,8 +117,6 @@ namespace JebsReadingGame.Games.Chests
                         inbox = "You're doing well! " + (correctLetterIndex + 1) + "/" + letterSequence.Length; ;
 
                         correctLetterIndex++;
-
-                        comboBar.SetFillAmount((float)correctLetterIndex/(float)letterSequence.Length);
                     }
                     else
                     {
@@ -126,9 +124,14 @@ namespace JebsReadingGame.Games.Chests
                         GamemodeView.singleton.DoLetterGroupWin(GamemodeView.singleton.viewModel.activity, letterGroup);
 
                         ReloadSequence(letterGroup);
-
-                        comboBar.SetFillAmount(0.0f);
                     }
+
+                    LetterGroupLearningState currentLetterGroupLearningState = LearningView.singleton.viewModel.currentLetterGroupLearning;
+
+                    if (currentLetterGroupLearningState.highestLetterGroupStreak > 0)
+                        comboBar.SetFillAmount(((float)GamemodeView.singleton.viewModel.currentLetterGroupStreak + ((float)correctLetterIndex / (float)letterSequence.Length)) / ((float)currentLetterGroupLearningState.highestLetterGroupStreak + 1.0f));
+                    else
+                        comboBar.SetFillAmount((float)correctLetterIndex / (float)letterSequence.Length);
                 }
                 // If negative combo broke
                 else
@@ -140,7 +143,7 @@ namespace JebsReadingGame.Games.Chests
 
                     ReloadSequence(letterGroup);
 
-                    comboBar.SetFillAmount(0.5f / (float)letterSequence.Length);
+                    comboBar.SetFillAmount(0.01f);
                 }
             }
             else

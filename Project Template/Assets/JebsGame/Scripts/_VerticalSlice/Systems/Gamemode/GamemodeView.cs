@@ -6,6 +6,7 @@ using UnityEngine.Events;
 using JebsReadingGame.Events;
 using JebsReadingGame.Globals;
 using JebsReadingGame.Log;
+using JebsReadingGame.Systems.Learning;
 
 namespace JebsReadingGame.Systems.Gamemode
 {
@@ -31,11 +32,11 @@ namespace JebsReadingGame.Systems.Gamemode
 
             // Properties
             public int persistentValue { get { return model.persistent.persistentValue; } } // placeholder
-            public int letterGroupStreakLength { get { return model.asset.letterGroupStreakLength; } }
+            // public int countLetterGroupStreakAfter { get { return model.asset.countLetterGroupStreakAfter; } }
 
             public Activity activity { get { return model.activity; } }
 
-            public int currentLetterGroupCombo { get { return model.currentLetterGroupCombo; } set { model.currentLetterGroupCombo = value; } }
+            public int currentLetterGroupStreak { get { return model.currentLetterGroupStreak; } set { model.currentLetterGroupStreak = value; } }
 
             // public Item nextEquipableItem { get { return model.nextEquipableItem; } } -> Store system is not implemented yet
 
@@ -64,10 +65,8 @@ namespace JebsReadingGame.Systems.Gamemode
 
         public UnityEvent onTip = new UnityEvent(); // Small optional help
 
-        public UnityEvent onPositiveLetterGroupStreakCompleted = new UnityEvent();
-        public UnityEvent onPositiveLetterGroupStreakBroken = new UnityEvent();
-        public UnityEvent onNegativeLetterGroupStreakCompleted = new UnityEvent();
-        public UnityEvent onNegativeLetterGroupStreakBroken = new UnityEvent();
+        public StreakEvent onPositiveLetterGroupStreak = new StreakEvent();
+        public StreakEvent onNegativeLetterGroupStreak = new StreakEvent();
 
         public GamemodeEvent onGamemodeRepaired = new GamemodeEvent();
 
@@ -82,14 +81,21 @@ namespace JebsReadingGame.Systems.Gamemode
 
             LogService.singleton.Log("LETTER GROUP WIN! Activity: " + activity.ToString() + " - Letter Group: " + letterGroup.ToString());
 
-            if (viewModel.currentLetterGroupCombo < 0)
+            if (viewModel.currentLetterGroupStreak < 0)
             {
-                viewModel.currentLetterGroupCombo = 1;
-
-                onNegativeLetterGroupStreakBroken.Invoke();
+                onNegativeLetterGroupStreak.Invoke(activity, letterGroup, viewModel.currentLetterGroupStreak);
+                viewModel.currentLetterGroupStreak = 1;
             }
             else
-                viewModel.currentLetterGroupCombo++;
+            {
+                viewModel.currentLetterGroupStreak++;
+
+                if (viewModel.currentLetterGroupStreak > LearningView.singleton.viewModel.currentLetterGroupLearning.highestLetterGroupStreak)
+                {
+                    onPositiveLetterGroupStreak.Invoke(activity, letterGroup, viewModel.currentLetterGroupStreak);
+                    viewModel.currentLetterGroupStreak = 0;
+                }
+            }
         }
 
         public void DoLetterGroupFail(Activity activity, LetterGroup letterGroup)
@@ -100,30 +106,49 @@ namespace JebsReadingGame.Systems.Gamemode
 
             LogService.singleton.Log("LETTER GROUP FAIL! Activity: " + activity.ToString() + " - Letter Group: " + letterGroup.ToString());
 
-            if (viewModel.currentLetterGroupCombo > 0)
+            if (viewModel.currentLetterGroupStreak > 0)
             {
-                viewModel.currentLetterGroupCombo = -1;
-
-                onPositiveLetterGroupStreakBroken.Invoke();
+                onPositiveLetterGroupStreak.Invoke(activity, letterGroup, viewModel.currentLetterGroupStreak);
+                viewModel.currentLetterGroupStreak = -1;
             }
             else
-                viewModel.currentLetterGroupCombo--;
+            {
+                viewModel.currentLetterGroupStreak--;
+
+                if (viewModel.currentLetterGroupStreak < LearningView.singleton.viewModel.currentLetterGroupLearning.lowestLetterGroupStreak)
+                {
+                    onNegativeLetterGroupStreak.Invoke(activity, letterGroup, viewModel.currentLetterGroupStreak);
+                    viewModel.currentLetterGroupStreak = 0;
+                }
+            }
         }
 
-        public void DoLetterWin(Activity activity, char letter)
+        public void DoLetterWin(Activity activity, LetterGroup letterGroup, char letter)
         {
             onLetterWin.Invoke(activity, letter);
 
             viewModel.gameplayLetterWins++;
 
+            if (viewModel.currentLetterGroupStreak < 0)
+            {
+                // onNegativeLetterGroupStreak.Invoke(activity, letterGroup, viewModel.currentLetterGroupStreak);
+                viewModel.currentLetterGroupStreak = 0;
+            }
+
             LogService.singleton.Log("LETTER WIN! Activity: " + activity.ToString() + " - Letter: " + letter.ToString());
         }
 
-        public void DoLetterFail(Activity activity, char letter)
+        public void DoLetterFail(Activity activity, LetterGroup letterGroup, char letter)
         {
             onLetterFail.Invoke(activity, letter);
 
             viewModel.gameplayLetterFails++;
+
+            if (viewModel.currentLetterGroupStreak > 0)
+            {
+                // onPositiveLetterGroupStreak.Invoke(activity, letterGroup, viewModel.currentLetterGroupStreak);
+                viewModel.currentLetterGroupStreak = 0;
+            }
 
             LogService.singleton.Log("LETTER WIN! Activity: " + activity.ToString() + " - Letter: " + letter.ToString());
         }

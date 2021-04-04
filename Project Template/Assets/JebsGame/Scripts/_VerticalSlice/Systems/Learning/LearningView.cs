@@ -36,15 +36,12 @@ namespace JebsReadingGame.Systems.Learning
             public LearningPersistent persistent { get { return model.persistent; } }
 
             LetterGroupLearningState _currentLetterGroupLearning;
-            public float currentLetterGroupLearningLerp
+
+            public LetterGroupLearningState currentLetterGroupLearning
             {
                 get
                 {
-                    if (_currentLetterGroupLearning == null)
-                    {
-                        _currentLetterGroupLearning = GetLearningState(GamemodeView.singleton.viewModel.activity,ProgressionView.singleton.viewModel.currentLetterGroup);
-                    }
-                    return _currentLetterGroupLearning.learningScore;
+                    return GetLearningState(GamemodeView.singleton.viewModel.activity,ProgressionView.singleton.viewModel.currentLetterGroup);
                 }
             }
 
@@ -112,7 +109,6 @@ namespace JebsReadingGame.Systems.Learning
             {
                 return GetLettersFromWorstToBest(activity, letterGroup)[0];
             }
-
         }
 
         public LearningViewModel viewModel;
@@ -120,5 +116,8 @@ namespace JebsReadingGame.Systems.Learning
         // Events
         public ActivityLetterGroupEvent onForgottenSkill = new ActivityLetterGroupEvent();
         public ActivityLetterGroupEvent onLevelMastered = new ActivityLetterGroupEvent();
+
+        public StreakEvent onNewHighestStreak = new StreakEvent();
+        public StreakEvent onNewLowestStreak = new StreakEvent();
     }
 }

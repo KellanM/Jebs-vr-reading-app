@@ -37,7 +37,7 @@ namespace JebsReadingGame.Systems.Currency
             // Subscribe to events
             GamemodeView.singleton.onLetterWin.AddListener(OnLetterWin);
             GamemodeView.singleton.onLetterGroupWin.AddListener(OnLetterGroupWin);
-            GamemodeView.singleton.onPositiveLetterGroupStreakCompleted.AddListener(OnPositiveStreak);
+            GamemodeView.singleton.onPositiveLetterGroupStreak.AddListener(OnPositiveStreak);
             GamemodeView.singleton.onTip.AddListener(OnTip);
             Scene.SceneView.singleton.onSceneChange.AddListener(SceneChanged);
         }
@@ -68,9 +68,9 @@ namespace JebsReadingGame.Systems.Currency
             EarnCoins(model.asset.letterGroupWinPrice);
         }
 
-        void OnPositiveStreak()
+        void OnPositiveStreak(Activity activity, LetterGroup letterGroup, int streak)
         {
-            EarnCoins(model.asset.positiveStreakPrice);
+            EarnCoins(model.asset.coinsPerStreakValue * streak);
         }
 
         void OnTip()

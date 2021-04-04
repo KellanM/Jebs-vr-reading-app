@@ -141,10 +141,6 @@ namespace JebsReadingGame.Games.Chests
 
         public Chest StealChest(Crab crab)
         {
-#if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPaused = true;
-#endif
-
             crab.hasChest = false;
 
             // We copy it so the crab can be reused from pool while conserving its chest

@@ -30,6 +30,10 @@ namespace JebsReadingGame.Events
     [Serializable]
     public class IntCharEvent : UnityEvent<int, char> { }
 
+    // Gamemode
+    [Serializable]
+    public class StreakEvent : UnityEvent<Activity, LetterGroup, int> { }
+
     // Learning system
     [Serializable]
     public class ActivityEvent : UnityEvent<Activity> { }
