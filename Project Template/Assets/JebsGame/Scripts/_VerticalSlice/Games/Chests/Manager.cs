@@ -1,4 +1,5 @@
-﻿using JebsReadingGame.Globals;
+﻿using JebsReadingGame.Events;
+using JebsReadingGame.Globals;
 using JebsReadingGame.Helpers;
 using JebsReadingGame.Letters;
 using JebsReadingGame.Systems.Engagement;
@@ -46,6 +47,11 @@ namespace JebsReadingGame.Games.Chests
         [Header("Refs")]
         public ImageFiller comboBar;
 
+        [Header("Events")]
+        public CharEvent onNewLetterRequest = new CharEvent();
+        public CharEvent onLetterAccepted = new CharEvent();
+        public CharEvent onLetterRejected = new CharEvent();
+
         [Header("Debug")]
         [TextArea]
         public string log;
@@ -56,12 +62,27 @@ namespace JebsReadingGame.Games.Chests
         float correctLetterProbability = 0.5f;
 
         string letterSequence;
-        int correctLetterIndex = 0;
+        int _correctLetterIndex = -1;
+        int correctLetterIndex
+        {
+            get { return _correctLetterIndex; }
+            set
+            {
+                if (value != _correctLetterIndex)
+                {
+                    _correctLetterIndex = value;
+                    onNewLetterRequest.Invoke(correctLetter);
+                }
+            }
+        }
+
         bool wasLetterWin;
 
         private void Start()
         {
             letterSequence = Environment.GetRandomizedLetterGroup(ProgressionView.singleton.viewModel.currentLetterGroup);
+
+            correctLetterIndex = 0;
         }
 
         private void Update()
@@ -74,6 +95,9 @@ namespace JebsReadingGame.Games.Chests
 
         public void Evaluate(Letter letter, bool accepted)
         {
+            if (accepted) onLetterAccepted.Invoke(letter.letter);
+            else onLetterRejected.Invoke(letter.letter);
+
             if (IsCorrect(letter.letter) && accepted)
             {
                 DebugHelpers.LogEvent("(GamemodeSys) onLetterWin!", ref inbox);
