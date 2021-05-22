@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3814612445985082157}
+  - component: {fileID: 8013530745629617459}
   m_Layer: 0
-  m_Name: Pirate_Rowboat_Broken
+  m_Name: PirateRowboatBroken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,9 +29,135 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9076672240146563935}
+  - {fileID: 5294588519188609522}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &8013530745629617459
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192353065174530366}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0.0551939, z: 0.4081601}
+  m_Size: 4.8490834
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.249
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6021698199579854224}
+  - screenRelativeHeight: 0.009777254
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4540927444644132296}
+  m_Enabled: 1
+--- !u!1 &4355328888263902899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5294588519188609522}
+  - component: {fileID: 8915414090598787643}
+  - component: {fileID: 4540927444644132296}
+  m_Layer: 0
+  m_Name: Impostor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5294588519188609522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4355328888263902899}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3814612445985082157}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8915414090598787643
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4355328888263902899}
+  m_Mesh: {fileID: -805609273920929186, guid: d43505f33c3a50444883ed0bafcb45a3, type: 2}
+--- !u!23 &4540927444644132296
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4355328888263902899}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 5332547488912686801, guid: d43505f33c3a50444883ed0bafcb45a3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &3337447285507511317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5453164906054627660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fadcc2d9a34a1a34f93d4962ec37e6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data: {fileID: 11400000, guid: d43505f33c3a50444883ed0bafcb45a3, type: 2}
+  m_rootTransform: {fileID: 9076672240146563935}
+  m_lodGroup: {fileID: 0}
+  m_renderers:
+  - {fileID: 6021698199579854224}
+  m_lodReplacement: 2
+  m_renderPipelineInUse: 0
+  m_insertIndex: 1
+  m_lastImpostor: {fileID: 4355328888263902899}
+  m_folderPath: Assets/JebsGame/Models/Static/Letter Lagoon/Boats/
+  m_cutMode: 0
 --- !u!1001 &4074743369351063621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38,16 +165,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3814612445985082157}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: f2efa42cd9180a54bb69f3e2fe433d13,
-        type: 3}
-      propertyPath: m_Name
-      value: Pirate_Rowboat_Broken
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: f2efa42cd9180a54bb69f3e2fe433d13,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: f2efa42cd9180a54bb69f3e2fe433d13,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -108,12 +225,34 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d2e996bfe0a7cad4d85601b15b511cf5, type: 2}
+    - target: {fileID: -927199367670048503, guid: f2efa42cd9180a54bb69f3e2fe433d13,
+        type: 3}
+      propertyPath: m_Name
+      value: Pirate_Rowboat_Broken
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: f2efa42cd9180a54bb69f3e2fe433d13,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -6057140222963153312, guid: f2efa42cd9180a54bb69f3e2fe433d13, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f2efa42cd9180a54bb69f3e2fe433d13, type: 3}
+--- !u!1 &5453164906054627660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f2efa42cd9180a54bb69f3e2fe433d13,
+    type: 3}
+  m_PrefabInstance: {fileID: 4074743369351063621}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &9076672240146563935 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: f2efa42cd9180a54bb69f3e2fe433d13,
+    type: 3}
+  m_PrefabInstance: {fileID: 4074743369351063621}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6021698199579854224 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1504981713932161579, guid: f2efa42cd9180a54bb69f3e2fe433d13,
     type: 3}
   m_PrefabInstance: {fileID: 4074743369351063621}
   m_PrefabAsset: {fileID: 0}

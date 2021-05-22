@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2367025332855935404}
+  - component: {fileID: 973697877968999865}
   m_Layer: 0
-  m_Name: Pirate_LargeRockFormation_2
+  m_Name: PirateLargeRockFormation2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,9 +29,135 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8756925688125456924}
+  - {fileID: 753235737614020482}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &973697877968999865
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621864481483940799}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.6373291, y: 22.17132, z: 0.14160919}
+  m_Size: 84.72165
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.25112316
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6332437453717292243}
+  - screenRelativeHeight: 0.011608625
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 3856820202928682055}
+  m_Enabled: 1
+--- !u!114 &1178443727379826610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5754897033800511503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fadcc2d9a34a1a34f93d4962ec37e6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data: {fileID: 11400000, guid: 07dc1b123b8fbab4c9e0d24660ed6285, type: 2}
+  m_rootTransform: {fileID: 8756925688125456924}
+  m_lodGroup: {fileID: 0}
+  m_renderers:
+  - {fileID: 6332437453717292243}
+  m_lodReplacement: 2
+  m_renderPipelineInUse: 0
+  m_insertIndex: 1
+  m_lastImpostor: {fileID: 8169168656065430127}
+  m_folderPath: Assets/JebsGame/Models/Static/Letter Lagoon/Rocks/
+  m_cutMode: 0
+--- !u!1 &8169168656065430127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 753235737614020482}
+  - component: {fileID: 1763803407395011264}
+  - component: {fileID: 3856820202928682055}
+  m_Layer: 0
+  m_Name: Impostor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &753235737614020482
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169168656065430127}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2367025332855935404}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1763803407395011264
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169168656065430127}
+  m_Mesh: {fileID: -8878130463766130960, guid: 07dc1b123b8fbab4c9e0d24660ed6285, type: 2}
+--- !u!23 &3856820202928682055
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169168656065430127}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 7938249810493006128, guid: 07dc1b123b8fbab4c9e0d24660ed6285, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1001 &4394507504838486278
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38,16 +165,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2367025332855935404}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 37b7c6333619f094d9aa2ac039371399,
-        type: 3}
-      propertyPath: m_Name
-      value: Pirate_LargeRockFormation_2
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 37b7c6333619f094d9aa2ac039371399,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 37b7c6333619f094d9aa2ac039371399,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -108,11 +225,33 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d2e996bfe0a7cad4d85601b15b511cf5, type: 2}
+    - target: {fileID: -927199367670048503, guid: 37b7c6333619f094d9aa2ac039371399,
+        type: 3}
+      propertyPath: m_Name
+      value: Pirate_LargeRockFormation_2
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 37b7c6333619f094d9aa2ac039371399,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37b7c6333619f094d9aa2ac039371399, type: 3}
+--- !u!1 &5754897033800511503 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 37b7c6333619f094d9aa2ac039371399,
+    type: 3}
+  m_PrefabInstance: {fileID: 4394507504838486278}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8756925688125456924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 37b7c6333619f094d9aa2ac039371399,
+    type: 3}
+  m_PrefabInstance: {fileID: 4394507504838486278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6332437453717292243 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1504981713932161579, guid: 37b7c6333619f094d9aa2ac039371399,
     type: 3}
   m_PrefabInstance: {fileID: 4394507504838486278}
   m_PrefabAsset: {fileID: 0}

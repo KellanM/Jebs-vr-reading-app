@@ -14,6 +14,108 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 484883996647706761, guid: ed767d4665cdf9c47862c7a1f78918bc, type: 3}
+--- !u!114 &5839413061093032601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816924130157781726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fadcc2d9a34a1a34f93d4962ec37e6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data: {fileID: 11400000, guid: 0b33ab1d371534241b9344bb51d4131d, type: 2}
+  m_rootTransform: {fileID: 3417206300180025549}
+  m_lodGroup: {fileID: 0}
+  m_renderers:
+  - {fileID: 75387817264535042}
+  m_lodReplacement: 2
+  m_renderPipelineInUse: 0
+  m_insertIndex: 1
+  m_lastImpostor: {fileID: 2511649933264932396}
+  m_folderPath: Assets/JebsGame/Models/Static/Letter Lagoon/Rocks/
+  m_cutMode: 0
+--- !u!1 &2511649933264932396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 535055578641273480}
+  - component: {fileID: 4594778940758246496}
+  - component: {fileID: 6479070359515796685}
+  m_Layer: 0
+  m_Name: Impostor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &535055578641273480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2511649933264932396}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5913570600559202190}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4594778940758246496
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2511649933264932396}
+  m_Mesh: {fileID: 359459562180714801, guid: 0b33ab1d371534241b9344bb51d4131d, type: 2}
+--- !u!23 &6479070359515796685
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2511649933264932396}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 5455775956169591429, guid: 0b33ab1d371534241b9344bb51d4131d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &7226695178240703901
 GameObject:
   m_ObjectHideFlags: 0
@@ -23,8 +125,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5913570600559202190}
+  - component: {fileID: 7232978932446837644}
   m_Layer: 0
-  m_Name: Pirate_Cliff_C
+  m_Name: PirateCliffC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,9 +145,33 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3417206300180025549}
+  - {fileID: 535055578641273480}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &7232978932446837644
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7226695178240703901}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.18083572, y: -0.642746, z: 1.2655897}
+  m_Size: 26.953697
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.24688584
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 75387817264535042}
+  - screenRelativeHeight: 0.014099827
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6479070359515796685}
+  m_Enabled: 1
 --- !u!1001 &7644561063537327063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52,16 +179,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5913570600559202190}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: ed767d4665cdf9c47862c7a1f78918bc,
-        type: 3}
-      propertyPath: m_Name
-      value: Pirate_Cliff_C
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: ed767d4665cdf9c47862c7a1f78918bc,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ed767d4665cdf9c47862c7a1f78918bc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -122,6 +239,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f37274bc0bbb11b48bcd50bdbb9d33ff, type: 2}
+    - target: {fileID: -927199367670048503, guid: ed767d4665cdf9c47862c7a1f78918bc,
+        type: 3}
+      propertyPath: m_Name
+      value: Pirate_Cliff_C
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: ed767d4665cdf9c47862c7a1f78918bc,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed767d4665cdf9c47862c7a1f78918bc, type: 3}
 --- !u!1 &1816924130157781726 stripped
@@ -133,6 +260,12 @@ GameObject:
 --- !u!4 &3417206300180025549 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: ed767d4665cdf9c47862c7a1f78918bc,
+    type: 3}
+  m_PrefabInstance: {fileID: 7644561063537327063}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &75387817264535042 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1504981713932161579, guid: ed767d4665cdf9c47862c7a1f78918bc,
     type: 3}
   m_PrefabInstance: {fileID: 7644561063537327063}
   m_PrefabAsset: {fileID: 0}

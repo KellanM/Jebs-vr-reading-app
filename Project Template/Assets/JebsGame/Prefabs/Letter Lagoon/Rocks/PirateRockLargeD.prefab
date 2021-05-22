@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9013402958213028544}
+  - component: {fileID: 1976498620413258450}
   m_Layer: 0
-  m_Name: Pirate_Rock_Large_D
+  m_Name: PirateRockLargeD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,9 +29,33 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7686151725179926170}
+  - {fileID: 8071267078273170904}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &1976498620413258450
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426085367623772371}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.39388347, y: 0.7274886, z: 0.045171738}
+  m_Size: 3.2313056
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.25112316
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4957686458843279445}
+  - screenRelativeHeight: 0.009777254
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5203182180205160003}
+  m_Enabled: 1
 --- !u!64 &744287577350938501
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45,6 +70,108 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: -1612937636813512382, guid: 40e6a58b0b068c94ea0ff652b6577294, type: 3}
+--- !u!114 &1802444179283824290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6697393182743463049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fadcc2d9a34a1a34f93d4962ec37e6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data: {fileID: 11400000, guid: a54152c3796e9cc4085719a2f148cbb1, type: 2}
+  m_rootTransform: {fileID: 7686151725179926170}
+  m_lodGroup: {fileID: 0}
+  m_renderers:
+  - {fileID: 4957686458843279445}
+  m_lodReplacement: 2
+  m_renderPipelineInUse: 0
+  m_insertIndex: 1
+  m_lastImpostor: {fileID: 9198260086593520010}
+  m_folderPath: Assets/JebsGame/Models/Static/Letter Lagoon/Rocks/
+  m_cutMode: 0
+--- !u!1 &9198260086593520010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8071267078273170904}
+  - component: {fileID: 2805541048789868094}
+  - component: {fileID: 5203182180205160003}
+  m_Layer: 0
+  m_Name: Impostor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8071267078273170904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9198260086593520010}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9013402958213028544}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2805541048789868094
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9198260086593520010}
+  m_Mesh: {fileID: 6618483773827438921, guid: a54152c3796e9cc4085719a2f148cbb1, type: 2}
+--- !u!23 &5203182180205160003
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9198260086593520010}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 1680274871978319667, guid: a54152c3796e9cc4085719a2f148cbb1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1001 &3445260912842464640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52,16 +179,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9013402958213028544}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 40e6a58b0b068c94ea0ff652b6577294,
-        type: 3}
-      propertyPath: m_Name
-      value: Pirate_Rock_Large_D
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 40e6a58b0b068c94ea0ff652b6577294,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 40e6a58b0b068c94ea0ff652b6577294,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -122,6 +239,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f37274bc0bbb11b48bcd50bdbb9d33ff, type: 2}
+    - target: {fileID: -927199367670048503, guid: 40e6a58b0b068c94ea0ff652b6577294,
+        type: 3}
+      propertyPath: m_Name
+      value: Pirate_Rock_Large_D
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 40e6a58b0b068c94ea0ff652b6577294,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40e6a58b0b068c94ea0ff652b6577294, type: 3}
 --- !u!1 &6697393182743463049 stripped
@@ -133,6 +260,12 @@ GameObject:
 --- !u!4 &7686151725179926170 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 40e6a58b0b068c94ea0ff652b6577294,
+    type: 3}
+  m_PrefabInstance: {fileID: 3445260912842464640}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &4957686458843279445 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1504981713932161579, guid: 40e6a58b0b068c94ea0ff652b6577294,
     type: 3}
   m_PrefabInstance: {fileID: 3445260912842464640}
   m_PrefabAsset: {fileID: 0}

@@ -1,5 +1,107 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &7148967074619430192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947066504932178803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fadcc2d9a34a1a34f93d4962ec37e6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data: {fileID: 11400000, guid: 64b5f422e1d0f274daefe784e9a9fada, type: 2}
+  m_rootTransform: {fileID: 4287424848142125408}
+  m_lodGroup: {fileID: 0}
+  m_renderers:
+  - {fileID: 1520090198576533423}
+  m_lodReplacement: 2
+  m_renderPipelineInUse: 0
+  m_insertIndex: 1
+  m_lastImpostor: {fileID: 3506854999738474314}
+  m_folderPath: Assets/JebsGame/Models/Static/Letter Lagoon/Clouds/
+  m_cutMode: 0
+--- !u!1 &3506854999738474314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1733743960839186134}
+  - component: {fileID: 3697627914441906512}
+  - component: {fileID: 3205374019460624191}
+  m_Layer: 0
+  m_Name: Impostor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1733743960839186134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3506854999738474314}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8776521551893257293}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3697627914441906512
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3506854999738474314}
+  m_Mesh: {fileID: 37109918740848973, guid: 64b5f422e1d0f274daefe784e9a9fada, type: 2}
+--- !u!23 &3205374019460624191
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3506854999738474314}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -7254265940566230394, guid: 64b5f422e1d0f274daefe784e9a9fada, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1 &5735103232707833438
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,8 +111,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8776521551893257293}
+  - component: {fileID: 4426446123526683372}
   m_Layer: 0
-  m_Name: Pirate_Cloud_C
+  m_Name: PirateCloudC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,9 +131,33 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4287424848142125408}
+  - {fileID: 1733743960839186134}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &4426446123526683372
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5735103232707833438}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.19783211, y: 1.1679534, z: 0.14406633}
+  m_Size: 11.200634
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.25112316
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 1520090198576533423}
+  - screenRelativeHeight: 0.0065454245
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 3205374019460624191}
+  m_Enabled: 1
 --- !u!1001 &9080746556091032186
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38,16 +165,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8776521551893257293}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 3b06a0716836a0444a1c7ceb6a27bbeb,
-        type: 3}
-      propertyPath: m_Name
-      value: Pirate_Cloud_C
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 3b06a0716836a0444a1c7ceb6a27bbeb,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3b06a0716836a0444a1c7ceb6a27bbeb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -113,12 +230,34 @@ PrefabInstance:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 3b06a0716836a0444a1c7ceb6a27bbeb,
+        type: 3}
+      propertyPath: m_Name
+      value: Pirate_Cloud_C
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 3b06a0716836a0444a1c7ceb6a27bbeb,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -6860895033569716450, guid: 3b06a0716836a0444a1c7ceb6a27bbeb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3b06a0716836a0444a1c7ceb6a27bbeb, type: 3}
+--- !u!1 &947066504932178803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 3b06a0716836a0444a1c7ceb6a27bbeb,
+    type: 3}
+  m_PrefabInstance: {fileID: 9080746556091032186}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4287424848142125408 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 3b06a0716836a0444a1c7ceb6a27bbeb,
+    type: 3}
+  m_PrefabInstance: {fileID: 9080746556091032186}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1520090198576533423 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1504981713932161579, guid: 3b06a0716836a0444a1c7ceb6a27bbeb,
     type: 3}
   m_PrefabInstance: {fileID: 9080746556091032186}
   m_PrefabAsset: {fileID: 0}

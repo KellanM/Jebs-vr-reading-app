@@ -1,5 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &6165338763075524058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157302269322632192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fadcc2d9a34a1a34f93d4962ec37e6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data: {fileID: 11400000, guid: b2065145c83bed3488a109c91033f715, type: 2}
+  m_rootTransform: {fileID: 2762054094669245971}
+  m_lodGroup: {fileID: 0}
+  m_renderers:
+  - {fileID: 590893238033361116}
+  m_lodReplacement: 2
+  m_renderPipelineInUse: 0
+  m_insertIndex: 1
+  m_lastImpostor: {fileID: 8686094530910943772}
+  m_folderPath: Assets/JebsGame/Models/Static/Letter Lagoon/Foliage/
+  m_cutMode: 0
 --- !u!1 &3813053826582538263
 GameObject:
   m_ObjectHideFlags: 0
@@ -9,8 +32,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 194193099431582212}
+  - component: {fileID: 7880505003578232408}
   m_Layer: 0
-  m_Name: Pirate_PalmTree_Multiple_B
+  m_Name: PiratePalmTreeMultipleB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,9 +52,112 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2762054094669245971}
+  - {fileID: 5780409497412125399}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &7880505003578232408
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3813053826582538263}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.8709173, y: 6.307978, z: -0.62089646}
+  m_Size: 12.615518
+  m_FadeMode: 1
+  m_AnimateCrossFading: 1
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.25325525
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 590893238033361116}
+  - screenRelativeHeight: 0.011608625
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5923985462940943375}
+  m_Enabled: 1
+--- !u!1 &8686094530910943772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5780409497412125399}
+  - component: {fileID: 8973106726739991696}
+  - component: {fileID: 5923985462940943375}
+  m_Layer: 0
+  m_Name: Impostor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5780409497412125399
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8686094530910943772}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 194193099431582212}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8973106726739991696
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8686094530910943772}
+  m_Mesh: {fileID: 3549733333282124018, guid: b2065145c83bed3488a109c91033f715, type: 2}
+--- !u!23 &5923985462940943375
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8686094530910943772}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -3564536667754550499, guid: b2065145c83bed3488a109c91033f715, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1001 &7146787502080509193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38,16 +165,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 194193099431582212}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 9159533efffebb249a6dd2f909f73958,
-        type: 3}
-      propertyPath: m_Name
-      value: Pirate_PalmTree_Multiple_B
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 9159533efffebb249a6dd2f909f73958,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9159533efffebb249a6dd2f909f73958,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -108,11 +225,33 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f37274bc0bbb11b48bcd50bdbb9d33ff, type: 2}
+    - target: {fileID: -927199367670048503, guid: 9159533efffebb249a6dd2f909f73958,
+        type: 3}
+      propertyPath: m_Name
+      value: Pirate_PalmTree_Multiple_B
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9159533efffebb249a6dd2f909f73958,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9159533efffebb249a6dd2f909f73958, type: 3}
+--- !u!1 &1157302269322632192 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 9159533efffebb249a6dd2f909f73958,
+    type: 3}
+  m_PrefabInstance: {fileID: 7146787502080509193}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2762054094669245971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 9159533efffebb249a6dd2f909f73958,
+    type: 3}
+  m_PrefabInstance: {fileID: 7146787502080509193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &590893238033361116 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1504981713932161579, guid: 9159533efffebb249a6dd2f909f73958,
     type: 3}
   m_PrefabInstance: {fileID: 7146787502080509193}
   m_PrefabAsset: {fileID: 0}

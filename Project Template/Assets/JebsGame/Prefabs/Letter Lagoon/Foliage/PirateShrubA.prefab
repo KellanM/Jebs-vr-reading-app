@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 441121732560877722}
+  - component: {fileID: 1258966780364538114}
   m_Layer: 0
-  m_Name: Pirate_Shrub_A
+  m_Name: PirateShrubA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,9 +29,135 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 883535528903255597}
+  - {fileID: 7687624421094404276}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &1258966780364538114
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3478032596177783433}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.0003142357, y: 1.0513036, z: 0.034766912}
+  m_Size: 2.3497515
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.24688584
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 2460510441113379042}
+  - screenRelativeHeight: 0.013583633
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7621591421422382616}
+  m_Enabled: 1
+--- !u!114 &3283839771762202392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4186565590139393086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fadcc2d9a34a1a34f93d4962ec37e6e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_data: {fileID: 11400000, guid: a1d7081b3b720c2479662bc8421a8d76, type: 2}
+  m_rootTransform: {fileID: 883535528903255597}
+  m_lodGroup: {fileID: 0}
+  m_renderers:
+  - {fileID: 2460510441113379042}
+  m_lodReplacement: 2
+  m_renderPipelineInUse: 0
+  m_insertIndex: 1
+  m_lastImpostor: {fileID: 5420904576898449769}
+  m_folderPath: Assets/JebsGame/Models/Static/Letter Lagoon/Foliage/
+  m_cutMode: 0
+--- !u!1 &5420904576898449769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7687624421094404276}
+  - component: {fileID: 4434447443359303077}
+  - component: {fileID: 7621591421422382616}
+  m_Layer: 0
+  m_Name: Impostor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7687624421094404276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5420904576898449769}
+  m_LocalRotation: {x: -0.7071068, y: 0.000000061817246, z: 0.000000061817246, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441121732560877722}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &4434447443359303077
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5420904576898449769}
+  m_Mesh: {fileID: -7507757538514159743, guid: a1d7081b3b720c2479662bc8421a8d76, type: 2}
+--- !u!23 &7621591421422382616
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5420904576898449769}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -4171815453337342315, guid: a1d7081b3b720c2479662bc8421a8d76, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!1001 &5276044132805938487
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38,16 +165,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 441121732560877722}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 28e13574074507b4cb9f1c4ee19e4d22,
-        type: 3}
-      propertyPath: m_Name
-      value: Pirate_Shrub_A
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 28e13574074507b4cb9f1c4ee19e4d22,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 28e13574074507b4cb9f1c4ee19e4d22,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -108,11 +225,33 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f37274bc0bbb11b48bcd50bdbb9d33ff, type: 2}
+    - target: {fileID: -927199367670048503, guid: 28e13574074507b4cb9f1c4ee19e4d22,
+        type: 3}
+      propertyPath: m_Name
+      value: Pirate_Shrub_A
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 28e13574074507b4cb9f1c4ee19e4d22,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28e13574074507b4cb9f1c4ee19e4d22, type: 3}
+--- !u!1 &4186565590139393086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 28e13574074507b4cb9f1c4ee19e4d22,
+    type: 3}
+  m_PrefabInstance: {fileID: 5276044132805938487}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &883535528903255597 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 28e13574074507b4cb9f1c4ee19e4d22,
+    type: 3}
+  m_PrefabInstance: {fileID: 5276044132805938487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &2460510441113379042 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1504981713932161579, guid: 28e13574074507b4cb9f1c4ee19e4d22,
     type: 3}
   m_PrefabInstance: {fileID: 5276044132805938487}
   m_PrefabAsset: {fileID: 0}
